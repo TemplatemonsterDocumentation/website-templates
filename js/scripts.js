@@ -2,7 +2,11 @@
   		
   // hide #back-top first
   $("#back-top").hide();
-  
+  $(".nav a").click(function(){
+    $this.each(function() {
+      this.href = this.href.split("#")[0] + "#" + window.location.hash;
+    })
+  })
   // fade in #back-top
   $(function () {
     $(window).scroll(function () {

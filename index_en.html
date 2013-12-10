@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Template Documentation</title>
+  <title>HTML Template Documentation</title>
   <meta charset="utf-8">
+  <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/website-templates/responsive-website-templates-v1-0/index_en.html"/> 
   <link rel="stylesheet" href="css/bootstrap.css" media="screen">
   <link rel="stylesheet" href="css/responsive.css" media="screen">
   <link rel="stylesheet" href="css/prettify.css"  media="screen">
@@ -40,7 +41,7 @@
   <div class="row">
   <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
  <article class="span6">
- <h1><img alt="" src="img/bootstrap-icon.png"  width="60"> Bootstrap Template Documentation</h1>
+ <h1><img alt="" src="img/html-icon.png"> HTML Template Documentation</h1>
   </article> 
   <article class="span2">
     <div class="languages pull-right">
@@ -189,10 +190,9 @@
       </li>
       <li class="folder"><i class="icon-folder-close"></i> <b>Site</b><small class="muted"> - contains the .html files of the template.</small>
         <ul>
-          <li class="folder"><i class="icon-folder-close"></i> assets<small class="muted"> - contains assets and bonus add-ons.</small></li>
           <li class="folder"><i class="icon-folder-close"></i> bat<small class="muted"> - contains contact form processing .php script.</small></li>
           <li class="folder"><i class="icon-folder-close"></i> css<small class="muted"> - contains all the .css files used in the design.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> img<small class="muted"> - contains all the images used in .html files.</small></li>
+          <li class="folder"><i class="icon-folder-close"></i> images<small class="muted"> - contains all the images used in .html files.</small></li>
           <li class="folder"><i class="icon-folder-close"></i> js<small class="muted"> - contains JavaScript libraries and jQuery plugins.</small></li>
           <li class="folder"><i class="icon-folder-close"></i> search<small class="muted"> - contains .js, .php and .css file of the search engine.</small></li>
         </ul>
@@ -200,7 +200,6 @@
       <li class="folder"><i class="icon-folder-close"></i> <b>sources</b><small class="muted"> contains source files.</small>
         <ul>
           <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - contains Adobe Photoshop .psd files.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> less<small class="muted"> - contains .css LESS files used in the template.</small></li>
         </ul>
       </li>
       <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - contains the list of fonts used in template.</small></li>
@@ -248,7 +247,7 @@
             <p>Feel free to check the following <a href="/help/developer-tools.html" target="_blank">Developer Tools</a> article.</p>
             <p>You can also check the video tutorial on <a target="_blank" href="/help/js-animated-how-to-edit-text.html">how to edit text in JS Animated templates</a></p>
             <h3 id="how-to-edit-images" class="scrollTo">How to edit images</h3>
-            <p>Open the template folder, go to '<strong>site/img</strong>' directory. You can upload your images with the same name and extension to replace the default ones.</p>
+            <p>Open the template folder, go to '<strong>site/images</strong>' directory. You can upload your images with the same name and extension to replace the default ones.</p>
             <p>The other way is to upload custom images with your titles and extensions. Then you&rsquo;ll need to change the image file names in the html files.</p>
             <ol>
             <li>Open <strong>.html</strong> file from the &ldquo;<strong>site</strong>&rdquo; folder with your html editor.</li>
@@ -328,7 +327,7 @@
         <!-- Getting started end -->
 					<pre class="prettyprint linenums">
 &lt;form id="contact-form"&gt;
-  &lt;div class="success-message"&gt;this is success message&lt;/div&gt;
+  &lt;div class="success-message"&gt;Contact form submitted.&lt;/div&gt;
   &lt;label class="name"&gt;
     &lt;input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" /&gt;
     &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
@@ -527,14 +526,14 @@ _date.setMonth(_date.getMonth()+8)
 /*end code for demonstration*/
 	
 $('#counter').countdown({
-	image: 'img/digits_inverted.png',
+	image: 'images/digits_inverted.png',
 	startTime: _date,
 	stepTime: 35
 });	
 });							</pre>
 						<p>The initialization occurs on the event <b><i>$(document).ready()</i></b>.</p> Parameters:
 						<ul class="square-list">
-							<li><strong>image</strong> &ndash; shows path to the image which will be used as a skin (the directory <strong>img</strong> contains files that you can use as skins for the timer);</li>
+							<li><strong>image</strong> &ndash; shows path to the image which will be used as a skin (the directory <strong>images</strong> contains files that you can use as skins for the timer);</li>
 							<li><strong>startTime</strong> &ndash; sets the final date of the countdown. Time countdown is implemented with  the help of variable <strong>_date</strong>;</li>
 							<li><strong>stepTime</strong> &ndash; sets cycle rate of numbers' animation.</li>							
 						</ul>
@@ -567,7 +566,8 @@ _date.setMonth(_date.getMonth()+8)
 /*end code for demonstration*/
 						</pre>
 						<h4>Color themes</h4>
-						<p class="pad">Below you'll find examples of skin solutions for the timer. All these skins you can find in <strong>img</strong> directory.</p>						
+						<p class="pad">Below you'll find examples of skin solutions for the timer. All these skins you can find in <strong>images</strong> directory.</p>
+						
 						<div class="counter_pos">
 							<div id="counter1"></div>
 							<div class="counter_desc">
@@ -578,7 +578,7 @@ _date.setMonth(_date.getMonth()+8)
 							</div>
 							<div class="code pad">
 							<pre><code>$('#counter').countdown({
-	image: 'img/digits.png',
+	image: 'images/digits.png',
 });						</code></pre>
 						</div>	
 						</div>						
@@ -592,10 +592,10 @@ _date.setMonth(_date.getMonth()+8)
 							</div>	
 							<div class="code pad">
 							<pre><code>$('#counter').countdown({
-	image: 'img/digits2.png',
+	image: 'images/digits2.png',
 });						</code></pre>
 						</div>	
-						</div>						
+						</div>
 					</div>
 				</article> 
          <!---->
