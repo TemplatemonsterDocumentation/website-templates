@@ -1,12 +1,7 @@
-var currentYear = (new Date).getFullYear();
-  $(document).ready(function() {
-  $("#copyright-year").text( (new Date).getFullYear() );
-  });
     $(document).ready(function() {	
   		
   // hide #back-top first
   $("#back-top").hide();
-  
   // fade in #back-top
   $(function () {
     $(window).scroll(function () {
