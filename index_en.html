@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/ie.css" />
   <![endif]-->
 
-    <!--[if lt IE 8]>
+    <!--[if lt IE 9]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
  	  <![endif]-->
     <!--[if lt IE 9]>
@@ -130,6 +130,12 @@
                               <li><a href="#subscription-form">Subscription Form</a></li>
                              </ul> 
                          </dd>
+                     </dl> 
+                  </li> 
+                  <li class="nav-item item7-1">
+                    <dl class="slide-down">
+                       <dt><a href="#cookie-policy" class="icon-copy">Cookie Policy</a></dt>
+                         <dd></dd>
                      </dl> 
                   </li> 
                   <li class="nav-item item7">
@@ -672,7 +678,60 @@ $(window).load(function(){
       </div>
     </article>
 </section>
+<section class="block-templates" id="cookie-policy">
+  <h2><i class="icon-copy"></i> Cookie Policy </h2>
 
+  <p>Cookies are small text files which websites place on visitors’ computers. They’re typically used to identify that particular visitor and provide them with a better experience. Cookies are a crucial part of many website functions which we take for granted.</p>
+  <p>For instance, it’s usually cookies which allow online shops to remember what items you have in your shopping trolley. They’re also used to keep you logged in to a website, or to provide valuable usage statistics and information to website owners.</p>
+  <p>If you run a website, it almost certainly uses cookies. Their most likely function is to monitor visitor numbers and behaviours through tools like Google Analytics. They may also be used to display relevant adverts to visitors, or – if you sell online – to power key parts of your online shopping system.</p>
+   <p>26th May 2012 - The ICO released a change to the enforcement, "implied consent" is now allowed as long as you make it clear where your privacy/cookie policy is.</p>
+   <h4>Box info:</h4>
+
+   <p>Following the Cookie Law conditions, we suggest you add the plugin <a href="http://cookiecuttr.com/">cookiecuttr</a> created by <a href="https://twitter.com/cdwharton">Chris Wharton</a> and provided under the GNU General Public License.</p>
+
+<h4>This is how it looks like:</h4>
+
+<p>This plugin is used to warn the visitors of your website about cookies usage. The plugin will add the information panel/box which can be fully customized via <strong>css</strong> and <strong>js</strong> files:</p> <p>  <img src="img/cookiecuttr.png" alt="">  </p> 
+
+   <h4>How to implement the plugin</h4>
+   <p>You need to download the <a href="js/jquery.cookie.js" download>jquery.cookie.js</a>, <a href="js/jquery.cookiecuttr.js" download>jquery.cookiecuttr.js</a> and <a href="css/cookiecuttr.css" download>cookiecuttr.css</a> file. Copy them into the <strong>js</strong> and <strong>css</strong> folders respectively, include plugin scripts and css file reference in the <strong>&lt;head&gt;</strong> section of each <strong>html</strong> file:</p>
+   <pre class="prettyprint linenums">
+&lt;!-- cookiecuttr plugin --&gt;
+ &lt;link rel="stylesheet" href="css/cookiecuttr.css"&gt;
+ &lt;script src="js/jquery.cookie.js"&gt;&lt;/script&gt;
+ &lt;script src="js/jquery.cookiecuttr.js"&gt;&lt;/script&gt;
+&lt;!-- end cookiecuttr plugin --&gt;                 </pre>
+
+
+<h4>Plugin customization</h4>
+
+<p>The plugin has a lot of parameters and options. This allows you to customize it according to you needs and wishes.</p> <p>Here are just a few of them:</p>
+ <pre class="prettyprint linenums">
+cookieCutter // if you’d like to actively hide parts of your website set this to true, for example say you use a comments system that inserts cookies, you can put the div name in below to replace it with a cookie warning message.
+cookieAnalytics //if you are just using a simple analytics package you can set this to true, it displays a simple default message with no privacy policy link - this is set to true by default.
+cookieDeclineButton // if you’d like a decline button to (ironically) write a cookie into the browser then set this to true.
+cookieAcceptButton // set this to true to hide the accept button, its set to false by default
+cookieResetButton // if you’d like a reset button to delete the accept or decline cookies then set this to true.
+cookieOverlayEnabled // don't want a discreet toolbar? this makes the whole message into a 100% height
+cookiePolicyLink // if applicable, enter the link to your privacy policy in here - this is as soon as cookieAnalytics is set to false;
+cookieMessage // edit the message you want to appear in the cookie bar, remember to keep the {{cookiePolicyLink}} variable in tact so it inserts your privacy policy link.
+cookieAnalyticsMessage // edit the message you want to appear, this is the default message.
+cookieWhatAreTheyLink // edit the link for the 'What are Cookies' link.
+cookieErrorMessage // edit the message you’d like to appear in place of the functionality
+cookieNotificationLocationBottom // this is false by default, change it to true and the cookie notification bar will show at the bottom of the page instead, please note this will remain at the top for mobile and iOS devices and Internet Explorer 6.
+cookieDisable // list elements comma separated in here that you want to disable, this will only work if cookieCutter is set to true.
+cookieAcceptButtonText // you can change the text of the green accept button.
+cookieDeclineButtonText // you can change the text of the red decline button.
+cookieResetButtonText // you can change the text of the orange reset button.
+cookieWhatAreLinkText // you can change the text of the "What are Cookies" link shown on Google Analytics message.
+cookiePolicyPage // set this to true to display the message you want to appear on your privacy or cookie policy page.
+cookiePolicyPageMessage // edit the message you want to appear on your policy page.
+cookieDiscreetLink // false by default, set to true to enable.
+cookieDiscreetLinkText // edit the text you want to appear on the discreet option.
+cookieDiscreetPosition // set to topleft by default, you can also set topright, bottomleft, bottomright.
+cookieDomain // empty by default, add your domain name in here without www. or https:// or http:// to remove Google Analytics cookies on decline.                 </pre>
+<p>You can find more detailed information and instructions on plugin customization and usage at the official <a href="http://cookiecuttr.com/">cookiecuttr</a> website.</p>
+</section>
 
 <section class="block-templates" id="uploading-template">
   <h2><i class="icon-cogs"></i> Uploading template </h2>
@@ -690,7 +749,7 @@ $(window).load(function(){
   <h2><i class="icon-question-sign"></i> Addendum <small>where to get help, support and additional information</small> </h2>
 
   <p>We hope this manual was useful for you and helped you to install, edit the template and to resolve your issues.</p>
-            <div id="help_support">
+            <div>
     <h4>Help and Support</h4>
     <ul class="list">
       <li><a href="http://chat.template-help.com/" target="_blank">Live chat</a></li>
