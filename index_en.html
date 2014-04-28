@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Template Documentation</title>
+  <title>Documentation FullJS v.3</title>
   <meta charset="utf-8">
-  <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/website-templates/full-javascript-animated-templates-html5-v1-0/index_en.html"/> 
+  <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/website-templates/responsive-website-templates-v1-0/index_en.html"/> 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-
   <link rel="stylesheet" href="css/responsive.css" media="screen">
   <link rel="stylesheet" href="css/prettify.css"  media="screen">
   <link rel="stylesheet" href="css/prettyPhoto.css"  media="screen">
@@ -27,7 +26,7 @@
   <![endif]-->
 
     <!--[if lt IE 9]>
-  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+  		<div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
  	  <![endif]-->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -43,7 +42,7 @@
   <div class="row">
   <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
  <article class="span6">
- <h1><img alt="" src="img/bootstrap-icon.png"  width="60"> Bootstrap Template Documentation</h1>
+ <h1><img alt="" src="img/html_js.png"> FullJS Template Documentation</h1>
   </article> 
   <article class="span2">
     <div class="languages pull-right">
@@ -94,22 +93,45 @@
                   <li class="nav-item item3">
                     <dl class="slide-down">
                        <dt><a href="#general-information" class="icon-play">General Information</a></dt>
-                         <dd></dd>
+                         <dd>
+                           <ul class="list">
+                                <li><a href="#fulljscomponents">Framework Components</a></li>         
+                                <li><a href="#fulljsfeatures">Framework Features</a></li>           
+                           </ul> 
+                         </dd>
                      </dl> 
                   </li> 
                   <li class="nav-item item4">
+                      <dl class="slide-down">
+                         <dt><a href="#template-files-structure" class="icon-folder-open"> Files and Folders Architecture</a></dt>
+                      </dl> 
+                  </li>
+                  <li class="nav-item item5">
                     <dl class="slide-down">
-                       <dt><a href="#editing-template" class="icon-cog">Editing template</a> <i class="icon-sample"></i></dt>
+                       <dt><a href="#editing-template" class="icon-pencil">Editing template</a> <i class="icon-sample"></i></dt>
                          <dd>
                          	<ul class="list">          
-                            <li><a href="#editing-html-and-css-files">Editing HTML and CSS files</a></li>
+                            <li><a href="#workspaceprepare">Preparation</a></li>         
+                            <li><a href="#htmlbase">Order of HTML structure</a></li>         
+                            <li><a href="#htmlspecial">HTML Specifics in FullJS v.3</a></li> 
+                            <li><a href="#editloader">How to change the site preloader?</a></li>
+                            <li><a href="#hmtlpagesformat">Subpages format</a></li> 
+                            <li><a href="#addpage">Adding new pages</a></li>       
+                            <li><a href="#menustructure">Template Menu Setup</a></li>       
+                            <li><a href="#links">Links</a></li>       
+                            <li><a href="#ajaxpages">Ajax pages</a></li>       
+                            <li><a href="#editcss">Main Stylesheet Structure</a></li>         
+                            <li><a href="#addcss">Linking CSS files</a></li>         
+                            <li><a href="#editresponsive">Responsive Styles</a></li>         
+                            <li><a href="#addjs">Adding scripts</a></li>         
+                            <li><a href="#pluginsetup">Plugin configuration</a></li>
                             <li><a href="#editing-psd-files">Editing PSD files</a></li>
                             <li><a href="#custom-fonts">Custom Fonts</a></li>
                            </ul> 
                          </dd>
                      </dl> 
                   </li> 
-                  <li class="nav-item item5">
+                  <li class="nav-item item6">
                     <dl class="slide-down">
                       <dt><a href="#customization-tutorials" class="icon-fullscreen">Customization Tutorials</a> <i class="icon-sample"></i></dt>
                       <dd>
@@ -120,8 +142,49 @@
                          </ul> 
                        </dd>
                     </dl>
-                  </li>                  
-                  <li class="nav-item item6">
+                  </li> 
+                  <li class="nav-item item7">
+                      <dl class="slide-down">
+                         <dt><a href="#mobile-version" class="icon-mobile-phone">Site Mobile Layout</a> <i class="icon-sample"></i></dt>
+                           <dd>
+                              <ul class="list">
+                                  <li><a href="#mobileinfo">General Information</a></li>         
+                                  <li><a href="#mobilestructure">Structure</a></li>      
+                                  <li><a href="#mobileedit">Editing</a></li> 
+                                  <li><a href="#mobileoff">Disabling the Mobile Version</a></li>   
+                             </ul> 
+                           </dd>
+                       </dl> 
+                  </li>
+                  <li class="nav-item item8">
+                      <dl class="slide-down">
+                         <dt><a href="#corejs" class="icon-cog">Core.js. Options and Settings</a> <i class="icon-sample"></i></dt>
+                           <dd>
+                              <ul class="list">
+                                  <li><a href="#corejsparams">Core Options</a></li>         
+                                  <li><a href="#corejsevents">Core Events</a></li>         
+                                  <li><a href="#responsivecontainer">ResponsiveContainer Module</a></li>         
+                                  <li><a href="#responsivecontainersetup">ResponsiveContainer module sample configuration</a></li> 
+                             </ul> 
+                           </dd>
+                       </dl> 
+                  </li>
+                  
+                   <li class="nav-item item9">
+                      <dl class="slide-down">
+                         <dt><a href="#faq" class="icon-comment">FAQ</a><i class="icon-sample"></i></dt>
+                         <dd>
+                            <ul class="list">      
+                              <li><a href="#afterload">Why am I not forwarded to the required page after loading?</a></li>
+                              <li><a href="#devicejs">What is device.js? What is it for and what does it do? </a></li>
+                              <li><a href="#changeanimation">How to alter the page changing animation? </a></li>
+                              <li><a href="#changesplash">How to change splash?</a></li>
+                              <li><a href="#pagetosplash">How to turn a sub-page into a splash page?</a></li>
+                            </ul>
+                         </dd>
+                      </dl> 
+                  </li>                 
+                  <li class="nav-item item10">
                     <dl class="slide-down">
                        <dt><a href="#tm-add-ons" class="icon-wrench">TM add-ons</a> <i class="icon-sample"></i></dt>
                          <dd>
@@ -134,19 +197,19 @@
                          </dd>
                      </dl> 
                   </li> 
-                  <li class="nav-item item7-1">
+                  <li class="nav-item item11">
                     <dl class="slide-down">
                        <dt><a href="#cookie-policy" class="icon-copy">Cookie Policy</a></dt>
                          <dd></dd>
                      </dl> 
                   </li> 
-                  <li class="nav-item item7">
+                  <li class="nav-item item12">
                     <dl class="slide-down">
                        <dt><a href="#uploading-template" class="icon-cogs">Uploading template</a></dt>
                          <dd></dd>
                      </dl> 
                   </li> 
-                  <li class="nav-item item8">
+                  <li class="nav-item item13">
                     <dl class="slide-down">
                        <dt><a href="#conclusion" class="icon-question-sign">Addendum</a></dt>
                        <dd></dd>
@@ -187,49 +250,324 @@
 
 <section class="block-templates" id="general-information">  
   <h2><i class="icon-play"></i> General Information </h2>
-  <h3>Software requirements</h3>
-  <p><strong>Adobe Dreamweaver</strong> (<a href="http://www.adobe.com/products/dreamweaver/" target="_blank">download free trial</a>). Used to edit the .HTML, .JS, .PHP and .CSS files.<br/>
-  <strong>Adobe Photoshop CS</strong> or later (<a href="http://www.adobe.com/products/photoshop.html" target="_blank">download free trial</a>). Used to edit .PSD files.</p>
-  <p>The following scheme displays the template files structure. </p>
-  <ul class="files_structure">
-      <li class="folder"><i class="icon-folder-close"></i> <b>Documentation</b><small class="muted"> – contains documentation on template editing and installation.</small>
-      </li>
-      <li class="folder"><i class="icon-folder-close"></i> <b>Screenshots</b><small class="muted"> - contains screenshots of the template.</small>
-      </li>
-      <li class="folder"><i class="icon-folder-close"></i> <b>Site</b><small class="muted"> - contains the .html files of the template.</small>
-        <ul>
-          <li class="folder"><i class="icon-folder-close"></i> assets<small class="muted"> - contains assets and bonus add-ons.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> bat<small class="muted"> - contains contact form processing .php script.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> css<small class="muted"> - contains all the .css files used in the design.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> img<small class="muted"> - contains all the images used in .html files.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> js<small class="muted"> - contains JavaScript libraries and jQuery plugins.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> search<small class="muted"> - contains .js, .php and .css file of the search engine.</small></li>
-        </ul>
-      </li>
-      <li class="folder"><i class="icon-folder-close"></i> <b>sources</b><small class="muted"> contains source files.</small>
-        <ul>
-          <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - contains Adobe Photoshop .psd files.</small></li>
-          <li class="folder"><i class="icon-folder-close"></i> less<small class="muted"> - contains .css LESS files used in the template.</small></li>
-        </ul>
-      </li>
-      <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - contains the list of fonts used in template.</small></li>
-      <li class="file"><i class="icon-file"></i> info.txt<small class="muted"> - contains the information about password protected "sources" folder.</small></li>
-    </ul>
+  <p>This guide shows the specifics of managing the framework, its capabilities and principles. It explains the FullJS v.3 templates architecture and describes the principle of creating content pages as well as the specifics of script initialization. The Framework is geared towards creating animated templates which can be finely tuned and quickly edited. FullJS framework differs from its predecessors by its universality, allowing to create multiple kinds of templates.  </p>
+                            <p> The FullJS v.3 Framework has an inbuilt capacity of creating the mobile layout automatically.  The templates are responsive, changing their layout for small resolutions or narrow screens. The framework has a set of customizable options and modules:  </p>
+                            <h3 id="fulljscomponents" class="scrollTo">Framework Components</h3>
+                            <p>The Framework includes the following libraries and technologies: </p>
+                            <ol>
+                                <li><b>jQuery</b> is a JavaScript library focusing on the  JavaScript interaction with HTML. The jQuery library gives you easy access to any DOM element, allowing manipulations with attributes and  DOM elements content. It also provides a convenient API for working with AJAX. <br><a href="http://jquery.com/">jquery.com</a></li>
+                                <li><b>Twitter Bootstrap v.3.x.x</b> is a free set of tools for creating responsive sites and web applications. It includes HTML and CSS styling templates for typography, web forms, buttons, marks, navigation blocks and other web interface components, including  JavaScript extensions. 
+ <br><a href="http://getbootstrap.com">getbootstrap.com</a></li>
+                                <li><b>Ajax</b>  is an approach to building interactive user interfaces and web applications, which consists in “background” data exchange with the web server. As a result, the page doesn't reload fully when the data is updated, making the web application faster and more convenient to use.  
+</li>
+                                <li><b>HTML5 History API</b> is a library for working with the browser address bar history.<br><a href="https://github.com/browserstate/history.js/">https://github.com/browserstate/history.js/</a></li>
+                                <li><b>Font Awesome</b> is vector font with a multitude of icons, which are easily modified with simple CSS. The font is Retina-supported. <br><a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+                                <li><b>LESS</b> is a dynamic style language that provides the following extensions to CSS: variables, nested blocks, mixins, operators and functions. 
+<br><a href="http://lesscss.org/">http://lesscss.org/</a></li>
+                            </ol>
+                            <h3 id="fulljsfeatures" class="scrollTo">Framework Features</h3>
+                            <p>The Framework has the following features:</p>
+                            <ul class="square-list">
+                              <li><b>module core structure</b>: the framework's core consists of modules that can  be activated, expanding or changing the core functionality. </li>
+                              <li><b>emphasis on CSS3 animation and creativity</b>: FullJS v.3 templates are supposed to replace Flash, so the animation is the distinctive feature of these templates. It is executed with CSS3 and not the script. The script animation has become a standard, however, it is slower than CSS3 animation. </li>
+                              <li><b>using Bootstrap</b>: using Bootstrap as the site framework makes the code more legible, standardized and universal.</li>
+                              <li><b>responsiveness</b>: in the era of rapid technology development unresponsive sites are not perceived to be fully functional any more. Responsiveness is becoming a standard. That's why this framework was made responsive.</li>
+                              <li><b>mobile layout</b>: to meet the mobile devices limited resources, a mobile version was developed. It is created automatically and configured by the developer.   This saves mobile resources and makes the site compatible with a wider range of devices. </li>
+                              <li><b>flexible site-to-device configuration system</b>: in this type of sites, there is a mechanism allowing to manage elements rules, their display and behavior through CSS or JavaScript.</li>
+                              <li><b>loading pages with Ajax</b>: saves from having to reload the whole site, lets you load separate pages, saving time and resources.</li>
+                              <li><b>History API</b>: using this library eliminates the hash symbols (#) in the URLs for modern browsers, so the pages have a regular address (however, Internet Explorer 8, 9 still uses hash #). The library also adds functionality by enabling the Back and Forward browser buttons).</li>
+                              <li><b>regularly updated plugin inventory</b>: the plugins base is always growing, with new galleries and features added.</li>
+                              <li><b>site search</b>: the site has an inbuilt search function, allowing you to easily find the right page with a word or phrase.</li>
+                              <li><b>retention of all the positive features of  FullJS</b>: the unnecessary options of the previous FullJS releases were eliminated, but the best and most useful features were preserved in the product.</li>
+                            </ul>
   
 </section>
 
+<section class="block-templates" id="template-files-structure">
+                            <h2><i class="icon-folder-open"></i>  Files and Folders Architecture </h2>
+                                <p>The file structure of the essential files and folders looks the following way: </p>
+                                <ul class="files_structure">
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>ajax</b><small class="muted"> – a folder with pages loaded through Ajax *.html, *.php</small>
+                                        <ul>
+                                            <li class="file"><i class="icon-file"></i> .htaccess<small class="muted"> - a web server configuration file for the Ajax folder (check the description of .htaccess in the root folder)  </small></li>
+                                            <li class="file"><i class="icon-file"></i> 404.html<small class="muted"> - a page displayed when a browser generates the 404 error (the requested page was not found). This is usually a separate page loaded with Ajax, but it can also be located inside the index.html file</small></li>
+                                            <li class="file"><i class="icon-file"></i> search.php<small class="muted"> - a file responsible for searches on site pages  </small></li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>assets</b><small class="muted"> - a folder containing a set of various helpful examples, scripts and styles from Twitter Bootstrap</small></li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>css</b><small class="muted"> – a folder with cascading style sheet files</small>
+                                        <ul>
+                                            <li class="file"><i class="icon-file"></i> bootstrap.css<small class="muted"> - basic styles of the Twitter Bootstrap v3.x.x framework</small></li>
+                                            <li class="file"><i class="icon-file"></i> style.css<small class="muted"> - the main file containing the site's styles </small></li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>fonts</b><small class="muted"> - a folder with a set of Font Awesome icon fonts</small></li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>img</b><small class="muted"> - a folder with site images</small></li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>js</b><small class="muted"> - a folder for site scripts</small>
+                                        <ul>
+                                            <li class="file"><i class="icon-file"></i> jquery.js<small class="muted"> -  the jQuery framework</small></li>
+                                            <li class="file"><i class="icon-file"></i> history.js<small class="muted"> - a library to manage HTML5 History API</small></li>
+                                            <li class="file"><i class="icon-file"></i> device.js<small class="muted"> - a library to determine the type and the operational system of the device used to view the site </small></li>
+                                            <li class="file"><i class="icon-file"></i> core.js<small class="muted"> - the core file of the FullJS v.3 framework</small></li>
+                                            <li class="file"><i class="icon-file"></i> bootstrap.min.js<small class="muted"> - the Twitter Bootstrap v.3.x.x framework</small></li>
+                                            <li class="file"><i class="icon-file"></i> jquery.cookie.js<small class="muted"> - a jQuery plugin working with browser cookies</small></li>
+                                            <li class="file"><i class="icon-file"></i> jquery.mousewheel.min.js<small class="muted"> - a plugin which tracks the mouse wheel events </small></li>
+                                            <li class="file"><i class="icon-file"></i> script.js<small class="muted"> - the main file with essential scripts for the template</small></li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder"><i class="icon-folder-close"></i> <b>less</b><small class="muted"> - a set of less files</small></li>
+                                    <li class="file"><i class="icon-file"></i> <b>index.html</b><small class="muted"> -  a file containing the basic html tree</small></li>
+                                    <li class="file"><i class="icon-file"></i> <b>.htaccess</b><small class="muted"> - an additional configuration file for the Apache web server as well as other similar web servers. It allows to set a wide range of additional options and permissions for the web server's work in separate catalogs (folders). For example, it provides a manageable access to catalogs, reassignment of file types, etc. without changing the main configuration file </small></li>
+                                </ul>
+                                <p>The architecture described above is typical for FullJS v.3 templates. However, as a rule, the templates are supplemented with scripts, stylesheets, additional pages, images, etc. But by default, this folder structure has to be preserved.</p>
+                        </section>
+
 
 <section class="block-templates" id="editing-template">
-  <h2><i class="icon-cog"></i> Editing template </h2>
-  
-  <p>Working with the  template you need to edit the <strong>.html</strong>, <strong>.css</strong>, <strong>.js</strong> and <strong>.psd</strong> files. </p>
-  <h3 id="editing-html-and-css-files" class="scrollTo">Editing HTML and CSS files</h3>
-  <p>All editable HTML files are located in "<strong>site</strong>" folder of the template package (index.html, index-1.html,index-2.html, etc.) Each index-#.html file represents a single template page. </p>
-  <p>To open .html file with Adobe Dreamweaver application, you should right mouse click on the file, and in the context menu select <strong>Open with > Adobe Dreamweaver</strong>. When the file is opened you can start editing it.</p>
-  <p>Adobe Dreamweaver is a recommended application as it allows you to edit the HTML files content in visual mode. Open any .html file and click the <strong>Live Code </strong> button at the top of the screen to switch to visual mode. </p>
-  <div class="cols"> <a class="first" href="img/dreamweaver-code.jpg" data-gal="prettyPhoto"><img src="img/dreamweaver-code.jpg" width="360" alt=""></a> <a class="last" href="img/dreamweaver-design.jpg" data-gal="prettyPhoto"><img src="img/dreamweaver-design.jpg" width="360" alt=""></a> </div>
-  <p>Feel free to check the detailed text and video tutorials on <a href="/help/general-tutorials/work-with-html/" target="_blank">how to edit HTML files with Adobe Dreamweaver</a>.</p>
-  <p>CSS files are used to change the template appearance like fonts (font-family, font-size, color etc), backgrounds, column width values etc. You can edit the css files with Adobe Dreamweaver application. Detailed tutorials on <a href="/help/general-tutorials/work-with-css/" target="_blank">how to work with the CSS files</a> are available at our online help center. </p>
+  <h2><i class="icon-pencil"></i> Editing template </h2>
+  <h3 id="workspaceprepare" class="scrollTo">Preparation</h3>
+                                <p>Go inside the root folder of the site. Each of the edited files is located in a folder with a matching type. Template editing is done by altering <b>*.html</b>, <b>*.php</b>, <b>*.css (or *.less) </b> and <b>*.js</b> files. To be able to edit the files, you'll need some knowledge of these languages: HTML, CSS (or LESS), PHP, JavaScript. You will also need to use an editor. <b>Notepad</b> (for Windows) is the simplest kind of editor that will open all the above file types.  However, it's not convenient for editing, so you'd better get one of the following editors: </p>
+                                <ul class="square-list">
+                                  <li><b>SublimeText</b> <a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a></li>
+                                  <li><b>Dreamweaver</b> <a href="https://creative.adobe.com/products/dreamweaver">https://creative.adobe.com/products/dreamweaver</a></li>
+                                  <li><b>Notepad++</b> <a href="http://notepad-plus-plus.org/">http://notepad-plus-plus.org/</a></li>
+                                </ul>
+
+                                <p>To view the site locally on your computer, you'll need a local server, for example, <b>Wamp</b> (<a href="http://www.wampserver.com/en/">http://www.wampserver.com/en/</a>). Without it, the AJAX queries and php files won't work. But if you're using the latest release of <b>Mozilla Firefox</b>, your site might be fully functional even without using the local hosting server (<a href="http://www.mozilla.org/en-US/firefox/new/">http://www.mozilla.org/en-US/firefox/new/</a>).</p>
+                
+                <p>Please check the tutorials below on how to configure the local development environment:</p>
+                
+                <ul class="unstyled">
+                  <li><i class="icon-film"> </i><a target="_blank" href="/help/how-to-install-appserv-web-development-environment.html">How to install AppServ web development environment</a></li>
+                  <li><i class="icon-film"> </i><a target="_blank" href="/help/how-to-install-wamp-web-development-environment.html">How to install WAMP web development environment</a></li>
+                  <li><i class="icon-film"> </i><a target="_blank" href="/help/how-to-install-xamp-web-development-environment.html">How to install XAMP web development environment</a></li>
+                </ul>
+
+                               <h3 id="htmlbase" class="scrollTo">Order of HTML structure</h3>
+                                    <p>In the <b>head</b> tag, you have to include both the basic essential files and the custom <b>*.css</b> and <b>*.js</b> files (as well as meta-data). The files should be referred to in a certain order. The stylesheets should go first:</p>
+                                    <pre class="prettyprint linenums">&lt;link rel="stylesheet" href="css/style.css"&gt;</pre>
+                                    <p>After that, the script files:</p>
+                                    <pre class="prettyprint linenums">&lt;script type="text/javascript" src="js/script.js">&lt;/script&gt;</pre>
+                                   <h3 id="htmlspecial" class="scrollTo"> HTML pages specifics in the FullJS v.3 framework</h3>
+                                    <p>Managed by the FullJS v.3 framework, the site has a slightly peculiar though clear and understandable structure. This example features an <b>HTML</b> code for a site, in which the pages are located in the <b>index.html</b> file:</p>
+                                    <pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-behavior="scroll"&gt;
+    &lt;div data-id="page1"&gt;&lt;/div&gt;
+    &lt;div data-id="page2"&gt;&lt;/div&gt;
+    &lt;div data-id="page3"&gt;&lt;/div&gt;
+    &lt;div data-id="page4"&gt;&lt;/div&gt;
+&lt;/article&gt;</pre>
+
+                                <p>There is a set of attributes that the framework core interacts with. The purpose of each one is described below:</p>
+
+                                <ul class="square-list">
+                                  <li><b>data-follow="location"</b> is an attribute responsible for tracking the address bar changes and turning on the browser reaction to these changes. </li>
+                                  <li><b>data-type="switcher"</b> is the attribute determining the designation of the content pages block.  For an <b>HTML</b> tree element containing pages to be switched, this attribute needs to equal the "<i>switcher</i>" string.</li>
+                                  <li><b>data-behavior="scroll"</b> is an attribute responsible for the script behavior on switching pages. For example, if you aim to create a single-page site, whose pages will follow each other and the address will switch as the pages are scrolled down, you will need to assign the "<i>scroll</i>" value to this attribute. If you don't need this behavior, just assign a blank string to the attribute: <b>data-behavior=""</b>.</li>
+                                </ul>
+
+
+                               <h3 id="editloader" class="scrollTo">How to change the site preloader? </h3>
+                                <p>Often the spin.min.js script is used to make the customization easier afterward.  The script lets you create a preloader with customizable settings. It's included and initialized in the script.js file. Please check the appropriate FAQ section to learn more about including custom scripts.</p>
+                                <p>Sample preloader settings:</p>
+<pre class="prettyprint linenums">function spinnerInit(){    
+  var opts = {
+    lines: 11,
+    length: 10,
+    width: 5,
+    radius: 14, 
+    corners: 1,
+    color: '#fff',
+    speed: 1.3,
+    trail: 5
+  },
+  spinner = new Spinner(opts).spin($('#webSiteLoader')[0]);
+}
+$(document).ready(function(e){
+  spinnerInit();
+});
+$(window).load(function(){
+  setTimeout(function(){
+    $("#webSiteLoader").fadeOut(500, function(){
+      $("#webSiteLoader").remove();                
+    });
+  }, 1500);
+});</pre>
+                                <p>In this example the site preloader is initialized on the document event <b>ready</b> and removed on the window event <b>load</b>. <br>
+                                The preloader can also be a Gif-animated image. In this case, the  <b>spin.min.js</b> script will not be needed any more, it can and should be disabled by removing the initialization script and the <b>js</b> file.</p>
+                                
+                                <h3 id="hmtlpagesformat" class="scrollTo">Subpages format</h3>
+                            <p>The framework allows the pages to be either all in the index.html, or  in separate files that will be kept in a certain folder and will load dynamically (by default it's the <b>ajax</b> folder). 
+
+If a page is inside <b>index.html</b>, it is usually a regular DIV-element located in a block with the <b>data-follow="location"</b> and <b>data-type="switcher"</b> attributes (the <b>data-behavior</b> attribute may be absent):</p>
+
+                            <pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-behavior=""&gt;
+…
+&lt;/article&gt;</pre>
+    <p> A page inside the block described above usually looks like this:</p>
+<pre class="prettyprint linenums">&lt;div data-id="readmore"&gt;
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-lg-12"&gt;
+      &lt;h2&gt;Read More&lt;/h2&gt;
+      &lt;p&gt;Aenean sapien massa, ultricies in risus at, consectetur.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+    <p>An external page will be loaded with AJAX and kept in the ajax folder. It is a regular page created according to HTML5 standards (in this example the Bootstrap classes are used): </p>
+<pre class="prettyprint linenums">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Read More&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-lg-12"&gt;
+        &lt;h2&gt;Read More&lt;/h2&gt;
+        &lt;p&gt;Aenean sapien massa, ultricies in risus at, consectetur.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    <p>It's not recommended to include script and style files in the loaded pages. It's best to include scripts in script.js.</p>
+
+                                <pre class="prettyprint linenums">
+&lt;article id="content" data-follow="location" data-type="switcher" data-behavior="scroll"&gt;
+    …
+    &lt;div data-id="page4"&gt;&lt;/div&gt;
+    &lt;div data-id="page5"&gt;
+      &lt;!-- your content here --&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</pre>
+
+
+                              <h3 id="addpage" class="scrollTo">Adding new pages</h3>
+
+                                <p> Each element is a content page if it's located in the appropriate container with attributes described above and looks like this: <pre class="prettyprint linenums">&lt;div data-id="page1">&lt;/div&gt;</pre>
+
+So, to add a new page, you just need to copy and paste this <b>div</b> tag below and fill in the page. The <b>data-id=""</b> attribute contains the new page name (the same name will be displayed in the address bar). Let's create a sample page and give it a name <i>"page5"</i>.</p>
+                                
+                                
+                                <h3 id="menustructure" class="scrollTo">Template Menu Setup</h3>
+                                <p>The main menu in a FullJS v.3 template is quite specific. To enable connections between the site pages, certain attributes have to be added to the menu. These attributes will simultaneously be the framework functioning options:</p>
+                                <ul class="square-list">
+                                  <li><b>data-follow="location"</b> - an attribute responsible for tracking the address bar changes and turning on the browser reaction to these changes.</li>
+                                  <li><b>data-type="navigation"</b> - an attribute signifying the given element type. For the menu, the type and purpose of the element is the site navigation.</li>
+                                </ul>
+                        <pre class="prettyprint linenums">&lt;nav data-follow="location" data-type="navigation"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="./page1"&gt;page1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./page2"&gt;page2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./page3"&gt;page3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./page4"&gt;page4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+                               <h3 id="links" class="scrollTo">Links</h3>
+                                
+                                <p>The links in a template can be both external (leading to other domains) and internal (links to inner pages of the document - the pages located in the index file or loaded with <b>Ajax</b>). The internal links should start with <b>"./"</b>. For example, 
+
+<pre class="prettyprint linenums">&lt;a href="./about"&gt;&lt;/a&gt;</pre>
+                                
+In this case the framework will know that it needs to show an internal content page. </p>
+                                
+                                <h3 id="ajaxpages" class="scrollTo"> Ajax Pages </h3>
+
+                                <p>The framework enables page load with the <b>Ajax</b> technology. Additional pages can be found in the <b>ajax</b> folder. Let's create a content file (<i>somePage.html</i>) and put it in the folder. After that, to load this external page by going to a link in the template, we have to add the name of the HTML file created earlier (with the <b>*.html</b> extension) to the href attribute of the link:</p>
+<pre class="prettyprint linenums">&lt;a href="./somePage.html"&gt;&lt;/a&gt;</pre>
+                                <p>We can add the <b>data-flags="ajax"</b> attribute to any page container:</p>
+<pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-flags="ajax"&gt;
+    &lt;div data-id="page1"&gt;&lt;/div&gt;
+    &lt;div data-id="page2"&gt;&lt;/div&gt;
+    &lt;div data-id="page3"&gt;&lt;/div&gt;
+    &lt;div data-id="page4"&gt;&lt;/div&gt;
+&lt;/article&gt;
+</pre>
+                              An <b>Ajax</b> page will be loaded to this container just as any other internal template page. This attribute signifies that the page is loadable and launches the appropriate algorithms for its loading. </p>
+                        
+                            <h3 id="editcss" class="scrollTo">Main Stylesheet Structure</h3>
+                                <p>You can edit the stylesheet in any code editor. The main css file <b>style.css</b> normally has the following structure:</p>
+                                <ul class="square-list">
+                                  <li>including other css files through import</li>
+                                  <li>declaring body, headings, paragraphs and other elements styles</li>
+                                  <li>specification of styles for header-а</li>
+                                  <li>declaring content styles</li>
+                                  <li>declaring footer-а styles</li>
+                                  <li>additional styles specification</li>
+                                  <li>styles corrections with media-queries to make the site responsive (@media (min-width: 1200px) {…})</li>
+                                  <li>styles corrections for the tablet layout (the html.tablet block)</li>
+                                  <li>styles corrections  for the mobile layout (the html.mobile block).</li>
+                                </ul>
+ 
+                            <h3 id="addcss" class="scrollTo">Including CSS files</h3>
+                            <p>To avoid overloading the index file, you should include files in the main stylesheet style.css. Including them this way is not a strict requirement, but it simplifies the site structure.  </p>
+                            <p>Example:</p>
+                            <pre class="prettyprint linenums">@import 'photoswipe.css';</pre>
+
+                            <h3 id="editcssversions" class="scrollTo"> Styles for different layouts </h3>
+                            <p>As a rule, almost all the template files are located in <b>style.css</b>. When the site is opened on a device, the site engine determines, whether the device is a desktop, a tablet or a mobile phone. This adds corresponding classes to the <b>html</b> tag. These classes are listed below: </p>
+<pre class="prettyprint linenums">html.desktop{}
+html.tablet{}
+html.mobile{}</pre>
+                            <p>To make sure that the styles are applied to a certain type of devices, you should begin them with indicating the type of layout they belong to: 
+
+                            </p>
+<pre class="prettyprint linenums">html.tablet h1 {
+  font-size: 45px;
+}</pre>
+                            <p>By default, all the styles are specified for the desktop layout, so there is no need to indicate  html.desktop before the styles. </p>
+
+
+
+                            <h3 id="editresponsive" class="scrollTo">Responsive Styles</h3>
+                            <p>To manage the site display on different resolutions, media-queries are used. 
+
+All the styles that will be applied to a certain resolution should be indicated inside the media block (max-width: …px){…}. <br>For example:</p>
+<pre class="prettyprint linenums">@media (max-width: 1024px) {
+  h1{
+    font-size: 45px;  
+  }
+}
+@media (max-width: 650px) {
+  h1{
+    font-size: 35px;  
+  }
+}</pre>
+
+                            <h3 id="addjs" class="scrollTo">Including scripts</h3>
+                                
+                            <p>It is recommended to avoid including scripts the regular way in the "head" tag of index.html and to include them in the script.js file instead. This file is responsible for the settings as well as for the core and plugins initialization. You can include scripts using the “include” function, with its argument being the inclusion script: 
+
+</p>
+
+                            <pre class="prettyprint linenums">include('js/superfish.js');</pre>
+
+                            <p>The script inclusion can be based on a condition, whether the site will be opened on a phone or a tablet:</p>
+
+                            <pre class="prettyprint linenums">if (!FJSCore.mobile){
+  include('js/superfish.js'); 
+}</pre>
+
+                            <p>I.e. the given script will be loaded only on a desktop computer or a tablet.</p>
+                            <p>Scripts should be initialized either on the event of document readiness:
+                            </p>
+                            <pre class="prettyprint linenums">$(document).ready(function(e){
+…
+});</pre>
+                            <p>or on the event of window load finish:</p>
+                            <pre class="prettyprint linenums">$(window).load(function(e){
+…
+});</pre>
+
+                            <h3 id="pluginsetup" class="scrollTo">Plugin configuration</h3>
+                            <p>The plugin is configured and initialized depending on its settings, in accordance with the JavaScript and jQuery syntax. <br>For example:</p>
+                            <pre class="prettyprint linenums">$('.someSelector').somePlugin({
+  'parameter1': parameterValue1,
+  'parameter2': parameterValue2
+});</pre>
   <h3 id="editing-psd-files" class="scrollTo">Editing PSD files</h3>
   <p>PSD files are located in the &quot;<strong>sources/psd</strong>&quot; folder in your template package. PSD are the source files of the template design. They are divided into layers so any part of the template design can be changed. </p>
   <p>During the customization process you can refer to the PSD files in order to change the images used in the content pages or in the design. </p>
@@ -257,7 +595,7 @@
             <p>Feel free to check the following <a href="/help/developer-tools.html" target="_blank">Developer Tools</a> article.</p>
             <p>You can also check the video tutorial on <a target="_blank" href="/help/js-animated-how-to-edit-text.html">how to edit text in JS Animated templates</a></p>
             <h3 id="how-to-edit-images" class="scrollTo">How to edit images</h3>
-            <p>Open the template folder, go to '<strong>site/img</strong>' directory. You can upload your images with the same name and extension to replace the default ones.</p>
+            <p>Open the template folder, go to '<strong>site/images</strong>' directory. You can upload your images with the same name and extension to replace the default ones.</p>
             <p>The other way is to upload custom images with your titles and extensions. Then you&rsquo;ll need to change the image file names in the html files.</p>
             <ol>
             <li>Open <strong>.html</strong> file from the &ldquo;<strong>site</strong>&rdquo; folder with your html editor.</li>
@@ -279,7 +617,270 @@
             <p>You can see the detailed tutorial on <a href="/help/js-animated-how-to-activate-contact-form.html" target="_blank">how to activate contact form in your template</a>.</p>
             
 </section>
+<section class="block-templates" id="mobile-version">
+                            <h2><i class="icon-mobile-phone"></i> Site Mobile Layout </h2>
+                                <h3 id="mobileinfo" class="scrollTo">General Information</h3>
+                                    <p>The FullJS v.3 framework has a built-in option of creating the mobile layout automatically. This layout will display when the template is loaded on a mobile phone. It ensures that the site will be loaded in its full view but with responsive design on tablet devices. This is possible since the modern tablets are equipped with powerful hardware and are almost equal to desktop computers in their capabilities. The mobile layout will be launched on mobile devices with small screens, e.g. a cell phone or other devices with Internet browsers. 
+</p>
+                                <h3 id="mobilestructure" class="scrollTo">Structure</h3>
+                                    <p>The document tree of the mobile version has the following structure:</p>
+                                    <pre class="prettyprint linenums">
+&lt;div id="mobile-wrap"&gt;
+    &lt;div id="mobile-header"&gt;
+        &lt;h1&gt;&lt;/h1&gt;
+        &lt;select id="mobile-navigation"&gt;
+        …
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div id="mobile-content"&gt;
+        &lt;div data-id="page1"&gt;&lt;/div&gt;
+        &lt;div data-id="page2"&gt;&lt;/div&gt;
+        …
+        &lt;div data-id="pageN"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="mobile-footer"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                                    <p>On condition that the <b>FJSCore.mobile</b> variable is true, the framework builds this structure automatically, at the same time deleting the document tree for the desktop layout. All of the desktop layout pages, without any changes and keeping the same names, are relocated into block: 
+<pre class="prettyprint linenums">&lt;div id="mobile-content"&gt;&lt;/div&gt;</pre>
+                                      
+The new  <b>select</b> mobile menu is created, it's based on the site menu with a specified attribute 
+ <b>data-type="navigation"</b>.  A drop-down menu is added with unlimited sub-menu levels. This menu is located in the site header. The <b>h1</b> tag is transferred there as well. The tag can be used as a holding block for the logo. The <i>.copyright</i> block (the privacy policy link) and <i>.follow-links</i> (a list of social links) are transferred to the &lt;div id="mobile-footer"&gt;&lt;/div&gt; block. </p>
 
+                                 <h3 id="mobileedit" class="scrollTo">Editing</h3>
+                                <p>If you want a certain block to be absent in the mobile layout, you just need to assign the <i>.desktop-only</i> class to it. To display a block on the mobile layout only, there is another class  - <i>.mobile-only</i>.  <br>
+
+The mobile layout is created by default, but it's possible to disable that function.  As was described above, the mobile layout scripts need to be enclosed into the condition: <pre class="prettyprint linenums"> if(FJSCore.mobile){}.</pre></p>
+
+
+                                <p>As the mobile layout tree is created with the framework core, *.js-scripts are used to edit this tree. As an example, let's wrap all the footer and header elements into a <b>div</b> element with the <i>.container</i> class:</p>
+                                <pre class="prettyprint linenums">
+$('#mobile-header&gt;*').wrapAll('&lt;div class="container"&gt;&lt;/div&gt;');
+$('#mobile-footer&gt;*').wrapAll('&lt;div class="container"&gt;&lt;/div&gt;');</pre>
+
+
+                            <h3 id="mobileoff" class="scrollTo">Disabling the Mobile Version</h3>
+                            <p>To disable the mobile layout, the mobileVersion property of the <b>FJSCore mobileVersion</b> object should be initialized. Just set mobileVersion: false in Core.js.  Please check the FAQ for details of <b>Сore.js.</b> configuration. </p>
+                        </section>
+
+                        <section class="block-templates" id="corejs">
+                            <h2><i class="icon-cog"></i> Core.js. Options and Settings </h2>
+                            <p>This block describes the functioning of the principal framework script <b>core.js</b>. It defines the main variables, their purposes and events as well as gives sample codes to use.</p>
+
+                            <h3 id="corejsparams" class="scrollTo"> Core Options</h3>
+                            <p> <b>Core.js</b> has a set of options which unlock the core's potential and simplify site building:</p>
+                            <ul class="square-list">
+                              <li><b>defState: ''</b> - a variable responsible for the default page (main page) link.  It's usually a blank string, so the link in the address bar will look the following way: http://domenname/site/ ;</li>
+                              <li><b>defMobileState:''</b> - a variable responsible for main page link of the mobile version;</li>
+                              <li><b>emptyNavigationText:'-- navigate to --'</b> - a variable responsible for the text displayed in the select. This mechanism menu on mobile devices. You will be transferred to the menu item with this text if the required menu item is not found, e.g. in the case of <i>PrivacyPolicy</i>;</li>
+                              <li><b>ajaxFolder: "/ajax/"</b> - a variable indicating the name of the folder with <b>Ajax</b> loaded pages;</li>
+                              <li><b>indexFile: 'index.html'</b> - a variable indicating the main index file. All the required <b>*.css</b> and <b>*.js</b> files have to be included in the index file;</li>
+                              <li><b>mobileVersion: true</b> - a core variable responsible for launching the mobile layout;</li>
+                              <li><b>mobileFollowLinks: true</b> - a core variable responsible for launching the social links rearranging mechanism. It will be helpful when the space for displaying the links is limited;</li>
+                              <li><b>state</b> - a variable showing the current page name. This is the same name displayed in the address bar;</li>
+                              <li><b>prevState</b> - a variable showing the previous page name. It can sometimes be required to manipulate page animation;</li>
+                              <li><b>mobile</b> - a core variable indicating that the site is loaded on a mobile device;</li>
+                              <li><b>tablet</b> - a core variable indicating that the site is loaded on a tablet. </li>
+                            </ul>
+                            <p>Right now you can change the variables values only in <b>core.js</b>.  
+Subsequently, a mechanism will be created allowing to initialize all the customizable core settings in other script files. </p>
+                            <p>At this moment, you can get a variable value by referring to the main object <i>FJSCore</i>. For example, the expression <i>FJSCore.mobile</i> will return the <i>true/false</i> value, which indicates whether the site is launched on a mobile phone.</p>   
+
+
+    
+                            <h3 id="corejsevents" class="scrollTo">Core events</h3>
+                            <p>The core <b>core.js</b> uses events in its work. The most important and widely used is the changeLocation event. This event fires every time the site <i>url</i> is changed either by clicking on menu buttons and links or loading the site. Control over this event allows to assign necessary effects to page transitions, e.g. set up animation, put some conditions, etc. The event is applied to the document.  <br> The given example outputs the event and the new <i>url</i> value  into the console:</p>
+
+                            <pre class="prettyprint linenums">$(document).on('changeLocation', function(e,d){
+  console.log(e);
+  console.log(d);
+});</pre>
+                            <p>After that, you can expand the script, for example, by adding a condition to check  for a mobile device:</p>
+                            <pre class="prettyprint linenums">$(document).on('changeLocation', function(e,d){
+  if (FJSCore.mobile) {
+    …
+  } else {
+    …
+  }
+});</pre>
+
+
+                            <h3 id="responsivecontainer" class="scrollTo">The responsiveContainer module</h3>
+                            <p>This block answers the questions: "What is the responsiveContainer module?", "What is it for?" and "How can it be set up?".</p>
+<p><b>ResponsiveContainer</b> is a <b>core.js</b> module responsible for modifying the layout for different resolutions. To be animated, the blocks need to be positioned absolutely, which prevents the site from reacting to the window size changes. This problem is solved by including the core module <b>responsiveContainer</b>. It's important to create pages according to the rules for responsive site creation, with an appropriate structure (in this case <b>Bootstrap</b>). This module is called in the block for the window load finish and looks the following way:</p>
+<pre class="prettyprint linenums">$(window).load(function(){
+  FJSCore.modules.responsiveContainer({
+    elementsSelector: '#other_pages>div',
+    defStates: ''
+  });
+});</pre>
+
+<p>The <b>responsiveContainer</b> module can work in two modes: changing the <b>body</b> element <b>min-height</b> depending on the height of content and adding a scroll to the page. This is achieved by changing properties at module initialization.<br>
+The <b>responsiveContainer</b> plugin options (the default values are indicated):
+</p>
+
+<ul class="square-list">
+  <li><b>container: ''</b> - a page container selector. Can be both a parent element for a page and a page itself;</li>
+  <li><b>elementsSelector: '.content-pages>div'</b> - a page selector for further manipulation with pages; </li>
+  <li><b>type: 'outer'</b> - a mode for the plugin functioning. The <i>outer</i> value will add a scroll to body, the <i>inner</i> one will add a scroll to the DOM tree elements specified in the <i>elementsSelector</i> option;</li>
+  <li><b>affectSelectors: 'header, footer'</b> - element selectors affecting the page height. These can be footer and header, for example, or some bars. If a header or footer are absent in a document, their height will simply not be taken into account, even if they are defined with a parameter;</li>
+  <li><b>deltaHeight: </b> - a value by which the site height can be changed for some actions. For example, when a certain page is loaded, some element on top may need to be extended, increasing the height of the site, but this selector is not indicated in <i>affectSelectors</i>, because it doesn't affect all the pages height, just one particular page. In this case, the <i>updateDeltaHeight</i>  event  of the plugin should be called for body, its desired value defined by the string: <br><br>
+    <pre class="prettyprint linenums">$('body').trigger('updateDeltaHeight', '300');</pre>
+    <p>Please keep in mind that the <i>deltaHeight</i> value should be set to zero on transition to another page where there is no need for the height to increase:</p>
+<pre class="prettyprint linenums">$('body').trigger('updateDeltaHeight', '0');</pre>
+  </li>
+  <li><b>activePageSelector: '.activeSubPage'</b> - an active page class selector. This selector defines the page that sets the site height;
+
+<li><b>resizeDisableSelector: '.disableResize'</b> - it is sometimes necessary not to account for the height on certain kinds of pages. This is what this option is for. In such a page, you need to add the <i>disableResize</i> class (or some other class) to a DOM tree element, making it a value for the given property. The height will not be accounted for on the page then;
+  <li><b>defStates: ''</b> - when the page value equals one of the values indicated in this property, the height resizing will not be executed and will instead be equal to the <b>min-height</b> css property indicated in <b>style.css</b>.
+
+If you need to list the pages where the height should not be recalculated, the given option has to be overridden as in the example below. These actions are usually needed for splash pages and gallery pages. Please note that a blank string is the first value in the list of these parameters. After that, the gallery addresses are listed.  
+
+These are the values that go after the last slash in the browser address bar: <br><br>
+<pre class="prettyprint linenums">FJSCore.modules.responsiveContainer({
+  defStates: ',fashion,nature,food,animals'
+});</pre>
+</ul>
+
+
+                            <h3 id="responsivecontainersetup" class="scrollTo">ResponsiveContainer module sample configuration</h3>
+                            <p>Let's consider a case where there is no footer and header (or either one of them) in the site - it's obvious that there is nowhere to account for the height. And another case where the header and footer are present, but for some reason, there is no need to account for their height. If only header height has to be accounted for, the <i>affectSelectors</i> parameter can be reassigned this way:
+                            </p>
+<pre class="prettyprint linenums">FJSCore.modules.responsiveContainer({
+  affectSelectors: 'header'
+});</pre>
+                            <p> If the footer or header have absolute positioning, you need to do the following for the plugin to work: add a <i>margin</i> property to the pages CSS-selector (the <i>elementsSelector</i> value) in <b>style.css</b> where the site's main styles are declared. The top and bottom values of the <i>margin</i> property will be taken into account when calculating the site height. 
+                            </p>
+                            <p>
+                            In <b>style.css</b>:
+                            </p>
+
+<pre class="prettyprint linenums">.content-pages>div{
+  margin: 200px 0;  
+}
+header, footer{
+  position: absolute;
+}</pre>
+                            <p>In <b>script.js</b>:</p>
+<pre class="prettyprint linenums">FJSCore.modules.responsiveContainer({
+  elementsSelector: '.content-pages>div',
+  affectSelectors: ''
+});</pre>
+
+</section>
+
+                          <section class="block-templates" id="faq">  
+                            <h2><i class="icon-comment"></i> FAQ </h2>
+                            
+                          <h3 id="afterload" class="scrollTo">Why am I not forwarded to the required page when the site has finished loading?</h3>
+                            <p>If you are not transferred to the right page after the site loads, you need to check whether the <i>afterload</i> event is called in the <b>script.js</b> framework file. The call has to be executed when the load finish event for the window fires. <br><br>For example:</p>
+<pre class="prettyprint linenums">$(window).load(function(){
+  $(this).trigger('afterload');
+});</pre>
+
+                            <h3 id="devicejs" class="scrollTo">What is device.js? What is it for and what does it do?</h3>
+                            <p>Device.js is a library that determines the operational system and type of the device on which the site is launched. This library is very helpful in developing sites geared towards both desktop and laptop computers as well as mobile devices with limited resources and smaller screens. Together with <b>media-queries</b> this library allows to create a really flexible and understandable site structure.<br> When the script is executed, corresponding classes are added to the HTML document body, and it becomes possible to manage the site display or behavior right out of the css or JavaScript files.</p>
+                            
+                         
+                            <h3 id="changeanimation" class="scrollTo">How to alter the page changing animation? </h3>
+<p> Altering the page changing animation is relative easy. Open the  <b>script.js</b> and <b>index.html</b> files. Check the name for the page container in <b>index.html</b>. It's usually a  DOM tree element with the following properties: <i>data-follow="location" data-type="switcher" data-behavior=""</i> and <i>id="content"</i>.</p>
+<p>In the <b>script.js</b> file, find the lines :</p>
+<pre class="prettyprint linenums">$('#content')
+.on('show','>*',function(e,d){  
+  d.curr
+    .addClass('active')
+    .stop(true, true)
+    .css({'top': '100%',
+        'display': 'block'})
+    .animate({
+        top: '0'
+    },{
+        duration: 1000,
+        ease: 'easeInOutCubic'
+    })    
+  }
+  })  
+.on('hide','>*',function(e,d){   
+  $(this)
+    .removeClass('active')
+    .stop(true, true)
+    .animate({
+        top: '100%'
+    },{
+        duration: 500,
+        ease: 'easeInOutCubic',
+        complete: function(){
+            $(this).css('display','none');
+        }
+    })
+  });</pre>
+  
+<p> You can change the site animation by editing CSS rules in the <i>animate</i> block. You can also add your own codes for animation of appearance:</p>
+<pre class="prettyprint linenums">.on('show','>*',function(e,d){  
+/* your code here */</pre>
+<p>and disappearance of pages:</p>
+<pre class="prettyprint linenums">.on('hide','>*',function(e,d){  
+/* your code here */</pre>
+<p>If other pages are in another container (e.g. <b>Ajax</b> - loaded pages), their animation may be found in another similar part of code in the same <b>script.js</b> file. <br><br>Example:</p>
+<pre class="prettyprint linenums">$('#other_pages')
+.on('show','>*',function(e,d){
+    $.when(d.elements)
+      .then(function(){
+        …
+      })         
+    })
+.on('hide','>*',function(e,d){ 
+  …           
+});</pre>
+
+                            
+
+                            <h3 id="changesplash" class="scrollTo">How to change splash?</h3>
+<p>Changing the splash page may differ between templates. Normally, it is similar to regular plugin editing, with the plugin having a set of customizable options.  
+ <br>
+For example:</p>
+<pre class="prettyprint linenums">$('.splash').tm3DCircleCarousel({
+    container: '.splashHolder',
+    transformClasses: '.scale100, .scale90, .scale80, .scale70, .scale60',
+    itemOffset: 110,
+    useCSS3Animation: true,
+    reflections: {
+        enable: true
+    },
+    autoplay: {
+        enable: true,
+        timeout: 8000
+    }
+});</pre>
+
+<h3 id="pagetosplash" class="scrollTo">How to turn a sub-page into a splash page?</h3>
+                            <p> To remove the splash page or change it, you need to clear the content in the div-element with a <i>data-id</i> parameter  (it's usually <i>data-id="", data-id="splash"</i> or <i>data-id="home"</i>), or insert another page code into it. This div-element, as a rule, is located in the following block of HTML code in <b>index.html</b>:</p>
+<pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-behavior=""&gt;</pre>
+<p>For example, this splash page:</p>
+<pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-behavior=""&gt;
+&lt;div data-id=""&gt;
+    &lt;div class="splashHolder"&gt;
+      &lt;ul class="splash"&gt;
+        &lt;li&gt;&lt;a href="img/bg_pic1.jpg"&gt;&lt;img src="img/gall_slide1.jpg" alt="Image 5"&gt;&lt;/a&gt;&lt;/li&gt;
+        …
+        &lt;li&gt;&lt;a href="img/bg_pic4.jpg"&gt;&lt;img src="img/gall_slide4.jpg" alt="Image 4"&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</pre>
+<p>Change into a regular page:</p>
+<pre class="prettyprint linenums">&lt;article id="content" data-follow="location" data-type="switcher" data-behavior=""&gt;
+&lt;div data-id=""&gt;
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-lg-12"&gt;
+        &lt;h2&gt;Some title&lt;/h2&gt;
+        &lt;p&gt;Aenean sapien massa, ultricies in risus at, consectetur.Aliquam ac bibendum odio. Aliquam mattis scelerisque ligula. &lt;/p&gt;        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/article&gt;</pre>
+                        </section>
 <section class="block-templates" id="tm-add-ons">
   <h2><i class="icon-wrench"></i> TM add-ons </h2>
   
@@ -337,7 +938,7 @@
         <!-- Getting started end -->
 					<pre class="prettyprint linenums">
 &lt;form id="contact-form"&gt;
-  &lt;div class="success-message"&gt;this is success message&lt;/div&gt;
+  &lt;div class="success-message"&gt;Contact form submitted.&lt;/div&gt;
   &lt;label class="name"&gt;
     &lt;input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" /&gt;
     &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
@@ -536,14 +1137,14 @@ _date.setMonth(_date.getMonth()+8)
 /*end code for demonstration*/
 	
 $('#counter').countdown({
-	image: 'img/digits_inverted.png',
+	image: 'images/digits_inverted.png',
 	startTime: _date,
 	stepTime: 35
 });	
 });							</pre>
 						<p>The initialization occurs on the event <b><i>$(document).ready()</i></b>.</p> Parameters:
 						<ul class="square-list">
-							<li><strong>image</strong> &ndash; shows path to the image which will be used as a skin (the directory <strong>img</strong> contains files that you can use as skins for the timer);</li>
+							<li><strong>image</strong> &ndash; shows path to the image which will be used as a skin (the directory <strong>images</strong> contains files that you can use as skins for the timer);</li>
 							<li><strong>startTime</strong> &ndash; sets the final date of the countdown. Time countdown is implemented with  the help of variable <strong>_date</strong>;</li>
 							<li><strong>stepTime</strong> &ndash; sets cycle rate of numbers' animation.</li>							
 						</ul>
@@ -576,7 +1177,8 @@ _date.setMonth(_date.getMonth()+8)
 /*end code for demonstration*/
 						</pre>
 						<h4>Color themes</h4>
-						<p class="pad">Below you'll find examples of skin solutions for the timer. All these skins you can find in <strong>img</strong> directory.</p>						
+						<p class="pad">Below you'll find examples of skin solutions for the timer. All these skins you can find in <strong>images</strong> directory.</p>
+						
 						<div class="counter_pos">
 							<div id="counter1"></div>
 							<div class="counter_desc">
@@ -587,7 +1189,7 @@ _date.setMonth(_date.getMonth()+8)
 							</div>
 							<div class="code pad">
 							<pre><code>$('#counter').countdown({
-	image: 'img/digits.png',
+	image: 'images/digits.png',
 });						</code></pre>
 						</div>	
 						</div>						
@@ -601,10 +1203,10 @@ _date.setMonth(_date.getMonth()+8)
 							</div>	
 							<div class="code pad">
 							<pre><code>$('#counter').countdown({
-	image: 'img/digits2.png',
+	image: 'images/digits2.png',
 });						</code></pre>
 						</div>	
-						</div>						
+						</div>
 					</div>
 				</article> 
          <!---->

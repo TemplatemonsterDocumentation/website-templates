@@ -166,6 +166,9 @@ figure.img-polaroid {
 p strong {
   color: #010101;
 }
+b {
+  color: black;
+}
 /*------ header ------- */
 header {
   background: #fcfcfc;
@@ -629,7 +632,6 @@ footer {
   width: 51px;
   display: block;
   /* transition */
-
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   transition: 0.1s;
@@ -726,7 +728,6 @@ pre {
 #contact-form label {
   position: relative;
   /*!*/
-
   display: block;
   min-height: 43px;
 }
@@ -736,7 +737,6 @@ pre {
 #contact-form ._placeholder {
   position: absolute;
   /*!*/
-
   left: 0;
   right: 0;
   top: 0;
@@ -944,7 +944,6 @@ ul.square-list li {
 #subscribe-form label {
   position: relative;
   /*!*/
-
   display: block;
   min-height: 43px;
 }
