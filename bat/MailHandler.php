@@ -1,87 +1,65 @@
 <?php
-
+	$owner_email='#';
 	//SMTP server settings	
-	$host = "smtp.host.com";
-    $port = "587";
-    $username = "";
-    $password = "";
-	
-	
-	$messageBody = "";
-	
-	if($_POST['name']!='false'){
-		$messageBody .= '<p>Visitor: ' . $_POST["name"] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}
-	if($_POST['email']!='false'){
-		$messageBody .= '<p>Email Address: ' . $_POST['email'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}else{
-		$headers = '';
-	}
-	if($_POST['state']!='false'){		
-		$messageBody .= '<p>State: ' . $_POST['state'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}
-	if($_POST['phone']!='false'){		
-		$messageBody .= '<p>Phone Number: ' . $_POST['phone'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}	
-	if($_POST['fax']!='false'){		
-		$messageBody .= '<p>Fax Number: ' . $_POST['fax'] . '</p>' . "\n";
-		$messageBody .= '<br>' . "\n";
-	}
-	if($_POST['message']!='false'){
-		$messageBody .= '<p>Message: ' . $_POST['message'] . '</p>' . "\n";
-	}
-	
-	if($_POST["stripHTML"] == 'true'){
-		$messageBody = strip_tags($messageBody);
-	}
-	
-	if($host=="" or $username=="" or $password==""){
-		$owner_email = $_POST["owner_email"];
-		$headers = 'From:' . $_POST["email"] . "\r\n" . 'Content-Type: text/plain; charset=UTF-8' . "\r\n";
-		$subject = 'A message from your site visitor ' . $_POST["name"];
-		
-		try{
-			if(!mail($owner_email, $subject, $messageBody, $headers)){
-				throw new Exception('mail failed');
-				}else{
-				echo 'mail sent';
-			}
-			}catch(Exception $e){
-			echo $e->getMessage() ."\n";
-		}
-	}else{	
-		require_once 'Mail.php';
+	$host = 'ssl://smtp.gmail.com';
+    $port = '465';//"587";
+    $username = '';
+    $password = '';
 
-		$to = $_POST["owner_email"];
-		$subject = 'A message from your site visitor ' . $_POST["name"];
-		$headers = array (
-		'From' => 'From:' . $_POST["email"] . "\r\n" . 'Content-Type: text/plain; charset=UTF-8' . "\r\n",
-		'To' => $to,
-		'Subject' => $subject);
-		
-		$smtp = Mail::factory(
-					'smtp',
-					array (
-						'host' => $host,
-						'port' => $port,
-						'auth' => true,
-						'username' => $username,
-						'password' => $password));
+    $subject='A message from your site visitor ';
+    $user_email='';    
+	$message_body='';
+	$message_type='html';
 
-		$mail = $smtp->send($to, $headers, $messageBody);
-		
-		try{
-			if(PEAR::isError($mail)){
-				echo $mail->getMessage();
-				}else{
-				echo 'mail sent';
+	$max_file_size=52428800; // bytes
+	$file_types='/(doc|docx|txt|pdf|zip|rar)$/';
+	$error_text_filesize='File size must be less than';
+	$error_text_filetype='Failed to upload file. This file type is not allowed. Accepted files types: doc, docx, txt, pdf, zip, rar.';
+
+
+	$error_text='something goes wrong';
+
+	$use_smtp=($host=='' or $username=='' or $password=='');
+
+	// $max_file_size*=20;
+	
+	if(isset($_POST['name']) and $_POST['name'] != ''){$message_body .= '<p>Visitor: ' . $_POST['name'] . '</p>' . "\n" . '<br>' . "\n"; $subject.=$_POST['name'];}
+	if(isset($_POST['email']) and $_POST['email'] != ''){$message_body .= '<p>Email Address: ' . $_POST['email'] . '</p>' . "\n" . '<br>' . "\n"; $user_email=$_POST['email'];}
+	if(isset($_POST['state']) and $_POST['state'] != ''){$message_body .= '<p>State: ' . $_POST['state'] . '</p>' . "\n" . '<br>' . "\n";}
+	if(isset($_POST['phone']) and $_POST['phone'] != ''){$message_body .= '<p>Phone Number: ' . $_POST['phone'] . '</p>' . "\n" . '<br>' . "\n";}	
+	if(isset($_POST['fax']) and $_POST['fax'] != ''){$message_body .= '<p>Fax Number: ' . $_POST['fax'] . '</p>' . "\n" . '<br>' . "\n";}
+	if(isset($_POST['message']) and $_POST['message'] != ''){$message_body .= '<p>Message: ' . $_POST['message'] . '</p>' . "\n";}	
+	if(isset($_POST['stripHTML']) and $_POST['stripHTML']=='true'){$message_body = strip_tags($message_body);$message_type='text';}
+
+try{
+	include "libmail.php";
+	$m= new Mail("utf-8");
+	$m->From($user_email);
+	$m->To($owner_email);
+	$m->Subject($subject);
+	$m->Body($message_body,$message_type);
+	$m->log_on(true);
+
+	if(isset($_FILES['attachment'])){
+		if($_FILES['attachment']['size']>$max_file_size){
+			$error_text=$error_text_filesize . ' ' . $max_file_size . 'bytes';
+			throw new Exception($error_text);
+		}else{			
+			if(preg_match($file_types,$_FILES['attachment']['name'])){
+				$m->Attach($_FILES['attachment']['tmp_name'],$_FILES['attachment']['name'],'','attachment');
+			}else{
+				$error_text=$error_text_filetype;
+				throw new Exception($error_text);
 			}
-			}catch(Exception $mail){
-			echo $mail->getMessage() ."\n";
-		}
-	}	
+		}		
+	}
+	if(!$use_smtp){
+		$m->smtp_on( $host, $username, $password, $port);
+	}
+	$m->Send();
+	
+	echo 'success';
+}catch(Exception $mail){
+	echo $error_text;
+}	
 ?>

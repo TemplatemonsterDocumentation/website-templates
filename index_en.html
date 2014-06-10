@@ -11,13 +11,18 @@
   <link rel="stylesheet" href="css/prettyPhoto.css"  media="screen">
   <link rel="stylesheet" href="css/idea.css"  media="screen">
   <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/contact-form.css" media="screen">
   <script src="js/jquery.js"></script>
   <script src="js/jquery.scrollTo.js"></script>
   <script src="js/jquery-migrate-1.1.0.js"></script>
   <script src="js/prettify.js"></script>
   <script src="js/bootstrap-affix.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script> 
+
   <script src="js/TMForm.js"></script>
+  <script src="js/modal.js"></script>  
+  <script src="js/bootstrap-filestyle.js"></script>    
+  
   <script src="js/sForm.js"></script>  
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -45,15 +50,19 @@
  <h1><img alt="" src="img/html-icon.png"> HTML Template Documentation</h1>
   </article> 
   <article class="span2">
-    <div class="languages pull-right">
-      <!-- <span class="lang_label">Language: </span> --><div id="lang_icon"><b>En</b><i class="icon-angle-down"></i></div>
-      <ul id="lang_list">
-        <li class="active"><a href="index.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
-        <!--li><a href="index_es.html"><span>Español </span><img src="img/flags/es.png" height="14" width="22" alt="es"></a></li>
-        <li><a href="index_de.html"><span>Deutsch </span><img src="img/flags/de.png" height="14" width="22" alt="de"></a></li>
-        <li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li-->
-      </ul>
-    </div>
+    <div id="languages" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>En</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          
+        </ul>
+      </div>
+      <div id="versions" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>v1-1</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          <li class="active"><a href="help/quick-start-guide/website-templates/responsive-website-templates-v1-1/index_en.html"><span>v1-1</span></a></li>
+          <li><a href="help/quick-start-guide/website-templates/responsive-website-templates-v1-0/index_en.html"><span>v1-0</span></a></li>
+        </ul>
+      </div>
   </article>   
   </div>    
   </div>
@@ -294,81 +303,121 @@
 			<!-- Getting started begin -->
           <div class="bs-docs-example">
             <form id="contact-form">
-              <div class="success-message">Contact form submitted.</div>
-              <label class="name">
-                <input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*This is not a valid name.</span>
-              </label>
-              <label class="state">
-                <input type="text" placeholder="State:" data-constraints="@JustLetters" />
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*This is not a valid state.</span>
-              </label>
-              <label class="email">
-                <input type="text" placeholder="Email:" data-constraints="@Required @Email" />
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*This is not a valid email.</span>
-              </label>
-              <label class="phone">
-                <input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*This is not a valid phone.</span>
-              </label>
-              <label class="fax">
-                <input type="text" placeholder="Fax:" data-constraints="@JustNumbers" />
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*This is not a valid fax.</span>
-              </label>
-              <label class="message">
-                <textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                <span class="empty-message">*This field is required.</span>
-                <span class="error-message">*The message is too short.</span>
-              </label>
-              <div>
-                <a href="#" data-type="submit" >submit</a>
-                <a href="#" data-type="reset" >reset</a> 
-              </div>  
+              <div class="contact-form-loader"></div>
+              <fieldset>
+                <label class="name">
+                  <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid name.</span>
+                </label>
+                <label class="state">
+                  <input type="text" name="state" placeholder="State:" data-constraints="@JustLetters" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid state.</span>
+                </label>
+                <label class="email">
+                  <input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid email.</span>
+                </label>
+                <label class="phone">
+                  <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid phone.</span>
+                </label>
+                <label class="fax">
+                  <input type="text" name="fax" placeholder="Fax:" data-constraints="@JustNumbers" />
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid fax.</span>
+                </label>
+                <label class="file">
+                  <input type="file" name="attachment" class="filestyle file-input" data-input="true" >
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*This is not a valid file.</span>
+                </label>
+                <label class="message">
+                  <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                  <span class="empty-message">*This field is required.</span>
+                  <span class="error-message">*The message is too short.</span>
+                </label>
+                <div>
+                  <a href="#" data-type="submit" >submit</a>
+                  <a href="#" data-type="reset" >reset</a> 
+                </div>
+              </fieldset> 
+              <div class="modal fade response-message">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      You message has been sent! We will be in touch soon.
+                    </div>      
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         <!-- Getting started end -->
 					<pre class="prettyprint linenums">
 &lt;form id="contact-form"&gt;
-  &lt;div class="success-message"&gt;Contact form submitted.&lt;/div&gt;
-  &lt;label class="name"&gt;
-    &lt;input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" /&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*This is not a valid name.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class="state"&gt;
-    &lt;input type="text" placeholder="State:" data-constraints="@JustLetters" /&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*This is not a valid state.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class="email"&gt;
-    &lt;input type="text" placeholder="Email:" data-constraints="@Required @Email" /&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*This is not a valid email.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class="phone"&gt;
-    &lt;input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*This is not a valid phone.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class="fax"&gt;
-    &lt;input type="text" placeholder="Fax:" data-constraints="@JustNumbers" /&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*This is not a valid fax.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class="message"&gt;
-    &lt;textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'&gt;&lt;/textarea&gt;
-    &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
-    &lt;span class="error-message"&gt;*The message is too short.&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;div&gt;
-    &lt;a href="#" data-type="submit" &gt;submit&lt;/a&gt;
-    &lt;a href="#" data-type="reset" &gt;reset&lt;/a&gt; 
-  &lt;/div&gt;  
+  &lt;div class="contact-form-loader">&lt;/div&gt;
+  &lt;fieldset&gt;
+    &lt;label class="name"&gt;
+      &lt;input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid name.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="state"&gt;
+      &lt;input type="text" name="state" placeholder="State:" data-constraints="@JustLetters" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid state.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="email"&gt;
+      &lt;input type="text" name="email" placeholder="Email:" value="" data-constraints="@Required @Email" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid email.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="phone"&gt;
+      &lt;input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid phone.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="fax"&gt;
+      &lt;input type="text" name="fax" placeholder="Fax:" data-constraints="@JustNumbers" /&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid fax.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="file"&gt;
+      &lt;input type="file" name="attachment" class="filestyle file-input" data-input="true" &gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*This is not a valid file.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="message"&gt;
+      &lt;textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'&gt;&lt;/textarea&gt;
+      &lt;span class="empty-message"&gt;*This field is required.&lt;/span&gt;
+      &lt;span class="error-message"&gt;*The message is too short.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;div&gt;
+      &lt;a href="#" data-type="submit" &gt;submit&lt;/a&gt;
+      &lt;a href="#" data-type="reset" &gt;reset&lt;/a&gt; 
+    &lt;/div&gt;
+  &lt;/fieldset&gt; 
+  &lt;div class="modal fade response-message"&gt;
+    &lt;div class="modal-dialog"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;div class="modal-header"&gt;
+          &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
+          &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class="modal-body"&gt;
+          You message has been sent! We will be in touch soon.
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/form&gt;		</pre>
         <h4>Description</h4>
            The HTML structure inside the form is flexible, the only condition is that all the fields (input, textarea HTML elements) should be placed inside the <strong>label</strong> tags that have class corresponding to their type.<br>
@@ -379,32 +428,50 @@
           <li><strong>state</strong> &ndash; Country (Area). Validation: digits are disallowed, not less than 2 symbols;</li>
           <li><strong>phone</strong> &ndash; Phone. Validation: digits only, not less than 5 symbols. Additional acceptable not alphabetical symbols: "space", "+" and "-";</li>
           <li><strong>fax</strong> &ndash; Fax. Validation: digits only, not less than 5 symbols. Additional acceptable not alphabetical symbols: "space", "+" and "-";</li>
+          <li><strong>file</strong> &ndash; File upload. Validation: max upload file size 10 MB. Only for doc, docx, txt, pdf, zip, rar file formats.</li>
           <li><strong>message</strong> &ndash; Message. Validation: any symbols, not less than 20 symbols.</li>
           <li><strong>@Required</strong> &ndash; This data-constraints attribute is used as a pointer for the  optional fields while filling the forms out.</li>
         </ul>
 			<p>Also <strong>label</strong> tag mentioned above can contain nested <em><strong>span</strong></em> elements with classes <strong>error-message</strong> and <strong>empty-message</strong>, 
-			which include the error message in case the data in the field is specified incorrectly or the field is just empty.</p>			
-            
-			<p>There is also <strong>div</strong> container with the class <strong>success-message</strong> inside the form, which is displayed after the message has been sent.</p>
+			which include the error message in case the data in the field is specified incorrectly or the field is just empty.</p>			           
+			
 
 		<h4>Script Initialization</h4>
 			<div class="inner">
-			  <p>To activate the contact form you need to include contact from script in the <strong>&lt;head&gt;</strong> section of HTML file and copy <strong>"bat"</strong> folder to your website root folder. The <strong>"bat"</strong> folder should contain 1 file: <strong>MailHandler.php</strong></p>
+			  <p>To activate the contact form you need to include contact from script in the <strong>&lt;head&gt;</strong> section of HTML file and copy <strong>"bat"</strong> folder to your website root folder. The <strong>"bat"</strong> folder should contain 2 file: <strong>MailHandler.php</strong>, <strong>libmail.php</strong></p>
 			  		 	<pre  class="prettyprint linenums">&lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/modal.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/bootstrap-filestyle.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="js/TMForm.js"&gt;&lt;/script&gt;</pre>
 				
-				<p>After this you should initialize your contact form on the <i><b>$(window).load() :</b></i> event</p>
-					<pre class="prettyprint linenums">&lt;script type="text/javascript"&gt;
-$(window).load(function(){
-  $('#contact-form').TMForm({
-    ownerEmail:'#'
-  })
-})
-&lt;/script&gt;</pre>
-				<p>Use the following parameters for initialization:</p>
+				<p>После этого вам необходимо открыть файл <strong>MailHandler.php</strong> с папки <strong>bat</strong> и выставить необходимые вам параметры. </p>
+					<pre class="prettyprint linenums">$owner_email='#';
+
+//SMTP server settings  
+$host = 'ssl://smtp.gmail.com';
+$port = '465';//"587";
+$username = '';
+$password = '';  
+
+$subject='A message from your site visitor ';
+
+$file_types='/(doc|docx|txt|pdf|zip|rar)$/';
+
+$error_text_filesize='file size must be less than';
+$error_text_filetype='wrong file type';
+$error_text='something goes wrong';</pre>
+				<p>Use the following parameters for customization:</p>
 					<ul class="square-list">
-						<li><strong>ownerEmail</strong> &ndash; the Email address the data will be sent to;
-						<li><strong>successShow</strong> &ndash; the period of time in milliseconds, during which the Send Message will be shown and after which the fields will be emptied, by default it is 4000 - 4 sec.</li>
+						<li><strong>$owner_email</strong> &ndash; the Email address the data will be sent to;
+						<li><strong>$host</strong> &ndash; хост, используемый для smtp верификации;</li>
+            <li><strong>$port</strong> &ndash; порт, используемый для smtp верификации;</li>
+            <li><strong>$username</strong> &ndash; имя пользователя, используемое для smtp верификации;</li>
+            <li><strong>$password</strong> &ndash; пароль, используемый для smtp верификации;</li>
+            <li><strong>$subject</strong> &ndash; тема письма, которая будет отображатся в вашем имейл агенте;</li>
+            <li><strong>$file_types</strong> &ndash; типы файлов, которые вы можете загрудать с помощью формы;</li>
+            <li><strong>$error_text_filesize</strong> &ndash; текст для вывода ошибки о некоректном размере загружаемого файла;</li>
+            <li><strong>$error_text_filetype</strong> &ndash; текст для вывода ошибки о некорректном типе загружаемого файла;</li>
+            <li><strong>$error_text</strong> &ndash; текст для вывода ошибки о проблемах с отправкой письма. ;</li>
 					</ul>
 			</div>
         </article>
@@ -807,7 +874,19 @@ cookieDomain // empty by default, add your domain name in here without www. or h
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
   })(); 
 </script>
-    
+
+<div class="language-modal">
+  <div class="modal_bg"></div>
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal_remove pull-right"><i class="icon-remove"></i></span>
+      <h3>Choose language</h3>
+    </div>
+    <div class="modal-body">
+      <ul id="modal_languages" class="nav nav-list bs-docs-sidenav"></ul>
+    </div>
+  </div>
+</div>
 </body> 
 
 </html>
