@@ -705,7 +705,7 @@ var {
   font: 100% mono-space, monospace;
 }
 pre {
-  margin: 0;
+  margin: 5px 0 20px 0;
   padding: 10px;
   overflow: auto;
   background: #fff;
