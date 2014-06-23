@@ -45,15 +45,19 @@
  <h1><img alt="" src="img/html-icon.png"> HTML Template Documentation</h1>
   </article> 
   <article class="span2">
-    <div class="languages pull-right">
-      <!-- <span class="lang_label">Language: </span> --><div id="lang_icon"><b>En</b><i class="icon-angle-down"></i></div>
-      <ul id="lang_list">
-        <li class="active"><a href="index.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
-        <!--li><a href="index_es.html"><span>Español </span><img src="img/flags/es.png" height="14" width="22" alt="es"></a></li>
-        <li><a href="index_de.html"><span>Deutsch </span><img src="img/flags/de.png" height="14" width="22" alt="de"></a></li>
-        <li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li-->
-      </ul>
-    </div>
+    <div id="languages" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>En</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          
+        </ul>
+      </div>
+      <div id="versions" class="select-menu pull-right">
+        <div class="select-menu_icon"><b>v1-0</b><i class="icon-angle-down"></i></div>
+        <ul class="select-menu_list">
+          <li><a href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/index_en.html"><span>v1-1</span></a></li>
+          <li class="active"><a href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-0/index_en.html"><span>v1-0</span></a></li>
+        </ul>
+      </div>
   </article>   
   </div>    
   </div>
@@ -808,6 +812,19 @@ cookieDomain // empty by default, add your domain name in here without www. or h
   })(); 
 </script>
     
+
+    <div class="language-modal">
+  <div class="modal_bg"></div>
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal_remove pull-right"><i class="icon-remove"></i></span>
+      <h3>Choose language</h3>
+    </div>
+    <div class="modal-body">
+      <ul id="modal_languages" class="nav nav-list bs-docs-sidenav"></ul>
+    </div>
+  </div>
+</div>
 </body> 
 
 </html>
