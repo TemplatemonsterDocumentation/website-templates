@@ -629,7 +629,6 @@ footer {
   width: 51px;
   display: block;
   /* transition */
-
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   transition: 0.1s;
@@ -726,7 +725,6 @@ pre {
 #contact-form label {
   position: relative;
   /*!*/
-
   display: block;
   min-height: 43px;
 }
@@ -736,7 +734,6 @@ pre {
 #contact-form ._placeholder {
   position: absolute;
   /*!*/
-
   left: 0;
   right: 0;
   top: 0;
@@ -944,7 +941,6 @@ ul.square-list li {
 #subscribe-form label {
   position: relative;
   /*!*/
-
   display: block;
   min-height: 43px;
 }
@@ -1141,4 +1137,113 @@ header h1 {
 .bs-docs-example + .prettyprint {
   margin-top: -20px;
   padding-top: 15px;
+}
+.select-menu_icon {
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+  background: #fff;
+  padding: 6px 12px;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
+}
+.select-menu_icon b {
+  display: inline-block;
+  margin-right: 6px;
+}
+.select-menu_icon:hover {
+  background: #f5f5f5;
+}
+.select-menu_list {
+  display: none;
+  position: absolute;
+  top: 43px;
+  right: 0;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+}
+.select-menu {
+  position: relative;
+  margin-left: 4px;
+}
+.select-menu ul li {
+  list-style: none;
+  display: block;
+  width: 90px;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 1px;
+}
+.select-menu ul li.active,
+.select-menu ul li:hover {
+  background: #fff;
+}
+.select-menu ul li.active a,
+.select-menu ul li:hover a {
+  color: #df152b;
+}
+.select-menu ul li a {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.select-menu ul li span {
+  display: block;
+  float: left;
+}
+.select-menu ul li img {
+  display: block;
+  float: right;
+  position: relative;
+  top: 3px;
+}
+/*======================= MODAL =======================*/
+.language-modal .modal_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 997;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.language-modal .modal {
+  position: fixed;
+  width: 320px;
+  margin-left: -160px;
+  left: 50%;
+  top: 150px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 998;
+  display: none;
+}
+.language-modal .modal h3 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: #000;
+}
+.language-modal .modal_remove {
+  font-size: 19px;
+  cursor: pointer;
+  padding: 2px;
+}
+#modal_languages li a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#modal_languages li a:hover {
+  background: #f5f5f5;
+}
+#modal_languages li img {
+  float: right;
+  position: relative;
+  top: 2px;
 }
