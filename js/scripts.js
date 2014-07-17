@@ -39,7 +39,7 @@ console.log(doc_language);
 	    */
 	    var languages = [ 
 	        ['en', 'English', true], 
-	        ['ru', 'Русский', false], 
+	        ['ru', 'Русский', true], 
 	        ['es', 'Español', false], 
 	        ['de', 'Deutsch', false], 
 	        ['fr', 'Français', false],
