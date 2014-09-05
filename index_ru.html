@@ -139,6 +139,8 @@
                               <li><a href="#under-construction">Сайт в разработке</a></li>
                               <li><a href="#subscription-form">Форма подписка</a></li>
                               <li><a href="#multimedia-gallery">Галерея TM </a></li>
+                              <li><a href="#video-bg">Вставка фонового видео</a></li>
+                              <li><a href="#parallax-bg">Использование параллакс-эффекта</a></li>
                              </ul> 
                          </dd>
                      </dl> 
@@ -902,6 +904,56 @@ $(window).load(function(){
          <p class="top-indent">Просмотреть <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-with-description.html" target="blank_">демо</a></p>
         Стилизацию внешнего вида галереи можно осуществить, используя файлы <strong>\gallery\less\tmMultimediaGallery.less</strong> (только для экспертов) или <strong>\gallery\css\tmMultimediaGallery.css</strong>.
       </div>
+    </article>
+
+    <h4 id="video-bg" class="scrollTo" style="padding: 50px 0 0px 0;">Вставка фонового видео (Background video)</h4>
+    <article>
+      <img src="img/video-1.png" alt="" class="video-img">
+      <p>Для реализации фонового видео в шаблоне используется jquery-плагин <a href="http://vodkabears.github.io/vide/">Vide</a>.</p>
+
+      <h5>Как установить плагин</h5>
+      <p>Скачайте архив с официального сайта. Скопируйте файл <strong>vide.js</strong> в папку <strong>js</strong>, добавьте подключение плагина и проинициализируйте его в файле <strong>script.js</strong>:</p>
+      <pre class="prettyprint linenums">
+include('js/jquery.vide.js'); 
+$(document).ready(function () {
+    $("#home").vide("video/[имя_файла]",{
+      volume: 1,
+      playbackRate: 1,
+      muted: true,
+      loop: true,
+      autoplay: true,
+      position: "50% 50%" // Alignment
+  });
+    $('#home video').fadeOut(0).delay(200).fadeIn(800);
+});              </pre>
+    где [имя_файла] - имя файла видео, без указания расширения, а <strong>#home</strong> блок с <strong>id="home"</strong> на котором будет отображаться видео.
+    <p>Также необходимо подготовить видео в форматах mp4, ogv, webm и постер к видео в форматах png, jpg и gif. Имя у всех файлов должно быть одинаковым и соответствовать прописанному ранее [имя_файла]. Все подготовленные файлы нужно разместить в директории video/ в корневой директории сайта.</p>
+
+    </article>
+
+    <h4 id="parallax-bg" class="scrollTo" style="padding: 50px 0 10px 0;">Использование параллакс-эффекта</h4>
+    <article>
+      <p>Для реализации параллакс-эффекта в шаблоне используется jquery-плагин <a href="http://markdalgleish.com/projects/stellar.js/">Stellar</a>.</p>
+
+      <h5>Как установить плагин</h5>
+        <p>Скачайте архив с официального сайта. Скопируйте файл <strong>jquery.stellar.js</strong> в папку <strong>js</strong>, добавьте подключение плагина и проинициализируйте его в файле <strong>script.js</strong>:</p>
+        <pre class="prettyprint linenums">
+include('js/jquery.stellar.js'); 
+$(document).ready(function() { 
+    $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: -50
+  }  
+});      </pre>      
+      <p>На блок, в котором мы хотим реализовать паралакс бекграунд, необходимо добавить свойство <strong>data-stellar-background-ratio="[значение]"</strong>:</p>      
+      <pre class="prettyprint linenums">
+&lt;section id="priorities" data-stellar-background-ratio="-0.1"&gt;&lt;/section&gt;   </pre>  
+<p>где [значение] - коэффициент относительно естественной скорости скроллинга, более детально можно прочитать в документации к плагину.</p>
+    Не забываем указать данному блоку бекграунд в цсс файле:
+    <pre class="prettyprint linenums">
+#priorities {
+  background: url('../images/[ваша_картинка].jpg');
+}   </pre> 
     </article>
 </section>
 <section class="block-templates" id="cookie-policy">

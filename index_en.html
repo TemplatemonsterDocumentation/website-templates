@@ -139,6 +139,8 @@
                               <li><a href="#under-construction">Under Construction</a></li>
                               <li><a href="#subscription-form">Subscription Form</a></li>
                               <li><a href="#multimedia-gallery">TM Gallery</a></li>
+                              <li><a href="#video-bg">Video background</a></li>
+                              <li><a href="#parallax-bg">Parallax background</a></li>
                              </ul> 
                          </dd>
                      </dl> 
@@ -903,6 +905,60 @@ $(window).load(function(){
          <p class="top-indent">View <a href="http://www.templatemonster.com/help/files/demos/gallery-demo/gallery-with-description.html" target="blank_">demo</a></p>
          You can customize gallery appearance in the <strong>\gallery\less\tmMultimediaGallery.less</strong> (for experts only) or <strong>\gallery\css\tmMultimediaGallery.css</strong> file.
       </div>
+    </article>
+
+    <h4 id="video-bg" class="scrollTo" style="padding: 50px 0 0px 0;">Video background</h4>
+    <article>
+      <img src="img/video-1.png" alt="" class="video-img">
+      <p>To create video background you need to use <a href="http://vodkabears.github.io/vide/">Vide</a> jQuery plugin.</p>
+
+      <h5>Plugin installation</h5>
+      <p>Download Video plugin archive from the official website. Copy <strong>vide.js</strong> file to <strong>js</strong>folder, include script to your html page and add script initialization to <strong>script.js</strong>:</p>
+      <pre class="prettyprint linenums">
+      include('js/jquery.vide.js'); 
+      $(document).ready(function () {
+          $("#home").vide("video/[file_name]",{
+            volume: 1,
+            playbackRate: 1,
+            muted: true,
+            loop: true,
+            autoplay: true,
+            position: "50% 50%" // Alignment
+        });
+          $('#home video').fadeOut(0).delay(200).fadeIn(800);
+      });              
+      </pre>
+
+      <p>where [file_name] - is name of the video file, without extension. <strong>#home</strong> is a block with <strong>id="home"</strong> that will contain video.</p>    
+      <p>Also you need to prepare video in mp4, ogv, webm formats and poster in png, jpg or gif formats. All files names should be equal to [file_name]. All prepared files should be placed in video directory in the website root. </p>
+    </article>
+
+    <h4 id="parallax-bg" class="scrollTo" style="padding: 50px 0 10px 0;">Parallax effect</h4>
+    <article>
+      <p>To add block with parallax effect to your website you need to use <a href="http://markdalgleish.com/projects/stellar.js/">Stellar</a> jQuery plugin</p>
+
+      <h5>Plugin installation</h5>
+        <p>Download plugin from the official website. Copy <strong>jquery.stellar.js</strong> file to <strong>js</strong> folder, add script to your hrml file and script initialization to <strong>script.js</strong> file:</p>
+        <pre class="prettyprint linenums">
+include('js/jquery.stellar.js'); 
+$(document).ready(function() { 
+    $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: -50
+  }  
+});
+        </pre>
+      <p>Add <strong>data-stellar-background-ratio="[value]"</strong> attribute to the parallax block element:</p>
+      <pre class="prettyprint linenums">
+&lt;section id="priorities" data-stellar-background-ratio="-0.1"&gt;&lt;/section&gt;
+      </pre>  
+      <p>where [value] - is a scroll speed coefficient. You can learn more from plugin documentation.</p>
+      <p>Don't forget to specify background for the parallax block element:</p>
+      <pre class="prettyprint linenums">
+#priorities {
+  background: url('../images/[your_image].jpg');
+}
+      </pre> 
     </article>
 </section>
 <section class="block-templates" id="cookie-policy">
