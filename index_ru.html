@@ -250,6 +250,14 @@
   <p>В дизайне некоторых шаблонов могут использоваться нестандартные шрифты. По умолчанию, интернет-браузер может использовать только шрифты, установленные в  операционной системе. Другими словами, если в дизайне сайта используются пользовательские шрифты, не установленные на компьютере, эти шрифты отображаться не будут. Вместо них будут отображаться стандартные шрифты. Поэтому веб-разработчики ищут альтернативные решения. В наших шаблонах  пользовательские шрифты добавляются при помощи технологии <strong>Google Web Fonts</strong>. </p>
   <h4>Google Web Fonts</h4>
   <p>Более детальную информацию об использовании шрифтов Google Web Fonts можно найти в туториале  <a target="_blank" href="/help/how-to-use-the-google-web-fonts-api.html">Как работать со шрифтами Google web Fonts</a>. </p>
+  <h5>Не удается загрузить Google Fonts:</h5>
+  <ol>
+  <li>Откройте 'site\index-*.html' или 'site\css\style.css' файлы</li>
+  <li>Найдите строку: <br>
+  <pre>//fonts.googleapis.com/css?family=[---your_web_font_name_here---]</pre></li>
+  <li>Замените её следующим: <br>
+  <pre>//fonts.useso.com/css?family=[---your_web_font_name_here---]</pre></li>
+  </ol>
  </section>
 
 
@@ -1035,7 +1043,7 @@ cookieDomain // по умолчанию не задана, добавьте до
     <h4>Помощь и Поддержка</h4>
     <ul class="list">
       <li><a href="http://chat.template-help.com/" target="_blank">Чат</a></li>
-      <li><a href="http://esupport.template-help.com/index.php?/Tickets/Submit"  target="_blank">Тикет-система</a></li>
+      <li><a href="http://support.template-help.com/index.php?/Tickets/Submit"  target="_blank">Тикет-система</a></li>
     </ul>
   </div>
 
