@@ -584,6 +584,14 @@ All the styles that will be applied to a certain resolution should be indicated 
   <p>Some templates may contain the non-default fonts used in the design. By default the internet browser can render only fonts that are installed to your operating system. In other words if your website design uses some custom fonts and these custom fonts are not installed on your website visitor's computer, custom fonts won't be displayed. Default fonts will be rendered instead. That's why web developers should look for some alternative solutions. In our templates custom fonts are embedded using <strong>Google Web Fonts</strong> technology. </p>
   <h4>Google Web Fonts</h4>
   <p>You can learn more on using Google Web Fonts by checking the tutorial on <a target="_blank" href="/help/how-to-use-the-google-web-fonts-api.html">how to work with Google web Fonts</a>. </p>
+  <h5>Can't load Google Fonts: </h5>
+  <ol>
+  <li>Open 'site\index-*.html' or 'site\css\style.css' files</li>
+  <li>Locate the line: <br>
+  <pre>//fonts.googleapis.com/css?family=[---your_web_font_name_here---]</pre></li>
+  <li>Replace it with the following: <br>
+  <pre>//fonts.useso.com/css?family=[---your_web_font_name_here---]</pre></li>
+  </ol>
  </section>
 
 
@@ -1424,7 +1432,7 @@ cookieDomain // empty by default, add your domain name in here without www. or h
     <h4>Help and Support</h4>
     <ul class="list">
       <li><a href="http://chat.template-help.com/" target="_blank">Live chat</a></li>
-      <li><a href="http://esupport.template-help.com/index.php?/Tickets/Submit"  target="_blank">Help ticket system</a></li>
+      <li><a href="http://support.template-help.com/index.php?/Tickets/Submit"  target="_blank">Help ticket system</a></li>
     </ul>
   </div>
 
