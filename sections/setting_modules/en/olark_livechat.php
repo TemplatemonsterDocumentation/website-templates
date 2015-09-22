@@ -1,7 +1,7 @@
 <h3>Olark Livechat</h3>
 
 <p>To set up online chat same as at template's Live Demo, you should register at official
-    <a href="//www.olark.com/?r=ad8fbsj2">Olark website.</a></p>
+    <a href="//special.olark.com/cDqdW">Olark website.</a></p>
 
 <p>After filling all fields you'll get a code to insert it into your template before the closing <b>&lt;/body&gt;</b>tag:</p>
 
