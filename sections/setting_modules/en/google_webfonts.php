@@ -20,7 +20,7 @@
 <h4>In case Google Fonts loading fails:</h4>
 
 <ol class="index-list">
-    <li>Open 'site_granter\index-*.html' or 'site_granter\css\bootstrap.css' file</li>
+    <li>Open 'site\index-*.html' or 'site\css\bootstrap.css' file</li>
     <li><p>Locate this line:</p><code>//fonts.googleapis.com/css?family=[---your_web_font_name_here---]</code></li>
     <li><p>And change it to the following one:</p>
         <code>//fonts.useso.com/css?family=[---your_web_font_name_here---]</code></li>

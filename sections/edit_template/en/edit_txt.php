@@ -6,7 +6,7 @@
 <p> In order to replace “lipsum” (filling text) with your own one please, do the following:</p>
 
 <ol class="index-list">
-    <li>Navigate to ‘site_granter’ folder within template package.</li>
+    <li>Navigate to ‘site’ folder within template package.</li>
     <li>Open index.html file with HTML editor.</li>
     <li>You may use search function <b>(CTRL+F)</b> to check for required text.</li>
     <li>Edit text with HTML editor. Save changes and open your file in browser to see them applied.</li>

@@ -1,6 +1,6 @@
 <h3>.html and .css files editing</h3>
 
-<p>All of editable HTML files are located at <b>"site_granter"</b> folder (index.html, index-1.html, index-2.html, etc.). Every index-#.html file represents separate template page.</p>
+<p>All of editable HTML files are located at <b>"site"</b> folder (index.html, index-1.html, index-2.html, etc.). Every index-#.html file represents separate template page.</p>
 
 <p>Sublime Text 3 is an advised application, for HTML files content editing, but you may also use any other suitable software.</p>
 

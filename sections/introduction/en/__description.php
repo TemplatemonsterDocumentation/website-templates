@@ -89,7 +89,7 @@
         <dl class="inline-term">
             <dt>
                 <i class="fa fa-folder"></i>
-                site_granter
+                site
             </dt>
             <dd> includes template's pages as .html files.</dd>
         </dl>

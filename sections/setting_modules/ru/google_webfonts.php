@@ -24,7 +24,7 @@
 <h4>Не удается загрузить Google Fonts:</h4>
 
 <ol class="index-list">
-    <li>Откройте 'site_granter\index-*.html' или 'site_granter\css\bootstrap.css' файлы</li>
+    <li>Откройте 'site\index-*.html' или 'site\css\bootstrap.css' файлы</li>
     <li><p>Найдите строку:</p><code>//fonts.googleapis.com/css?family=[---your_web_font_name_here---]</code></li>
     <li><p>Замените её следующим:</p><code>//fonts.useso.com/css?family=[---your_web_font_name_here---]</code></li>
 </ol>

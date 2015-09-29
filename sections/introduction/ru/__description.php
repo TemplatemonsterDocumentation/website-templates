@@ -92,7 +92,7 @@
         <dl class="inline-term">
             <dt>
                 <i class="fa fa-folder"></i>
-                site_granter
+                site
             </dt>
             <dd>содержит .html файлы страниц шаблона.</dd>
         </dl>
