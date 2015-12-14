@@ -1,0 +1,23 @@
+{
+  "id": "modules",
+  "translations": {
+    "en": "Modules",
+    "ru": "Модули"
+  },
+  "articles": [
+    {
+      "id": "tm_grid",
+      "translations": {
+        "en": "TM Grid System",
+        "ru": "TM Grid Система"
+      }
+    },
+    {
+      "id": "tm_box",
+      "translations": {
+        "en": "TM Box System",
+        "ru": "TM Box Система"
+      }
+    }
+  ]
+}

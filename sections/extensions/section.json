@@ -1,0 +1,114 @@
+{
+  "id": "extensions",
+  "translations": {
+    "en": "Extensions",
+    "ru": "Расширения"
+  },
+  "articles": [
+    {
+      "id": "rd-mailform",
+      "translations": {
+        "en": "RD Mail Form. Mail form.",
+        "ru": "RD Mail Form. Почтовая форма."
+      }
+    },
+    {
+      "id": "rd-navbar",
+      "translations": {
+        "en": "RD Navbar. Navigation panel",
+        "ru": "RD Navbar. Навигационная панель"
+      }
+    },
+    {
+      "id": "video_bg",
+      "translations": {
+        "en": "Vide - Background video",
+        "ru": "Vide - Фоновое видео"
+      }
+    },
+    {
+      "id": "counter",
+      "translations": {
+        "en": "CountTo - Counter",
+        "ru": "CountTo - Счетчик"
+      }
+    },
+    {
+      "id": "timer",
+      "translations": {
+        "en": "Countdown - Timer",
+        "ru": "Countdown - Таймер"
+      }
+    },
+    {
+      "id": "modal-window",
+      "translations": {
+        "en": "Magnific Popup - Modal window",
+        "ru": "Magnific Popup - Модальное окно"
+      }
+    },
+    {
+      "id": "slider",
+      "translations": {
+        "en": "Swiper - Slider",
+        "ru": "Swiper - Слайдер"
+      }
+    },
+    {
+      "id": "carousel",
+      "translations": {
+        "en": "Owl Carousel - Carousel",
+        "ru": "Owl Carousel - Карусель"
+      }
+    },
+    {
+      "id": "calendar",
+      "translations": {
+        "en": "RD Calendar. Events calendar",
+        "ru": "RD Calendar. Календарь с поддержкой событий"
+      }
+    },
+    {
+      "id": "progress-bar",
+      "translations": {
+        "en": "Progress Bar - horizontal and circular progress bars",
+        "ru": "Progress Bar - горизонтальные и радиальные прогресс бары"
+      }
+    },
+    {
+      "id": "isotope",
+      "translations": {
+        "en": "Isotope. Layout filter",
+        "ru": "Isotope. Лейаут фильтр"
+      }
+    },
+    {
+      "id": "tabs",
+      "translations": {
+        "en": "Responsive Tabs. Tabs",
+        "ru": "Responsive Tabs. Табы"
+      }
+    },
+    {
+      "id": "accordion",
+      "translations": {
+        "en": "Reponsive Tabs. Accordion",
+        "ru": "Reponsive Tabs. Аккордион"
+      }
+    },
+    {
+      "id": "stacktable",
+      "translations": {
+        "en": "Stacktable. Responsive tables",
+        "ru": "Stacktable. Адаптивные таблицы"
+      }
+    },
+    {
+      "id": "parallax",
+      "translations": {
+        "en": "RD Parallax. Parallax script",
+        "ru": "RD Parallax. Скрипт параллакса"
+      }
+    }
+  ]
+}

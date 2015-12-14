@@ -18,7 +18,7 @@ if (isset($_GET['lang'])) {
 	$lang = $_GET['lang'];
 }
 
-$section_param = 'introduction';
+$section_param = 'preparation';
 if (isset($_GET['section'])) {
 	$section_param = $_GET['section'];
 }

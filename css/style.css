@@ -166,6 +166,14 @@ a[href^="callto:"] {
   min-width: 1200px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+pre + ul {
+  margin-top: 30px;
+}
+
 hr {
   height: 1px;
   border: none;
@@ -186,6 +194,14 @@ hr {
 
 .color-4 {
   color: #ff9700;
+}
+
+.bg-1 {
+  background-color: #f0f0f0;
+}
+
+.bg-2 {
+  background-color: #ccc;
 }
 
 .relative {
@@ -302,7 +318,68 @@ code {
   font-weight: 500;
 }
 .index-list > li + li {
-  margin-top: 10px;
+  margin-top: 8px;
+}
+.index-list > li code {
+  margin-bottom: 30px;
+}
+
+/*==================== Table ====================*/
+.table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.table, .table td, .table th {
+  border: 1px solid #000;
+}
+.table td, .table th {
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+.table--skin-1 th, .table--skin-1 td:first-child {
+  background: #f0f0f0;
+  font-weight: 500;
+}
+.table--skin-1 td, .table--skin-1 th {
+  padding: 10px;
+}
+.table--skin-2 {
+  background: #f0f0f0;
+}
+.table--skin-2 td:first-child {
+  width: 75%;
+}
+.table--skin-2 td:first-child, .table--skin-2 .table {
+  text-align: left;
+}
+.table--skin-2 td, .table--skin-2 th {
+  padding: 10px;
+}
+.table--skin-2 .table {
+  margin: 10px 0;
+  width: 100%;
+}
+.table--skin-2 .table td, .table--skin-2 .table th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.table--skin-2 .table, .table--skin-2 .table th, .table--skin-2 .table td:first-child {
+  background: #ccc;
+}
+.table--skin-2 .table td:first-child {
+  width: auto;
+}
+.table .col-3 {
+  width: 25%;
+}
+.table .col-4 {
+  width: 33.33%;
+}
+.table .col-6 {
+  width: 50%;
 }
 
 /*==================== Search ====================*/
@@ -1386,3 +1463,5 @@ footer:after {
 .copyright {
   margin: 0;
 }
+
+/*# sourceMappingURL=style.css.map */

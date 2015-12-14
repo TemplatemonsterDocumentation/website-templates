@@ -1,8 +1,11 @@
 [
-	"introduction",
-	"edit_template",
-	"setting_modules",
-  	"cookie_policy",
-  	"uploading-template",
-	"conclusion"
+	"preparation",
+  	"template_structure",
+	"template_customization",
+	"components",
+	"modules",
+  	"extensions",
+	"widgets",
+  	"shortcodes",
+  	"credits"
 ]

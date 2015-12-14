@@ -165,6 +165,14 @@ a[href^="callto:"] {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
+pre + ul {
+  margin-top: 30px;
+}
+
 hr {
   height: 1px;
   border: none;
@@ -178,6 +186,14 @@ hr {
 .color-3 { color: #4aab4d; }
 
 .color-4 { color: #ff9700; }
+
+.bg-1 {
+  background-color: #f0f0f0;
+}
+
+.bg-2 {
+  background-color: #ccc;;
+}
 
 .relative { position: relative; }
 
@@ -294,7 +310,71 @@ code{
       font-weight: 500;
     }
 
-    & + li { margin-top: 10px; }
+    & + li { margin-top: 8px; }
+    code {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/*==================== Table ====================*/
+.table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 100%;
+  &, td, th {
+    border: 1px solid #000;
+  }
+
+  td, th {
+    padding: 5px 10px;
+    vertical-align: middle;
+  }
+  &--skin-1 {
+    th, td:first-child {
+      background: #f0f0f0;
+      font-weight: 500;
+    }
+    td, th {
+      padding: 10px;
+    }
+  }
+  &--skin-2 {
+    background: #f0f0f0;
+    td:first-child {
+      width: 75%;
+    }
+    td:first-child, .table {
+      text-align: left;
+    }
+    td, th {
+      padding: 10px;
+    }
+    .table {
+      margin: 10px 0;
+      width: 100%;
+      td, th {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      &, th, td:first-child {
+        background: #ccc;
+      }
+      td:first-child {
+        width: auto;
+      }
+    }
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-6 {
+    width: 50%;
   }
 }
 
