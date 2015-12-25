@@ -46,7 +46,9 @@
 
 <p>In order to implement isotope filters to page you should define group of isotope items by using <b>data-isotope-group</b> data attribute and corresponding filter types for each item.</p>
 
-<pre><code>&lt;div data-isotope-group="gallery" data-isotope-layout="masonry"&gt;
+<pre><code>
+
+&lt;div data-isotope-group="gallery" data-isotope-layout="masonry"&gt;
     &lt;div class="isotope-item" data-filter="type-1"&gt;
         Item 1
     &lt;/div&gt;
@@ -58,13 +60,16 @@
 
 <p>In order to filter items you should just define corresponding filter control buttons at target Isotope items group.</p>
 
-<pre><code>&lt;button data-isotope-filter="*" data-isotope-group="gallery"&gt;
-    Show All
-&lt;/button&gt;
-&lt;button data-isotope-filter="type-1" data-isotope-group="gallery"&gt;
-    Type 1
-&lt;/button&gt;
-&lt;button data-isotope-filter="type-2" data-isotope-group="gallery"&gt;
-    Type 2
-&lt;/button&gt;
+<pre><code>
+&lt;div class="isotope-filters">
+    &lt;button data-isotope-filter="*" data-isotope-group="gallery"&gt;
+        Show All
+    &lt;/button&gt;
+    &lt;button data-isotope-filter="type-1" data-isotope-group="gallery"&gt;
+        Type 1
+    &lt;/button&gt;
+    &lt;button data-isotope-filter="type-2" data-isotope-group="gallery"&gt;
+        Type 2
+    &lt;/button&gt;
+&lt;/div&gt;
 </code></pre>

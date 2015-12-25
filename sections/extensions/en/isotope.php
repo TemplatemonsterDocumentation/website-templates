@@ -58,13 +58,16 @@
 
 <p>In order to filter items you should just define corresponding filter control buttons at target Isotope items group.</p>
 
-<pre><code>&lt;button data-isotope-filter="*" data-isotope-group="gallery"&gt;
-    Show All
-&lt;/button&gt;
-&lt;button data-isotope-filter="type-1" data-isotope-group="gallery"&gt;
-    Type 1
-&lt;/button&gt;
-&lt;button data-isotope-filter="type-2" data-isotope-group="gallery"&gt;
-    Type 2
-&lt;/button&gt;
+<pre><code>
+&lt;div class="isotope-filters">
+    &lt;button data-isotope-filter="*" data-isotope-group="gallery"&gt;
+        Show All
+    &lt;/button&gt;
+    &lt;button data-isotope-filter="type-1" data-isotope-group="gallery"&gt;
+        Type 1
+    &lt;/button&gt;
+    &lt;button data-isotope-filter="type-2" data-isotope-group="gallery"&gt;
+        Type 2
+    &lt;/button&gt;
+&lt;/div&gt;
 </code></pre>
