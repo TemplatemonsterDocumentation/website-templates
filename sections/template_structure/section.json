@@ -1,0 +1,31 @@
+{
+	"id":"template_structure",
+	"translations":
+	{
+		"en":"Template structure",
+		"ru":"Структура шаблона"
+	},
+  "articles": [
+	{
+	  "id": "pack_struct",
+	  "translations": {
+		"en": "Package structure",
+		"ru": "Структура архива"
+	  }
+	},
+	{
+	  "id": "html_struct",
+	  "translations": {
+		"en": "HTML Structure",
+		"ru": "Структура HTML"
+	  }
+	},
+	{
+	  "id": "css_struct",
+	  "translations": {
+		"en": "CSS Structure",
+		"ru": "Структура CSS"
+	  }
+	}
+  ]
+}

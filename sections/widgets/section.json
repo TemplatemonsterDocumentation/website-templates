@@ -1,0 +1,44 @@
+{
+  "id": "widgets",
+  "translations": {
+    "en": "Widgets",
+    "ru": "Виджеты"
+  },
+  "articles": [
+    {
+      "id": "flickr-widget",
+      "translations": {
+        "en": "Flickr Widget",
+        "ru": "Flickr Widget"
+      }
+    },
+    {
+      "id": "instagram-widget",
+      "translations": {
+        "en": "Instagram Widget",
+        "ru": "Instagram Widget"
+      }
+    },
+    {
+      "id": "twitter-feed",
+      "translations": {
+        "en": "Twitter Feed",
+        "ru": "Twitter Feed"
+      }
+    },
+    {
+      "id": "pinterest-board",
+      "translations": {
+        "en": "Pinterest Board",
+        "ru": "Pinterest Board"
+      }
+    },
+    {
+      "id": "facebook-plugin",
+      "translations": {
+        "en": "Facebook Page Plugin",
+        "ru": "Facebook Page Plugin"
+      }
+    }
+  ]
+}
