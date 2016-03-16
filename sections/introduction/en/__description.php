@@ -12,14 +12,11 @@
 
 <h3>Preparation</h3>
 
-<p>Before proceeding with Bootstrap Template installation, you need to prepare. It is recommended to follow steps,
-    listed
-    below:</p>
+<p>Before proceeding with Bootstrap Template installation, you need to prepare. It is recommended that you follow the steps listed below:</p>
 
 <h4>Software</h4>
 
-<p>We recommend that you download all the required software to edit Bootstrap Template. Software Required is listed at
-    template preview page.</p>
+<p>We recommend that you download all the required software to edit Bootstrap Template. Software Required is listed on the template preview page.</p>
 
 <p>Technical requirements might differ depending on specific template, therefore we will list the most basic ones:</p>
 
@@ -27,13 +24,13 @@
     <li>First, you'll need proper unzipping software for password-protected sources_#########.zip package extracting.
         You may use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac). This is a mandatory software.
     </li>
-    <li>You might also require Adobe Photoshop (v. CS3 or higher). It is used for source .PSD files editing and is
-        needful in case of graphic design changes performing or template images editing.
+    <li>You might also require Adobe Photoshop (v. CS3 or higher).  It is used for editing source .PSD file and is required for
+        performing graphic design changes or editing template images.
     </li>
-    <li>You should also use code editor, i. e. Sublime Text, Notepad++, Atom, etc. for template files source code
-        editing.
+    <li>You should also use code editor, i. e. Sublime Text,
+        Notepad++, Atom, etc. to edit the source code of template files.
     </li>
-    <li>For files uploading to server FTP manager will be also needed, like FileManager at your hosting control panel or
+    <li>To upload files to server, FTP manager will be also required, like FileManager at your hosting control panel or
         desktop applications, such as Total Commander, FileZilla, CuteFTP, etc.
     </li>
 </ol>
@@ -43,9 +40,8 @@
 <p>You can run index.html file directly from your site folder, but it won't let you explore all template functionality.
     You should upload template to hosting server in order to display a fully working website correctly.</p>
 
-<p>In case you have existing server already, please check if it meets Bootstrap Template requirements, listed at
-    template
-    preview page. For most templates PHP 5.4+ version is the only one required.</p>
+<p>In case you have existing server already, please check if it meets
+    Landing Page requirements, listed on template preview page. For most templates PHP 5.4+ version is the only one required.</p>
 
 <p>You may also install Bootstrap Template to your computer locally by using localhost. In order to set up local server
     you may use WAMP, AppServ, MAMP or any similar software. All of them are installed same as regular application.</p>
