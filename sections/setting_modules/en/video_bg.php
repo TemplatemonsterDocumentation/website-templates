@@ -1,8 +1,6 @@
 <h3>Background video</h3>
 
-<p>We use jQuery-plugin <a href="//vodkabears.github.io/vide/">Vide.</a> for implementation background video to our
-    templates. </p>
-
+<p>We use jQuery-plugin <a href="//vodkabears.github.io/vide/">Vide.</a>  to implement background video to our templates. </p>
 <p>Video is added to section background by using special script.</p>
 
 <p> Different browsers support different video formats, therefore to ensure cross-browser functionality, please, perform
@@ -25,4 +23,4 @@
 </ol>
 
 <p class="alert alert-danger">Warning. Due to Apple and other mobile platforms policy background video will not appear
-    at mobile devices!</p>
+    on mobile devices!</p>

@@ -1,7 +1,6 @@
 <h3>PSD files editing</h3>
 
-<p>PSD files are located at<b>"sources/psd"</b> PSD files are source ones for template design.</p>
-
+<p>PSD file is located in<b>"sources/psd"</b> folder. PSD files are source files of template design.</p>
 <p>They consist of multiple layers, that's why any of template parts can be changed according to your needs.</p>
 
 <p></p>
