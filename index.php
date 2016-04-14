@@ -47,11 +47,6 @@ if (!isset($sections)) {
             </a>
         </div>        
         <div class="panel">
-            <div class="select select-version">
-                <select>
-                    <option data-href="#" selected>Version v1-0</option>
-                </select>
-            </div>
             <div class="select select-lang">
                 <select>
                     <option
