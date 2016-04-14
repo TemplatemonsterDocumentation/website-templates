@@ -4,7 +4,7 @@
     <img src="img/isotope.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>Isotope</b> extension for layout filters creating.</h6>
+<h6>Intense Template use <b>Isotope</b> extension for layout filters creating.</h6>
 
 <h4>Implementing Isotope to page</h4>
 

@@ -3,7 +3,7 @@
     <img src="img/modal-window.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>Magnific Popup</b> extension to implement modal windows functionality.</h6>
+<h6>Intense Template use <b>Magnific Popup</b> extension to implement modal windows functionality.</h6>
 
 <h4>Inserting modal window to page</h4>
 

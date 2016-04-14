@@ -1,6 +1,6 @@
 <h3>CSS Structure</h3>
 
-<p>All HTML Website Templates styles are located in <b>style.css</b> file.</p>
+<p>All Intense Template styles are located in <b>style.css</b> file.</p>
 <p>Code is commented according to <a href="//cssdoc.net">CSSDoc</a> standard.</p>
 <p>Structure of <b>style.css</b> file is built on the following principle:</p>
 <pre><code>    /*

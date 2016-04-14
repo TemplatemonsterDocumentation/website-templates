@@ -1,6 +1,6 @@
 <h2 class="item9">Credits</h2>
 
-<p>HTML Website Templates use some external <b>JS</b>, <b>PHP</b>, <b>CSS</b> etc. software solutions, listed below. All of materials used are distributed for free and as an open source (MIT, CC, GPL).</p>
+<p>Intense Template use some external <b>JS</b>, <b>PHP</b>, <b>CSS</b> etc. software solutions, listed below. All of materials used are distributed for free and as an open source (MIT, CC, GPL).</p>
 
 <h4>CSS & Fonts</h4>
 

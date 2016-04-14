@@ -1,6 +1,6 @@
 <h2 class="item8">Shortcodes</h2>
 
-<p>HTML Website Templates include special shortcodes.php page, with source code and examples for some frequently used template elements:</p>
+<p>Intense Template include special shortcodes.php page, with source code and examples for some frequently used template elements:</p>
 
 <ul class="marked-list">
     <li><b>Contact form</b></li>

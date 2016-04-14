@@ -3,7 +3,7 @@
     <img src="img/navbar.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>RD Navbar</b> extension to implement site navigation functionality. Basic HTML code structure for this extension looks as follows:</h6>
+<h6>Intense Template use <b>RD Navbar</b> extension to implement site navigation functionality. Basic HTML code structure for this extension looks as follows:</h6>
 
 <pre><code>  &lt;!-- RD Navbar --&gt;
         &lt;div class="rd-navbar-wrap"&gt;
@@ -95,7 +95,7 @@
 <p class="alert alert-warning">Please, note: navbar HTML structure might differ depending on exact template design specifications.</p>
 
 <h4>Navbar layout configuration</h4>
-<h6>HTML Website Templates navbar works with 4 different layouts:</h6>
+<h6>Intense Template navbar works with 4 different layouts:</h6>
 
 <ol class="index-list">
     <li>

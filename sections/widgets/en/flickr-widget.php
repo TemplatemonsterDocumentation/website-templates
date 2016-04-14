@@ -1,6 +1,6 @@
 <h3>Flickr Widget</h3>
 
-<h6>HTML Website Templates use <b>jflickrfeed.js</b> exetnsion to obtain data from <a href="https://www.flickr.com/">https://www.flickr.com/</a> service on a webpage.</h6>
+<h6>Intense Template use <b>jflickrfeed.js</b> exetnsion to obtain data from <a href="https://www.flickr.com/">https://www.flickr.com/</a> service on a webpage.</h6>
 
 <h4>Inserting widget to page</h4>
 

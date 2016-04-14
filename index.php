@@ -44,7 +44,6 @@ if (!isset($sections)) {
         <div class="logo">
             <a href="<?php echo $path; ?>">
                 <img src="<?php echo $path; ?>/img/logo.png" alt="">
-                <span><strong>HTML</strong> Templates</span>
             </a>
         </div>        
         <div class="panel">

@@ -4,7 +4,7 @@
     <img src="img/calendar.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>RD Calendar</b> extension to implement event calendar functionality.</h6>
+<h6>Intense Template use <b>RD Calendar</b> extension to implement event calendar functionality.</h6>
 
 <p>Basic calendar HTML code structure is</p>
 

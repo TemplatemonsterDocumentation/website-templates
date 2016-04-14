@@ -110,8 +110,19 @@
                         <i class="fa fa-folder"></i>
                         psd
                     </dt>
-                    <dd> includes .psd Adobe Photoshop files.</dd>
+                    <dd> includes file with links</dd>
                 </dl>
+                <ul>
+                    <li class="file">
+                        <dl class="inline-term">
+                            <dt>
+                                <i class="fa fa-file-text-o"></i>
+                                readme.txt
+                            </dt>
+                            <dd>includes links to .psd Adobe Photoshop archive files</dd>
+                        </dl>
+                    </li>
+                </ul>
             </li>
             <li class="folder">
                 <dl class="inline-term">

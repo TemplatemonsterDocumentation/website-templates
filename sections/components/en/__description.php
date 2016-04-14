@@ -9,7 +9,7 @@
     <img src="img/icons.png" alt="">
 </figure>
 
-<h6>HTML Website Templates icons are defined similarly to buttons:</h6>
+<h6>Intense Template icons are defined similarly to buttons:</h6>
 <ul class="marked-list">
     <li>
         <dl class="inline-term">

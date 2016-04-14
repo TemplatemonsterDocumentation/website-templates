@@ -4,7 +4,7 @@
     <img src="img/accordion.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>ResponsiveTabs.js</b> extension for accordion functionality implementing. In order to add accordion to target page you should use the following code structure.</h6>
+<h6>Intense Template use <b>ResponsiveTabs.js</b> extension for accordion functionality implementing. In order to add accordion to target page you should use the following code structure.</h6>
 
 <pre><code>&lt;div class="responsive-tabs" data-type="accordion"&gt;
     &lt;ul class="resp-tabs-list"&gt;

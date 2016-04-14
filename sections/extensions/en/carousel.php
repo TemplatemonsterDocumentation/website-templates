@@ -4,7 +4,7 @@
     <img src="img/carousel.png" alt="">
 </figure>
 
-<h6>HTML Website Templates use <b>Owl-carousel.js</b> extension for carousel functionality implementing to template pages with extended data-API for interaction.</h6>
+<h6>Intense Template use <b>Owl-carousel.js</b> extension for carousel functionality implementing to template pages with extended data-API for interaction.</h6>
 
 <p>Carousel default code structure appears the following way:</p>
 

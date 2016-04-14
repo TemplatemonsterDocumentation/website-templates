@@ -1,6 +1,6 @@
 <h3>Twitter Feed</h3>
 
-<h6>HTML Website Templates use <b>jquery.rd-twitter-feed.js</b> extension to obtain data from <a href="https://twitter.com/">https://twitter.com/</a> service on a webpage.</h6>
+<h6>Intense Template use <b>jquery.rd-twitter-feed.js</b> extension to obtain data from <a href="https://twitter.com/">https://twitter.com/</a> service on a webpage.</h6>
 
 <h4>Inserting widget to page</h4>
 

@@ -1,7 +1,7 @@
 <h2 class="item5">Modules</h2>
 
 <h3>TM Box System</h3>
-<p>HTML Website Templates include specially prepared TM Box system, which is an enhanced and expanded version of .media object in Bootstrap.</p>
+<p>Intense Template include specially prepared TM Box system, which is an enhanced and expanded version of .media object in Bootstrap.</p>
 <p>TM Box system is a complex of classes, prepared for easy control of the target content  layout, namely, changing the order of the output elements from vertical to horizontal and vice versa.</p>
 <p>TM BOX system work principle is built on using <b>.box</b>, <b>.box-*</b>, <b>.box-*-clear</b>, <b>.box__left</b>,
     <b>.box__body</b> and <b>.box__right</b> classes.</p>

@@ -1,6 +1,6 @@
 <h3>Progress Bar - horizontal and circular progress bars</h3>
 
-<p>HTML Website Templates use <b>ProgressBar.js</b> extension to implement horizontal and circular progress bars functionality.</p>
+<p>Intense Template use <b>ProgressBar.js</b> extension to implement horizontal and circular progress bars functionality.</p>
 
 <p>Basic HTML code structure for progress bar creating appears as follows:</p>
 

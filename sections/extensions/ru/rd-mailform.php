@@ -4,7 +4,7 @@
     <img src="img/mailform.png" alt="">
 </figure>
 
-<p>HTML Website Templates use <b>RD Mail Form</b> extension to implement mail form functionality. Basic form code structure is similar to the one below:</p>
+<p>Intense Template use <b>RD Mail Form</b> extension to implement mail form functionality. Basic form code structure is similar to the one below:</p>
 
 <pre><code>
         &lt;!-- RD Mailform --&gt;
