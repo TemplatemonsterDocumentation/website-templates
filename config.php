@@ -1,12 +1,11 @@
-<?php 
+<?php
 
+$dir    = str_replace('index.php', '', $_SERVER['SCRIPT_NAME']);
 if (strpos($_SERVER['REQUEST_URI'], 'index.php')) {
-	$path = dirname("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+	$path   = dirname("http://$_SERVER[HTTP_HOST]") . "$dir";
 } else {
-	$path = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$path   = "http://$_SERVER[HTTP_HOST]$dir";
 }
-
-//$path = 111;
 
 // Variables
 $product_name = "HTML Templates";
@@ -18,7 +17,10 @@ if (isset($_GET['lang'])) {
 	$lang = $_GET['lang'];
 }
 
-$section_param = 'preparation';
+$section_param = 'introduction';
 if (isset($_GET['section'])) {
 	$section_param = $_GET['section'];
+}
+if (isset($_GET['utm_campaign'])) {
+	header('Location: index.php');
 }
