@@ -1,9 +1,9 @@
-<h3>Stacktable. Responsive tables</h3>
-
-<h6>Intense Template use <b>Stacktable</b> extension to create responsive tables.</h6>
-<h6>In order to change target table to responsive one you should just add <b>data-responsive=”true”</b> data attribute to its code structure.</h6>
-
-<pre><code>&lt;table data-responsive="true"&gt;
-    ...
-&lt;/table&gt;
-</code></pre>
+<h3>Stacktable. Adaptive tables
+</h3>
+<p>Intense uses <b>Stacktable</b> extension for implementation of adaptive tables.To make a target table adaptive, just add the <b>data-responsive="true"</b> attribute to its marking:
+</p>
+<pre><code>
+        &lt;table data-responsive="true"  &gt;
+            ...
+        &lt;/table&gt;
+    </code></pre>

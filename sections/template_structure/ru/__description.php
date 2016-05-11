@@ -1,3 +1,3 @@
-<h2 class="item2">Template structure</h2>
+<h2 class="item2">Структура шаблона</h2>
 
-<h5>This section includes information on complete template and its separate files structure.</h5>
+<h5>Данный раздел содержит информацию о структуре шаблона и его отдельных файлов.</h5>

@@ -6,6 +6,21 @@
 		"ru":"Компоненты"
 	},
   "articles": [
-
+	{
+	  "id": "buttons",
+	  "translations":
+	  {
+		"en": "Buttons",
+		"ru": "Кнопки"
+	  }
+	},
+	{
+	  "id": "icons",
+	  "translations":
+	  {
+		"en": "Icons",
+		"ru": "Иконки"
+	  }
+	}
   ]
 }

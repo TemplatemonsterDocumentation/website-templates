@@ -6,115 +6,150 @@
   },
   "articles": [
     {
+      "id": "rd-calendar",
+      "translations": {
+        "en": "RD Calendar. A calendar with events support",
+        "ru": "RD Calendar. Календарь с поддержкой событий"
+      }
+    },
+    {
+      "id": "rd-parallax",
+      "translations": {
+        "en": "RD Parallax",
+        "ru": "RD Parallax"
+      }
+    },
+    {
       "id": "rd-mailform",
       "translations": {
-        "en": "RD Mail Form. Mail form.",
-        "ru": "RD Mail Form. Почтовая форма."
+        "en": "RD Mailform",
+        "ru": "RD Mailform"
       }
     },
     {
-      "id": "rd-navbar",
+      "id": "google-map",
       "translations": {
-        "en": "RD Navbar. Navigation panel",
-        "ru": "RD Navbar. Навигационная панель"
+        "en": "RD Google Maps",
+        "ru": "RD Google Maps"
       }
     },
     {
-      "id": "time-circles",
+      "id": "rd-video-player",
       "translations": {
-        "en": "TimeCircles - Timer",
-        "ru": "TimeCircles - Таймер"
+        "en": "RD Video Player",
+        "ru": "RD Video Player"
       }
     },
     {
-      "id": "video_bg",
+      "id": "rd-audio-player",
       "translations": {
-        "en": "Vide - Background video",
-        "ru": "Vide - Фоновое видео"
+        "en": "RD Audio Player",
+        "ru": "RD Audio Player"
       }
     },
     {
-      "id": "counter",
+      "id": "rd-bg-video",
       "translations": {
-        "en": "CountTo - Counter",
-        "ru": "CountTo - Счетчик"
+        "en": "Background video integration",
+        "ru": "RD Background Video"
       }
     },
     {
-      "id": "timer",
+      "id": "rd-flickr-widget",
       "translations": {
-        "en": "Countdown - Timer",
-        "ru": "Countdown - Таймер"
+        "en": "RD Flickr Gallery",
+        "ru": "RD Flickr Gallery"
       }
     },
     {
-      "id": "modal-window",
+      "id": "rd-twitter-feed",
       "translations": {
-        "en": "Magnific Popup - Modal window",
-        "ru": "Magnific Popup - Модальное окно"
+        "en": "RD Twitterfeed",
+        "ru": "RD Twitterfeed"
       }
     },
     {
-      "id": "slider",
+      "id": "rd-facebook-feed",
       "translations": {
-        "en": "Swiper - Slider",
-        "ru": "Swiper - Слайдер"
+        "en": "RD Facebook Feed",
+        "ru": "RD Facebook Feed"
+      }
+    },
+    {
+      "id": "rd-instagram-feed",
+      "translations": {
+        "en": "RD Instafeed",
+        "ru": "RD Instafeed"
+      }
+    },
+    {
+      "id": "countto",
+      "translations": {
+        "en": "CountTo",
+        "ru": "CountTo.Cчетчик"
+      }
+    },
+    {
+      "id": "countdown",
+      "translations": {
+        "en": "Countdown",
+        "ru": "Счётчик обратного отсчёта"
+      }
+    },
+    {
+      "id": "rd-search",
+      "translations": {
+        "en": "RD Search",
+        "ru": "RD Search.Поиск"
       }
     },
     {
       "id": "carousel",
       "translations": {
-        "en": "Owl Carousel - Carousel",
-        "ru": "Owl Carousel - Карусель"
-      }
-    },
-    {
-      "id": "calendar",
-      "translations": {
-        "en": "RD Calendar. Events calendar",
-        "ru": "RD Calendar. Календарь с поддержкой событий"
-      }
-    },
-    {
-      "id": "progress-bar",
-      "translations": {
-        "en": "Progress Bar - horizontal and circular progress bars",
-        "ru": "Progress Bar - горизонтальные и радиальные прогресс бары"
+        "en": "Owl Carousel",
+        "ru": "Owl Carousel.Карусель"
       }
     },
     {
       "id": "isotope",
       "translations": {
-        "en": "Isotope. Layout filter",
-        "ru": "Isotope. Лейаут фильтр"
+        "en": "Isotope layout filter",
+        "ru": "Isotope. Фильтр макета"
       }
     },
     {
-      "id": "tabs",
+      "id": "responsive-tabs",
       "translations": {
-        "en": "Responsive Tabs. Tabs",
-        "ru": "Responsive Tabs. Табы"
+        "en": "Responsive Tabs",
+        "ru": "Адаптивные вкладки"
       }
     },
     {
       "id": "accordion",
       "translations": {
-        "en": "Reponsive Tabs. Accordion",
-        "ru": "Reponsive Tabs. Аккордион"
+        "en": "Responsive Tabs. Accordion",
+        "ru": "Адаптивные вкладки: аккордеон"
       }
     },
     {
       "id": "stacktable",
       "translations": {
-        "en": "Stacktable. Responsive tables",
+        "en": "Stacktable. Adaptive tables",
         "ru": "Stacktable. Адаптивные таблицы"
       }
     },
     {
-      "id": "parallax",
+      "id": "swiper",
       "translations": {
-        "en": "RD Parallax. Parallax script",
-        "ru": "RD Parallax. Скрипт параллакса"
+        "en": "Swiper Slider",
+        "ru": "Swiper Slider"
+      }
+    },
+    {
+      "id": "photoswipe",
+      "translations": {
+        "en": "Photoswipe",
+        "ru": "Photoswipe"
       }
     }
   ]

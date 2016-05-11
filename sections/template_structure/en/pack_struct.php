@@ -1,6 +1,6 @@
-<h3>Package structure</h3>
+<h3>Archive structure</h3>
 
-<h6>After HTML Website Template package extracting you'll see the following files structure:</h6>
+<h6>After unzipping Intense, you will see the following files structure:</h6>
 
 <ul class="files_structure">
     <li class="folder">
@@ -9,7 +9,7 @@
                 <i class="fa fa-folder"></i>
                 documentation
             </dt>
-            <dd>includes template's documentation files (on template editing and setup).</dd>
+            <dd>contains documentation files that will show you how to install and edit the template.</dd>
         </dl>
         <ul>
             <li class="file">
@@ -18,7 +18,7 @@
                         <i class="fa fa-file"></i>
                         documentation.html
                     </dt>
-                    <dd>main documentation file. Includes link to online documentation you are currently reading.</dd>
+                    <dd>the main template documentation file. It contains a link to the online documentation that you’re reading now.</dd>
                 </dl>
             </li>
         </ul>
@@ -29,8 +29,7 @@
                 <i class="fa fa-folder"></i>
                 screenshots
             </dt>
-            <dd>includes template's sceenshots. Not to be used at live site.
-            </dd>
+            <dd>contains template screenshots. Not for a live website.</dd>
         </dl>
     </li>
     <li class="folder">
@@ -39,7 +38,7 @@
                 <i class="fa fa-folder"></i>
                 site
             </dt>
-            <dd> includes template's pages as .html files.</dd>
+            <dd>contains .html files of the template pages.</dd>
         </dl>
         <ul>
             <li class="folder">
@@ -48,7 +47,7 @@
                         <i class="fa fa-folder"></i>
                         bat
                     </dt>
-                    <dd>includes all .php scripts, used in template.</dd>
+                    <dd>contains all .php scripts, used in the template.</dd>
                 </dl>
             </li>
             <li class="folder">
@@ -57,7 +56,7 @@
                         <i class="fa fa-folder"></i>
                         audio
                     </dt>
-                    <dd>includes all audio files, used in template.</dd>
+                    <dd>contains all the audio files, used in the template.</dd>
                 </dl>
             </li>
             <li class="folder">
@@ -66,31 +65,37 @@
                         <i class="fa fa-folder"></i>
                         css
                     </dt>
-                    <dd> includes all .css files, used in template.</dd>
+                    <dd>contains all the .css files, used in the template.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt><i class="fa fa-folder"></i>fonts</dt>
-                    <dd>includes all custom typography and iconic fonts, used in template.</dd>
+                    <dd>contains all the custom regular and iconic fonts, used in the template.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt><i class="fa fa-folder"></i>images</dt>
-                    <dd>includes all images, used in .html files.</dd>
+                    <dd>contains all the images, used in .html files.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt><i class="fa fa-folder"></i>js</dt>
-                    <dd>includes JavaScript libraries and jQuery plugins.</dd>
+                    <dd>contains JavaScript libraries and jQuery plugins.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt><i class="fa fa-folder"></i>video</dt>
-                    <dd>includes all audio files, used in template.</dd>
+                    <dd>ontains all the video files, used in the template.</dd>
+                </dl>
+            </li>
+            <li class="folder">
+                <dl class="inline-term">
+                    <dt><i class="fa fa-folder"></i>intense-*</dt>
+                    <dd>contains Child Themes for Intense.</dd>
                 </dl>
             </li>
         </ul>
@@ -101,28 +106,26 @@
                 <i class="fa fa-folder"></i>
                 sources
             </dt>
-            <dd>includes template's source files.</dd>
+            <dd>contains template source files.</dd>
         </dl>
         <ul>
             <li class="folder">
                 <dl class="inline-term">
                     <dt>
                         <i class="fa fa-folder"></i>
+                        intense-*
+                    </dt>
+                    <dd>contains source files for Child Themes.</dd>
+                </dl>
+            </li>
+            <li class="folder">
+                <dl class="inline-term">
+                    <dt>
+                        <i class="fa fa-folder"></i>
                         psd
                     </dt>
-                    <dd> includes file with links</dd>
+                    <dd>contains Adobe Photoshop .psd files.</dd>
                 </dl>
-                <ul>
-                    <li class="file">
-                        <dl class="inline-term">
-                            <dt>
-                                <i class="fa fa-file-text-o"></i>
-                                readme.txt
-                            </dt>
-                            <dd>includes links to .psd Adobe Photoshop archive files</dd>
-                        </dl>
-                    </li>
-                </ul>
             </li>
             <li class="folder">
                 <dl class="inline-term">
@@ -130,7 +133,7 @@
                         <i class="fa fa-folder"></i>
                         sass
                     </dt>
-                    <dd>includes .scss SASS files, used in template.</dd>
+                    <dd>contains SASS .scss files, used in the template.</dd>
                 </dl>
             </li>
             <li class="folder">
@@ -139,7 +142,7 @@
                         <i class="fa fa-folder"></i>
                         jade
                     </dt>
-                    <dd>includes .jade Jade files, used in template.</dd>
+                    <dd>contains Jade .jade files, used in the template.</dd>
                 </dl>
             </li>
         </ul>
@@ -150,7 +153,27 @@
                 <i class="fa fa-file"></i>
                 info.txt
             </dt>
-            <dd>includes information on a password-protected "sources" folder.</dd>
+            <dd>contains information about the password-protected "sources" folder.</dd>
         </dl>
     </li>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

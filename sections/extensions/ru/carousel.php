@@ -1,131 +1,131 @@
-<h3>Owl Carousel - Carousel</h3>
+<h3>Owl Carousel - Карусель</h3>
+<p>Intense использует расширение <b>Owl-carousel.js</b> для реализации карусели на страницах шаблона с расширенным <b>data-API</b> для взаимодействия. </p>
+<з>Разметка карусели по умолчанию выглядит следующим образом:</з>
+<pre><code>
+        &lt;!-- Owl Carousel --&gt;
+        &lt;div class="owl-carousel"&gt;
+            &lt;div class="owl-item"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;div class="owl-item"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;div class="owl-item"&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
 
-<figure class="img-polaroid">
-    <img src="img/carousel.png" alt="">
-</figure>
+<h4>Настройка зацикливания карусели</h4>
+<p>Для того, чтобы зациклить отображение слайдов в карусели, необходимо воспользоваться атрибутом <b>data-loop</b> (true/false, по-умолчанию true) для целевого элемента с классом <b>.owl-carousel</b>.
+</p>
+<p>Например:</p>
+<pre><code>
+        &lt;div class="owl-carousel" data-loop="false"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
 
-<h6>Intense Template use <b>Owl-carousel.js</b> extension for carousel functionality implementing to template pages with extended data-API for interaction.</h6>
+<h4>Настройка автоматического переключения элементов карусели</h4>
+<p>Автоматическое переключение элементов в Owl Carousel для HTML Website templates по-умолчанию отключено.
+    Для того чтобы включить автоматическое переключение слайдов, необходимо воспользоваться дата атрибутом <b>data-autoplay</b> с указанием значения <b>true</b>.</p>
+<pre><code>
+        &lt;div class="owl-carousel" data-autoplay="true"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
 
-<p>Carousel default code structure appears the following way:</p>
-
-<pre><code>&lt;!-- Owl Carousel --&gt;
-&lt;div class="owl-carousel"&gt;
-    &lt;div class="owl-item"&gt;
-        ...
-    &lt;/div&gt;
-    &lt;div class="owl-item"&gt;
-        ...
-    &lt;/div&gt;
-    &lt;div class="owl-item"&gt;
-        ...
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h4>Carousel loop configuration</h4>
-<p>In order to enable carousel loop you should use <b>data-loop</b> data attribute (true/false, by default is set to true) for target item with
-    <b>.owl-carousel</b> class.</p>
-<p>For example,</p>
-<pre><code>&lt;div class="owl-carousel" data-loop="false"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
-
-<h4>Carousel autoplay configuration</h4>
-<p>HTML Website templates Owl Carousel has autoplay disabled by default.  In order to enable this feature you should use
-    <b>data-autoplay</b> data attribute with value set to ‘true’.</p>
-
-<pre><code>&lt;div class="owl-carousel" data-autoplay="true"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
-
-<h4>Carousel items display configuration</h4>
-
-<p>Owl carousel allows to display one or couple of items at once. In order to manage carousel items display you should use corresponding data attributes
-    <b>data-items</b> and <b>data-*-items</b>.</p>
+<h4>Настройка отображения элементов карусели</h4>
+<p>Owl carousel поддерживает отображение одного или нескольких элементов карусели одновременно.
+    Для настройки отображения элементов карусели необходимо воспользоваться соответствующими атрибутами <b>data-items</b> и <b>data-*-items</b>.
+</p>
 
 <ol class="index-list">
     <li>
         <dl class="inline-term">
-            <dt>data-items=”N”</dt>
-            <dd>shows N carousel items by default (default value = 1).</dd>
+            <dt>data-items="N"</dt>
+            <dd>отображает N элементов карусели по-умолчанию (значение по-умолчанию = 1).</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>data-xs-items=”N”</dt>
-            <dd>shows N carousel items, starting from XS screen dimensions.</dd>
+            <dt>data-xs-items="N"</dt>
+            <dd>отображает N элементов карусели, начиная с XS разрешения.</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>data-sm-items=”N”</dt>
-            <dd>shows N carousel items, starting from SM screen dimensions.</dd>
+            <dt>data-sm-items="N"</dt>
+            <dd>отображает N элементов карусели, начиная с SM разрешения.</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>data-md-items=”N”</dt>
-            <dd>shows N carousel items, starting from MD screen dimensions.</dd>
+            <dt>data-md-items="N"</dt>
+            <dd>отображает N элементов карусели, начиная с MD разрешения.</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>data-lg-items=”N”</dt>
-            <dd>shows N carousel items, starting from LG screen dimensions.</dd>
+            <dt>data-lg-items="N"</dt>
+            <dd>отображает N элементов карусели, начиная с LG разрешения.</dd>
         </dl>
     </li>
 </ol>
+<p> где N - цифра, отображающая количество необходимых элементов.
+</p>
+<p>Например: </p>
+<pre><code>
+        &lt;div class="owl-carousel" data-items="2" data-xs-items="3" data-lg-items="4"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
+<p>В данном примере, по умолчанию в карусели будет отображаться 2 элемента, на разрешениях xs, sm и md - 3 элемента, на разрешении lg - 4 элемента.
+</p>
+<h4>Настройка навигации карусели</h4>
+<p>Для отображения элементов навигации "Вперед"/"Назад" в Owl Carousel необходимо воспользоваться атрибутом <b>data-nav="true"</b> для целевой карусели:</p>
 
-<p>For example,</p>
 
-<pre><code>&lt;div class="owl-carousel" data-items="2" data-xs-items="3" data-lg-items="4"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
+<pre><code>
+        &lt;div class="owl-carousel" data-nav="true"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
 
-<p>This example shows that by default there will appear 2 carousel items, for xs, sm and md dimensions - 3 items, for lg dimensions - 4 items.</p>
+<h4>Настройка пагинации карусели
+</h4>
 
+<p>Для отображения пагинации в Owl Carousel необходимо воспользоваться атрибутом <b>data-dots="true"</b> для целевой карусели:</p>
+<pre><code>
+        &lt;div class="owl-carousel" data-dots="true"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
 
-<h4>Carousel navigation setup</h4>
+<p>Для определения шага отображения точек пагинации необходимо воспользоваться атрибутом <b>data-dots-each="N"</b>.</p>
+<pre><code>
+        &lt;div class="owl-carousel" data-dots="true" data-dots-each="1"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
 
-<p>In order to display “Previous”/”Next” navigation in Owl Carousel you should use corresponding <b>data-nav=”true”</b> data attribute for target carousel.</p>
+<p>где N - цифра, отображающая количество необходимых элементов.
+</p>
 
-<pre><code>&lt;div class="owl-carousel" data-nav="true"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
+<h4>Настройка паддинга сцены карусели</h4>
 
-<h4>Carousel pagination setup</h4>
-<p>In order to display pagination in Owl Carousel you should use corresponding <b>data-dots=”true”</b> data attribute for target carousel.</p>
+<p>Для определения паддинга сцены карусели необходимо воспользоваться атрибутом <b>data-*-stage-padding="N"</b>:</p>
 
-<pre><code>&lt;div class="owl-carousel" data-dots="true"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
+<pre><code>
+        &lt;div class="owl-carousel" data-xs-stage-padding="30"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>
+<h4>Настройка отступа между элементами карусели</h4>
 
-<p>In order to define pagination dots display step you should use <b>data-dots-each=”N”</b> data attribute.</p>
-
-<pre><code>&lt;div class="owl-carousel" data-dots="true" data-dots-each="1"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
-
-<h4>Carousel scene padding configuration</h4>
-
-<p>In order to define carousel scene padding  you should use <b>data-*-stage-padding=”N”</b> data attribute.</p>
-
-<pre><code>&lt;div class="owl-carousel" data-xs-stage-padding="30"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
-
-<h4>Carousel items padding configuration</h4>
-
-<p>In order to define carousel items padding you should use <b>data-*-margin=”N”</b> data attribute (by default = 30).</p>
-
-<pre><code>&lt;div class="owl-carousel" data-xs-margin="15"&gt;
-    ...
-&lt;/div&gt;
-</code></pre>
+<p>Для определения отсупа между элементами карусели необходимо воспользоваться атрибутом <b>data-*-margin="N"</b> (по-умолчанию = 30):</p>
+<pre><code>
+        &lt;div class="owl-carousel" data-xs-margin="15"&gt;
+            ...
+        &lt;/div&gt;
+    </code></pre>

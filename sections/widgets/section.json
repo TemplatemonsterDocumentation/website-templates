@@ -6,14 +6,21 @@
   },
   "articles": [
     {
-      "id": "flickr-widget",
+      "id": "subscribe-form",
       "translations": {
-        "en": "Flickr Widget",
-        "ru": "Flickr Widget"
+        "en": "Subscribe form",
+        "ru": "Форма подписки"
       }
     },
     {
-      "id": "twitter-feed",
+      "id": "flickr-photostream-widget",
+      "translations": {
+        "en": "Flickr Photostream",
+        "ru": "Flickr Photostream"
+      }
+    },
+    {
+      "id": "twitter-feed-widget",
       "translations": {
         "en": "Twitter Feed",
         "ru": "Twitter Feed"

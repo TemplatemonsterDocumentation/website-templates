@@ -5,7 +5,86 @@
 		"en":"Template customization",
 		"ru":"Кастомизация шаблона"
 	},
-  "articles": {
-
-  }
+  "articles": [
+	{
+	  "id": "change-logo",
+	  "translations":
+	  {
+		"en": "Changing the Logo",
+		"ru": "Замена логотипа в шаблоне"
+	  }
+	},
+	{
+	  "id": "navigation-settings",
+	  "translations":
+	  {
+		"en": "Template navigation setup",
+		"ru": "Настройка навигации в шаблоне"
+	  }
+	},
+	{
+	  "id": "shop-settings",
+	  "translations":
+	  {
+		"en": "Setting up a Shop",
+		"ru": "Настройка интернет-магазина"
+	  }
+	},
+	{
+	  "id": "maintenance-settings",
+	  "translations":
+	  {
+		"en": "Maintenance Page Setup",
+		"ru": "Настройка cтраницы режима техобслуживания"
+	  }
+	},
+	{
+	  "id": "mailform-settings",
+	  "translations":
+	  {
+		"en": "Mailform setup",
+		"ru": "Настройка контактной формы"
+	  }
+	},
+	{
+	  "id": "smoothscroll-settings",
+	  "translations":
+	  {
+		"en": "Smooth scroll for Windows setup",
+		"ru": "Настройка плавной прокрутки страницы для Windows"
+	  }
+	},
+	{
+	  "id": "animation-settings",
+	  "translations":
+	  {
+		"en": "Template scroll animation setup",
+		"ru": "Настройка анимации элементов шаблона при прокрутке страницы"
+	  }
+	},
+	{
+	  "id": "slider-settings",
+	  "translations":
+	  {
+		"en": "Slider Setup",
+		"ru": "Настройка слайдера"
+	  }
+	},
+	{
+	  "id": "parallax-settings",
+	  "translations":
+	  {
+		"en": "Parallax Setup",
+		"ru": "Настройка параллакса"
+	  }
+	},
+	{
+	  "id": "page-search-settings",
+	  "translations":
+	  {
+		"en": "Search by pages setup",
+		"ru": "Настройка поиска по страницам"
+	  }
+	}
+  ]
 }

@@ -1,302 +1,201 @@
-<h3>RD Mail Form. Mail form.</h3>
+<h3>RD Mailform</h3>
+<p>Вы можете использовать любые элементы форм, представленные на странице <b>Components > Toolkit Components > Form
+        Elements</b> для реализации контактных
+    форм с нестандартным набором полей. Вы также можете использовать любые элементы Bootstrap, связанные с формами,
+    которые представлены на
+    <a href="http://getbootstrap.com/css/#forms">официальной странице Bootstrap</a> , а также элементы Bootstrap Grid и Flex
+    Grid для реализации нестандартной структуры формы.
+</p>
 
-<figure class="img-polaroid">
-    <img src="img/mailform.png" alt="">
-</figure>
-
-<p>Intense Template use <b>RD Mail Form</b> extension to implement mail form functionality. Basic form code structure is similar to the one below:</p>
+<p class="alert alert-info">Обратите внимание: в RD Mailform <b>&lt;input type="email" name="email"&gt; </b> является
+    обязательным для работы формы. В случае отсутствия данного поля , будет выведена соответствующая ошибка при попытке
+    отправки формы.
+</p>
+<p>Базовая разметка для создания стандартной формы поиска выглядит следующим образом:</p>
 
 <pre><code>
-        &lt;!-- RD Mailform --&gt;
-        &lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
-        &lt;!-- RD Mailform Type --&gt;
-        &lt;input type="hidden" name="form-type" value="contact"/&gt;
-        &lt;!-- END RD Mailform Type --&gt;
-        &lt;fieldset&gt;
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-name"&gt;Name &lt;/label&gt;
-        &lt;input type="text"
-        name="name"
-        id="mailform-input-name"
-        data-constraints="@LettersOnly @NotEmpty"/&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-email"&gt;Email &lt;/label&gt;
-        &lt;input type="text"
-        name="email"
-        id="mailform-input-email"
-        data-constraints="@Email @NotEmpty"/&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-phone"&gt;Phone &lt;/label&gt;
-        &lt;input type="text"
-        name="phone"
-        id="mailform-input-phone"
-        data-constraints="@Phone"/&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group select" &gt;
-        &lt;div class="flt-select-box"&gt;
-        &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
-        &lt;select name="gender" id="mailform-input-select"&gt;
-        &lt;option&gt;Gender&lt;/option&gt;
-        &lt;option&gt;Male&lt;/option&gt;
-        &lt;option&gt;Female&lt;/option&gt;
-        &lt;/select&gt;
-        &lt;/div
-        &lt;/div&gt;
-
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-date"&gt;Birthday &lt;/label&gt;
-        &lt;input type="date"
-        name="birthday"
-        id="mailform-input-date"
-        data-constraints="@Date"
-        /&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-textarea"&gt;Message &lt;/label&gt;
-        &lt;textarea name="message"
-        id="mailform-input-textarea"
-        data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-
-        &lt;div class="form-group btn-group"&gt;
-        &lt;button class="btn btn-lg btn-primary" type="submit"&gt;Submit&lt;/button&gt;
-        &lt;button class="btn btn-lg btn-default" type="reset"&gt;Reset&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class="mfInfo"&gt;&lt;/div&gt;
-        &lt;/fieldset&gt;
+        &lt;form data-form-output="form-output-global" method="post"
+                        action="bat/rd-mailform.php" class="rd-mailform"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="contact-us-name" class="form-label form-label-outside"&gt;Name:&lt;/label&gt;
+                &lt;input id="contact-us-name" type="text" name="name"
+                        data-constraints="@Required" class="form-control"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="contact-us-email" class="form-label form-label-outside"&gt;E-Mail:&lt;/label&gt;
+                &lt;input id="contact-us-email" type="email" name="email"
+                        data-constraints="@Required @Email" class="form-control"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="contact-us-message" class="form-label form-label-outside"&gt;Message:&lt;/label&gt;
+                &lt;textarea id="contact-us-message" name="message"
+                        data-constraints="@Required" class="form-control"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;div class="group-sm text-center text-lg-left offset-top-30"&gt;
+                &lt;button type="submit" class="btn btn-primary"&gt;Send&lt;/button&gt;
+                &lt;button type="reset" class="btn btn-default"&gt;Reset&lt;/button&gt;
+            &lt;/div&gt;
         &lt;/form&gt;
-        &lt;!-- END RD Mailform --&gt;
     </code></pre>
 
-<h4>Form mode configuration</h4>
-
-<p>RD Mailform allows to use mail form in three modes:</p>
+<h3>Настройка типа почтовой формы</h3>
+<p>RD Mailform поддерживает три типа почтовой формы:</p>
 
 <ol class="index-list">
     <li>
         <dl class="inline-term">
-            <dt>Contact form</dt>
+            <dt>Контактная форма </dt>
             <dd>contact;</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>Booking form</dt>
+            <dt>Форма заказа </dt>
             <dd>order;</dd>
         </dl>
     </li>
     <li>
         <dl class="inline-term">
-            <dt>Newsletter form</dt>
+            <dt>Форма подписки </dt>
             <dd>subscribe;</dd>
         </dl>
     </li>
 </ol>
 
-<p>In order to change form working mode you should add hidden form-type field to target form HTML code, where respectable form mode is set as a value.</p>
+<p>Для того чтобы изменить тип контактной формы, необходимо в HTML разметке целевой формы добавить атрибут <b>data-form-type</b>, где в качестве значения указывается тип формы.</p>
 
-<pre><code>&lt;!-- RD Mailform --&gt;
-        &lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
-        &lt;!-- RD Mailform Type --&gt;
-        &lt;input type="hidden" name="form-type" value="contact"/&gt;
-        &lt;!-- END RD Mailform Type --&gt;
+<pre><code>
+        &lt;form class='rd-mailform' data-form-type="contact" method="post" action="bat/rd-mailform.php"&gt;
+            ...
         &lt;/form&gt;
-        &lt;!-- END RD Mailform --&gt;
     </code></pre>
 
+<h3>Настройка полей формы</h3>
 
-<h4>Mail configuration for messages delivery</h4>
-
-<p>Form sends messages to specific email address, defined in <b>bat/rd-mailform.php</b> file in <b>$recipients</b> variable. You may set any number of email addresses, separated by space here.</p>
-
-<code>$recipients = "test@demolink.com test2@demolink.com"</code>
-
-<h4>Form fields configuration</h4>
-<h6>Mail form RD Mailform allows you to use the following field types:</h6>
+<p>Почтовая форма RD Mailform поддерживает следующие типы полей:</p>
 
 <ol class="index-list">
-    <li>
-        <h6>Text field</h6>
-        <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-name"&gt; Name &lt;/label&gt;
-                &lt;input type="text"
-                name="name"
-                id="mailform-input-name"
-                data-constraints="@LettersOnly @NotEmpty"/&gt;
+    <li><p>Текстовое поле</p>
+        <pre><code>
+                ...
+                &lt;div class="form-group"&gt;
+                    &lt;label for="contact-us-name" class="form-label form-label-outside"&gt;Name:&lt;/label&gt;
+                    &lt;input id="contact-us-name" type="text" name="name"
+                            data-constraints="@Required" class="form-control"&gt;
                 &lt;/div&gt;
                 ...
             </code></pre>
     </li>
     <li>
-        <h6>Date selector</h6>
-        <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-date"&gt; Birthday &lt;/label&gt;
-                &lt;input type="date"
-                name="birthday"
-                id="mailform-input-date"
-                data-constraints="@Date"
-                /&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
-    </li>
-    <li>
-        <h6>Menu selector</h6>
-        <pre><code>  ...
-                &lt;div class="form-group select" &gt;
-                &lt;div class="flt-select-box"&gt;
-                &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
-                &lt;select name="gender" id="mailform-input-select"&gt;
-                &lt;option&gt;Gender&lt;/option&gt;
-                &lt;option&gt;Male&lt;/option&gt;
-                &lt;option&gt;Female&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
-    </li>
-    <li>
-        <h6>Text area</h6>
-        <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
-                &lt;textarea name="message"
-                id="mailform-input-textarea"
-                data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
-    </li>
-</ol>
+        <p>Меню выбора даты и времени.
+            Данное меню поддерживает 3 вида отображения:</p>
+        <ul class="marked-list">
+            <li>
+                <dl class="inline-term">
+                    <dt>Выбор времени</dt>
+                    <dd>time;</dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="inline-term">
+                    <dt>Выбор даты</dt>
+                    <dd>date;</dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="inline-term">
+                    <dt>Выбор даты и времени</dt>
+                    <dd>datetime.</dd>
+                </dl>
+            </li>
+        </ul>
+            <p>Для того чтобы указать один из видов отображения, воспользуйтесь атрибутом <b>date-time-picker</b> с необходимым вам значением.
+            </p>
 
-<h4>Form fields validation setup</h4>
-<p>Mail form <b>RD Mailform</b> supports form fields dynamic validation. You should add data-constraints data attribute to target field HTML code in order to implement this validation for target form.</p>
+                <pre><code>
+                        ...
+                        &lt;div class="form-group"&gt;
+                         &lt;label for="rd-mailform-time" class="form-label form-label-outside"&gt;Time:&lt;/label&gt;
+                             &lt;input id="rd-mailform-time" type="text" name="time"
+                        date-time-picker="time" class="form-control"&gt;
+                        &lt;/div&gt;
+                        ...
+                    </code></pre>
+    </li>
+    <li><p>Простое меню выбора</p>
+        <pre><code>
+                ...
+                &lt;div class="form-group"&gt;
+                    &lt;label for="select" class="form-label form-label-outside"&gt;Gender:&lt;/label&gt;
+                    &lt;select id="select" data-placeholder="Select an option"
+                            data-minimum-results-for-search="Infinity" class="form-control"&gt;
+                        &lt;option&gt;Male&lt;/option&gt;
+                        &lt;option&gt;Female&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                ...
+            </code></pre>
+    </li>
+    <li>
+        <p>Меню выбора c подкатегориями</p>
+            <pre><code>
+                ...
+                &lt;div class="form-group"&gt;
+                    &lt;select data-placeholder="Select an option"
+                            data-minimum-results-for-search="Infinity" class="form-control select-filter"&gt;
+                        &lt;optgroup label="Category 1"&gt;
+                            &lt;option&gt;Demo Item 1-1&lt;/option&gt;
+                            &lt;option&gt;Demo Item 1-2&lt;/option&gt;
+                            &lt;option&gt;Demo Item 1-2&lt;/option&gt;
+                        &lt;/optgroup&gt;
+                        &lt;optgroup label="Category 2"&gt;
+                            &lt;option&gt;Demo Item 2-1&lt;/option&gt;
+                            &lt;option&gt;Demo Item 2-2&lt;/option&gt;
+                            &lt;option&gt;Demo Item 2-3&lt;/option&gt;
+                        &lt;/optgroup&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                ...
+            </code></pre>
+    </li>
+    <li>
+        <p>Текстовая область</p>
 
-<h6>There are following validation types available:</h6>
-<ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>@LettersOnly</dt>
-            <dd>field’s value should be set to letters only;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@NumbersOnly</dt>
-            <dd>field’s value should be set to numbers only;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@NotEmpty</dt>
-            <dd>field must be filled in;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@Email</dt>
-            <dd>field’s value should be set to email address;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@Phone</dt>
-            <dd>field’s value should be set to phone number in the international format;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@Date</dt>
-            <dd>field’s value should be set to date in  MM / DD / YYYY format;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>@SelectRequired</dt>
-            <dd>at least one of menu options must be selected.</dd>
-        </dl>
-    </li>
-</ol>
-
-<p>For instance,</p>
-<pre><code>  ...
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
-        &lt;textarea name="message"
-        id="mailform-input-textarea"
-        data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
+        <pre><code>
+        ...
+        &lt;div class="form-group"&gt;
+            &lt;label for="message" class="form-label form-label-outside"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message" name="message" data-constraints="@Required"
+                                                    class="form-control"&gt;&lt;/textarea&gt;
         &lt;/div&gt;
         ...
-    </code></pre>
+        </code></pre>
+    </li>
+</ol>
 
-<h4>Form informing messages configuration</h4>
-<p>Mail form <b>RD Mailform</b> allows you to set custom informing messages, such as fields validation error messages or messages on successful/unsuccessful form submitting.</p>
-<p>In order to change some default informing messages, you should edit script initialization <b>script.js</b> file, by changing corresponding message field for RD Mailform module target validation type.</p>
-<pre><code>  /**
-        * @module       RD Mailform
-        * @description  Enables RD Mailform Plugin
-        */
-        ;
-        (function ($) {
-        ...
-        // Form validation messages
-        validator: {
-        'constraints': {
-        '@LettersOnly': {
-        message: 'Please use letters only!'
-        },
-        '@NumbersOnly': {
-        message: 'Please use numbers only!'
-        },
-        '@NotEmpty': {
-        message: 'Field should not be empty!'
-        },
-        '@Email': {
-        message: 'Enter valid e-mail address!'
-        },
-        '@Phone': {
-        message: 'Enter valid phone number!'
-        },
-        '@Date': {
-        message: 'Use MM/DD/YYYY format!'
-        },
-        '@SelectRequired': {
-        message: 'Please choose an option!'
-        }
-        }
-        }
-        ...
-        // Form Submit Messages
-        {
-        'MF000': 'Sent',
+<h4>Настройка валидации полей формы</h4>
+<p>Для динамической валидации полей формы используется библиотека <b>Regula</b>. Ссылку на документацию по даной библиотеке вы можете найти в разделе <b>Credits</b>.
+</p>
+<h4>Настройка информационных сообщений формы</h4>
+<p>Контактная форма <b>RD Mailform</b> поддерживает настройку информационных сообщений об успешной/неудачной отправке формы.</p>
+
+<p>Для того чтобы изменить некоторые информационные сообщения по умолчанию, необходимо в файле инициализации скриптов <b>script.js</b> в модуле <b>RD Mailform</b> внести соответствующие правки в поле msg целевого типа валидации:</p>
+<pre><code>
+        msg = {
+        'MF000': 'Successfully sent!',
         'MF001': 'Recipients are not set!',
         'MF002': 'Form will not work locally!',
         'MF003': 'Please, define email field in your form!',
         'MF004': 'Please, define type of your form!',
         'MF254': 'Something went wrong with PHPMailer!',
         'MF255': 'Aw, snap! Something went wrong.'
-        }
-        ...
-        })(jQuery);
+        };
     </code></pre>
 
-<h4>SMTP server configuration</h4>
-<p>SMTP server setting does not relate to <b>RD Mailform</b> form settings at all.</p>
-<p>In order to send your site messages via SMTP-server you'll need to refer to official PhpMailer (library, used in form) documentation or check this tutorial from official documentation.</p>
+<h4>Настройка SMTP сервера</h4>
 
-<ol class="index-list">
-    <li>
-        <a href="http://phpmailer.worxware.com/?pg=examplebsmtp">http://phpmailer.worxware.com/?pg=examplebsmtp</a>
-    </li>
-</ol>
+<p>Настройка SMTP сервера никоим образом не относится к настройке почтовой формы RD Mailform.</p>
+<p>Для отправки сообщений  с помощью SMTP сервера Вам необходимо обратиться к оффициальной документации <b>PhpMailer</b> (библиотеки, которая используется для отправки почты) или воспользоваться туториалом из оффиальной документации.</p>
+<a href="http://phpmailer.worxware.com/?pg=examplebsmtp">http://phpmailer.worxware.com</a>
 
-<p class="alert alert-warning">Please, note: mail form extension does not work locally. You should upload site to corresponding hosting server in order to send emails.</p>
+<p class="alert alert-info">Обратите внимание: расширение контактной формы не работает на локальном сервере.  Для отправки почты необходимо загрузить ваш сайт на соответствующий хостинг-сервер.</p>

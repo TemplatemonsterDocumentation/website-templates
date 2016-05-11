@@ -5,6 +5,29 @@
     "ru": "Модули"
   },
   "articles": [
-
+    {
+      "id": "flex-grid",
+      "translations":
+      {
+        "en": "Flex Grid System",
+        "ru": "Flex Grid System"
+      }
+    },
+    {
+      "id": "bootstrap-grid",
+      "translations":
+      {
+        "en": "Bootstrap Grid System",
+        "ru": "Bootstrap Grid System"
+      }
+    },
+    {
+      "id": "responsive-units",
+      "translations":
+      {
+        "en": "Responsive Units",
+        "ru": "Responsive Units"
+      }
+    }
   ]
 }

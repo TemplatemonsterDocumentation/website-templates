@@ -1,42 +1,68 @@
-<h2 class="item1">Preparation</h2>
+<h2 class="item1">Подготовка</h2>
 
-<h5>Before you proceed with HTML Multipurpose Template installation, you need to prepare. It is recommended to follow steps, listed below:</h5>
+<h5>Прежде чем перейти к установке Intense, нужно полностью подготовиться. Рекомендуется выполнить следующие
+    подготовительные шаги:</h5>
 
-<h3>Software</h3>
+<h3>Программное обеспечение</h3>
 
-<p>We recommend that you download all the required software to edit Website Template. Software Required is listed at template preview page.</p>
-
-<p>Technical requirements might differ depending on exact template, therefore we will list the most basic ones:</p>
-
+<p>Для полноценной работы с шаблоном вебсайта мы рекомендуем скачать все требуемые приложения. Список необходимого
+    программного обеспечения находится на странице предпросмотра шаблона.
+    Требования для различных шаблонов могут меняться, поэтому мы перечислим самые основные:
+</p>
 <ol class="index-list">
-    <li>First, you'll need proper unzipping software for password-protected sources_#########.zip package extracting. You
-        may use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac). This is a mandatory software.
+    <li>Прежде всего нужны правильные приложения для распаковывания защищенного паролем архива <b>sources_#########.zip</b>.
+        Можно воспользоваться <a
+            href="http://www.winzip.com/downauto.cgi?o=1&file=http://download.winzip.com/winzip160.exe&email=&er=&os=win">WinZip
+            9+</a> (Windows) и <a href="http://my.smithmicro.com/stuffit-deluxe-mac.html">Stuffit Expander
+            10+</a> (Mac). Это обязательное ПО.
     </li>
-    <li>You might also require Adobe Photoshop (v. CS3 or higher). It is used for source .PSD files editing and is needful
-        in case of graphic design changes performing or template images editing.
+    <li>Также может понадобиться программа Adobe Photoshop (версии CS3 или выше). Она используется для редактирования
+        исходных файлов .PSD и необходима, если требуется изменить графический дизайн и изображения шаблона.
     </li>
-    <li>You should also use code editor, i. e. Sublime Text, Notepad++, Atom, etc. for template files source code
-        editing.
+    <li>Для редактирования исходного кода файлов шаблона нужно использовать редактор кода, например Sublime Text,
+        Notepad++, Atom и т.п.
     </li>
-    <li>For files uploading to server FTP manager will be also required, like FileManager at your hosting control panel or
-        desktop applications, such as Total Commander, FileZilla, CuteFTP, etc.
+    <li>Чтобы загрузить файлы на хостинг сервер, потребуется FTP менеджер, например, файловый менеджер в панели
+        управления вашего хостинг-провайдера или десктопные приложения, такие как Total Commander, FileZilla, CuteFTP и
+        т.д.
     </li>
 </ol>
 
 
+<h3>Хостинг</h3>
 
-<h3>Hosting</h3>
+<p>Вы можете просто запустить файл index.html прямо из папки с сайтом, но Вы не увидите всего функционала шаблона. Для
+    отображения полноценно работающего сайта необходимо загрузить шаблон на хостинг-сервер.</p>
 
-<p>You can just run index.html file directly from your site folder, but it won't let you explore all template functionality. You should upload template to hosting server in order to display a fully working website correctly.</p>
+<p>При наличии активного сервера, нужно проверить его на соответствие требованиям Website Template, указанным на
+    странице предпросмотра шаблона. Для большинства шаблонов обязательным требованием является только PHP 5.2+.</p>
 
-<p>In case you have existing server already, please check if it meets Website Template requirements, listed at template preview page. For most templates PHP 5.2+ version is the only requirement.</p>
+<p>Также можно установить Website Template на Ваш компьютер при помощи локального сервера. Для создания локального
+    хостинг-сервера Вы можете использовать программное обеспечение WAMP, AppServ, MAMP и т.п. Любое из них
+    устанавливается, как обычная программа.
+</p>
 
-<p>You may also install Website Template to your computer locally by using localhost. In order to set up local server you may use WAMP, AppServ, MAMP or any similar software. All of them are installed same as regular application.</p>
-
-<h6>Feel free to check the following tutorials on how to set up local server:</h6>
+<h6>Вы можете воспользоваться следующими туториалами для настройки локального сервера:</h6>
 
 <ul class="marked-list">
-    <li><a href="/help/how-to-install-appserv-web-development-environment.html">How to install AppServ web development environment</a></li>
-    <li><a href="/help/how-to-install-wamp-web-development-environment.html">How to install WAMP web development environment</a></li>
-    <li><a href="/help/how-to-install-xamp-web-development-environment.html">How to install XAMP web development environment</a></li>
+    <li><a href="/help/how-to-install-appserv-web-development-environment.html">Как установить среду веб-разработки
+            AppServ
+        </a></li>
+    <li><a href="/help/how-to-install-wamp-web-development-environment.html">Как установить среду веб-разработки
+            WAMP</a></li>
+    <li><a href="/help/how-to-install-xamp-web-development-environment.html">Как установить среду веб-разработки XAMP
+        </a></li>
 </ul>
+
+<h4>Загрузка шаблона на Хостинг</h4>
+
+<p>Для того, чтобы сделать ваш сайт "живым", Вам необходимо загрузить всё содержимое из папки site/ с вашего локального компьютера на хостинг сервер.
+</p>
+
+<p class="alert alert-info">Обратите внимание: корневая папка сайта зависит от внутренней структуры вашего хостинг-сервера. Если вы
+    загрузите саму папку <b>site/</b> на хостинг сервер, то корнем вашего сайта будет <b>http://your_domain_name/site</b>. Для того,
+    чтобы корнем вашего сайта был <b>http://your_domain_name/</b> , пожалуйста откройте папку site/ и скоппируйте ее содержимое
+    на ваш хостинг-сервер.
+</p>
+
+<p class="alert alert-danger">Внимание:  не загружайте, папку <b>sources/</b> или любой из исходных файлов шаблона на ваш хостинг сервер.</p>
