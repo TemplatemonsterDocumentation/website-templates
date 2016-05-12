@@ -165,7 +165,7 @@ $rd-menu-width-mobile: 250px;
   white-space: nowrap;
 
   @media (max-width: 1599px) {
-    right: 64px;
+    right: 144px;
   }
 
   @media (min-width: 1068px) and (max-width: 1301px) {
@@ -214,6 +214,34 @@ $rd-menu-width-mobile: 250px;
     right: 10px;
     bottom: 14px;
     @include transition(.3s all cubic-bezier(0.2, 1, 0.3, 1));
+  }
+
+
+}
+
+.page-content{
+  .rd-mobilepanel > .btn{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+  >.btn{
+    position: fixed;
+    transition: none!important;
+    display: none;
+    right: 20px;
+    top: 8px;
+    z-index: 9999998;
+    @media (min-width: 992px) {
+      display: block;
+    }
   }
 }
 

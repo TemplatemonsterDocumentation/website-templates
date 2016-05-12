@@ -66,7 +66,9 @@ if (!isset($sections)) {
     </div>
     <div class="page-content active">
         <button class="rd-mobilepanel_toggle active"><span></span></button>
-        <div class="rd-mobilepanel">            
+        <a href="//www.templatemonster.com/intense-multipurpose-html-template.html?utm_source=documentation&utm_medium=buttonlink&utm_campaign=intense" class=" btn btn-default btn-lg btn-anis-effect"><span class="btn-text">Buy Intense Now</span></a>
+        <div class="rd-mobilepanel">
+            <a href="//www.templatemonster.com/intense-multipurpose-html-template.html?utm_source=documentation&utm_medium=buttonlink&utm_campaign=intense" class=" btn btn-default btn-lg btn-anis-effect"><span class="btn-text">Buy Intense Now</span></a>
             <h1 class="rd-mobilepanel_title">
                 <span><?php echo $product_name; ?></span> <?php echo $product_desc; ?>
             </h1>

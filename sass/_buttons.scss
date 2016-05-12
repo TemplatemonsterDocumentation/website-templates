@@ -1,0 +1,216 @@
+
+.btn {
+  position: relative;
+  padding: 9px 16px;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-width: 2px;
+  transition: .3s;
+  backface-visibility: hidden;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-style: solid;
+
+}
+.btn-default {
+  color: #434345;
+  background-color: transparent;
+  border-color: #d9d9d9;
+}
+.btn-lg {
+  padding: 17px 24px;
+  font-size: 17px;
+  line-height: 32px;
+  border-radius: 5px;
+}
+.btn-anis-effect {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: .2s;
+  transition-delay: .1s;
+
+  &:before{
+    left: -20px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #434345;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  &:after{
+    background: #fff;
+    right: -20px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  span{
+    color: #fff;
+    transition: .35s .35s all ease;
+
+  }
+
+  &:hover{
+
+    color: #434345;
+    border-color: #fff;
+
+
+    &:before{
+      -webkit-animation: criss-cross-left 0.8s;
+      animation: criss-cross-left 0.8s;
+    }
+    &:after{
+      -webkit-animation: criss-cross-right 0.8s;
+      animation: criss-cross-right 0.8s;
+    }
+    span{
+      transition: .35s .35s all ease;
+      color: #434345;
+    }
+  }
+}
+
+
+//btn-Anis
+.btn-anis-effect {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  &:before, &:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -20px;
+    @include transform(translate(-50%, -50%));
+  }
+
+  &:after {
+    right: -20px;
+    @include transform(translate(50%, -50%));
+  }
+
+  &:hover {
+
+    &:before {
+      -webkit-animation: criss-cross-left 0.8s both;
+      animation: criss-cross-left 0.8s both;
+      background: #fff;
+    }
+
+    &:after {
+      -webkit-animation: criss-cross-right 0.8s both;
+      animation: criss-cross-right 0.8s both;
+      background: #fff;
+    }
+  }
+}
+
+//animation for .btn-anis
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
