@@ -13,13 +13,6 @@
       }
     },
     {
-      "id": "instagram-widget",
-      "translations": {
-        "en": "Instagram Widget",
-        "ru": "Instagram Widget"
-      }
-    },
-    {
       "id": "twitter-feed",
       "translations": {
         "en": "Twitter Feed",
