@@ -18,6 +18,9 @@
     </li>
     <li>To edit the template source code, use a code editor, e.g. Sublime Text, Notepad++, Atom, etc.</li>
     <li>To upload files to your server, you need an FTP client, for example, cPanel File Manager or a desktop application, e.g. Total Commander, FileZilla, CuteFTP, etc.</li>
+    <li>
+        For compiling the source code of template files (.scss, .jade) use a code compiler, for instance, Prepros, Koala, etc.
+    </li>
 </ol>
 
 

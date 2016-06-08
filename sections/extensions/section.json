@@ -132,6 +132,13 @@
       }
     },
     {
+      "id": "rd-material-tabs",
+      "translations": {
+        "en": "RD Material Tabs",
+        "ru": "Вкладки RD Material Tabs"
+      }
+    },
+    {
       "id": "stacktable",
       "translations": {
         "en": "Stacktable. Adaptive tables",
@@ -150,6 +157,27 @@
       "translations": {
         "en": "Photoswipe",
         "ru": "Photoswipe"
+      }
+    },
+    {
+      "id": "progress-bar",
+      "translations": {
+        "en": "Progress Bar. Horizontal progress bars",
+        "ru": "Progress Bar. Горизонтальные полосы прогресса"
+      }
+    },
+    {
+      "id": "progress-bar-circle",
+      "translations": {
+        "en": "Circle-progress",
+        "ru": "Circle-progress. Радиальные полосы прогресса c градиентом"
+      }
+    },
+    {
+      "id": "diagrams-and-graphs",
+      "translations": {
+        "en": "Diagrams and graphs",
+        "ru": "Диаграммы и графики"
       }
     }
   ]

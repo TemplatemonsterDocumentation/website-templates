@@ -1,12 +1,53 @@
 <h3>RD Google Maps</h3>
-<h6>Intense uses <b>RD Google Maps</b> plugin for implementing Google Maps.
-  Plugin supports the following settings:</h6>
+<h6>Intense uses <b>RD Google Maps</b> to implement Google maps.
+  </h6>
+<p>The plugin supports the following settings:</p>
 <ul class="marked-list">
     <li>Changing map coordinates;</li>
     <li>Adding custom map markers;</li>
     <li>Adding pop-up windows for the markers;</li>
     <li>Custom map styling.</li>
+    <li>Search on the map;</li>
 </ul>
+
+<h4>How to add search on the map?</h4>
+<p>RD Google Maps supports adding search on the map. </p>
+<p>To enable search on the map, add a textfield with <b>id</b> <b>"rd-google-map-address"</b> and a button with <b>id</b> <b>“rd-google-map-address-submit”</b>.</p>
+<p>The fool code of the map with search will look the following way:</p>
+
+<pre><code>
+    &lt;!--Google map search--&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="rd-google-map-address" class="form-label rd-input-label"&gt;Address&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+        &lt;input id="rd-google-map-address"
+                  type="text" name="address"
+                  data-constraints="@Required"
+                  placeholder="" autocomplete="off"
+                  class="form-control
+                  form-control-has-validation"&gt;
+          &lt;span class="input-group-btn"&gt;
+          &lt;a id="rd-google-map-address-submit" href="#" class="btn btn-primary"&gt;Find Address&lt;/a&gt;
+          &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- RD Google Map--&gt;
+    &lt;div class="rd-google-map"&gt;
+      &lt;div id="rd-google-map"
+              data-zoom="15"
+              data-x="-73.9874068"
+              data-y="40.643180"
+              data-styles="[]"
+              class="rd-google-map__model"&gt;
+      &lt;/div&gt;
+      &lt;ul class="map_locations"&gt;
+        &lt;li data-x="-73.9874068" data-y="40.643180"&gt;
+          &lt;p&gt;9870 St Vincent Place, Glasgow, DC 45 Fr 45.&lt;/p&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  </code></pre>
+
 
 <h4>Changing map coordinates</h4>
 

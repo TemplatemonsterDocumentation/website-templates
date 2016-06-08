@@ -1,12 +1,51 @@
 <h3>RD Google Maps</h3>
-<h6>Intense использует плагин <b>RD Google Maps</b> для реализации Google Maps.
-    Плагин поддерживает следующие настройки:</h6>
+<h6>Intense использует плагин <b>RD Google Maps</b> для реализации Google Maps.</h6>
+<p>Плагин поддерживает следующие настройки:</p>
 <ul class="marked-list">
     <li>Замена координат карты;</li>
     <li>Добавление пользовательких маркеров на карту;</li>
     <li>Добавление всплывающих окон к маркерам;</li>
     <li>Пользовательскую стилизацию карты;</li>
+    <li>Поиск по карте;</li>
 </ul>
+
+<h4>Как добавить поиск по карте</h4>
+<p><b>RD Google Map</b> поддерживает возможность добавление поиска по карте.</p>
+<p>Чтобы включить поиск по карте, необходимо добавить текстовое поле с <b>id "rd-google-map-address"</b> и кнопку с id  <b>"rd-google-map-address-submit"</b>.</p>
+<p>Полный пример кода карты с поиском будет выглядеть следующим образом:</p>
+
+<pre><code>
+    &lt;!--Google map search--&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="rd-google-map-address" class="form-label rd-input-label"&gt;Address&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+        &lt;input id="rd-google-map-address"
+                  type="text" name="address"
+                  data-constraints="@Required"
+                  placeholder="" autocomplete="off"
+                  class="form-control
+                  form-control-has-validation"&gt;
+          &lt;span class="input-group-btn"&gt;
+          &lt;a id="rd-google-map-address-submit" href="#" class="btn btn-primary"&gt;Find Address&lt;/a&gt;
+          &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- RD Google Map--&gt;
+    &lt;div class="rd-google-map"&gt;
+      &lt;div id="rd-google-map"
+              data-zoom="15"
+              data-x="-73.9874068"
+              data-y="40.643180"
+              data-styles="[]"
+              class="rd-google-map__model"&gt;
+      &lt;/div&gt;
+      &lt;ul class="map_locations"&gt;
+        &lt;li data-x="-73.9874068" data-y="40.643180"&gt;
+          &lt;p&gt;9870 St Vincent Place, Glasgow, DC 45 Fr 45.&lt;/p&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  </code></pre>
 
 <h4>Как изменить координаты карты</h4>
 

@@ -194,3 +194,89 @@
 <a href="http://phpmailer.worxware.com/?pg=examplebsmtp">http://phpmailer.worxware.com</a>
 
 <p class="alert alert-info">Attention: mailform extension will not work on the local server. To send a mailform, upload your website to the hosting server you use.</p>
+
+<h4>Configuring spam and abuse protection</h4>
+
+<p><b>RD Mailform</b> uses <b>Google reCAPTCHA</b> for spam protection.  </p>
+<p class="alert alert-info"> Pay attention: in order to disable Google reCAPTCHA, just delete a section of html code, wrapped in comments  "&lt;!--Google captcha--&gt;" - "&lt;!-- End google captcha--&gt;".</p>
+<h6>Getting Started with Google ReCaptcha</h6>
+
+<p>To manage Google ReCaptcha, you should:</p>
+
+
+<ol class="index-list">
+  <li>
+      <p>Register your domain at  <a href="https://www.google.com/recaptcha/admin#list">Google reCaptcha</a> website and get a pair of API-keys (a pair of keys consists of
+        <b>site key</b> and <b>secret</b>). </p>
+  </li>
+  <li>
+    <p>Specify your API-keys in <b>bat/reCaptcha.php</b> file in <b>$siteKey</b> and <b>$secret</b> variables at the beginning of the file:</p>
+    <pre><code>
+        $siteKey = 'You site key here';
+        $secret = 'You secret key here';
+      </code></pre>
+  </li>
+  <li>
+    <p>Paste this section to html and specify your site key in <b>data-attribute</b> <b>data-sitekey=""</b></p>
+  </li>
+</ol>
+<p> You can find more detailed instructions at <a href="https://developers.google.com/recaptcha/docs/start">Google ReCaptcha</a> official website.</p>
+
+<h4>Google ReCaptcha Marking</h4>
+<p>The basic marking for ReCaptcha looks the following way:</p>
+<pre><code>
+    &lt;!--Google captcha--&gt;
+    &lt;div class="form-group"&gt;
+      &lt;div id="captcha1" data-sitekey="You site key here" class="recaptcha"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End google captcha--&gt;
+  </code></pre>
+
+<p class="alert alert-info">Pay attention: <b>id</b> attribute and <b>.recaptcha</b> class are required.</p>
+
+<h4>Google ReCaptcha Setup</h4>
+<p>Google Recaptcha supports the following settings:</p>
+<ul class="marked-list">
+  <li>Changing size;</li>
+  <li>Changing color scheme.</li>
+</ul>
+
+<h4>Changing Google ReCaptcha Size</h4>
+<p>To change widget size, specify in data-attribute <b>data-size</b> one of the following size values:</p>
+
+<ul class="marked-list">
+  <li>compact;</li>
+  <li>normal (default).</li>
+</ul>
+<p>The sample code looks the following way:</p>
+
+<pre><code>
+    &lt;!--Google captcha--&gt;
+    &lt;div class="form-group"&gt;
+      &lt;div id="captcha1"
+           data-sitekey="You site key here"
+           data-size="compact"
+           class="recaptcha"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End google captcha--&gt;
+  </code></pre>
+
+<h4>Changing Google ReCaptcha widget color scheme</h4>
+<p>To change widget color scheme, specify in the data-attribute <b>data-theme</b> one of the following variants:</p>
+
+<ul class="marked-list">
+  <li>dark;</li>
+  <li>light (default).</li>
+</ul>
+
+<p> Sample code looks the following way:</p>
+<pre><code>
+    &lt;!--Google captcha--&gt;
+    &lt;div class="form-group"&gt;
+      &lt;div id="captcha1"
+           data-sitekey="You site key here"
+           data-theme="dark"
+           class="recaptcha"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End google captcha--&gt;
+  </code></pre>
