@@ -1,6 +1,5 @@
-<h3>Адаптивные вкладки: аккордеон</h3>
-<p>Intense использует расширение <b>jQuery Responsive Tab</b> для реализации аккордеона. Для добавления аккордеона на целевую страницу необходимо воспользоваться следующей разметкой:
-</p>
+<h3>Reponsive Tabs. Аккордион</h3>
+<p>HTML Website Templates используют расширение  <b>jQuery Responsive Tab</b> для реализации аккордиона. Для внедрения аккордиона на целевую страницу необходимо воспользоваться следующей разметкой.</p>
 <pre><code>
         &lt;div class="responsive-tabs" data-type="accordion"&gt;
             &lt;ul class="resp-tabs-list"&gt;

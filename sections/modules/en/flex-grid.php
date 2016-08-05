@@ -1,5 +1,5 @@
 <h3>Flex Grid System</h3>
-<p>Intense uses the specially developed Flex Grid system. This system in a more multipurpose and flexible solution, in comparison to Bootstrap Grid. </p>
+<p>HTML Website Template uses the specially developed Flex Grid system. This system in a more multipurpose and flexible solution, in comparison to Bootstrap Grid. </p>
 <p>Different aspects of default Flex Grid functionality are covered in the following table:</p>
 
 <table class="table table--skin-1">

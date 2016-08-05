@@ -1,6 +1,6 @@
 <h3>Vide - Background video</h3>
 
-<h6>Intense Template use <b>Vide.js</b> extension to implement background video functionality.</h6>
+<h6>HTML Website Template Template use <b>Vide.js</b> extension to implement background video functionality.</h6>
 
 <h4>Files requirements</h4>
 

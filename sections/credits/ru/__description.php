@@ -1,9 +1,8 @@
 <h2 class="item9">Credits</h2>
 
-<p>Intense использует некоторые сторонние JS, PHP, CSS и т.п. программные решения из представленных ниже.
-    Все использованные материалы распостраняются по свободным и открытым лицензиям (MIT, CC, GPL). </p>
+<p>HTML Website Templates используют некоторые сторонние JS, PHP, CSS и т.п. программные решения, из представленных ниже. Все использованные материалы распостраняются по свободным и открытым лицензиям (MIT, CC, GPL). </p>
 
-<h4>CSS и Шрифты</h4>
+<h4>CSS & Fonts</h4>
 
 <ul class="marked-list">
     <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
@@ -34,6 +33,9 @@
     <li><a href="http://johnpolacek.github.io/stacktable.js/">Stacktable</a></li>
     <li><a href="https://github.com/afarkas/html5shiv">Html5shiv </a></li>
     <li><a href="http://vivin.github.io/regula/">Regula</a></li>
+    <li><a href="https://github.com/kenwheeler/slick">Slick</a></li>
+    <li><a href="https://github.com/kottenator/jquery-circle-progress">jquery-circle-progress</a></li>
+    <li><a href="http://kimmobrunfeldt.github.io/progressbar.js/">progressbar.js</a></li>
 </ul>
 
 

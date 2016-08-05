@@ -1,6 +1,6 @@
 /*==================   RD Mobile Menu    =====================*/
 $light-theme: (
-        panel-background-color: #434343,
+        panel-background-color: #1499E8,
         panel-text-color: #FFF,
         menu-background-color: #f9f9f9,
         menu-item-color: #333,
@@ -44,10 +44,12 @@ $rd-menu-width-mobile: 250px;
     right: 0;
     height: $rd-mobilepanel-height*2;
     background: darken(map-get($rd-theme, panel-background-color), 5%);
-    padding: 16px 14px;
+    padding: 37px 14px;
+    font-size: 24px;
     text-align: left;
+    text-align: center;
     @include box-sizing(border-box);
-    color:#fff;       
+    color:#fff;
     img{
       margin-right: 5px;
       max-width: 93%;
@@ -165,7 +167,7 @@ $rd-menu-width-mobile: 250px;
   white-space: nowrap;
 
   @media (max-width: 1599px) {
-    right: 144px;
+    right: 64px;
   }
 
   @media (min-width: 1068px) and (max-width: 1301px) {
@@ -194,7 +196,7 @@ $rd-menu-width-mobile: 250px;
   right: 0;
   height: 256px;
   background: map-get($rd-theme, panel-background-color);
-  background: linear-gradient(90deg, #55bbeb 0%, #84c450 100%);
+  background: #1499E8;
   color: map-get($rd-theme, panel-text-color);
   z-index: 9999997;
 
@@ -214,34 +216,6 @@ $rd-menu-width-mobile: 250px;
     right: 10px;
     bottom: 14px;
     @include transition(.3s all cubic-bezier(0.2, 1, 0.3, 1));
-  }
-
-
-}
-
-.page-content{
-  .rd-mobilepanel > .btn{
-    position: absolute;
-    right: 20px;
-    top: 8px;
-    display: none;
-    @media (min-width: 768px) {
-      display: block;
-    }
-    @media (min-width: 992px) {
-      display: none;
-    }
-  }
-  >.btn{
-    position: fixed;
-    transition: none!important;
-    display: none;
-    right: 20px;
-    top: 8px;
-    z-index: 9999998;
-    @media (min-width: 992px) {
-      display: block;
-    }
   }
 }
 

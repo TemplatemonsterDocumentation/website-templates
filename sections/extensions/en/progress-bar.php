@@ -1,5 +1,5 @@
 <h3>Progress Bar. Horizontal progress bars</h3>
-<h6>Intense uses <b>Bootstrap Progress Bars</b> extension to implement horizontal progress bars.</h6>
+<h6>HTML Website Template uses <b>Bootstrap Progress Bars</b> extension to implement horizontal progress bars.</h6>
 <p>The basic HTML marking for creating a progress bar should look the following way:</p>
 <pre><code>
     &lt;div class="progress"&gt;

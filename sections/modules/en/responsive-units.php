@@ -1,5 +1,5 @@
 <h3>Responsive Units</h3>
-<h6>Intense has a new content management system, based on Flex. It’s called Responsive Units. Using these units, you can easily manage the
+<h6>HTML Website Template has a new content management system, based on Flex. It’s called Responsive Units. Using these units, you can easily manage the
     layout of the elements: embed them in a horizontal or vertical way at any resolution, manage their location relative to each other, etc.</h6>
 <p>Responsive Units operating principle is somewhat  similar to the operating principle of Media in Bootstrap.</p>
 <p>Responsive Units logics meets the requirements of Mobile First.

@@ -1,5 +1,5 @@
 <h3>RD Facebook Feed</h3>
-<p>Intense uses <b>jquery.rd-facebook-feed.js</b> to display data from  <a
+<p>HTML Website Template uses <b>jquery.rd-facebook-feed.js</b> to display data from  <a
         href="https://facebook.com/">https://facebook.com/</a> service on the website.</p>
 <h4>Adding widget to the page</h4>
 <p>The basic widget HTML markup to display one element looks the following way:</p>

@@ -1,5 +1,5 @@
 <h3>Circle-progress. Radial progress bar with gradient</h3>
-<h6>Intense uses <b>jquery-circle-progress.js</b> to implement radial progress bars with gradient.</h6>
+<h6>HTML Website Template uses <b>jquery-circle-progress.js</b> to implement radial progress bars with gradient.</h6>
 <p>The basic HTML marking for creating a progress bar looks the following way:</p>
 <pre><code>
     &lt;!-- Circle Progress Bar--&gt;

@@ -1,5 +1,5 @@
 <h3>Swiper Slider</h3>
-<p>Intense uses <b>Swiper Slider</b> extension to implement a slider on template pages with advanced <b>data-API</b> user interface.</p>
+<p>HTML Website Template uses <b>Swiper Slider</b> extension to implement a slider on template pages with advanced <b>data-API</b> user interface.</p>
 
 <pre><code>
         &lt;!-- Swiper --&gt;

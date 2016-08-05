@@ -1,11 +1,11 @@
 <h3>Icons</h3>
-<h6>Intense contains more than 2500 ready-made icons.
+<h6>HTML Website Template contains more than 2500 ready-made icons.
     A list of all icons can be found on the <b>Components > Toolkit Components > Icons</b> page. To add an icon to the target page, use the following marking:</h6>
 <pre><code>
         &lt;span class="your-icon-class"&gt;&lt;/span&gt;
     </code></pre>
 <p>    A list of classes for adding target icons is also available on the <b>Components > Toolkit Components > Icons</b> page.</p>
-<p>In Intense, icon styling is defined as button styling:</p>
+<p>In HTML Website Template, icon styling is defined as button styling:</p>
 <ul class="marked-list">
     <li>
         <dl class="inline-term">

@@ -1,10 +1,9 @@
 [
-	"preparation",
+		"preparation",
   	"template_structure",
-	"template_customization",
-	"components",
-	"modules",
+		"template_customization",
+		"components",
+		"modules",
   	"extensions",
-	"widgets",
   	"credits"
 ]

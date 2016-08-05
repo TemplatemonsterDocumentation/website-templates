@@ -1,5 +1,5 @@
 <h3>Isotope layout filter</h3>
-<p>Intense uses Isotope for creating a layout filter.</p>
+<p>HTML Website Template uses Isotope for creating a layout filter.</p>
 
 <h4>Adding Isotope to the page</h4>
 <p>To insert <b>isotope</b> to the corresponding layout of the target page, you should just add the
@@ -51,7 +51,7 @@
         &lt;/div&gt;
     </code></pre>
 
-<p class="alert alert-info">Attention: in this case, dimensions of Isotope elements should be set up manually. Intense offers the ready-made functionality only for the grid elements.</p>
+<p class="alert alert-info">Attention: in this case, dimensions of Isotope elements should be set up manually. HTML Website Template offers the ready-made functionality only for the grid elements.</p>
 
 <h4>Isotope item filter</h4>
 

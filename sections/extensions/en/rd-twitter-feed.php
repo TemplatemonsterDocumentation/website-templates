@@ -1,5 +1,5 @@
 <h3>RD Twitterfeed</h3>
-<p>Intense uses <b>jquery.rd-twitter-feed.js</b> to get data from <a
+<p>HTML Website Template uses <b>jquery.rd-twitter-feed.js</b> to get data from <a
         href="https://twitter.com/">https://twitter.com/</a> service on the website.</p>
 
 <h4>Adding widget to the page</h4>

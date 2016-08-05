@@ -26,13 +26,13 @@
 
 <pre><code>
         &lt;!-- Site Title--&gt;
-        &lt;title&gt;Intense - multi-page template by TemplateMonster&lt;/title&gt;
+        &lt;title&gt;HTML Website Template - multi-page template by TemplateMonster&lt;/title&gt;
     </code></pre>
 
 <h4>Keywords display in search results</h4>
 <p>To display keywords (tags) in search results, specify them for every page in <b>'content'</b> attribute of the <b>&lt;meta name="keywords"&gt;</b> tag:</p>
 <pre><code>
-        &lt;meta name="keywords" content="intense web design multipurpose template"&gt;
+        &lt;meta name="keywords" content="HTML Website Template web design multipurpose template"&gt;
     </code></pre>
 
 <h4>Additional information display in search results</h4>

@@ -10,7 +10,7 @@
 	  "id": "change-logo",
 	  "translations":
 	  {
-		"en": "Changing the Logo",
+		"en": "Change logo",
 		"ru": "Замена логотипа в шаблоне"
 	  }
 	},
@@ -18,55 +18,39 @@
 	  "id": "navigation-settings",
 	  "translations":
 	  {
-		"en": "Template navigation setup",
+		"en": "Navigation settings",
 		"ru": "Настройка навигации в шаблоне"
-	  }
-	},
-	{
-	  "id": "shop-settings",
-	  "translations":
-	  {
-		"en": "Setting up a Shop",
-		"ru": "Настройка интернет-магазина"
-	  }
-	},
-	{
-	  "id": "maintenance-settings",
-	  "translations":
-	  {
-		"en": "Maintenance Page Setup",
-		"ru": "Настройка cтраницы режима техобслуживания"
 	  }
 	},
 	{
 	  "id": "mailform-settings",
 	  "translations":
 	  {
-		"en": "Mailform setup",
-		"ru": "Настройка контактной формы"
+		"en": "Mailform Settings",
+		"ru": "Настройка Почтовой формы"
 	  }
 	},
 	{
 	  "id": "smoothscroll-settings",
 	  "translations":
 	  {
-		"en": "Smooth scroll for Windows setup",
-		"ru": "Настройка плавной прокрутки страницы для Windows"
+		"en": "Smoothscroll Settings",
+		"ru": "Настройка плавного скролла страницы для Windows"
 	  }
 	},
 	{
 	  "id": "animation-settings",
 	  "translations":
 	  {
-		"en": "Template scroll animation setup",
-		"ru": "Настройка анимации элементов шаблона при прокрутке страницы"
+		"en": "Animation Settings",
+		"ru": "Настройка анимации элементов шаблона при скролле"
 	  }
 	},
 	{
 	  "id": "slider-settings",
 	  "translations":
 	  {
-		"en": "Slider Setup",
+		"en": "Slider Settings",
 		"ru": "Настройка слайдера"
 	  }
 	},
@@ -74,7 +58,7 @@
 	  "id": "parallax-settings",
 	  "translations":
 	  {
-		"en": "Parallax Setup",
+		"en": "Parallax Settings",
 		"ru": "Настройка параллакса"
 	  }
 	},
@@ -82,7 +66,7 @@
 	  "id": "page-search-settings",
 	  "translations":
 	  {
-		"en": "Search by pages setup",
+		"en": "Search Settings",
 		"ru": "Настройка поиска по страницам"
 	  }
 	}

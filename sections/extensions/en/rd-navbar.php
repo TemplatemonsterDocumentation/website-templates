@@ -1,9 +1,7 @@
 <h3>RD Navbar. Navigation panel</h3>
-<figure class="img-polaroid">
-    <img src="img/navbar.png" alt="">
-</figure>
 
-<h6>Intense Template use <b>RD Navbar</b> extension to implement site navigation functionality. Basic HTML code structure for this extension looks as follows:</h6>
+
+<h6>HTML Website Template Template use <b>RD Navbar</b> extension to implement site navigation functionality. Basic HTML code structure for this extension looks as follows:</h6>
 
 <pre><code>  &lt;!-- RD Navbar --&gt;
   &lt;div class="rd-navbar-wrap"&gt;
@@ -95,7 +93,7 @@
 <p class="alert alert-warning">Please, note: navbar HTML structure might differ depending on exact template design specifications.</p>
 
 <h4>Navbar layout configuration</h4>
-<h6>Intense Template navbar works with 4 different layouts:</h6>
+<h6>HTML Website Template Template navbar works with 4 different layouts:</h6>
 
 <ol class="index-list">
     <li>
@@ -138,6 +136,89 @@
 <p class="alert alert-warning">Please note:  data attributes <b>data-layout</b>, <b>data-stick-up</b>,
     <b>data-hover-on</b>  can be defined for all main dimension types as <b>data-xx-layout</b>, <b>data-xx-stick-up</b>,
     <b>data-xx-hover-on</b> (where <b>xx</b>  can take <b>xs</b>, <b>sm</b>, <b>md</b>. <b>lg</b> values). Navigation panel appearance for lower resolutions is defined by template design specifics only.</p>
+
+<h6>RD Navbar supports managing layout with the help of data-attributes:</h6>
+
+<ol class="index-list">
+    <li>
+        <dl class="inline-term">
+            <dt>data-layout</dt>
+            <dd>sets default navbar layout.</dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-sm-layout</dt>
+            <dd>sets navbar layout for SM resolution.</dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-md-layout</dt>
+            <dd>sets navbar layout for MD resolution.</dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-lg-layout</dt>
+            <dd>sets navbar layout for LG resolution.</dd>
+        </dl>
+    </li>
+</ol>
+
+<h4>Setting navbar layout type for mobile devices</h4>
+
+<ol class="index-list">
+    <li>
+        <dl class="inline-term">
+            <dt>data-sm-device-layout</dt>
+            <dd>sets navbar layout type for mobile devices with SM resolution.
+            </dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-md-device-layout</dt>
+            <dd>sets navbar layout type for mobile devices with MD resolution.
+            </dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-lg-device-layout</dt>
+            <dd>sets navbar layout type for mobile devices with LG resolution.</dd>
+        </dl>
+    </li>
+</ol>
+
+<p class="alert alert-warning">Pay attention:  <b>data-md-device-layout='rd-navbar-fullwidth'</b>, <b>data-lg-device-layout="rd-navbar-static"</b> attributes are required. Otherwise, touchpad desktops will display navbar layout for mobile devices.</p>
+
+
+<h4>Offset for stick up on scroll setup</h4>
+<p>RD Navbar supports setting up the offset, on which the navbar will stick up. Use data-(*)-stick-up-offset attribute for this:</p>
+
+<ol class="index-list">
+    <li>
+        <dl class="inline-term">
+            <dt>data-sm-stick-up-offset</dt>
+            <dd>sets navbar stick-up offset for SM resolution.</dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-md-stick-up-offset</dt>
+            <dd>sets navbar stick-up offset for MD resolution.</dd>
+        </dl>
+    </li>
+    <li>
+        <dl class="inline-term">
+            <dt>data-lg-stick-up-offset</dt>
+            <dd>sets navbar stick-up offset for LG resolution.</dd>
+        </dl>
+    </li>
+</ol>
+
+<p>You can specify the exact offset value, as well as navbar height ratio.</p>
 
 <h4>Dropdown menu configuration</h4>
 <p>In order to define navigation panel dropdown menu, you should just add <b>.rd-navbar-dropdown</b> class to corresponding submenu item.</p>

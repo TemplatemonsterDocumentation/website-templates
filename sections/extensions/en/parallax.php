@@ -1,6 +1,6 @@
 <h3>RD Parallax. Parallax script</h3>
 
-<p>Intense Template use <b>RD Parallax</b> extension to implement parallax effects to page.</p>
+<p>HTML Website Template Template use <b>RD Parallax</b> extension to implement parallax effects to page.</p>
 
 <p>Basic script code structure appears as follows:</p>
 

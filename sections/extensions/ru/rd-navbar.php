@@ -1,183 +1,185 @@
-<h3>RD Navbar. Navigation panel</h3>
-<figure class="img-polaroid">
-    <img src="img/navbar.png" alt="">
-</figure>
+<h3>RD Navbar</h3>
+<p>HTML Website Templates используют расширение <b>RD Navbar</b>
+   для функциональной навигации по сайту. </p>
 
-<h6>Intense Template use <b>RD Navbar</b> extension to implement site navigation functionality. Basic HTML code structure for this extension looks as follows:</h6>
+<p>Базовая структура кода для расширения RD Navbar равыглядит следующим образом:</p>
 
-<pre><code>  &lt;!-- RD Navbar --&gt;
-        &lt;div class="rd-navbar-wrap"&gt;
-        &lt;nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static"&gt;
-        &lt;div class="rd-navbar-inner"&gt;
+<pre>
+  <code>
+     &lt;!-- RD Navbar --&gt;
+     &lt;div class="rd-navbar-wrap"&gt;
+       &lt;nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth"
+             data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fullwidth"
+             data-lg-device-layout="rd-navbar-static"&gt;
+         &lt;div class="rd-navbar-inner"&gt;
 
-        &lt;!-- RD Navbar Collapse --&gt;
-        &lt;div class="rd-navbar-collapse"&gt;
-        &lt;button class="rd-navbar-collapse-toggle"&gt;
-        &lt;span&gt;&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;ul class="rd-navbar-collapse-items list"&gt;
-        &lt;li&gt;
-        ...
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;!-- END RD Navbar Collapse --&gt;
+           &lt;!-- RD Navbar Panel --&gt;
+           &lt;div class="rd-navbar-panel"&gt;
 
-        &lt;!-- RD Navbar Panel --&gt;
-        &lt;div class="rd-navbar-panel"&gt;
+             &lt;!-- RD Navbar Toggle --&gt;
+             &lt;button class="rd-navbar-toggle"&gt; &lt;span&gt; &lt;/span&gt; &lt;/button&gt;
+             &lt;!-- END RD Navbar Toggle --&gt;
 
-        &lt;!-- RD Navbar Toggle --&gt;
-        &lt;button class="rd-navbar-toggle"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
-        &lt;!-- END RD Navbar Toggle --&gt;
+             &lt;!-- RD Navbar Brand --&gt;
+             &lt;div class="rd-navbar-brand"&gt;
+              ...
+             &lt;/div&gt;
+             &lt;!-- END RD Navbar Brand --&gt;
 
-        &lt;!-- RD Navbar Brand --&gt;
-        &lt;div class="rd-navbar-brand"&gt;
-        ...
-        &lt;/div&gt;
-        &lt;!-- END RD Navbar Brand --&gt;
+           &lt;/div&gt;
+           &lt;!-- END RD Navbar Panel --&gt;
 
-        &lt;/div&gt;
-        &lt;!-- END RD Navbar Panel --&gt;
+           &lt;div class="rd-navbar-nav-wrap"&gt;
+             &lt;!-- RD Navbar Nav --&gt;
+             &lt;ul class="rd-navbar-nav"&gt;
+               &lt;li&gt;
+                ...
+               &lt;/li&gt;
+               &lt;li&gt;
+                ...
 
-        &lt;div class="rd-navbar-nav-wrap"&gt;
-        &lt;!-- RD Navbar Search --&gt;
-        &lt;div class="rd-navbar-search"&gt;
-        &lt;form class="rd-navbar-search-form"
-        action="search.php" method="GET"&gt;
-        &lt;label class="rd-navbar-search-form-input"&gt;
-        &lt;input type="text" name="s"
-        placeholder="Search.." autocomplete="off"/&gt;
-        &lt;/label&gt;
-        &lt;button class="rd-navbar-search-form-submit"
-        type="submit"&gt;&lt;/button&gt;
-        &lt;/form&gt;
-        &lt;span class="rd-navbar-live-search-results"&gt;&lt;/span&gt;
-        &lt;button class="rd-navbar-search-toggle"&gt;&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;!-- END RD Navbar Search --&gt;
+                 &lt;!-- RD Navbar Dropdown --&gt;
+                 &lt;ul class="rd-navbar-dropdown"&gt;
+                   &lt;li&gt;
+                    ...
+                   &lt;/li&gt;
+                 &lt;/ul&gt;
+                 &lt;!-- END RD Navbar Dropdown --&gt;
+               &lt;/li&gt;
+               &lt;li&gt;
+                ...
 
-        &lt;!-- RD Navbar Nav --&gt;
-        &lt;ul class="rd-navbar-nav"&gt;
-        &lt;li&gt;
-        ...
-        &lt;/li&gt;
-        &lt;li&gt;
-        ...
+                 &lt;!-- RD Navbar Megamenu --&gt;
+                 &lt;ul class="rd-navbar-megamenu"&gt;
+                   &lt;li&gt;
+                    ...
+                   &lt;/li&gt;
+                 &lt;/ul&gt;
+               &lt;/li&gt;
+             &lt;/ul&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/nav&gt;
+     &lt;/div&gt;
+</code>
+</pre>
 
-        &lt;!-- RD Navbar Dropdown --&gt;
-        &lt;ul class="rd-navbar-dropdown"&gt;
-        &lt;li&gt;
-        ...
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;!-- END RD Navbar Dropdown --&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        ...
+<p class="alert alert-danger">
+  Обратите внимание: HTML разметка может отличаться в зависимости от дизайна.
+</p>
 
-        &lt;!-- RD Navbar Megamenu --&gt;
-        &lt;ul class="rd-navbar-megamenu"&gt;
-        &lt;li&gt;
-        ...
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;!-- END RD Navbar Megamenu --&gt;
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;!-- END RD Navbar Nav --&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/nav&gt;
-        &lt;/div&gt;
-        &lt;!-- END RD Navbar --&gt;
-    </code></pre>
-
-<p class="alert alert-warning">Please, note: navbar HTML structure might differ depending on exact template design specifications.</p>
-
-<h4>Navbar layout configuration</h4>
-<h6>Intense Template navbar works with 4 different layouts:</h6>
-
+<h4>Настройка лейаута RD Navbar</h4>
+<p>HTML Website Templates RD Navbar работает с четырьмя разными лейаутами.</p>
 <ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>Static</dt>
-            <dd>rd-navbar-static</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>Wide</dt>
-            <dd>rd-navbar-fullwidth</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>Mobile</dt>
-            <dd>rd-navbar-fixed</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>Sidebar</dt>
-            <dd>rd-navbar-sidebar</dd>
-        </dl>
-    </li>
+  <li><b>Static</b> rd-navbar-static</li>
+  <li><b>Wide </b> rd-navbar-fullwidth</li>
+  <li><b>Mobile </b> rd-navbar-fixed</li>
+  <li><b>Sidebar </b> rd-navbar-sidebar</li>
 </ol>
 
-<p>In order to change layout for corresponding navigation panel you should just alter  <b>“data-layout”</b>  attribute value.</p>
-<p>In order to  enable/disable stick-up dropdown menu just edit <b>“data-stick-up”</b> attribute value (true/false).</p>
-<p>In order to  enable/disable  dropdown menu on hover just edit <b>“data-hover-on”</b> attribute value (true/false).</p>
-
-<pre><code>  &lt;div class="rd-navbar-wrap"&gt;
-        &lt;nav class="rd-navbar" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false"&gt;
+<p>RD Navbar поддерживает управление лейаутами с помощью дата атрибутов.</p>
+<ol class="index-list">
+  <li><b>data-layout </b> устанавливает лейаут навбара по умолчанию </li>
+  <li><b>data-sm-layout </b> устанавливает лейаут навбара с SM разрешения.</li>
+  <li><b>data-md-layout </b> устанавливает лейаут навбара с MD разрешения.</li>
+  <li><b>data-lg-layout </b> устанавливает лейаут навбара с LG разрешения.</li>
+</ol>
+<code>
+  <pre>
+    &lt;div class="rd-navbar-wrap"&gt;
+      &lt;nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth"
+               data-lg-layout="rd-navbar-static"&gt;
         ...
-        &lt;/nav&gt;
-        &lt;/div&gt;
-    </code></pre>
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  </pre>
+</code>
 
-<p class="alert alert-warning">Please note:  data attributes <b>data-layout</b>, <b>data-stick-up</b>,
-    <b>data-hover-on</b>  can be defined for all main dimension types as <b>data-xx-layout</b>, <b>data-xx-stick-up</b>,
-    <b>data-xx-hover-on</b> (where <b>xx</b>  can take <b>xs</b>, <b>sm</b>, <b>md</b>. <b>lg</b> values). Navigation panel appearance for lower resolutions is defined by template design specifics only.</p>
+<h4>Настройка типа лейаута навбара для мобильных устройств</h4>
+<ul class="marked-list">
+  <li><b>data-sm-device-layout</b> - определяет тип лейаута навбара для мобильных устройств с SM разрешения.</li>
+  <li><b>data-md-device-layout</b> - определяет тип лейаута навбара для мобильных устройств с MD  разрешения.</li>
+  <li><b>data-lg-device-layout</b> - определяет тип лейаута навбара для мобильных устройств с LG  разрешения.</li>
+</ul>
 
-<h4>Dropdown menu configuration</h4>
-<p>In order to define navigation panel dropdown menu, you should just add <b>.rd-navbar-dropdown</b> class to corresponding submenu item.</p>
+<code>
+  <pre>
+    &lt;div class="rd-navbar-wrap"&gt;
+      &lt;nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth"
+               data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fullwidth"
+               data-lg-device-layout="rd-navbar-static" &gt;
+        ...
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  </pre>
+</code>
 
-<pre><code>  &lt;div class="rd-navbar-wrap"&gt;
+<p class="alert alert-danger">
+  Обратите внимание: Атрибуты data-md-device-layout='rd-navbar-fullwidth', data-lg-device-layout="rd-navbar-static" являються обязательными. В противном случае на десктопе с поддеркой тача будет отображаться лейаут навбара для мобильных устройств.
+</p>
+
+
+
+<h4>Настройка расстояние от начала навбара, при котором будет происходить залипание панели при скролле</h4>
+<p>
+  RD Navbar поддерживает настройку расстояния отступа  при котором будет происходить залипание панели. Для этого нужно использовать <b>data-(*)-stick-up-offset</b>
+</p>
+<ul class="marked-list">
+  <li><b>data-sm-stick-up-offset</b> - задает отступ для залипания навбара с SM разрешения.</li>
+  <li><b>data-md-stick-up-offset</b> - задает отступ для залипания навбара с MD  разрешения.</li>
+  <li><b>data-lg-stick-up-offset</b> - задает отступ для залипания навбара с LG  разрешения.</li>
+</ul>
+<p>Можно использовать как точное растояние, так и процент от высоты навбара.</p>
+
+<h4>Настройка выпадающего меню</h4>
+<p>
+  Для того чтобы определить выпадающее меню в шаблоне, нужно добавить класс <b>.rd-navbar-dropdown</b>
+на соответствующий елемент подменю.
+</p>
+
+<code>
+  <pre>
+      &lt;div class="rd-navbar-wrap"&gt;
         &lt;nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static"&gt;
-        &lt;ul class="rd-navbar-nav"&gt;
-        &lt;li&gt;
-        &lt;a href="#"&gt;Menu Link&lt;/a&gt;
-        &lt;ul class="rd-navbar-dropdown"&gt;
-        &lt;li&gt;
-        &lt;a href="#"&gt;Submenu Link 1&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;/ul&gt;
+          &lt;ul class="rd-navbar-nav"&gt;
+            &lt;li&gt;
+              &lt;a href="#"&gt;Menu Link&lt;/a&gt;
+              &lt;ul class="rd-navbar-dropdown"&gt;
+                &lt;li&gt;
+                  &lt;a href="#"&gt;Submenu Link 1&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
         &lt;/nav&gt;
-        &lt;/div&gt;
-    </code></pre>
+      &lt;/div&gt;
+  </pre>
+</code>
 
-<h4>Mega menu configuration</h4>
-<p>In order to define navigation panel mega menu you should add <b>.rd-navbar-megamenu</b> class to corresponding submenu item.</p>
+<h4>Настройка мега меню</h4>
+<p>
+  Для того чтобы определить выпадающее меню в шаблоне, нужно добавить класс <b>.rd-navbar-megamenu </b>
+на соответствующий елемент подменю.
+</p>
 
-<pre><code>  &lt;div class="rd-navbar-wrap"&gt;
-        &lt;nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static"&gt;
-        &lt;ul class="rd-navbar-nav"&gt;
-        &lt;li&gt;
-        &lt;a href="#"&gt;Menu Link&lt;/a&gt;
-        &lt;ul class="rd-navbar-megamenu"&gt;
-        &lt;li&gt;
-        … Your Custom HTML Content in 1 Column ...
-        &lt;/li&gt;
-        &lt;li&gt;
-        … Your Custom HTML Content in 2 Column ...
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/nav&gt;
-        &lt;/div&gt;
-    </code></pre>
-
-<p>By default columns size and width are calculated automatically, based on space available.</p>
+<code>
+  <pre>
+       &lt;div class="rd-navbar-wrap"&gt;
+         &lt;nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static"&gt;
+           &lt;ul class="rd-navbar-nav"&gt;
+             &lt;li&gt;
+               &lt;a href="#"&gt;Menu Link&lt;/a&gt;
+               &lt;ul class="rd-navbar-megamenu"&gt;
+                 &lt;li&gt;
+                   … Your Custom HTML Content in 1 Column ...
+                 &lt;/li&gt;
+                 &lt;li&gt;
+                   … Your Custom HTML Content in 2 Column ...
+                 &lt;/li&gt;
+               &lt;/ul&gt;
+             &lt;/li&gt;
+           &lt;/ul&gt;
+         &lt;/nav&gt;
+       &lt;/div&gt;
+  </pre>
+</code>

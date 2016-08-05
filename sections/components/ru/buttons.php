@@ -1,5 +1,5 @@
 <h3>Кнопки</h3>
-<h6>В Intense кнопки определяются с помощью 3 составных классов:</h6>
+<h6>В HTML Website Templates кнопки определяются с помощью 3 составных классов:</h6>
 <ul class="marked-list">
     <li>
         <dl class="inline-term">
@@ -10,7 +10,7 @@
     <li>
         <dl class="inline-term">
             <dt>.btn-xs, .btn-sm, .btn-md, .btn-lg, .btn-xl</dt>
-            <dd>классы макета кнопки, отвечающие за ее размер;</dd>
+            <dd>классы лейаута кнопки, отвечающие за ее размер;</dd>
         </dl>
     </li>
     <li>
@@ -20,7 +20,7 @@
         </dl>
     </li>
 </ul>
-<p>Рассмотрим пример:</p>
+<p>Рассмотрим пример,</p>
 <pre><code>
         &lt;a href="#" class="btn btn-lg btn-primary"&gt;Read More&lt;/a&gt;
     </code></pre>

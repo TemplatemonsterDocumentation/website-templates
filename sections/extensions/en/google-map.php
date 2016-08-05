@@ -1,5 +1,5 @@
 <h3>RD Google Maps</h3>
-<h6>Intense uses <b>RD Google Maps</b> to implement Google maps.
+<h6>HTML Website Template uses <b>RD Google Maps</b> to implement Google maps.
   </h6>
 <p>The plugin supports the following settings:</p>
 <ul class="marked-list">
@@ -168,3 +168,37 @@
             ...
         &lt;/div&gt;
     </code></pre>
+
+<h4>How to add search on the map</h4>
+<p>RD Google Map supports enabling search on the map.</p>
+<p>To enable search on the map, add a textfield with <strong>"rd-google-map-address"</strong> id and a button with <strong>rd-google-map-address-submit</strong> id.</p>
+<pre>
+  <code>
+    &lt;!-- RD Google Map Search--&gt;
+    &lt;input type="text" id="rd-google-map-address"&gt;
+    &lt;a href="#" class="btn btn-primary" id="rd-google-map-address-submit"&gt;
+    &lt;/div&gt;
+  </code>
+</pre>
+
+<p>The full sample code of the map with search should look the following way:</p>
+<pre>
+  <code>
+    &lt;!-- RD Google Map With Search--&gt;
+    &lt;div class="form-group"&gt;
+    &lt;label for="rd-google-map-address" class="form-label rd-input-label"&gt;Address&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+    &lt;input id="rd-google-map-address" type="text" name="address" autocomplete="off" class="form-control"/&gt;
+    &lt;span class="input-group-btn"&gt;
+    &lt;a id="rd-google-map-address-submit" href="#" class="btn btn-primary"&gt;Find Address&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- RD Google Map--&gt;
+    &lt;div class="rd-google-map"&gt;
+    &lt;div id="google-map" data-zoom="14" data-x="-73.9874068" data-y="40.643180"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+  </code>
+</pre>
+

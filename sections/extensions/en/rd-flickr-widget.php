@@ -1,5 +1,5 @@
 <h3>RD Flickr Gallery</h3>
-<h6>Intense uses <b>RD Flickrgallery</b> extension to display data from <a href="https://www.flickr.com/">https://www.flickr.com/</a> service on the web-page.</h6>
+<h6>HTML Website Template uses <b>RD Flickrgallery</b> extension to display data from <a href="https://www.flickr.com/">https://www.flickr.com/</a> service on the web-page.</h6>
 
 <h4>Adding widget to the page</h4>
 <p>The basic HTML marking for the widget looks the following way:</p>

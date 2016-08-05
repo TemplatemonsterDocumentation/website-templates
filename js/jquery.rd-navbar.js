@@ -219,14 +219,12 @@
             var nav = this,
                 p = $('.rd-mobilepanel'),
                 st_before = 0,
-                fz = 50,
-                btnfz = 17;
+                fz = 56;
 
 
             function resizePanel() {
                 var p = $('.rd-mobilepanel'),
                     t = $('.rd-mobilepanel_title'),
-                    btn = $('.btn'),
                     st = $(document).scrollTop();
 
                 function resize() {
@@ -237,21 +235,10 @@
                             "transform": "translateY(" + (st / 4) + "px)",
                             "font-size": fz - st / 6.7
                         });
-                        btn.css({
-                            //"transform": "translateY(" + (st / 1.2) + "px)",
-                            "padding-top": (17 - st/12) +"px",
-                            "padding-bottom": (17 - st/12) +"px"
-                        });
                     } else {
                         t.css({
                             "transform": "translateY(" + (st / 4) + "px)",
                             "font-size": fz - st / 6.7
-                        });
-                        btn.css({
-                            //"transform": "translateY(" + (st / 1.2) + "px)",
-                            "padding-top": (17 - st/12) +"px",
-                            "padding-bottom": (17- st/12) +"px"
-
                         });
                     }
                 }
@@ -261,12 +248,6 @@
                     t.css({
                         "transform": "translateY(50.25px)",
                         "font-size": 24
-                    });
-                    btn.css({
-                        //"transform": "translateY(156.25px)",
-                        "font-size": 17,
-                        "padding-top": 2 +"px",
-                        "padding-bottom": 2 +"px"
                     });
                 }
 

@@ -1,5 +1,5 @@
 <h3>RD Video Player</h3>
-<p>Intense uses <b>RD Video Player</b> extension for implementing a video player.</p>
+<p>HTML Website Template uses <b>RD Video Player</b> extension for implementing a video player.</p>
 
 <h4>Adding video player to the page</h4>
 <p>To add the video player to the target HTML page, use the following markup:</p>

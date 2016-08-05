@@ -1,5 +1,5 @@
 <h3>Countdown</h3>
-<p>Intense uses <b>jQuery Countdown</b> for implementing the countdown timer.
+<p>HTML Website Template uses <b>jQuery Countdown</b> for implementing the countdown timer.
 </p>
 
 <h4>Adding timer to the page</h4>

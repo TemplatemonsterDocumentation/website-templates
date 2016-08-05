@@ -4,7 +4,7 @@
     <img src="img/slider.png" alt="">
 </figure>
 
-<h6>Intense Template use <b>Swiper.js</b> extension to implement slider functionality to template pages with extended data-API for interaction.</h6>
+<h6>HTML Website Template Template use <b>Swiper.js</b> extension to implement slider functionality to template pages with extended data-API for interaction.</h6>
 
 <p>Default slider code structure appears as follows:</p>
 
@@ -251,7 +251,7 @@
 
 <h4>Slide parallax integration</h4>
 
-<p>В Intense Template allow you to integrate <b>RD Parallax</b> parallax effect to target slide of your Swiper
+<p>В HTML Website Template Template allow you to integrate <b>RD Parallax</b> parallax effect to target slide of your Swiper
         slider. In order to do this you should define additional .rd-parallax class at target slide and specify corresponding
     <b>data-url</b> , etc. data attributes to configure parallax effect.</p>
 
@@ -273,7 +273,7 @@
 
 <h4>Slide background video integration</h4>
 
-<p>Intense Template allow you to integrate <b>Vide.js</b> background video to target slide of your Swiper slider. In order to do this you should define additional
+<p>HTML Website Template Template allow you to integrate <b>Vide.js</b> background video to target slide of your Swiper slider. In order to do this you should define additional
     <b>.vide</b> class at target slide and specify corresponding <b>data-vide-bg</b>, etc. data attributes to configure background video effect.</p>
 
 <pre><code>&lt;div class="swiper-container swiper-slider"&gt;
@@ -290,7 +290,7 @@
 
 <h4>Animate.css integration to slide elements</h4>
 
-<p>Intense Template allow you to integrate <b>Animate.css</b> to slider elements. In order to do this you should define corresponding data attributes:
+<p>HTML Website Template Template allow you to integrate <b>Animate.css</b> to slider elements. In order to do this you should define corresponding data attributes:
     <b>data-caption-animate</b> and <b>data-caption-delay</b> (to set delay if needed) for target slide. Delay time for
     <b>data-caption-delay</b> is set in milliseconds. You can use any animation effect, available in <b>Animate.css</b> as a target animation.</p>
 

@@ -1,5 +1,5 @@
 <h3>RD Parallax</h3>
-<h6>Intense uses <b>RD Parallax</b> extension for implementing parallax effect on the page.</h6>
+<h6>HTML Website Template uses <b>RD Parallax</b> extension for implementing parallax effect on the page.</h6>
 <p>Basic script marking looks the following way:</p>
 <pre><code>
         &lt;!-- RD Parallax --&gt;

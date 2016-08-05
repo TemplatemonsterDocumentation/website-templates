@@ -1,5 +1,5 @@
 <h3>RD Audio Player</h3>
-<p>Intense uses <b>RD Audio Player</b> extension for implementing audio player functionality.</p>
+<p>HTML Website Template uses <b>RD Audio Player</b> extension for implementing audio player functionality.</p>
 
 <h4>Adding audio player to the page</h4>
 <p>To add audio player to the target HTML page, use the following marking:</p>

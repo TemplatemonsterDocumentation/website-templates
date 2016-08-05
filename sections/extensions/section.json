@@ -8,7 +8,7 @@
     {
       "id": "rd-calendar",
       "translations": {
-        "en": "RD Calendar. A calendar with events support",
+        "en": "RD Calendar",
         "ru": "RD Calendar. Календарь с поддержкой событий"
       }
     },
@@ -24,6 +24,13 @@
       "translations": {
         "en": "RD Mailform",
         "ru": "RD Mailform"
+      }
+    },
+    {
+      "id": "rd-navbar",
+      "translations": {
+        "en": "RD Navbar",
+        "ru": "RD Navbar"
       }
     },
     {
@@ -50,7 +57,7 @@
     {
       "id": "rd-bg-video",
       "translations": {
-        "en": "Background video integration",
+        "en": "RD Background Video",
         "ru": "RD Background Video"
       }
     },
@@ -76,24 +83,17 @@
       }
     },
     {
-      "id": "rd-instagram-feed",
-      "translations": {
-        "en": "RD Instafeed",
-        "ru": "RD Instafeed"
-      }
-    },
-    {
       "id": "countto",
       "translations": {
-        "en": "CountTo",
+        "en": "CountTo.Meters",
         "ru": "CountTo.Cчетчик"
       }
     },
     {
       "id": "countdown",
       "translations": {
-        "en": "Countdown",
-        "ru": "Счётчик обратного отсчёта"
+        "en": "Countdown.Timer",
+        "ru": "Countdown.Таймер"
       }
     },
     {
@@ -104,45 +104,73 @@
       }
     },
     {
-      "id": "carousel",
+      "id": "rd-range",
       "translations": {
-        "en": "Owl Carousel",
+        "en": "RD Range",
+        "ru": "RD Range.Выбор диапазона"
+      }
+    },
+    {
+      "id": "owl-carousel",
+      "translations": {
+        "en": "Carousel",
         "ru": "Owl Carousel.Карусель"
+      }
+    },
+    {
+      "id": "slick-carousel",
+      "translations": {
+        "en": "Slick Carousel",
+        "ru": "Slick Carousel.Карусель"
       }
     },
     {
       "id": "isotope",
       "translations": {
-        "en": "Isotope layout filter",
-        "ru": "Isotope. Фильтр макета"
+        "en": "Isotope",
+        "ru": "Isotope. Лейаут фильтр"
       }
     },
     {
       "id": "responsive-tabs",
       "translations": {
-        "en": "Responsive Tabs",
-        "ru": "Адаптивные вкладки"
+        "en": "Responsive Tabs.Tabs",
+        "ru": "Responsive Tabs.Табы"
       }
     },
     {
       "id": "accordion",
       "translations": {
-        "en": "Responsive Tabs. Accordion",
-        "ru": "Адаптивные вкладки: аккордеон"
+        "en": "Responsive Tabs.Accordion",
+        "ru": "Reponsive Tabs.Аккордион"
       }
     },
     {
       "id": "rd-material-tabs",
       "translations": {
         "en": "RD Material Tabs",
-        "ru": "Вкладки RD Material Tabs"
+        "ru": "RD Material Tabs.Табы"
       }
     },
     {
       "id": "stacktable",
       "translations": {
-        "en": "Stacktable. Adaptive tables",
+        "en": "Stacktable",
         "ru": "Stacktable. Адаптивные таблицы"
+      }
+    },
+    {
+      "id": "progress-bars",
+      "translations": {
+        "en": "Progress Bar. Horizontal and radial progress bars",
+        "ru": "Progress Bar. Горизонтальные и радиальные прогресс бары"
+      }
+    },
+    {
+      "id": "progress-bar-circle",
+      "translations": {
+        "en": "Circle-progress. Radial progress bars",
+        "ru": "Circle-progress. Радиальные прогресс бары"
       }
     },
     {
@@ -160,25 +188,13 @@
       }
     },
     {
-      "id": "progress-bar",
+      "id": "magnificent",
       "translations": {
-        "en": "Progress Bar. Horizontal progress bars",
-        "ru": "Progress Bar. Горизонтальные полосы прогресса"
-      }
-    },
-    {
-      "id": "progress-bar-circle",
-      "translations": {
-        "en": "Circle-progress",
-        "ru": "Circle-progress. Радиальные полосы прогресса c градиентом"
-      }
-    },
-    {
-      "id": "diagrams-and-graphs",
-      "translations": {
-        "en": "Diagrams and graphs",
-        "ru": "Диаграммы и графики"
+        "en": "Magnificent.Image zoom",
+        "ru": "Magnificent.Зум изображений"
       }
     }
   ]
 }
+
+

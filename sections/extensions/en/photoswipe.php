@@ -1,5 +1,5 @@
 <h3>Photoswipe</h3>
-<p>Intense uses <b>Photoswipe.js</b> extension for implementing beautiful mobile-friendly galleries.</p>
+<p>HTML Website Template uses <b>Photoswipe.js</b> extension for implementing beautiful mobile-friendly galleries.</p>
 
 <h4>Adding gallery to a page</h4>
 

@@ -2,7 +2,7 @@
 
 
 
-<p>Intense comes with <b>RD Parallax</b> plugin for implementing  <a href="https://en.wikipedia.org/wiki/Parallax">parallax</a> effect.
+<p>HTML Website Template comes with <b>RD Parallax</b> plugin for implementing  <a href="https://en.wikipedia.org/wiki/Parallax">parallax</a> effect.
         You can find more detailed information about the plugin and its setup in  <b><a href="index.php?lang=en&section=extensions#rd-parallax">Extensions > RD Parallax</a></b> section.
 </p>
 

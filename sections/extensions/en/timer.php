@@ -4,7 +4,7 @@
     <img src="img/timer.png" alt="">
 </figure>
 
-<h6>Intense Template use <b>Countdown.js</b> extension to implement timer functionality.</h6>
+<h6>HTML Website Template Template use <b>Countdown.js</b> extension to implement timer functionality.</h6>
 
 <h4>Adding timer to page</h4>
 

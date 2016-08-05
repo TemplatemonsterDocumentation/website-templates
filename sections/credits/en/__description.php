@@ -1,6 +1,6 @@
 <h2 class="item9">Credits</h2>
 
-<p>Intense uses some third-party <b>JS</b>, <b>PHP</b>, <b>CSS</b> solutions. All used materials are distributed under free and open licenses (MIT, CC, GPL). </p>
+<p>HTML Website Template uses some third-party <b>JS</b>, <b>PHP</b>, <b>CSS</b> solutions. All used materials are distributed under free and open licenses (MIT, CC, GPL). </p>
 
 <h4>CSS & Fonts</h4>
 

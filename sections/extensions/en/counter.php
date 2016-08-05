@@ -4,7 +4,7 @@
     <img src="img/counter.png" alt="">
 </figure>
 
-<h6>Intense Template use <b>countTo.js</b> extension to add counters to webpage.</h6>
+<h6>HTML Website Template Template use <b>countTo.js</b> extension to add counters to webpage.</h6>
 
 <h4>Creating new counter</h4>
 

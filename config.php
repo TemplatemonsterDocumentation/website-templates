@@ -1,15 +1,15 @@
+<?php 
 
-<?php
-
-$dir    = str_replace('index.php', '', $_SERVER['SCRIPT_NAME']);
 if (strpos($_SERVER['REQUEST_URI'], 'index.php')) {
-	$path   = dirname("http://$_SERVER[HTTP_HOST]") . "$dir";
+	$path = dirname("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 } else {
-	$path   = "http://$_SERVER[HTTP_HOST]$dir";
+	$path = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 }
 
+//$path = 111;
+
 // Variables
-$product_name = "Intense Template";
+$product_name = "Website Template";
 $product_desc = "Documentation";
 $doc_title = $product_name . " " . $product_desc;
 
@@ -21,7 +21,4 @@ if (isset($_GET['lang'])) {
 $section_param = 'preparation';
 if (isset($_GET['section'])) {
 	$section_param = $_GET['section'];
-}
-if (isset($_GET['utm_campaign'])) {
-	header('Location: index.php');
 }

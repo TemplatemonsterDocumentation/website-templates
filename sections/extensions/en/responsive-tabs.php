@@ -1,5 +1,5 @@
 <h3>Responsive Tabs    </h3>
-<p>Intense uses <b>jQuery Responsive Tab</b> extension for implementing tabs. To add tabs to the target page, use the following marking:</p>
+<p>HTML Website Template uses <b>jQuery Responsive Tab</b> extension for implementing tabs. To add tabs to the target page, use the following marking:</p>
 
 <pre><code>
         &lt;div class="responsive-tabs"&gt;

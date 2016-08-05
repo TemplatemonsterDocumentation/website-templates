@@ -1,5 +1,5 @@
 <h3>Diagrams and graphs</h3>
-<h6>    Intense uses <b>hightchart.js</b>, <b>flot.js</b> and <b>c3charts.js</b> plugins to implement diagrams and graphs. Please look through the official documentation, before you use these extensions: </h6>
+<h6>    HTML Website Template uses <b>hightchart.js</b>, <b>flot.js</b> and <b>c3charts.js</b> plugins to implement diagrams and graphs. Please look through the official documentation, before you use these extensions: </h6>
 
 <ul class="marked-list">
   <li><a href="http://www.highcharts.com/docs">Hightchart.js</a></li>

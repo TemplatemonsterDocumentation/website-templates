@@ -1,5 +1,5 @@
 <h3>RD Calendar. A calendar with events support</h3>
-<h6>Intense use <b>RD Calendar</b> extension for implementing calendar functionality.
+<h6>HTML Website Template use <b>RD Calendar</b> extension for implementing calendar functionality.
     The basic HTML marking for a calendar looks the following way:</h6>
 
 <pre><code>

@@ -1,6 +1,6 @@
 <h3>Структура архива</h3>
 
-<h6>После распаковки архива Intense, вы увидите следующую структуру файлов:</h6>
+<h6>После распаковки архива шаблона, вы увидите следующую структуру файлов:</h6>
 
 <ul class="files_structure">
     <li class="folder">
@@ -18,7 +18,8 @@
                         <i class="fa fa-file"></i>
                         documentation.html
                     </dt>
-                    <dd> основной файл документации. Содержит ссылку на онлайн-документацию, которую Вы сейчас читаете.</dd>
+                    <dd>основной файл документации. Содержит ссылку на онлайн документацию, которую вы сейчас читаете.
+                    </dd>
                 </dl>
             </li>
         </ul>
@@ -101,13 +102,6 @@
                     <dd>содержит все видео файлы, используемые в шаблоне.</dd>
                 </dl>
             </li>
-            <li class="folder">
-                <dl class="inline-term">
-                    <dt><i class="fa fa-folder"></i>intense-*</dt>
-                    <dd>содержит соответствующие Child Themes для Intense.
-                    </dd>
-                </dl>
-            </li>
         </ul>
     </li>
     <li class="folder">
@@ -119,16 +113,6 @@
             <dd>содержит исходные файлы шаблона.</dd>
         </dl>
         <ul>
-            <li class="folder">
-                <dl class="inline-term">
-                    <dt>
-                        <i class="fa fa-folder"></i>
-                        intense-*
-                    </dt>
-                    <dd> содержит соответствующие исходные файлы для Child Themes.
-                    </dd>
-                </dl>
-            </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt>

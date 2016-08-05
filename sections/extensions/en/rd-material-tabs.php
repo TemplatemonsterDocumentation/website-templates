@@ -1,5 +1,5 @@
 <h3>RD Material Tabs</h3>
-<h6>Intense uses RD Material Tabs to implement tabs. To add a tab, use the following marking:</h6>
+<h6>HTML Website Template uses RD Material Tabs to implement tabs. To add a tab, use the following marking:</h6>
 <pre><code>
     // RD Material Tabs
     &lt;div class="rd-material-tabs"&gt;

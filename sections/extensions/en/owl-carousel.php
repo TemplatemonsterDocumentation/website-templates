@@ -1,5 +1,5 @@
 <h3>Owl Carousel</h3>
-<p>Intense uses <b>Owl-carousel.js</b> extension on the template pages with the advanced <b>data-API</b> user interface.</p>
+<p>HTML Website Template uses <b>Owl-carousel.js</b> extension on the template pages with the advanced <b>data-API</b> user interface.</p>
 
 <pre><code>
         &lt;!-- Owl Carousel --&gt;

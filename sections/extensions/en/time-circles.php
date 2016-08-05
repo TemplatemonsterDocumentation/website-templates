@@ -4,7 +4,7 @@
     <img src="img/time-circles.png" alt="">
 </figure>
 
-<h6>Intense Template use <b>TimeCircles.js</b> extension to implement functionality for timer with radial progress bar.</h6>
+<h6>HTML Website Template Template use <b>TimeCircles.js</b> extension to implement functionality for timer with radial progress bar.</h6>
 
 <h4>Inserting timer to page</h4>
 

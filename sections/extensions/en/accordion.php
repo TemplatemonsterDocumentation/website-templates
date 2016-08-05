@@ -1,5 +1,5 @@
 <h3>Responsive Tabs. Accordion</h3>
-<p>Intense uses <b>jQuery Responsive Tab</b> extension for implementing accordion. To add accordion to a target page, use the following marking:</p>
+<p>HTML Website Template uses <b>jQuery Responsive Tab</b> extension for implementing accordion. To add accordion to a target page, use the following marking:</p>
 <pre><code>
         &lt;div class="responsive-tabs" data-type="accordion"&gt;
             &lt;ul class="resp-tabs-list"&gt;

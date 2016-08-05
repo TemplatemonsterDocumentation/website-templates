@@ -1,5 +1,5 @@
 <h3>RD Background Video</h3>
-<p>Intense uses <b>RD Background Video</b> for adding a page background video.
+<p>HTML Website Template uses <b>RD Background Video</b> for adding a page background video.
   The basic marking looks the following way:</p>
 
 <pre><code>

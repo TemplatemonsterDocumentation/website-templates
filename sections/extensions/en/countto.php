@@ -1,6 +1,6 @@
 <h3>CountTo</h3>
 
-<p>Intense uses <b>jQuery CountTo</b> extension for implementing countdown timers on web-pages.</p>
+<p>HTML Website Template uses <b>jQuery CountTo</b> extension for implementing countdown timers on web-pages.</p>
 <h4>Adding countdown timer to the page</h4>
 <p>To add a countdown timer, paste the following HTML code string to the page:</p>
 <pre><code>

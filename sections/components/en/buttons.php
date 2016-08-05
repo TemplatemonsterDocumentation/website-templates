@@ -1,5 +1,5 @@
 <h3>Buttons</h3>
-<h6>In Intense, the buttons are defined with the help of 3  classes:</h6>
+<h6>In HTML Website Template, the buttons are defined with the help of 3  classes:</h6>
 <ul class="marked-list">
     <li>
         <dl class="inline-term">
