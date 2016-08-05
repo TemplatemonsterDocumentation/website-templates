@@ -9,7 +9,7 @@ if (strpos($_SERVER['REQUEST_URI'], 'index.php')) {
 //$path = 111;
 
 // Variables
-$product_name = "Website Template";
+$product_name = "HTML Templates";
 $product_desc = "Documentation";
 $doc_title = $product_name . " " . $product_desc;
 

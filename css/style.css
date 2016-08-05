@@ -529,11 +529,11 @@ blockquote {
 
 .rd-mobilemenu .logo {
   position: absolute;
-  top: 56px;
+  top: 53px;
   left: 0;
   right: 0;
   height: 112px;
-  background: #128ad1;
+  background: #192643;
   padding: 37px 14px;
   font-size: 24px;
   text-align: left;
@@ -545,8 +545,19 @@ blockquote {
 }
 
 .rd-mobilemenu .logo img {
+  float: left;
   margin-right: 5px;
-  max-width: 93%;
+  max-width: 70px;
+}
+
+.rd-mobilemenu .logo span {
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  padding-top: 10px;
 }
 
 @media (max-width: 479px) {
@@ -703,8 +714,8 @@ blockquote {
   left: 0;
   right: 0;
   height: 256px;
-  background: #1499E8;
-  background: #1499E8;
+  background: #203056;
+  background: #203056;
   color: #FFF;
   z-index: 9999997;
 }

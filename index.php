@@ -43,7 +43,7 @@ if (!isset($sections)) {
     <div class="rd-mobilemenu active">
         <div class="logo">
             <a href="<?php echo $path; ?>">
-                Website Template
+                <img src="http://info.template-help.com/help/quick-start-guide/website-templates/v1-1//img/logo.png" alt=""><span><strong>HTML</strong> Templates</span>
             </a>
         </div>        
         <div class="panel">
