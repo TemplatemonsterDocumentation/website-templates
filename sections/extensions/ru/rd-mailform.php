@@ -192,3 +192,82 @@
 <a href="http://phpmailer.worxware.com/?pg=examplebsmtp">http://phpmailer.worxware.com</a>
 
 <p class="alert alert-info">Обратите внимание: расширение почтовой формы не работает на локальном сервере. Для отправки почты, необходимо загрузить ваш сайт на соответствующий хостинг сервер.</p>
+
+
+<h4>Настройка защиты от спама и злоупотреблений.</h4>
+
+<p><b>RD Mailform</b> использует расширение <b>Google reCAPTCHA</b> для защити от спама. </p>
+<p class="alert alert-info"> Обратите внимание: для того что бы убрать Google reCAPTCHA, достаточно удалить область html разметки, выделенную комментариями "&lt;!--Google captcha--&gt;" - "&lt;!-- End google captcha--&gt;".</p>
+<h6>Начало работы с Google ReCaptcha.</h6>
+
+<p>Для работы с Google ReCaptcha Вам необходимо:</p>
+
+
+<ol class="index-list">
+  <li>
+    <p>Зарегистрировать Ваш домен на <a href="https://www.google.com/recaptcha/admin#list">сайте Google reCaptcha</a> и получить пару API ключей (пара ключей состоит из <b>site key</b> и <b>secret</b>). </p>
+  </li>
+  <li>
+    <p>Указать ваши API ключи в файле <b>bat/reCaptcha.php</b> в соответствующих переменных <b>$siteKey</b> и <b>$secret</b> в начале файла:</p>
+    <pre><code>
+        $siteKey = 'You site key here';
+        $secret = 'You secret key here';
+      </code></pre>
+  </li>
+  <li>
+    <p> Вставить разметку в html, указав в дата-атрибуте <b>data-sitekey=""</b> в ваш <b>site key</b>. </p>
+  </li>
+</ol>
+<p> Более детальную информацию Вы можете получить на официальном сайте <a href="https://developers.google.com/recaptcha/docs/start">Google ReCaptcha.</a> </p>
+
+<h4>Разметка Google ReCaptch</h4>
+<p>Базовая разметка для ReCaptcha выглядит следующим образом:</p>
+<pre><code>
+&lt;!--Google captcha--&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div id="captcha1" data-sitekey="You site key here" class="recaptcha"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;!-- End google captcha--&gt;
+  </code></pre>
+
+<p class="alert alert-info">Обратите внимание: наличие атрибута <b>id</b> и класса <b>.recaptcha</b> является обязательным.</p>
+
+<h4>Настройка Google ReCaptcha</h4>
+<p>Google Recaptcha поддерживает следующие настройки:</p>
+<ul class="marked-list">
+  <li>Изменение размера;</li>
+  <li>Изменение цветовой схемы.</li>
+</ul>
+
+<h4>Изменение размера Google ReCaptcha</h4>
+<p>Для измения размера виджета, необходимо указать в дата-атрибуте <b>data-size</b> один из возможных вариантов размера:</p>
+
+<ul class="marked-list">
+  <li>compact;</li>
+  <li>normal (значение по умолчанию).</li>
+</ul>
+<p> Пример кода выглядит следующим образом:</p>
+
+<pre><code>
+&lt;!--Google captcha--&gt;
+  &lt;div class="form-group"&gt;
+  &lt;div id="captcha1" data-sitekey="You site key here" data-size="compact" class="recaptcha"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;!-- End google captcha--&gt;
+  </code></pre>
+
+<h4>    Изменение цветовой схемы виджета Google ReCaptcha</h4>
+<p> Для изменения цветовой схемы виджета, необходимо указать в дата-атрибуте <b>data-theme</b> один из возможных вариантов:</p>
+
+<ul class="marked-list">
+  <li>dark;</li>
+  <li>light (значение по умолчанию).</li>
+</ul>
+
+<p> Пример кода выглядит следующим образом:</p>
+<pre><code>
+&lt;!--Google captcha--&gt;
+  &lt;div class="form-group"&gt;
+  &lt;div id="captcha1" data-sitekey="You site key here" data-theme="dark" class="recaptcha"&gt;&lt;/div&gt; &lt;/div&gt;
+&lt;!-- End google captcha--&gt;
+  </code></pre>
