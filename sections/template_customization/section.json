@@ -23,6 +23,14 @@
 	  }
 	},
 	{
+	  "id": "min-css",
+	  "translations":
+	  {
+		"en": "Minification CSS ",
+		"ru": "Минифицирование CSS"
+	  }
+	},
+	{
 	  "id": "shop-settings",
 	  "translations":
 	  {
