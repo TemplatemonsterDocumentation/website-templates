@@ -207,6 +207,13 @@
         "en": "Magnificent.Image zoom",
         "ru": "Magnificent.Зум изображений"
       }
+    },
+    {
+      "id": "customScroll",
+      "translations": {
+        "en": "Custom-scrollbar",
+        "ru": "Custom-scrollbar"
+      }
     }
   ]
 }
