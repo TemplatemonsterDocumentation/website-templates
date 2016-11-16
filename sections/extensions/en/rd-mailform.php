@@ -9,29 +9,27 @@
 <p>Basic marking for creating a standard form looks the following way:</p>
 
 <pre><code>
-        &lt;form data-form-output="form-output-global" method="post"
-                        action="bat/rd-mailform.php" class="rd-mailform"&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="contact-us-name" class="form-label form-label-outside"&gt;Name:&lt;/label&gt;
-                &lt;input id="contact-us-name" type="text" name="name"
-                        data-constraints="@Required" class="form-control"&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="contact-us-email" class="form-label form-label-outside"&gt;E-Mail:&lt;/label&gt;
-                &lt;input id="contact-us-email" type="email" name="email"
-                        data-constraints="@Required @Email" class="form-control"&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group"&gt;
-                &lt;label for="contact-us-message" class="form-label form-label-outside"&gt;Message:&lt;/label&gt;
-                &lt;textarea id="contact-us-message" name="message"
-                        data-constraints="@Required" class="form-control"&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-            &lt;div class="group-sm text-center text-lg-left offset-top-30"&gt;
-                &lt;button type="submit" class="btn btn-primary"&gt;Send&lt;/button&gt;
-                &lt;button type="reset" class="btn btn-default"&gt;Reset&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-    </code></pre>
+&lt;!-- RD Mailform--&gt;
+&lt;form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform"&gt;
+  &lt;div class="form-wrap"&gt;
+    &lt;label for="contact-name" class="form-label"&gt;Name&lt;/label&gt;
+    &lt;input id="contact-name" type="text" name="name" data-constraints="@Required" class="form-input"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-wrap"&gt;
+    &lt;label for="contact-phone" class="form-label"&gt;Phone&lt;/label&gt;
+    &lt;input id="contact-phone" type="text" name="phone" data-constraints="@Required" class="form-input"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-wrap"&gt;
+    &lt;label for="contact-email" class="form-label"&gt;E-Mail&lt;/label&gt;
+    &lt;input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-input"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-wrap"&gt;
+    &lt;label for="contact-message" class="form-label"&gt;Message&lt;/label&gt;
+    &lt;textarea id="contact-message" name="message" data-constraints="@Required" class="form-input"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="button button-primary"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
 
 <h3>Mailform type setup</h3>
 <p>RD Mailform supports 3 mailform types:</p>
