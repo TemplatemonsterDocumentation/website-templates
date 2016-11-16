@@ -31,14 +31,6 @@
 	  }
 	},
 	{
-	  "id": "smoothscroll-settings",
-	  "translations":
-	  {
-		"en": "Smoothscroll Settings",
-		"ru": "Настройка плавного скролла страницы для Windows"
-	  }
-	},
-	{
 	  "id": "animation-settings",
 	  "translations":
 	  {

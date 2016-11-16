@@ -543,17 +543,3 @@
         &lt;/div>
     </code></pre>
 
-<h4>Column order control</h4>
-<p>To change grid elements order, use the <b>.cell-RS-push-X</b> class, where <b>RS</b> - the target screen resolution, <b>X</b> - order. E.g.:</p>
-<pre><code>
-        &lt;div class="range"&gt;
-            &lt;div class="cell-md-4 cell-md-push-2"&gt;
-                Level 1: .cell-md-4
-            &lt;/div&gt;
-            &lt;div class="cell-md-4 cell-md-push-1"&gt;
-                Level 1: .cell-md-4
-            &lt;/div&gt;
-        &lt;/div&gt;
-    </code></pre>
-
-<p class="alert alert-info">Attention: if you use classes to control column order, define the order of all elements in  the row.</p>

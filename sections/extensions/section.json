@@ -132,17 +132,31 @@
       }
     },
     {
+      "id": "bootstrap-accordions",
+      "translations": {
+        "en": "Bootstrap Accordions. Accordions",
+        "ru": "Bootstrap Accordions. Аккодрионы"
+      }
+    },
+    {
+      "id": "bootstrap-tabs",
+      "translations": {
+        "en": "Bootstrap Tabs. Tabs",
+        "ru": "Bootstrap Tabs. Табы"
+      }
+    },
+    {
       "id": "responsive-tabs",
       "translations": {
-        "en": "Responsive Tabs.Tabs",
-        "ru": "Responsive Tabs.Табы"
+        "en": "Responsive Tabs. Tabs",
+        "ru": "Responsive Tabs. Табы"
       }
     },
     {
       "id": "accordion",
       "translations": {
-        "en": "Responsive Tabs.Accordion",
-        "ru": "Reponsive Tabs.Аккордион"
+        "en": "Responsive Tabs. Accordion",
+        "ru": "Reponsive Tabs. Аккордион"
       }
     },
     {
