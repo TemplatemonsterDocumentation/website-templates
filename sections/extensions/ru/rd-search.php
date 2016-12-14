@@ -4,9 +4,9 @@
 <p> Базовая разметка данной формы выглядит следующим образом: </p>
 <pre><code>
         &lt;form action="search-results.html" method="GET" class="rd-search"&gt;
-            &lt;div class="form-group"&gt;
+            &lt;div class="form-wrap"&gt;
                 &lt;label for="search" class="form-label"&gt;Type and hit enter...&lt;/label&gt;
-                &lt;input id="search" type="text" name="s" autocomplete="off" class="form-control"/&gt;
+                &lt;input id="search" type="text" name="s" autocomplete="off" class="form-input"/&gt;
             &lt;/div&gt;
         &lt;/form&gt;
     </code></pre>

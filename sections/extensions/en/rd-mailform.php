@@ -71,10 +71,10 @@
     <li><p>Text field:</p>
         <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;label for="contact-us-name" class="form-label form-label-outside"&gt;Name:&lt;/label&gt;
                     &lt;input id="contact-us-name" type="text" name="name"
-                            data-constraints="@Required" class="form-control"&gt;
+                            data-constraints="@Required" class="form-input"&gt;
                 &lt;/div&gt;
                 ...
             </code></pre>
@@ -107,10 +107,10 @@
 
                 <pre><code>
                         ...
-                        &lt;div class="form-group"&gt;
+                        &lt;div class="form-wrap"&gt;
                          &lt;label for="rd-mailform-time" class="form-label form-label-outside"&gt;Time:&lt;/label&gt;
                              &lt;input id="rd-mailform-time" type="text" name="time"
-                        date-time-picker="time" class="form-control"&gt;
+                        date-time-picker="time" class="form-input"&gt;
                         &lt;/div&gt;
                         ...
                     </code></pre>
@@ -118,10 +118,10 @@
     <li><p>Simple selection menu;</p>
         <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;label for="select" class="form-label form-label-outside"&gt;Gender:&lt;/label&gt;
                     &lt;select id="select" data-placeholder="Select an option"
-                            data-minimum-results-for-search="Infinity" class="form-control"&gt;
+                            data-minimum-results-for-search="Infinity" class="form-input"&gt;
                         &lt;option&gt;Male&lt;/option&gt;
                         &lt;option&gt;Female&lt;/option&gt;
                     &lt;/select&gt;
@@ -133,9 +133,9 @@
         <p>Selection menu with subcategories;</p>
             <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;select data-placeholder="Select an option"
-                            data-minimum-results-for-search="Infinity" class="form-control select-filter"&gt;
+                            data-minimum-results-for-search="Infinity" class="form-input select-filter"&gt;
                         &lt;optgroup label="Category 1"&gt;
                             &lt;option&gt;Demo Item 1-1&lt;/option&gt;
                             &lt;option&gt;Demo Item 1-2&lt;/option&gt;
@@ -156,10 +156,10 @@
 
         <pre><code>
         ...
-        &lt;div class="form-group"&gt;
+        &lt;div class="form-wrap"&gt;
             &lt;label for="message" class="form-label form-label-outside"&gt;Message:&lt;/label&gt;
             &lt;textarea id="message" name="message" data-constraints="@Required"
-                                                    class="form-control"&gt;&lt;/textarea&gt;
+                                                    class="form-input"&gt;&lt;/textarea&gt;
         &lt;/div&gt;
         ...
         </code></pre>
@@ -224,7 +224,7 @@
 <p>The basic marking for ReCaptcha looks the following way:</p>
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
     &lt;div id="captcha1" data-sitekey="You site key here" class="recaptcha"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;!-- End google captcha--&gt;
@@ -250,7 +250,7 @@
 
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
     &lt;div id="captcha1" data-sitekey="You site key here" data-size="compact" class="recaptcha"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;!-- End google captcha--&gt;
@@ -267,7 +267,7 @@
 <p> Sample code looks the following way:</p>
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
     &lt;div id="captcha1" data-sitekey="You site key here" data-theme="dark"class="recaptcha"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;!-- End google captcha--&gt;

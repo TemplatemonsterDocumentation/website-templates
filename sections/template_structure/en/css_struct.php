@@ -3,80 +3,64 @@
 <p>All Website Template styles are located in <b>style.css</b> file.</p>
 <p>Code is commented according to <a href="//cssdoc.net">CSSDoc</a> standard.</p>
 <p>Structure of <b>style.css</b> file is built on the following principle:</p>
-<pre><code>    /*
-    * @package      Style
-    * @description  This package holds style declarations of all
-    *               included page layouts
-    */
-
-    /*
-    * @section      Page Layouts
-    * @description  This section holds page layouts style declarations
-    */
-
-    ...
-
-    /*
-    * @section      Main Styles
-    * @description  This section holds template default elements style
-    *               declarations
-    */
-
-    ...
-
-    /*
-    * @section      Main Layout
-    * @decsription  This section holds class declarations for elements
-    *               indent creation
-    */
-
-    ...
-
-    /*
-    * @section      Helpers
-    * @description  This section holds various helper classes for conditional
-    *               page styling
-    */
-
-    ...
-
-    /*
-    * @section      Components
-    * @description  This section holds all elements style declarations of
-    *               template
-    */
-
-    ...
-
-    /*
-    * @section      Extensions
-    * @description  This section holds some of style declarations for
-    *               necessary scripts
-    */
-
-    ...
-
-    /*
-    * @section      Page Header
-    * @description  This section holds specific style redeclarations for
-    *               some of common elements in page header
-    */
-
-    ...
-
-    /*
-    * @section      Page Content
-    * @description  This section holds specific style redeclarations for
-    *               some of common elements in page content
-    */
-
-    ...
-
-    /*
-    * @section      Page Footer
-    * @description  This section holds specific style redeclarations for
-    *               some of common elements in page footer
-    */
-
-    ...
+<pre><code>/**
+* Template Style
+*
+* [Table of contents]
+*   1. Custom styles
+*     1.1 Main Styles
+*     1.2 Typography
+*     1.3 Backgrounds
+*     1.4 Colors
+*     1.5 Main layout
+*
+*   2. Components
+*     2.1 Icons
+*     2.2 Buttons
+*     2.3 Forms
+*     2.4 Tables
+*     2.5 Lists
+*     2.6 Post
+*     2.7 Thumbnail
+*     2.8 Tooltip
+*     2.9 Snackbars
+*     2.10 Navigation
+*     2.11 Preloader
+*     2.12 Breadcrumbs
+*     2.13 Panel custom
+*
+*   3. Helpers
+*     3.1 Text-alignment
+*     3.2 Text-styling
+*     3.3 Visibility responsive
+*     3.4 Groups
+*     3.5 Context Styling
+*     3.6 Sections
+*     3.7 Offsets
+*
+*   4. Modules
+*     4.1 Flex grid
+*     4.2 Unit-responsive
+*
+*   5 Plugins
+*     5.1 Animate
+*     5.2 Isotope
+*     5.3 Owl Carousel
+*     5.4 RD Navbar
+*     5.5 RD Parallax
+*     5.6 RD Google-Map
+*     5.7 RD Search
+*     5.8 To top
+*     5.9 Tabs
+*     5.10 Photoswipe
+*     5.11 Progress-bars
+*     5.12 Counter
+*     5.13 jquery-circle-progress
+*     5.14 Timecircles
+*     5.15 Swiper
+*
+*   6. Fonts
+*     6.1 FontAwesome
+*     6.2 MDI
+**/
 </code></pre>

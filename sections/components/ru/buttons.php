@@ -15,7 +15,7 @@
     </li>
     <li>
         <dl class="inline-term">
-            <dt>.btn-default, .btn-primary, .btn-secondary-*</dt>
+            <dt>.btn-default, .btn-primary</dt>
             <dd>классы стилизации кнопки, отвечающие за ее цвет и фон.</dd>
         </dl>
     </li>

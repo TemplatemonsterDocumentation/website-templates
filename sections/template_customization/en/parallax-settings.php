@@ -12,8 +12,8 @@
 <pre><code>
         &lt;div class="rd-parallax"&gt;
         &lt;div data-speed="0.35" data-type="media" data-url="path/to/your-image.jpg" class="rd-parallax-layer"&gt;&lt;/div&gt;
-        &lt;div data-speed="0" data-type="html" class="rd-parallax-layer"&gt;
-        ...
-        &lt;/div&gt;
+          &lt;div data-speed="0" data-type="html" class="rd-parallax-layer"&gt;
+            ...
+          &lt;/div&gt;
         &lt;/div&gt;
     </code></pre>

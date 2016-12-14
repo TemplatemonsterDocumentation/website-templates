@@ -112,17 +112,6 @@
                     </dt>
                     <dd> includes file with links</dd>
                 </dl>
-                <ul>
-                    <li class="file">
-                        <dl class="inline-term">
-                            <dt>
-                                <i class="fa fa-file-text-o"></i>
-                                readme.txt
-                            </dt>
-                            <dd>includes links to .psd Adobe Photoshop archive files</dd>
-                        </dl>
-                    </li>
-                </ul>
             </li>
             <li class="folder">
                 <dl class="inline-term">
@@ -130,16 +119,16 @@
                         <i class="fa fa-folder"></i>
                         sass
                     </dt>
-                    <dd>includes .scss SASS files, used in template.</dd>
+                    <dd>includes .scss  files, used in template.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt>
                         <i class="fa fa-folder"></i>
-                        jade
+                        pug
                     </dt>
-                    <dd>includes .jade Jade files, used in template.</dd>
+                    <dd>includes .pug  files, used in template.</dd>
                 </dl>
             </li>
         </ul>

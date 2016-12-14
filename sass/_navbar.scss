@@ -1,6 +1,6 @@
 /*==================   RD Mobile Menu    =====================*/
 $light-theme: (
-        panel-background-color: #1499E8,
+        panel-background-color: #203056,
         panel-text-color: #FFF,
         menu-background-color: #f9f9f9,
         menu-item-color: #333,
@@ -96,6 +96,46 @@ $rd-menu-width-mobile: 250px;
   @media (max-width: 479px) {
     width: $rd-menu-width-mobile;
     @include transform(translateX(-$rd-menu-width-mobile));
+  }
+}
+
+.rd-mobilemenu .logo {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  right: 0;
+  height: 112px;
+  background: #192643;
+  padding: 37px 14px;
+  font-size: 24px;
+  text-align: left;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.rd-mobilemenu .logo img {
+  float: left;
+  margin-right: 5px;
+  max-width: 70px;
+}
+
+.rd-mobilemenu .logo span {
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  padding-top: 10px;
+}
+
+@media (max-width: 479px) {
+  .rd-mobilemenu .logo small {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -196,7 +236,7 @@ $rd-menu-width-mobile: 250px;
   right: 0;
   height: 256px;
   background: map-get($rd-theme, panel-background-color);
-  background: #1499E8;
+  background: #203056;
   color: map-get($rd-theme, panel-text-color);
   z-index: 9999997;
 

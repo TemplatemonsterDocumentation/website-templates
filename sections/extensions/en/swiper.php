@@ -3,7 +3,7 @@
 
 <pre><code>
         &lt;!-- Swiper --&gt;
-        &lt;div class="swiper-container swiper-slider" data-height="" data-min-height=""&gt;
+        &lt;div class="swiper-container swiper-slider"&gt;
             &lt;div class="swiper-wrapper"&gt;
                 &lt;div class="swiper-slide" data-slide-bg=""&gt;
                     &lt;div class="swiper-slide-caption"&gt;
@@ -34,70 +34,6 @@
         &lt;/div&gt;
         &lt;!-- END Swiper --&gt;
     </code></pre>
-
-<h4>Slider height setup</h4>
-
-<p>Swiper slider height is set with the help of the <b>'data-height'</b> and <b>'data-min-height'</b> attributes for the target slider:</p>
-<ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>data-height</dt>
-            <dd>defines the desired slider height;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>data-min-height</dt>
-            <dd>defines the minimal slider height.</dd>
-        </dl>
-    </li>
-</ol>
-
-<p>To define the slider height (data-height, data-min-height), use values in 3 formats:</p>
-
-<ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>*px</dt>
-            <dd>sets a static height that won't change, when resizing a window;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>*%</dt>
-            <dd>sets static height as a percentage of its width;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>*vh</dt>
-            <dd>sets static slider height as a percentage of the window height.</dd>
-        </dl>
-    </li>
-</ol>
-
-<p>An example with static width:</p>
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="500px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
-<p>An example with height as a percentage of slider width:</p>
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="50%" data-min-height="300px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
-<p>An example with height as a percentage of the window height:</p>
-
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="100vh" data-min-height="300px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-<p>If you don't set the slider height, it will be counted based on inserted content.</p>
 
 <h4>Slider autoplay setup</h4>
 

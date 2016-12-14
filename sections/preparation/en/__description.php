@@ -40,3 +40,15 @@
     <li><a href="/help/how-to-install-wamp-web-development-environment.html">How to install WAMP web development environment</a></li>
     <li><a href="/help/how-to-install-xamp-web-development-environment.html">How to install XAMP web development environment</a></li>
 </ul>
+
+<h3>Template upload</h3>
+
+<p>You need to upload all files of site/ folder from your localhost to hosting.</p>
+
+<p class="alert alert-info">
+  Note: the root directory of a site depends on the internal structure of your hosting server.
+  If you upload the site folder itself on hosting, the root of your site will be <b>http://your_domain_name/site.</b>
+  You need to upload inner content of site/ folder if you want url to be <b>http://your_domain_name/</b>
+</p>
+
+<p class="alert alert-danger">Warning: do not upload <b> sources / </ b> folder, or any of the source template files to your hosting server.</p>

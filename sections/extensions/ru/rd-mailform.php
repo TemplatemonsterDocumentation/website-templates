@@ -27,6 +27,9 @@
   &lt;/div&gt;
   &lt;button type="submit" class="button button-primary"&gt;Send&lt;/button&gt;
 &lt;/form&gt;
+
+&lt;!-- Елемент в который будет выводиться информация об ошибке--&gt;
+&lt;div class="form-output-global"&gt;
 </code></pre>
 
 <h3>Настройка типа почтовой формы</h3>
@@ -69,10 +72,10 @@
     <li><p>Текстовое поле</p>
         <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;label for="contact-us-name" class="form-label"&gt;Name:&lt;/label&gt;
                     &lt;input id="contact-us-name" type="text" name="name"
-                            data-constraints="@Required" class="form-control"&gt;
+                            data-constraints="@Required" class="form-input"&gt;
                 &lt;/div&gt;
                 ...
             </code></pre>
@@ -105,10 +108,10 @@
 
                 <pre><code>
                         ...
-                        &lt;div class="form-group"&gt;
+                        &lt;div class="form-wrap"&gt;
                          &lt;label for="rd-mailform-time" class="form-label"&gt;Time:&lt;/label&gt;
                              &lt;input id="rd-mailform-time" type="text" name="time"
-                        date-time-picker="time" class="form-control"&gt;
+                        date-time-picker="time" class="form-input"&gt;
                         &lt;/div&gt;
                         ...
                     </code></pre>
@@ -116,10 +119,10 @@
     <li><p>Простое меню выбора</p>
         <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;label for="select" class="form-label"&gt;Gender:&lt;/label&gt;
                     &lt;select id="select" data-placeholder="Select an option"
-                            data-minimum-results-for-search="Infinity" class="form-control"&gt;
+                            data-minimum-results-for-search="Infinity" class="form-input"&gt;
                         &lt;option&gt;Male&lt;/option&gt;
                         &lt;option&gt;Female&lt;/option&gt;
                     &lt;/select&gt;
@@ -131,9 +134,9 @@
         <p>Меню выбора c подкатегориями</p>
             <pre><code>
                 ...
-                &lt;div class="form-group"&gt;
+                &lt;div class="form-wrap"&gt;
                     &lt;select data-placeholder="Select an option"
-                            data-minimum-results-for-search="Infinity" class="form-control select-filter"&gt;
+                            data-minimum-results-for-search="Infinity" class="form-input select-filter"&gt;
                         &lt;optgroup label="Category 1"&gt;
                             &lt;option&gt;Demo Item 1-1&lt;/option&gt;
                             &lt;option&gt;Demo Item 1-2&lt;/option&gt;
@@ -154,10 +157,10 @@
 
         <pre><code>
         ...
-        &lt;div class="form-group"&gt;
+        &lt;div class="form-wrap"&gt;
             &lt;label for="message" class="form-label"&gt;Message:&lt;/label&gt;
             &lt;textarea id="message" name="message" data-constraints="@Required"
-                                                    class="form-control"&gt;&lt;/textarea&gt;
+                                                    class="form-input"&gt;&lt;/textarea&gt;
         &lt;/div&gt;
         ...
         </code></pre>
@@ -173,13 +176,13 @@
 <p>Для того, чтобы изменить некоторые информационные сообщения по-умолчанию, необходимо в файле инициализации скриптов <b>script.js</b> в модуле <b>RD Mailform</b> внести соответствующие правки в поле msg целевого типа валидации.</p>
 <pre><code>
         msg = {
-        'MF000': 'Successfully sent!',
-        'MF001': 'Recipients are not set!',
-        'MF002': 'Form will not work locally!',
-        'MF003': 'Please, define email field in your form!',
-        'MF004': 'Please, define type of your form!',
-        'MF254': 'Something went wrong with PHPMailer!',
-        'MF255': 'Aw, snap! Something went wrong.'
+          'MF000': 'Successfully sent!',
+          'MF001': 'Recipients are not set!',
+          'MF002': 'Form will not work locally!',
+          'MF003': 'Please, define email field in your form!',
+          'MF004': 'Please, define type of your form!',
+          'MF254': 'Something went wrong with PHPMailer!',
+          'MF255': 'Aw, snap! Something went wrong.'
         };
     </code></pre>
 
@@ -222,7 +225,7 @@
 <p>Базовая разметка для ReCaptcha выглядит следующим образом:</p>
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
     &lt;div id="captcha1" data-sitekey="You site key here" class="recaptcha"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;!-- End google captcha--&gt;
@@ -248,7 +251,7 @@
 
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
   &lt;div id="captcha1" data-sitekey="You site key here" data-size="compact" class="recaptcha"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;!-- End google captcha--&gt;
@@ -265,7 +268,7 @@
 <p> Пример кода выглядит следующим образом:</p>
 <pre><code>
 &lt;!--Google captcha--&gt;
-  &lt;div class="form-group"&gt;
+  &lt;div class="form-wrap"&gt;
   &lt;div id="captcha1" data-sitekey="You site key here" data-theme="dark" class="recaptcha"&gt;&lt;/div&gt; &lt;/div&gt;
 &lt;!-- End google captcha--&gt;
   </code></pre>

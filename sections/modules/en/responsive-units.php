@@ -6,13 +6,13 @@
     The basic Responsive Unit markup looks the following way:</p>
 <pre><code>
         &lt;div class="unit unit-horizontal"&gt;
-            &lt;div class="unit-left"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;
@@ -24,13 +24,13 @@
 
 <pre><code>
         &lt;div class="unit unit-horizontal unit-xs-middle"&gt;
-            &lt;div class="unit-left"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;
@@ -43,13 +43,13 @@
 
 <pre><code>
         &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal">
-            &lt;div class="unit-left">
+            &lt;div class="unit__left">
                 Unit Left
             &lt;/div>
-            &lt;div class="unit-body">
+            &lt;div class="unit__body">
                 Unit Body
             &lt;/div>
-            &lt;div class="unit-right">
+            &lt;div class="unit__right">
                 Unit Right
             &lt;/div>
         &lt;/div>
@@ -59,14 +59,14 @@
 <p>You can also invert the layout of the elements in a Responsive Unit. So, if you need a Responsive Unit to be vertical and to have direct display order of elements, and starting
     from <b>SM</b> resolution become horizontal and have the reverse order of elements <b>(right-body-left)</b>, use the following example:</p>
 <pre><code>
-        &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal unit-sm-inverse"&gt;
-            &lt;div class="unit-left"&gt;
+        &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal unit-sm--inverse"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;

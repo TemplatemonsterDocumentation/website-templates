@@ -5,62 +5,82 @@
 <p>Базовая структура кода для расширения RD Navbar равыглядит следующим образом:</p>
 
 <pre>
-  <code>
-     &lt;!-- RD Navbar --&gt;
-     &lt;div class="rd-navbar-wrap"&gt;
-       &lt;nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth"
-             data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fullwidth"
-             data-lg-device-layout="rd-navbar-static"&gt;
-         &lt;div class="rd-navbar-inner"&gt;
-
-           &lt;!-- RD Navbar Panel --&gt;
-           &lt;div class="rd-navbar-panel"&gt;
-
-             &lt;!-- RD Navbar Toggle --&gt;
-             &lt;button class="rd-navbar-toggle"&gt; &lt;span&gt; &lt;/span&gt; &lt;/button&gt;
-             &lt;!-- END RD Navbar Toggle --&gt;
-
-             &lt;!-- RD Navbar Brand --&gt;
-             &lt;div class="rd-navbar-brand"&gt;
-              ...
-             &lt;/div&gt;
-             &lt;!-- END RD Navbar Brand --&gt;
-
-           &lt;/div&gt;
-           &lt;!-- END RD Navbar Panel --&gt;
-
-           &lt;div class="rd-navbar-nav-wrap"&gt;
-             &lt;!-- RD Navbar Nav --&gt;
-             &lt;ul class="rd-navbar-nav"&gt;
-               &lt;li&gt;
-                ...
-               &lt;/li&gt;
-               &lt;li&gt;
-                ...
-
-                 &lt;!-- RD Navbar Dropdown --&gt;
-                 &lt;ul class="rd-navbar-dropdown"&gt;
-                   &lt;li&gt;
-                    ...
-                   &lt;/li&gt;
-                 &lt;/ul&gt;
-                 &lt;!-- END RD Navbar Dropdown --&gt;
-               &lt;/li&gt;
-               &lt;li&gt;
-                ...
-
-                 &lt;!-- RD Navbar Megamenu --&gt;
-                 &lt;ul class="rd-navbar-megamenu"&gt;
-                   &lt;li&gt;
-                    ...
-                   &lt;/li&gt;
-                 &lt;/ul&gt;
-               &lt;/li&gt;
-             &lt;/ul&gt;
-           &lt;/div&gt;
-         &lt;/div&gt;
-       &lt;/nav&gt;
+  <code style='white-space: pre-wrap;'>
+   &lt;nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-md-stick-up-offset="80px" data-lg-stick-up-offset="46px">
+     &lt;div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse">&lt;span>&lt;/span>&lt;/div&gt;
+     &lt;div class="rd-navbar-top-panel rd-navbar-collapse"&gt;
+       &lt;div class="rd-navbar-top-panel-inner"&gt;
+         &lt;address class="contact-info"&gt;
+           &lt;ul class="group-lg"&gt;
+             &lt;li&gt;
+               &lt;div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top"&gt;
+                 &lt;div class="unit__left"&gt;&lt;span class="icon text-middle fa-phone"&gt;&lt;/span&gt;&lt;/div&gt;
+                 &lt;div class="unit__body"&gt;
+                   &lt;div class="p"&gt;&lt;a class="text-middle" href="callto:#"&gt;1-800-1234-567&lt;/a&gt;&lt;/div&gt;
+                 &lt;/div&gt;
+               &lt;/div&gt;
+             &lt;/li&gt;
+             &lt;li&gt;
+               &lt;div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top"&gt;
+                 &lt;div class="unit__left"&gt;&lt;span class="icon text-middle fa-envelope"&gt;&lt;/span&gt;&lt;/div&gt;
+                 &lt;div class="unit__body"&gt;
+                   &lt;div class="p"&gt;&lt;a class="text-middle" href="mailto:#"&gt;info@demolink.org&lt;/a&gt;&lt;/div&gt;
+                 &lt;/div&gt;
+               &lt;/div&gt;
+             &lt;/li&gt;
+             &lt;li&gt;
+               &lt;div class="unit unit-middle unit-horizontal unit-spacing-xs unit-xs-top"&gt;
+                 &lt;div class="unit__left"&gt;&lt;span class="icon text-middle fa-map-marker"&gt;&lt;/span&gt;&lt;/div&gt;
+                 &lt;div class="unit__body"&gt;
+                   &lt;div class="p"&gt;&lt;a class="text-middle" href="contacts.html"&gt;2130 Fulton Street San Diego, CA 94117-1080 USA&lt;/a&gt;&lt;/div&gt;
+                 &lt;/div&gt;
+               &lt;/div&gt;
+             &lt;/li&gt;
+           &lt;/ul&gt;
+         &lt;/address&gt;
+       &lt;/div&gt;
      &lt;/div&gt;
+     &lt;div class="rd-navbar-inner"&gt;
+       &lt;!-- RD Navbar Panel--&gt;
+       &lt;div class="rd-navbar-panel"&gt;
+         &lt;!-- RD Navbar Toggle--&gt;
+         &lt;button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+         &lt;!-- RD Navbar Brand--&gt;
+         &lt;div class="rd-navbar-brand"&gt;&lt;a class="brand-name" href="index.html"&gt;&lt;img src="images/brand.png" width="180" height="29" alt=""&gt;&lt;/a&gt;&lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div class="rd-navbar-aside-right"&gt;
+         &lt;div class="rd-navbar-nav-wrap"&gt;
+           &lt;!-- RD Navbar Nav--&gt;
+           &lt;ul class="rd-navbar-nav"&gt;
+             &lt;li class="active"&gt;&lt;a href="./"&gt;Home&lt;/a&gt;&lt;/li&gt;
+             &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;
+               &lt;!-- RD Navbar Dropdown--&gt;
+               &lt;ul class="rd-navbar-dropdown"&gt;
+                ...
+               &lt;/ul&gt;
+             &lt;/li&gt;
+             &lt;li&gt;&lt;a href=".html"&gt;Link&lt;/a&gt;
+               &lt;!-- RD Navbar Megamenu--&gt;
+               &lt;ul class="rd-navbar-megamenu"&gt;
+                ...
+               &lt;/ul&gt;
+             &lt;/li&gt;
+           &lt;/ul&gt;
+         &lt;/div&gt;
+         &lt;!--RD Navbar Search--&gt;
+         &lt;div class="rd-navbar-search"&gt;&lt;a class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search" href="#"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+           &lt;form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET"&gt;
+             &lt;div class="form-wrap"&gt;
+               &lt;label class="form-label form-label" for="rd-navbar-search-form-input"&gt;Type and hit enter...&lt;/label&gt;
+               &lt;input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"&gt;
+               &lt;div class="rd-search-results-live" id="rd-search-results-live"&gt;&lt;/div&gt;
+             &lt;/div&gt;
+             &lt;button class="rd-search-form-submit fa-search"&gt;&lt;/button&gt;
+           &lt;/form&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/nav&gt;
 </code>
 </pre>
 

@@ -7,13 +7,13 @@
     Базовая разметка для Responsive Unit выглядит следующим образом:</p>
 <pre><code>
         &lt;div class="unit unit-horizontal"&gt;
-            &lt;div class="unit-left"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;
@@ -25,13 +25,13 @@
 
 <pre><code>
         &lt;div class="unit unit-horizontal unit-xs-middle"&gt;
-            &lt;div class="unit-left"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;
@@ -45,13 +45,13 @@
 
 <pre><code>
         &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal">
-            &lt;div class="unit-left">
+            &lt;div class="unit__left">
                 Unit Left
             &lt;/div>
-            &lt;div class="unit-body">
+            &lt;div class="unit__body">
                 Unit Body
             &lt;/div>
-            &lt;div class="unit-right">
+            &lt;div class="unit__right">
                 Unit Right
             &lt;/div>
         &lt;/div>
@@ -64,14 +64,14 @@
     становился вертикальным, а его элементы имели обратный порядок <b>(right-body-left)</b>, используйте следующий пример.
 </p>
 <pre><code>
-        &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal unit-sm-inverse"&gt;
-            &lt;div class="unit-left"&gt;
+        &lt;div class="unit unit-vertical unit-sm unit-sm-horizontal unit-sm--inverse"&gt;
+            &lt;div class="unit__left"&gt;
                 Unit Left
             &lt;/div&gt;
-            &lt;div class="unit-body"&gt;
+            &lt;div class="unit__body"&gt;
                 Unit Body
             &lt;/div&gt;
-            &lt;div class="unit-right"&gt;
+            &lt;div class="unit__right"&gt;
                 Unit Right
             &lt;/div&gt;
         &lt;/div&gt;

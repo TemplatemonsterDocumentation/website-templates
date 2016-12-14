@@ -17,15 +17,15 @@
 
 <pre><code>
     &lt;!--Google map search--&gt;
-    &lt;div class="form-group"&gt;
+    &lt;div class="form-wrap"&gt;
       &lt;label for="rd-google-map-address" class="form-label rd-input-label"&gt;Address&lt;/label&gt;
       &lt;div class="input-group"&gt;
         &lt;input id="rd-google-map-address"
                   type="text" name="address"
                   data-constraints="@Required"
                   placeholder="" autocomplete="off"
-                  class="form-control
-                  form-control-has-validation"&gt;
+                  class="form-input
+                  form-input-has-validation"&gt;
           &lt;span class="input-group-btn"&gt;
           &lt;a id="rd-google-map-address-submit" href="#" class="btn btn-primary"&gt;Find Address&lt;/a&gt;
           &lt;/span&gt;
@@ -185,10 +185,10 @@
 <pre>
   <code>
     &lt;!-- RD Google Map With Search--&gt;
-    &lt;div class="form-group"&gt;
+    &lt;div class="form-wrap"&gt;
     &lt;label for="rd-google-map-address" class="form-label rd-input-label"&gt;Address&lt;/label&gt;
     &lt;div class="input-group"&gt;
-    &lt;input id="rd-google-map-address" type="text" name="address" autocomplete="off" class="form-control"/&gt;
+    &lt;input id="rd-google-map-address" type="text" name="address" autocomplete="off" class="form-input"/&gt;
     &lt;span class="input-group-btn"&gt;
     &lt;a id="rd-google-map-address-submit" href="#" class="btn btn-primary"&gt;Find Address&lt;/a&gt;
     &lt;/span&gt;

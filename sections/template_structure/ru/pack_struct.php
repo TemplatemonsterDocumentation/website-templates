@@ -129,16 +129,16 @@
                         <i class="fa fa-folder"></i>
                         sass
                     </dt>
-                    <dd>содержит файлы .scss SASS, используемые в шаблоне.</dd>
+                    <dd>содержит файлы .scss, используемые в шаблоне.</dd>
                 </dl>
             </li>
             <li class="folder">
                 <dl class="inline-term">
                     <dt>
                         <i class="fa fa-folder"></i>
-                        jade
+                        pug
                     </dt>
-                    <dd>содержит файлы .jade Jade, используемые в шаблоне.</dd>
+                    <dd>содержит файлы .pug, используемые в шаблоне.</dd>
                 </dl>
             </li>
         </ul>

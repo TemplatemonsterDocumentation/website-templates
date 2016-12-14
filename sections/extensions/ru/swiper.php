@@ -3,7 +3,7 @@
 
 <pre><code>
         &lt;!-- Swiper --&gt;
-        &lt;div class="swiper-container swiper-slider" data-height="" data-min-height=""&gt;
+        &lt;div class="swiper-container swiper-slider"&gt;
             &lt;div class="swiper-wrapper"&gt;
                 &lt;div class="swiper-slide" data-slide-bg=""&gt;
                     &lt;div class="swiper-slide-caption"&gt;
@@ -35,69 +35,6 @@
         &lt;!-- END Swiper --&gt;
     </code></pre>
 
-<h4>Настройка высоты слайдера</h4>
-
-<p>Высота слайдера Swiper задается с помощью соответствующих дата атрибутов <b>data-height</b> и <b>data-min-height</b> для целевого слайдера. </p>
-<ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>data-height</dt>
-            <dd>определяет желаемую высоту слайдера;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>data-min-height</dt>
-            <dd>определяет минимальную высоту слайдера;</dd>
-        </dl>
-    </li>
-</ol>
-
-<p>Для определения высоты слайдера (data-height, data-min-height) можно использовать значения в трех форматах:</p>
-
-<ol class="index-list">
-    <li>
-        <dl class="inline-term">
-            <dt>*px</dt>
-            <dd>задает статичную высоту, которая не изменяется при ресайзе;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>*%</dt>
-            <dd>задает высоту слайдера в процентах о его ширины;</dd>
-        </dl>
-    </li>
-    <li>
-        <dl class="inline-term">
-            <dt>*vh</dt>
-            <dd>задает высоту слайдера в процентах от высоты окна.</dd>
-        </dl>
-    </li>
-</ol>
-
-<p>Пример со статичной высотой.</p>
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="500px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
-<p>Пример с процентом от ширины слайдера.</p>
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="50%" data-min-height="300px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
-<p>Пример с процентом от высоты окна.</p>
-
-<pre><code>
-        &lt;div class="swiper-container swiper-slider" data-height="100vh" data-min-height="300px"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-<p>Если не указывать параметры высоты слайдера, его высота будет расчитана исходя из вложенного конента.</p>
 
 <h4>Настройка автоматического переключения слайдов</h4>
 

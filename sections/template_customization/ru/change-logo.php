@@ -14,9 +14,9 @@
   <code>
         &lt;!--Navbar Brand--&gt;
         &lt;div class="rd-navbar-brand"&gt;
-        &lt;a href="index.html"&gt;
-        &lt;img src='path/to/your-logo.png' alt=''/&gt;
-        &lt;/a&gt;
+          &lt;a href="index.html"&gt;
+            &lt;img src='path/to/your-logo.png' alt=''/&gt;
+          &lt;/a&gt;
         &lt;/div&gt;
     </code>
 </pre>

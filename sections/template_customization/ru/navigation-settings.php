@@ -12,10 +12,10 @@
 <pre><code>
         &lt;!-- RD Navbar Nav--&gt;
         &lt;ul class="rd-navbar-nav"&gt;
-        &lt;li&gt;
-        &lt;a href="path/to/your-page.html&gt;Your Page&lt;/a&gt;
-        &lt;/li&gt;
-        ...
+          &lt;li&gt;
+            &lt;a href="path/to/your-page.html&gt;Your Page&lt;/a&gt;
+          &lt;/li&gt;
+          ...
     </code></pre>
 
 <h4>Как сделать пункт меню активным</h4>
@@ -26,7 +26,7 @@
         &lt;!-- RD Navbar Nav--&gt;
         ...
         &lt;li class="active"&gt;
-        &lt;a href="path/to/your-page.html"&gt;Your Page&lt;/a&gt;
+          &lt;a href="path/to/your-page.html"&gt;Your Page&lt;/a&gt;
         &lt;/li&gt;
         ...
     </code></pre>
@@ -39,19 +39,19 @@
         &lt;!-- RD Navbar Nav--&gt;
         ...
         &lt;li&gt;
-        &lt;a href="path/to/your-page.html"&gt;Your Page&lt;/a&gt;
-        &lt;ul class="rd-navbar-dropdown"&gt;
-        &lt;li&gt;
-        &lt;a href="path/to/your-page-1.html"&gt;Submenu Item 1&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;a href="path/to/your-page-2.html"&gt;Submenu Item 2&lt;/a&gt;
-        &lt;/li&gt;
-        ...
-        &lt;li&gt;
-        &lt;a href="path/to/your-page-n.html"&gt;Submenu Item N&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;/ul&gt;
+          &lt;a href="path/to/your-page.html"&gt;Your Page&lt;/a&gt;
+          &lt;ul class="rd-navbar-dropdown"&gt;
+            &lt;li&gt;
+              &lt;a href="path/to/your-page-1.html"&gt;Submenu Item 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href="path/to/your-page-2.html"&gt;Submenu Item 2&lt;/a&gt;
+            &lt;/li&gt;
+            ...
+            &lt;li&gt;
+              &lt;a href="path/to/your-page-n.html"&gt;Submenu Item N&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
         &lt;/li&gt;
         ...
     </code></pre>

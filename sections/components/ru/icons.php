@@ -22,7 +22,7 @@
   </li>
   <li>
     <dl class="inline-term">
-      <dt>fa-*, glyph-*, material-design-* и т.д.</dt>
+      <dt>fa-*, glyph-*, mdi-* и т.д.</dt>
       <dd>классы, которые отвечают за вставку кода (символа) иконки.</dd>
     </dl>
   </li>
@@ -31,7 +31,7 @@
 <p>Рассмотрим пример,</p>
 <pre>
   <code>
-    &lt;span href="#" class="icon icon-md icon-default"&gt;&lt;/span&gt;
+    &lt;span href="#" class="fa-search icon icon-md icon-default"&gt;&lt;/span&gt;
   </code>
 </pre>
 

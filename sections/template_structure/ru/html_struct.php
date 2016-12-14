@@ -16,16 +16,17 @@
     &lt;/header&gt;
 
     &lt;!-- Page Content--&gt;
-    &lt;main class="page-content"&gt;
+    &lt;section&gt;
                 ...
-    &lt;/main&gt;
+    &lt;/section&gt;
 
     &lt;!-- Page Footer--&gt;
     &lt;footer class="page-footer"&gt;
             ...
     &lt;/footer&gt;
 &lt;/div&gt;
-&lt;!-- Additional Functionality Scripts --&gt;
+&lt;!-- Javascript --&gt;
+&lt;script src="js/core.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;

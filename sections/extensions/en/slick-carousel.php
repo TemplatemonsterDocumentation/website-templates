@@ -19,16 +19,6 @@
   </code>
 </pre>
 
-<h4>Carousel loop setup</h4>
-<p>To loop slides display in the slider, use <b>data-loop</b> attribute (true/false, true by default) for the target item with <b>.slick-slider</b> class.
-</p>
-<p>For example:</p>
-<pre><code>
-        &lt;div class="slick-slider" data-loop="false"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
 <h4>Carousel autoplay setup</h4>
 <p>Autoplay for Slick Carousel items in HTML Website templates is disabled by default. To enable the autoplay, use data-attribute <b>data-autoplay</b> with <b>true</b> value.</p>
 <pre><code>

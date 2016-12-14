@@ -16,15 +16,6 @@
         &lt;/div&gt;
     </code></pre>
 
-<h4>Carousel loop setup</h4>
-<p>To set up carousel loop, use <b>'data-loop'</b> attribute (true/false, ‘true’ by default) for the target element with <b>.owl-carousel</b> class.</p>
-<p>Например,</p>
-<pre><code>
-        &lt;div class="owl-carousel" data-loop="false"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
-
 <h4>Carousel autoplay setup</h4>
 <p>    Owl Carousel autoplay is disabled by default. To enable it, use the <b>'data-autoplay</b> attribute with the <b>'true'</b> value: </p>
 <pre><code>
