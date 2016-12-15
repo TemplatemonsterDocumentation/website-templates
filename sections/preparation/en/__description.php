@@ -21,6 +21,9 @@
     <li>For files uploading to server FTP manager will be also required, like FileManager at your hosting control panel or
         desktop applications, such as Total Commander, FileZilla, CuteFTP, etc.
     </li>
+    <li>
+      We highly recommend you to use LibSass for SCSS compilation.
+    </li>
 </ol>
 
 
