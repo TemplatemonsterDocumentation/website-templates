@@ -209,6 +209,7 @@ b, strong {
     content: '–'; }
 
 code {
+  overflow: auto;
   display: block;
   background: #eeeeee;
   padding: 20px;
