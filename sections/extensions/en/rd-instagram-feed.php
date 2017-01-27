@@ -6,8 +6,8 @@
 <p>The basic widget HTML markup to display one element looks the following way:</p>
 
 <pre><code>
-      &lt;section class="instafeed" data-instafeed-clientid="..."
-                      data-instafeed-get="user" data-instafeed-user="1507096244"&gt;
+      &lt;section class="instafeed" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."
+                      data-instafeed-get="user"&gt;
           &lt;div data-instafeed-item&gt;
               &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
           &lt;/div&gt;
@@ -45,7 +45,7 @@
 <p>To display images from a user page, use the <b>data-instafeed-get="user"</b> and specify the user ID to the <b>'data-instafeed-user'</b>. E.g.:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-get="user" data-instafeed-user="1507096244"&gt;
+        &lt;section class="instafeed" data-instafeed-get="user" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
             ...
         &lt;/section&gt;
     </code></pre>
@@ -58,7 +58,7 @@
 <p>To display images by tag, add the <b>data-instafeed-get="tagged"</b> attribute and specify the tag name in the <b>'data-instafeed-tagname'</b> attribute. E.g.:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-tagname="food" data-instafeed-get="tagged" data-instafeed-user="1507096244"&gt;
+&lt;section class="instafeed" data-instafeed-tagname="food" data-instafeed-get="tagged" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
     ...
 &lt;/section&gt;
     </code></pre>
@@ -68,7 +68,7 @@
 <p>To display a user profile, add the <b>data-instafeed-get="profile"</b> attribute and specify user Id in the <b>'data-instafeed-user'</b> attribute. E.g.:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-get="profile" data-instafeed-user="1507096244"&gt;
+        &lt;section class="instafeed" data-instafeed-get="profile" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
             ...
         &lt;/section&gt;
     </code></pre>
