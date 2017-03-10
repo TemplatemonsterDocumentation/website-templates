@@ -6,37 +6,16 @@
 <p>Базовая HTML разметка виджета для вывода одного элемента выглядит следующим образом:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..." data-instafeed-get="user"
-                        data-instafeed-get="user" data-instafeed-user="1507096244"&gt;
-            &lt;div data-instafeed-item&gt;
-                &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
-            &lt;/div&gt;
-        &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-get="user"&gt;
+    &lt;div data-instafeed-item&gt;
+        &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
     </code></pre>
 
 <p>Вы можете вывести неограниченое количество данных элементов или использовать данный виджет несколько раз на странице.
     Так же, данное расширение можно интегрировать с любым стороним скриптом (например: карусель, галлерея и т.д.).  HTML структура внутри виджета произвольная.
     Например, вы можете использовать ТМ Grid систему для удобного расположения элементов. Обязательно только наличие элемента с дата атрибутом <b>data-instafeed-item</b>.</p>
-
-<h4>Инструкция получения access_token</h4>
-
-<p>
-  <a href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/">Ссылка на инструкцию</a>
-</p>
-
-<img src="http://192.168.9.182/rd-instafeed/documentation/img/img-1.jpg" alt="">
-
-<p> Полученую строку необходимо вставить в html атрибут - <strong>data-instafeed-accesstoken</strong></p>
-
-<p>Строка состоит из 3 частей разделенных точкой</p>
-
-<ul>
-  <li>1 часть строки необходимо вставить в <strong>data-instafeed-user</strong></li>
-  <li>3 часть строки вставить в <strong>data-instafeed-clientid</strong></li>
-</ul>
-
-<p><strong>Обратите внимание:</strong> после обновление Instagram API мы можем выводить контент только с своего аккаунта(с аккаунта к которому есть доступ).</p>
-
 
 <h4>Вывод изображений Instagram со страницы пользователя</h4>
 
@@ -44,17 +23,22 @@
     необходимо  добавить атрибут <b>data-instafeed-get="user"</b> и записать идентфикатор пользователя сервиса в атрибут <b>data-instafeed-user</b>. Например:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-get="user" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
-            ...
-        &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-get="user" data-instafeed-user="..."&gt;
+    ...
+&lt;/section&gt;
     </code></pre>
 
+<p>
+  <strong>
+    Узнать свой user id вы можете при помощи сервиса <a
+        href="https://smashballoon.com/instagram-feed/find-instagram-user-id/">smashballoon</a> .
+  </strong></p>
 <h4>Вывод изображений Instagram по тегу.</h4>
 
 <p>Для того, чтобы вывести изображения по тегу, необходимо  добавить атрибут <b>data-instafeed-get="tagged"</b> и записать название  тега в атрибут <b>data-instafeed-tagname</b>. Например:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..." data-instafeed-tagname="food" data-instafeed-get="tagged" data-instafeed-user="1507096244"&gt;
+&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-tagname="food" data-instafeed-get="tagged"&gt;
     ...
 &lt;/section&gt;
     </code></pre>
@@ -65,9 +49,9 @@
     в атрибут <b>data-instafeed-user</b>. Например:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..." data-instafeed-get="profile" data-instafeed-user="1507096244"&gt;
-            ...
-        &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-get="profile" data-instafeed-user="1507096244"&gt;
+    ...
+&lt;/section&gt;
     </code></pre>
 
 <h4>Настройка формата вывода даты</h4>

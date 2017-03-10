@@ -6,12 +6,11 @@
 <p>The basic widget HTML markup to display one element looks the following way:</p>
 
 <pre><code>
-      &lt;section class="instafeed" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."
-                      data-instafeed-get="user"&gt;
-          &lt;div data-instafeed-item&gt;
-              &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
-          &lt;/div&gt;
-      &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-get="user"&gt;
+    &lt;div data-instafeed-item&gt;
+        &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
     </code></pre>
 
 <p>You can display an unlimited number of items and use this widget several times on one page.
@@ -20,45 +19,25 @@
 </p>
 
 
-<h4>How to get access_token</h4>
-
-<p>
-  <a href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/">Instruction Link</a>
-</p>
-
-<img src="http://192.168.9.182/rd-instafeed/documentation/img/img-1.jpg" alt="">
-
-<p>Received options from <a href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/">this instruction</a> you need to set into html attribute - <strong>data-instafeed-accesstoken</strong></p>
-
-<p>The string consists of three parts separated by a dot</p>
-
-<ul>
-  <li>1 part of the string should be inserted into <strong>data-instafeed-user</strong></li>
-  <li>3 part of the string should be inserted into <strong>data-instafeed-clientid</strong></li>
-</ul>
-
-<p><strong>Please note:</strong> after Instagram API update, you can output contents only from your account (account you have accessed too).</p>
-
-
 <h4>Instagram images display from the user page</h4>
 
 <p>To display images from a user page, use the <b>data-instafeed-get="user"</b> and specify the user ID to the <b>'data-instafeed-user'</b>. E.g.:</p>
-
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-get="user" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
-            ...
-        &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-get="user" data-instafeed-user="..."&gt;
+    ...
+&lt;/section&gt;
     </code></pre>
 
-<p>You can find out the user ID with the help of multiple services. Here is <a
-        href="http://jelled.com/instagram/lookup-user-id">one of them</a> .</p>
+<p>
+  <strong>You can find out the user ID with the help of multiple services. Here is <a
+        href="https://smashballoon.com/instagram-feed/find-instagram-user-id/">one of them</a> .</strong></p>
 
 <h4>Instagram images display by a tag</h4>
 
 <p>To display images by tag, add the <b>data-instafeed-get="tagged"</b> attribute and specify the tag name in the <b>'data-instafeed-tagname'</b> attribute. E.g.:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-tagname="food" data-instafeed-get="tagged" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
+&lt;section class="instafeed" data-instafeed-tagname="food" data-instafeed-get="tagged" data-instafeed-user="..."&gt;
     ...
 &lt;/section&gt;
     </code></pre>
@@ -68,9 +47,9 @@
 <p>To display a user profile, add the <b>data-instafeed-get="profile"</b> attribute and specify user Id in the <b>'data-instafeed-user'</b> attribute. E.g.:</p>
 
 <pre><code>
-        &lt;section class="instafeed" data-instafeed-get="profile" data-instafeed-accesstoken="..." data-instafeed-clientid="..." data-instafeed-user="..."&gt;
-            ...
-        &lt;/section&gt;
+&lt;section class="instafeed" data-instafeed-get="profile" data-instafeed-user="..."&gt;
+    ...
+&lt;/section&gt;
     </code></pre>
 
 <h4>Date format setup</h4>
@@ -78,7 +57,7 @@
 <p>To set up the date display format, add the <b>'data-instafeed-date-format'</b> attribute. E.g.:</p>
 
 <pre><code>
-        &lt;div class="instafeed" data-instafeed-date-format="%b/%d/%Y"&gt;
+&lt;div class="instafeed" data-instafeed-date-format="%b/%d/%Y"&gt;
     </code></pre>
 
 <p>where</p>
