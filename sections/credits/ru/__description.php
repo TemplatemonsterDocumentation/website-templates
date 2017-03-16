@@ -34,6 +34,7 @@
     <li><a href="http://johnpolacek.github.io/stacktable.js/">Stacktable</a></li>
     <li><a href="https://github.com/afarkas/html5shiv">Html5shiv </a></li>
     <li><a href="http://vivin.github.io/regula/">Regula</a></li>
+    <li><a href="https://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/">Revolution Slider</a></li>
 </ul>
 
 
