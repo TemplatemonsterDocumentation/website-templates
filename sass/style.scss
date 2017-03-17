@@ -135,6 +135,14 @@ em {
   color: #000000;
 }
 
+mark{
+  display: inline-block;
+  background: #f3f3f3;
+  color: #e40d0d;
+  padding: 1px 9px;
+  border-radius: 3px;
+}
+
 a {
   font: inherit;
   color: inherit;

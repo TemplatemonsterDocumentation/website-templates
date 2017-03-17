@@ -27,6 +27,20 @@
       }
     },
     {
+      "id": "mailchimp",
+      "translations": {
+        "en": "MailChimp",
+        "ru": "MailChimp"
+      }
+    },
+    {
+      "id": "campaign-monitor",
+      "translations": {
+        "en": "Campaign Monitor",
+        "ru": "Campaign Monitor"
+      }
+    },
+    {
       "id": "rd-navbar",
       "translations": {
         "en": "RD Navbar",

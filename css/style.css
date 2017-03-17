@@ -216,6 +216,13 @@ code {
   color: #434343;
   font: 400 13px/24px "Roboto Mono", monospace; }
 
+mark{
+  display: inline-block;
+  background: #f3f3f3;
+  color: #e40d0d;
+  padding: 1px 9px;
+  border-radius: 3px;
+}
 .fa {
   line-height: inherit; }
 
