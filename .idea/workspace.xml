@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7268e437-18c3-474d-bece-a160f1afc01d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sections/extensions/en/campaign-monitor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sections/extensions/en/mailchimp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sections/extensions/ru/campaign-monitor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sections/extensions/ru/mailchimp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sections/extensions/section.json" afterPath="$PROJECT_DIR$/sections/extensions/section.json" />
-    </list>
+    <list default="true" id="7268e437-18c3-474d-bece-a160f1afc01d" name="Default" comment="" />
     <ignored path="website-templates.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +33,8 @@
       <file leaf-file-name="campaign-monitor.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sections/extensions/en/campaign-monitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -364,12 +355,12 @@
       <workItem from="1489147939431" duration="1548000" />
       <workItem from="1489155505670" duration="2580000" />
       <workItem from="1489660944450" duration="10960000" />
-      <workItem from="1489740371086" duration="368000" />
+      <workItem from="1489740371086" duration="1063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18340000" />
+    <option name="totallyTimeSpent" value="19035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -771,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sections/extensions/en/campaign-monitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
