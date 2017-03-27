@@ -216,10 +216,10 @@
       }
     },
     {
-      "id": "photoswipe",
+      "id": "LightGallery",
       "translations": {
-        "en": "Photoswipe",
-        "ru": "Photoswipe"
+        "en": "lightGallery",
+        "ru": "lightGallery"
       }
     },
     {

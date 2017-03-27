@@ -61,6 +61,14 @@
 		"en": "Search Settings",
 		"ru": "Настройка поиска по страницам"
 	  }
+	},
+	{
+	  "id": "rtl",
+	  "translations":
+	  {
+		"en": "Right to Left (RTL)",
+		"ru": "Right to Left (RTL)"
+	  }
 	}
   ]
 }
