@@ -1,10 +1,9 @@
 <?php
 
-$dir    = str_replace('index.php', '', $_SERVER['SCRIPT_NAME']);
 if (strpos($_SERVER['REQUEST_URI'], 'index.php')) {
-	$path   = dirname("http://$_SERVER[HTTP_HOST]") . "$dir";
+	$path = dirname("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 } else {
-	$path   = "http://$_SERVER[HTTP_HOST]$dir";
+	$path = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 }
 
 // Variables
