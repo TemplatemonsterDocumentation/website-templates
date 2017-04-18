@@ -1,5 +1,4 @@
 <h3>LightGallery</h3>
-
 <p>We use <b>LightGallery</b> plugin in our templates to implement functional mobile-friendly galleries.</p>
 
 <p>

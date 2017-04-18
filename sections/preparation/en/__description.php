@@ -22,7 +22,7 @@
         desktop applications, such as Total Commander, FileZilla, CuteFTP, etc.
     </li>
     <li>
-      We highly recommend you to use LibSass for SCSS compilation.
+      We highly recommend you to use LibSass for SCSS compilation, ex. program Prepros.
     </li>
 </ol>
 

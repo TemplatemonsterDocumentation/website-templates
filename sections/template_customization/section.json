@@ -14,6 +14,14 @@
 		"ru": "Замена логотипа в шаблоне"
 	  }
 	},
+    {
+      "id": "color-scheme-and-layout",
+      "translations":
+      {
+        "en": "Color scheme and layout",
+        "ru": "Настройка цветовой схемы и лейаута"
+      }
+    },
 	{
 	  "id": "navigation-settings",
 	  "translations":
