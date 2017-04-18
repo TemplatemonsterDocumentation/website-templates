@@ -216,7 +216,7 @@
       }
     },
     {
-      "id": "LightGallery",
+      "id": "lightGallery",
       "translations": {
         "en": "lightGallery",
         "ru": "lightGallery"

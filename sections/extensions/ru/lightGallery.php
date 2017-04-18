@@ -1,4 +1,5 @@
 <h3>LightGallery</h3>
+
 <p>В наших шаблонах используется плагин <b>LightGallery</b> для реализации функциональных mobile-friendly галерей.</p>
 
 <p>
