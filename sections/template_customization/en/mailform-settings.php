@@ -12,3 +12,11 @@
   If version is not specified or lower than 3.0.0, you need to set up in <b>bat/rd-mailform.php</b> file the e-mail, which is specified in <b>$recipients</b> variable, with the needed recipient's email:
 </p>
 <pre><code>$recipients = 'test@demolink.com';</code></pre>
+
+<h4>Configuring SMTP</h4>
+
+<p>To configure sending e-mail using SMTP, you need to open the <b>bat/rd-mailform.php</b> file and set the value of the <b>$isSMTP</b> variable to <b>true</b> in the beginning. Then, enter the settings of your SMTP into <b>$SMTPSettings</b> massive.</p>
+
+<div class="alert alert-info">
+  <p>Available from rd-mailform version 3.1.0</p>
+</div>
