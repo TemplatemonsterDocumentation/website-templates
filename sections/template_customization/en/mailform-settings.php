@@ -15,8 +15,15 @@
 
 <h4>Configuring SMTP</h4>
 
+<img src="http://puu.sh/w0wSo/26c8965efb.png" alt="">
+
 <p>To configure sending e-mail using SMTP, you need to open the <b>bat/rd-mailform.php</b> file and set the value of the <b>$isSMTP</b> variable to <b>true</b> in the beginning. Then, enter the settings of your SMTP into <b>$SMTPSettings</b> massive.</p>
 
 <div class="alert alert-info">
-  <p>Available from rd-mailform version 3.1.0</p>
+  <p>SMTP configuration is available in rd-mailform starting from version 3.1.0</p>
+</div>
+
+<div class="alert alert-info">
+  <p>To configure smtp through gmail, you need to give access to <a
+        href="https://support.google.com/accounts/answer/6010255">unreliable applications</a></p>
 </div>

@@ -17,8 +17,15 @@
 
 <h4>Настройка SMTP</h4>
 
+<img src="http://puu.sh/w0wVc/c3b571cdb8.png" alt="">
+
 <p>Для настройки отправки почты через SMTP, Вам необходимо зайти в файл <b>bat/rd-mailform.php</b> и в самом начале установить значение переменной <b>$isSMTP</b> - <b>true</b> и ввести настройки Вашего SMTP в массив <b>$SMTPSettings</b>.</p>
 
 <div class="alert alert-info">
-  <p>Доступно с версии формы 3.1.0</p>
+  <p>Работа формы через smtp доступно с версии формы 3.1.0</p>
+</div>
+
+<div class="alert alert-info">
+  <p>Для настройски smtp через gmail, необходимо в настройках аккаунта включить доступ <a
+        href="https://support.google.com/accounts/answer/6010255">ненадежным приложениям</a></p>
 </div>
