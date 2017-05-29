@@ -2,11 +2,36 @@
 <p>HTML Website Templates используют расширение <b>RD Instafeed</b> для получения данных с сервиса <a
         href="https://www.instagram.com/">https://www.instagram.com/</a> на веб-странице.</p>
 
+<h4>Настройка скрипта</h4>
+
+<p>Для рбаоты скрипта необходимо получить API access_token Вашего аккаунта. Сначала необходимо войти в свой аккаунт на сайте
+  <a href="http://instagram.com">instagram.com</a></p>
+
+<p>Выполнить 1 и 2 пункт следующей инструкции - <a
+      href="https://elfsight.com/blog/2016/05/how-to-get-instagram-access-token/">Ссылка</a></p>
+<p>После чего необходимо сгенерированный ClientId вставить в ссылку
+  <mark>https://instagram.com/oauth/authorize/?client_id=[CLIENT_ID_HERE]&redirect_uri=https://elfsight.com/service/generate-instagram-access-token/&response_type=token&scope=public_content</mark>
+  вместо <b>[CLIENT_ID_HERE]</b> и перейти. После чего Вас перенаправит а сайт URL которого будет содеражть Ваш уникльный access_token, прим. <b>https://elfsight.com/service/generate-instagram-access-token/#access_token=**********.******.**************************</b></p>
+<p>Вам необходимо скопировать строку разделенную точками после <b>/#access_token=</b></p>
+
+
+<p>Полученую строку необходимо вставить в файл  <mark>js/script.js</mark> в секции с инициализацией <b>RD Instafeed JS</b>, параметр <strong>accessToken</strong></p>
+
+<p>Строка состоит из 3 частей разделенных точкой</p>
+
+<ul>
+    <li>1 часть строки необходимо вставить в <strong>userId</strong></li>
+    <li>3 часть строки вставить в <strong>clientId</strong></li>
+  </ul>
+
+<p><strong>Обратите внимание:</strong> после обновление Instagram API мы можем выводить контент только с своего аккаунта(с аккаунта к которому есть доступ).</p>
+
+
 <h4>Вставка виджета на страницу</h4>
 <p>Базовая HTML разметка виджета для вывода одного элемента выглядит следующим образом:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-get="user"&gt;
+&lt;section class="instafeed" data-instafeed-get="user"&gt;
     &lt;div data-instafeed-item&gt;
         &lt;img src="images/_blank.png" alt="" data-images-low_resolution-url="src" /&gt;
     &lt;/div&gt;
@@ -23,7 +48,7 @@
     необходимо  добавить атрибут <b>data-instafeed-get="user"</b> и записать идентфикатор пользователя сервиса в атрибут <b>data-instafeed-user</b>. Например:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-get="user" data-instafeed-user="..."&gt;
+&lt;section class="instafeed" data-instafeed-get="user"&gt;
     ...
 &lt;/section&gt;
     </code></pre>
@@ -38,7 +63,7 @@
 <p>Для того, чтобы вывести изображения по тегу, необходимо  добавить атрибут <b>data-instafeed-get="tagged"</b> и записать название  тега в атрибут <b>data-instafeed-tagname</b>. Например:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-tagname="food" data-instafeed-get="tagged"&gt;
+&lt;section class="instafeed" data-instafeed-tagname="food" data-instafeed-get="tagged"&gt;
     ...
 &lt;/section&gt;
     </code></pre>
@@ -49,7 +74,7 @@
     в атрибут <b>data-instafeed-user</b>. Например:</p>
 
 <pre><code>
-&lt;section class="instafeed" data-instafeed-user="..." data-instafeed-get="profile" data-instafeed-user="1507096244"&gt;
+&lt;section class="instafeed" data-instafeed-get="profile"&gt;
     ...
 &lt;/section&gt;
     </code></pre>
