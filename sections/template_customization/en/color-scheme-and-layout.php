@@ -5,7 +5,7 @@
 </h4>
 
 <p>
-  To replace main colors of the template, you need to open the file <b>variables-custom.scss</b>, and replace the values of <b>$primary, $secondary, $gray-base...</b>(depends on your template)  variables in the section <b>//== Colors</b> with the necessary colors. Afterward, compile SCSS into CSS.
+  To replace main colors of the template, you need to open the file <b>_color-default.scss</b>, and replace the values of <b>$primary, $secondary, $gray-base...</b>(depends on your template)  variables with the necessary colors. Afterward, compile SCSS into CSS.
 </p>
 
 <p class="alert alert-warning">
@@ -17,7 +17,8 @@
 </h4>
 
 <p>
-  You need to add the class <b>contrast</b> to <b>html</b>. Styles can be found in the file <b>_context-styling.scss</b>
+  To enable the contrasting version of the template, you need to attach the <b>style-contrast.css</b> file instead of <b>style.css</b> <b>style.css</b> inside the <b>head</b> tag.
+  If you would like to change the colors of default or contrasting theme, you need to modify the values of variables in the <b>_color-default.scss</b> and <b>_color-contrast.scss</b> files correspondingly.
 </p>
 
 <h4>
