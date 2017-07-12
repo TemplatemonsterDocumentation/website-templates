@@ -1,7 +1,6 @@
 <h3>Campaign Monitor</h3>
 <p>
-  To connect the subscription form to your Campaign Monitor account, you need to go to the Lists page
-  (1), create a list (2) or select an existing one (3).
+  To connect the subscription form to your Campaign Monitor account, you need to go to the Lists page (1), create a list (2) or select an existing one (3).
 </p>
 
 <img src="img/campain.png" alt="">
@@ -27,7 +26,7 @@
 <img src="img/campain-3.png" alt="">
 
 <p>
-  Finally, copy the <mark>action</mark> attribute of the form you generated and paste it into the form of your website.
+  Finally, copy the <mark>action</mark> attribute of form element and attribute <mark>name</mark> of input[type='email'] element of the form you generated and paste it into the form of your website.
   <br>
   Here’s an example of the form code:
 </p>

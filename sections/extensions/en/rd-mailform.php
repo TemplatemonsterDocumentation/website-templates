@@ -186,10 +186,7 @@
 
 <h4>SMTP server setup</h4>
 
-<p>    SMTP server setup is no way related to the RD Mailform setup.</p>
-<p>o send messages through the SMTP server, please refer to the official documentation of the <b>PhpMailer</b> (the library, which is used for sending messages) or refer to a tutorial in the official documentation:
-</p>
-<a href="http://phpmailer.worxware.com/?pg=examplebsmtp">http://phpmailer.worxware.com</a>
+<p><a href="index.php?lang=ru&section=template_customization#mailform-settings">Instruction</a></p>
 
 <p class="alert alert-info">Attention: mailform extension will not work on the local server. To send a mailform, upload your website to the hosting server you use.</p>
 

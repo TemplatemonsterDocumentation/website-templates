@@ -4,6 +4,11 @@
 </p>
 
 <p>Для того, чтобы указать email адрес, на который будут приходить сообщения, отправляемые с помощью
+  <b>RD Mailform @version 3.2.0</b> необходимо в файле <b>bat/rd-mailform.config.json</b> вашего сайта, значение поля recipientEmail заменить на email реального получателя.
+</p>
+<img src="img/mailform-4.png" alt="">
+
+<p>Для того, чтобы указать email адрес, на который будут приходить сообщения, отправляемые с помощью
   <b>RD Mailform @version 3.0.0</b> необходимо в файле <b>js/script.js</b> вашего сайта, в секции с инициализацией RD Mailform заменить email, указанный в переменной <b>recipients</b>, на соответствующий email  получателя.
 </p>
 <pre><code>recipients = 'test@demolink.com';</code></pre>
@@ -17,9 +22,9 @@
 
 <h4>Настройка SMTP</h4>
 
-<img src="http://puu.sh/w0wVc/c3b571cdb8.png" alt="">
+<img src="img/mailform-4.png" alt="">
 
-<p>Для настройки отправки почты через SMTP, Вам необходимо зайти в файл <b>bat/rd-mailform.php</b> и в самом начале установить значение переменной <b>$isSMTP</b> - <b>true</b> и ввести настройки Вашего SMTP в массив <b>$SMTPSettings</b>.</p>
+<p>Для настройки отправки почты через SMTP, Вам необходимо зайти в файл <b>bat/rd-mailform.config.json</b> и установить значение <b>useSmtp</b> - <b>true</b> и ввести настройки Вашего SMTP в следущих полях объекта.</p>
 
 <div class="alert alert-info">
   <p>Работа формы через smtp доступно с версии формы 3.1.0</p>
