@@ -25,10 +25,18 @@
 
 <h4>Настройка аккаунта Facebook</h4>
 
-<p>Для того, чтобы указать пользователя с которого будут выведены данные, необходимо записать имя пользователя сервиса в атрибут <b>data-fb-id</b>. Например:</p>
+<p>Для того, чтобы указать пользователя с которого будут выведены данные, необходимо записать имя пользователя сервиса в атрибут <b>data-fb-id</b> и тип страницы в <b>data-fb-page-type</b>. Например:</p>
 <pre><code>
-        &lt;div class="facebook" data-fb-id="TemplateMonster"&gt;
+        &lt;div class="facebook" data-fb-page-type="page" data-fb-id="TemplateMonster"&gt;
     </code></pre>
+
+<p>
+  <b>data-fb-page-type</b> может принимать 2 значения page, group
+  <ul>
+  <li>page - если это публичная страница</li>
+  <li>group - если это группа</li>
+</ul>
+</p>
 
 <h4>Настройка формата вывода даты</h4>
 

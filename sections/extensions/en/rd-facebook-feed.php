@@ -17,10 +17,10 @@
   HTML structure inside the widget is up to you. For example, you can use ТМ Grid system for handy placing of the elements.
   Only the <b>'data-fb-post'</b> or <b>'data-fb-user'</b> attribute is required.</p>
 <h4>Project setup to work with Facebook API</h4>
-<p>To work with Facebook API, create an application in your Facebook account, generate the AccessToken and specify it the <b>'data-fb-access'</b> attribute:</p>
+<p>To work with Facebook API, create an application in your Facebook account, generate the AccessToken and specify it the <b>'data-fb-access'</b> and page type <b>data-fb-page-type</b> attribute:</p>
 
 <pre><code>
-        &lt;div class="facebook" data-fb-access="..."&gt;
+        &lt;div class="facebook"  data-fb-page-type="page" data-fb-access="..."&gt;
         &lt;/div&gt;
     </code></pre>
 
@@ -30,6 +30,14 @@
 <pre><code>
         &lt;div class="facebook" data-fb-id="TemplateMonster"&gt;
     </code></pre>
+
+<p>
+  Attribute <b>data-fb-page-type</b> can be: page or group
+<ul>
+  <li>page - If this is a public page</li>
+  <li>group - If it's a group</li>
+</ul>
+</p>
 
 <h4>Date format setup</h4>
 
