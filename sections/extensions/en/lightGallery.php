@@ -50,7 +50,7 @@
 
 <h4>Changing the photo transition</h4>
 
-<p>Open script.js file and add <mark>mode: "название анимации"</mark> setting in the section with lightGallery script initialization, for example: <b>lg-zoom-in-out</b></p>
+<p>Open script.js file and add <mark>mode: "animation name"</mark> setting in the section with lightGallery script initialization, for example: <b>lg-zoom-in-out</b></p>
 <p><a href="http://sachinchoolur.github.io/lightGallery/demos/transitions.html">Types of available transitions</a></p>
 
 <h4>Creating a gallery from multiple videos</h4>
