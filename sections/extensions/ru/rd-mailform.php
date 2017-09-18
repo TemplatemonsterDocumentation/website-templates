@@ -1,4 +1,6 @@
-<h3>RD Mail Form. Mail form.</h3>
+<h3>RD Mail Form v1. Mail form.</h3>
+
+<p class="alert alert-info">Внимание: шаблон может иметь одну из двух версий RD Mailform, их можно различить по наличию файла <b>rd-mailform.config.json</b>. Если данный файл присутствует, то это RD Mailform v2 который описан в <a href="#rd-mailform-2">следующем разделе</a>.</p>
 
 <figure class="img-polaroid">
     <img src="img/mailform.png" alt="">
@@ -7,71 +9,71 @@
 <p>HTML Website Templates use <b>RD Mail Form</b> extension to implement mail form functionality. Basic form code structure is similar to the one below:</p>
 
 <pre><code>
-        &lt;!-- RD Mailform --&gt;
-        &lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
+    &lt;!-- RD Mailform --&gt;
+    &lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
         &lt;!-- RD Mailform Type --&gt;
         &lt;input type="hidden" name="form-type" value="contact"/&gt;
         &lt;!-- END RD Mailform Type --&gt;
         &lt;fieldset&gt;
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-name"&gt;Name &lt;/label&gt;
-        &lt;input type="text"
-        name="name"
-        id="mailform-input-name"
-        data-constraints="@LettersOnly @NotEmpty"/&gt;
-        &lt;/div&gt;
+            &lt;div class="form-group" &gt;
+                &lt;label data-add-placeholder for="mailform-input-name"&gt;Name &lt;/label&gt;
+                &lt;input type="text"
+                       name="name"
+                       id="mailform-input-name"
+                       data-constraints="@LettersOnly @NotEmpty"/&gt;
+            &lt;/div&gt;
 
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-email"&gt;Email &lt;/label&gt;
-        &lt;input type="text"
-        name="email"
-        id="mailform-input-email"
-        data-constraints="@Email @NotEmpty"/&gt;
-        &lt;/div&gt;
+            &lt;div class="form-group" &gt;
+                &lt;label data-add-placeholder for="mailform-input-email"&gt;Email &lt;/label&gt;
+                &lt;input type="text"
+                       name="email"
+                       id="mailform-input-email"
+                       data-constraints="@Email @NotEmpty"/&gt;
+            &lt;/div&gt;
 
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-phone"&gt;Phone &lt;/label&gt;
-        &lt;input type="text"
-        name="phone"
-        id="mailform-input-phone"
-        data-constraints="@Phone"/&gt;
-        &lt;/div&gt;
+            &lt;div class="form-group" &gt;
+                &lt;label data-add-placeholder for="mailform-input-phone"&gt;Phone &lt;/label&gt;
+                &lt;input type="text"
+                       name="phone"
+                       id="mailform-input-phone"
+                       data-constraints="@Phone"/&gt;
+            &lt;/div&gt;
 
-        &lt;div class="form-group select" &gt;
-        &lt;div class="flt-select-box"&gt;
-        &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
-        &lt;select name="gender" id="mailform-input-select"&gt;
-        &lt;option&gt;Gender&lt;/option&gt;
-        &lt;option&gt;Male&lt;/option&gt;
-        &lt;option&gt;Female&lt;/option&gt;
-        &lt;/select&gt;
-        &lt;/div
-        &lt;/div&gt;
+            &lt;div class="form-group select" &gt;
+                &lt;div class="flt-select-box"&gt;
+                    &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
+                    &lt;select name="gender" id="mailform-input-select"&gt;
+                        &lt;option&gt;Gender&lt;/option&gt;
+                        &lt;option&gt;Male&lt;/option&gt;
+                        &lt;option&gt;Female&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div
+            &lt;/div&gt;
 
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-date"&gt;Birthday &lt;/label&gt;
-        &lt;input type="date"
-        name="birthday"
-        id="mailform-input-date"
-        data-constraints="@Date"
-        /&gt;
-        &lt;/div&gt;
+            &lt;div class="form-group" &gt;
+                &lt;label data-add-placeholder for="mailform-input-date"&gt;Birthday &lt;/label&gt;
+                &lt;input type="date"
+                       name="birthday"
+                       id="mailform-input-date"
+                       data-constraints="@Date"
+                /&gt;
+            &lt;/div&gt;
 
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-textarea"&gt;Message &lt;/label&gt;
-        &lt;textarea name="message"
-        id="mailform-input-textarea"
-        data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
+            &lt;div class="form-group" &gt;
+                &lt;label data-add-placeholder for="mailform-input-textarea"&gt;Message &lt;/label&gt;
+       &lt;textarea name="message"
+                 id="mailform-input-textarea"
+                 data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
 
-        &lt;div class="form-group btn-group"&gt;
-        &lt;button class="btn btn-lg btn-primary" type="submit"&gt;Submit&lt;/button&gt;
-        &lt;button class="btn btn-lg btn-default" type="reset"&gt;Reset&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class="mfInfo"&gt;&lt;/div&gt;
+            &lt;div class="form-group btn-group"&gt;
+                &lt;button class="btn btn-lg btn-primary" type="submit"&gt;Submit&lt;/button&gt;
+                &lt;button class="btn btn-lg btn-default" type="reset"&gt;Reset&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="mfInfo"&gt;&lt;/div&gt;
         &lt;/fieldset&gt;
-        &lt;/form&gt;
-        &lt;!-- END RD Mailform --&gt;
+    &lt;/form&gt;
+    &lt;!-- END RD Mailform --&gt;
     </code></pre>
 
 <h4>Form mode configuration</h4>
@@ -102,13 +104,13 @@
 <p>In order to change form working mode you should add hidden form-type field to target form HTML code, where respectable form mode is set as a value.</p>
 
 <pre><code>&lt;!-- RD Mailform --&gt;
-        &lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
-        &lt;!-- RD Mailform Type --&gt;
-        &lt;input type="hidden" name="form-type" value="contact"/&gt;
-        &lt;!-- END RD Mailform Type --&gt;
-        &lt;/form&gt;
-        &lt;!-- END RD Mailform --&gt;
-    </code></pre>
+&lt;form class='rd-mailform' method="post" action="bat/rd-mailform.php"&gt;
+    &lt;!-- RD Mailform Type --&gt;
+    &lt;input type="hidden" name="form-type" value="contact"/&gt;
+    &lt;!-- END RD Mailform Type --&gt;
+&lt;/form&gt;
+&lt;!-- END RD Mailform --&gt;
+</code></pre>
 
 
 <h4>Mail configuration for messages delivery</h4>
@@ -124,57 +126,57 @@
     <li>
         <h6>Text field</h6>
         <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-name"&gt; Name &lt;/label&gt;
-                &lt;input type="text"
-                name="name"
-                id="mailform-input-name"
-                data-constraints="@LettersOnly @NotEmpty"/&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
+  &lt;div class="form-group" &gt;
+      &lt;label data-add-placeholder for="mailform-input-name"&gt; Name &lt;/label&gt;
+      &lt;input type="text"
+             name="name"
+             id="mailform-input-name"
+             data-constraints="@LettersOnly @NotEmpty"/&gt;
+  &lt;/div&gt;
+  ...
+</code></pre>
     </li>
     <li>
         <h6>Date selector</h6>
         <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-date"&gt; Birthday &lt;/label&gt;
-                &lt;input type="date"
-                name="birthday"
-                id="mailform-input-date"
-                data-constraints="@Date"
-                /&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
+  &lt;div class="form-group" &gt;
+      &lt;label data-add-placeholder for="mailform-input-date"&gt; Birthday &lt;/label&gt;
+      &lt;input type="date"
+             name="birthday"
+             id="mailform-input-date"
+             data-constraints="@Date"
+      /&gt;
+  &lt;/div&gt;
+  ...
+</code></pre>
     </li>
     <li>
         <h6>Menu selector</h6>
         <pre><code>  ...
-                &lt;div class="form-group select" &gt;
-                &lt;div class="flt-select-box"&gt;
-                &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
-                &lt;select name="gender" id="mailform-input-select"&gt;
-                &lt;option&gt;Gender&lt;/option&gt;
-                &lt;option&gt;Male&lt;/option&gt;
-                &lt;option&gt;Female&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
+  &lt;div class="form-group select" &gt;
+      &lt;div class="flt-select-box"&gt;
+          &lt;label data-add-placeholder for="mailform-input-select"&gt;&lt;/label&gt;
+          &lt;select name="gender" id="mailform-input-select"&gt;
+              &lt;option&gt;Gender&lt;/option&gt;
+              &lt;option&gt;Male&lt;/option&gt;
+              &lt;option&gt;Female&lt;/option&gt;
+          &lt;/select&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  ...
+</code></pre>
     </li>
     <li>
         <h6>Text area</h6>
         <pre><code>  ...
-                &lt;div class="form-group" &gt;
-                &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
-                &lt;textarea name="message"
+  &lt;div class="form-group" &gt;
+      &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
+      &lt;textarea name="message"
                 id="mailform-input-textarea"
                 data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
-                &lt;/div&gt;
-                ...
-            </code></pre>
+  &lt;/div&gt;
+  ...
+</code></pre>
     </li>
 </ol>
 
@@ -229,54 +231,54 @@
 
 <p>For instance,</p>
 <pre><code>  ...
-        &lt;div class="form-group" &gt;
-        &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
-        &lt;textarea name="message"
-        id="mailform-input-textarea"
-        data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-        ...
-    </code></pre>
+  &lt;div class="form-group" &gt;
+     &lt;label data-add-placeholder for="mailform-input-textarea"&gt; Message &lt;/label&gt;
+     &lt;textarea name="message"
+               id="mailform-input-textarea"
+               data-constraints="@NotEmpty"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  ...
+</code></pre>
 
 <h4>Form informing messages configuration</h4>
 <p>Mail form <b>RD Mailform</b> allows you to set custom informing messages, such as fields validation error messages or messages on successful/unsuccessful form submitting.</p>
 <p>In order to change some default informing messages, you should edit script initialization <b>script.js</b> file, by changing corresponding message field for RD Mailform module target validation type.</p>
 <pre><code>  /**
-        * @module       RD Mailform
-        * @description  Enables RD Mailform Plugin
-        */
-        ;
-        (function ($) {
-        ...
-        // Form validation messages
-        validator: {
+  * @module       RD Mailform
+  * @description  Enables RD Mailform Plugin
+  */
+  ;
+  (function ($) {
+     ...
+     // Form validation messages
+     validator: {
         'constraints': {
-        '@LettersOnly': {
-        message: 'Please use letters only!'
-        },
-        '@NumbersOnly': {
-        message: 'Please use numbers only!'
-        },
-        '@NotEmpty': {
-        message: 'Field should not be empty!'
-        },
-        '@Email': {
-        message: 'Enter valid e-mail address!'
-        },
-        '@Phone': {
-        message: 'Enter valid phone number!'
-        },
-        '@Date': {
-        message: 'Use MM/DD/YYYY format!'
-        },
-        '@SelectRequired': {
-        message: 'Please choose an option!'
+           '@LettersOnly': {
+              message: 'Please use letters only!'
+           },
+           '@NumbersOnly': {
+              message: 'Please use numbers only!'
+           },
+           '@NotEmpty': {
+              message: 'Field should not be empty!'
+           },
+           '@Email': {
+              message: 'Enter valid e-mail address!'
+           },
+           '@Phone': {
+              message: 'Enter valid phone number!'
+           },
+           '@Date': {
+              message: 'Use MM/DD/YYYY format!'
+           },
+           '@SelectRequired': {
+              message: 'Please choose an option!'
+           }
         }
-        }
-        }
-        ...
-        // Form Submit Messages
-        {
+     }
+     ...
+     // Form Submit Messages
+     {
         'MF000': 'Sent',
         'MF001': 'Recipients are not set!',
         'MF002': 'Form will not work locally!',
@@ -284,10 +286,10 @@
         'MF004': 'Please, define type of your form!',
         'MF254': 'Something went wrong with PHPMailer!',
         'MF255': 'Aw, snap! Something went wrong.'
-        }
-        ...
-        })(jQuery);
-    </code></pre>
+     }
+     ...
+  })(jQuery);
+</code></pre>
 
 <h4>SMTP server configuration</h4>
 <p>SMTP server setting does not relate to <b>RD Mailform</b> form settings at all.</p>

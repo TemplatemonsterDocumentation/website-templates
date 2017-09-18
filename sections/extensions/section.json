@@ -8,8 +8,15 @@
     {
       "id": "rd-mailform",
       "translations": {
-        "en": "RD Mail Form. Mail form.",
-        "ru": "RD Mail Form. Почтовая форма."
+        "en": "RD Mail Form v1. Mail form.",
+        "ru": "RD Mail Form v1. Почтовая форма."
+      }
+    },
+    {
+      "id": "rd-mailform-2",
+      "translations": {
+        "en": "RD Mail Form v2. Mail form.",
+        "ru": "RD Mail Form v2. Почтовая форма."
       }
     },
     {

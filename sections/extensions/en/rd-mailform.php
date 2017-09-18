@@ -1,4 +1,6 @@
-<h3>RD Mail Form. Mail form.</h3>
+<h3>RD Mail Form v1. Mail form.</h3>
+
+<p class="alert alert-info">Attention: there are 2 different versions of RD Mailform that might be included to your theme. If the package includes the <b>rd-mailform.config.json</b> file then your theme uses RD Mailform v2. You can find the review of this version <a href="#rd-mailform-2">below</a>.</p>
 
 <figure class="img-polaroid">
     <img src="img/mailform.png" alt="">
