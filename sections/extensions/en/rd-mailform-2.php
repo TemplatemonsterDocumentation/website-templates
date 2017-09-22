@@ -127,7 +127,7 @@
     <p>Selection menu with subcategories;</p>
 <pre><code>...
 &lt;div class="form-wrap"&gt;
-  &lt;select data-placeholder="Select an option" data-minimum-results-for-search="Infinity" class="form-input select-filter"&gt;
+  &lt;select name="items" data-placeholder="Select an option" data-minimum-results-for-search="Infinity" class="form-input select-filter"&gt;
     &lt;optgroup label="Category 1"&gt;
       &lt;option&gt;Demo Item 1-1&lt;/option&gt;
       &lt;option&gt;Demo Item 1-2&lt;/option&gt;
