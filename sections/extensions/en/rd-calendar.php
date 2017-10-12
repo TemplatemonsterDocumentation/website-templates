@@ -150,7 +150,7 @@
     </li>
 </ul>
 
-<h4>Days of the week display format setup    </h4>
+<h4>Days of the week display format setup</h4>
 <p>By default, days of the week are displayed in the following way in RD Calendar:</p>
 <p> Sun, Mon, Tue, Wed, Thu, Fri, Sat</p>
 
@@ -159,10 +159,18 @@
 </p>
 
 <pre><code>
-        &lt;div class="rd-calendar" data-days="Sn, Mn, Te, Wd, Th, Fr, St"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
+    &lt;div class="rd-calendar" data-days="Sn, Mn, Te, Wd, Th, Fr, St"&gt;
+        ...
+    &lt;/div&gt;
+</code></pre>
+
+<p>To set Monday as the first day of the week, you need to add an attribute <b>data-first-day-monday='true'</b> and define the day values in a necessary order using <b>'data-days'</b> attribute:</p>
+
+<pre><code>
+    &lt;div class="rd-calendar" data-first-day-monday="true" data-days="Mon, Tue, Wed, Thu, Fri, Sat, Sun"&gt;
+        ...
+    &lt;/div&gt;
+</code></pre>
 
 <p class="alert alert-info">Attention: RD Calendar display format can take any form. You just need to
     specify the content you need: any text in any language in a format, shown in the example (text that is separated by commas).
@@ -174,7 +182,7 @@
 <p>January, February, March, April, May, June,
     July, August, September, October, November, December</p>
 
-<p>To set up a custom months of the year format, use the <b>'data-months'</b>attribute for the target calendar in the HTML marking.  The value should be represented as a line of the months, separated by commas:
+<p>To set up a custom months of the year format, use the <b>'data-months'</b> attribute for the target calendar in the HTML marking.  The value should be represented as a line of the months, separated by commas:
 </p>
 <pre><code>
         &lt;div class="rd-calendar" data-months="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"&gt;

@@ -159,10 +159,18 @@
 </p>
 
 <pre><code>
-        &lt;div class="rd-calendar" data-days="Sn, Mn, Te, Wd, Th, Fr, St"&gt;
-            ...
-        &lt;/div&gt;
-    </code></pre>
+    &lt;div class="rd-calendar" data-days="Sn, Mn, Te, Wd, Th, Fr, St"&gt;
+        ...
+    &lt;/div&gt;
+</code></pre>
+
+<p>Чтобы установить понедельник в качестве первого дня недели, вам нужно добавить атрибут <b>data-first-day-monday='true'</b> и определить значения дня в необходимом порядке с помощью атрибута <b>'data-days'</b>:</p>
+
+<pre><code>
+    &lt;div class="rd-calendar" data-first-day-monday="true" data-days="Mon, Tue, Wed, Thu, Fri, Sat, Sun"&gt;
+        ...
+    &lt;/div&gt;
+</code></pre>
 
 <p class="alert alert-info">Обратите внимание: формат вывода в RD Calendar может быть совершенно любым.
     Вы просто указываете требуемое вам именование: любой текст, на любом языке в формате предложенном в примере (текст, разделенный через запятую)
