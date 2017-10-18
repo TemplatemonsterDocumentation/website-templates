@@ -120,8 +120,7 @@
         <pre><code>
                 ...
                 &lt;div class="form-wrap"&gt;
-                    &lt;label for="select" class="form-label"&gt;Gender:&lt;/label&gt;
-                    &lt;select id="select" data-placeholder="Select an option"
+                    &lt;select data-placeholder="Select an option" name="gender"
                             data-minimum-results-for-search="Infinity" class="form-input"&gt;
                         &lt;option&gt;Male&lt;/option&gt;
                         &lt;option&gt;Female&lt;/option&gt;
@@ -135,7 +134,7 @@
             <pre><code>
                 ...
                 &lt;div class="form-wrap"&gt;
-                    &lt;select data-placeholder="Select an option"
+                    &lt;select data-placeholder="Select an option" name="gender"
                             data-minimum-results-for-search="Infinity" class="form-input select-filter"&gt;
                         &lt;optgroup label="Category 1"&gt;
                             &lt;option&gt;Demo Item 1-1&lt;/option&gt;
