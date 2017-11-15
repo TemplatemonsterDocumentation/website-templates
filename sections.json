@@ -1,10 +1,11 @@
 [
 	"preparation",
-  	"template_structure",
+	"template_structure",
 	"template_customization",
 	"components",
 	"modules",
-  	"extensions",
+	"extensions",
 	"widgets",
-  	"credits"
+	"credits",
+	"Novi Builder|http://novibuilder.com/documentation/"
 ]

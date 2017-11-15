@@ -23,9 +23,9 @@ function getArticles($current_section)
  * @return [string]          [Navigation markup string]
  */
 function generateNavigation($sections, $lang, $section_param)
-{		
+{
 	$html = '';
-	
+
 	foreach ($sections as $section_key => $section_dirname) {
 		$section_json_file	= dirname(__FILE__) . '/sections/' . $section_dirname . '/section.json';
 		// Check if section json file exists
@@ -73,6 +73,10 @@ function generateNavigation($sections, $lang, $section_param)
 					$html .= '</ul>';
 				}
 			$html .= '</li>';
+		// If link specified
+		elseif( count( explode("|", $section_dirname) ) > 0 ):
+			$link = explode("|", $section_dirname);
+			$html .= '<li class="section"><a class="section_link" href="' . $link[1] . '" target="_blank">' . $link[0] . '</a></li>';
 		else:
 			die("Section $section_dirname JSON file not found");
 		endif;

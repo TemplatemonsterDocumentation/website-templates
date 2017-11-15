@@ -1,26 +1,23 @@
 {
-	"id":"components",
-	"translations":
-	{
-		"en":"Components",
-		"ru":"Компоненты"
+	"id": "components",
+	"translations": {
+		"en": "Components",
+		"ru": "Компоненты"
 	},
-  "articles": [
-	{
-	  "id": "buttons",
-	  "translations":
-	  {
-		"en": "Buttons",
-		"ru": "Кнопки"
-	  }
-	},
-	{
-	  "id": "icons",
-	  "translations":
-	  {
-		"en": "Icons",
-		"ru": "Иконки"
-	  }
-	}
-  ]
+	"articles": [
+		{
+			"id": "buttons",
+			"translations": {
+				"en": "Buttons",
+				"ru": "Кнопки"
+			}
+		},
+		{
+			"id": "icons",
+			"translations": {
+				"en": "Icons",
+				"ru": "Иконки"
+			}
+		}
+	]
 }
