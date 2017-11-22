@@ -90,6 +90,8 @@ if (!isset($sections)) {
         </div>
         <p class="copyright">TemplateMonster ©
             <a href="http://www.templatemonster.com/privacy-policy.php">Privacy Policy</a>
+            <br>
+            <span>Trunk version: v1-4</span>
         </p>
     </div>
     <div class="page-content active">
