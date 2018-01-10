@@ -110,7 +110,7 @@
                         <i class="fa fa-folder"></i>
                         psd
                     </dt>
-                    <dd> includes file with links</dd>
+                    <dd>includes .psd files (availability of PSD source files depends on the template, they may not be available in the particular template package).</dd>
                 </dl>
                 <ul>
                     <li class="file">
