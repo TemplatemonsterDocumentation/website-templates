@@ -119,8 +119,7 @@
                         <i class="fa fa-folder"></i>
                         psd
                     </dt>
-                    <dd>содержит файлы .psd Adobe Photoshop.
-                    </dd>
+                    <dd>содержит .psd-файлы Adobe Photoshop (доступность исходных файлов PSD зависит от шаблона).</dd>
                 </dl>
             </li>
             <li class="folder">
