@@ -123,6 +123,13 @@
         "en": "RD Parallax. Parallax script",
         "ru": "RD Parallax. Скрипт параллакса"
       }
+    },
+    {
+      "id": "olark",
+      "translations": {
+        "en": "Olark Live Chat",
+        "ru": "Olark Живой Чат"
+      }
     }
   ]
 }
