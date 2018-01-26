@@ -5,36 +5,36 @@
 <p>Для внедрения видеоплеера  на целевую HTML страницу необходимо воспользоваться следующей разметкой .Для внедрения видеоплеера  на целевую HTML страницу необходимо воспользоваться следующей разметкой .</p>
 
 <pre><code>
-        &lt;div data-rd-video-path="path/to/video" class="rd-video-player"&gt;
-            &lt;div class="rd-video-wrap embed-responsive-16by9"&gt;
-                &lt;div class="rd-video-preloader"&gt;< /div&gt;
-                &lt;video preload="metadata"&gt;/video&gt;
-                &lt;div class="rd-video-preview"&gt;/div&gt;
-                &lt;div class="rd-video-top-controls"&gt;
-                    &lt;span class="rd-video-title"&gt;&lt;/span&gt;
-                    &lt;a href="#" class="rd-video-fullscreen mdi mdi-fullscreen rd-video-icon"&gt;&lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class="rd-video-controls"&gt;
-                    &lt;div class="rd-video-controls-buttons"&gt;
-                        &lt;a href="#" class="rd-video-prev mdi mdi-fast-forward rd-video-icon"&gt;&lt;/a&gt;
-                        &lt;a href="#" class="rd-video-play-pause mdi mdi-play"&gt;&lt;/a&gt;
-                        &lt;a href="#" class="rd-video-next mdi mdi-fast-forward rd-video-icon"&gt;&lt;/a&gt;
-                    &lt;/div&gt;
-                    &lt;div class="rd-video-progress-bar"&gt;<  /div&gt;
-                    &lt;div class="rd-video-time"&gt;
-                        &lt;span class="rd-video-current-time"&gt;< /span&gt;
-                        &lt;span class="rd-video-time-divider"&gt;:&lt;/span&gt;
-                        &lt;span class="rd-video-duration"&gt;< /span&gt;<  /div&gt;
-                    &lt;div class="rd-video-volume-wrap"&gt;
-                        &lt;a href="#" class="rd-video-volume mdi mdi-volume-high rd-video-icon"&gt;/a&gt;
-                        &lt;div class="rd-video-volume-bar-wrap"&gt;
-
-                            &lt;div class="rd-video-volume-bar"&gt;&lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-    </code></pre>
+&lt;div data-rd-video-path="path/to/video" class="rd-video-player"&gt;
+  &lt;div class="rd-video-wrap embed-responsive-16by9"&gt;
+    &lt;div class="rd-video-preloader"&gt;&lt;/div&gt;
+    &lt;video preload="metadata"&gt;&lt;/video&gt;
+    &lt;div class="rd-video-preview"&gt;&lt;/div&gt;
+    &lt;div class="rd-video-top-controls"&gt;
+      &lt;span class="rd-video-title"&gt;&lt;/span&gt;
+      &lt;a href="#" class="rd-video-fullscreen mdi mdi-fullscreen rd-video-icon"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="rd-video-controls"&gt;
+      &lt;div class="rd-video-controls-buttons"&gt;
+        &lt;a href="#" class="rd-video-prev mdi mdi-fast-forward rd-video-icon"&gt;&lt;/a&gt;
+        &lt;a href="#" class="rd-video-play-pause mdi mdi-play"&gt;&lt;/a&gt;
+        &lt;a href="#" class="rd-video-next mdi mdi-fast-forward rd-video-icon"&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="rd-video-progress-bar"&gt;&lt;/div&gt;
+      &lt;div class="rd-video-time"&gt;
+        &lt;span class="rd-video-current-time"&gt;&lt;/span&gt;
+        &lt;span class="rd-video-time-divider"&gt;:&lt;/span&gt;
+        &lt;span class="rd-video-duration"&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="rd-video-volume-wrap"&gt;
+        &lt;a href="#" class="rd-video-volume mdi mdi-volume-high rd-video-icon"&gt;&lt;/a&gt;
+        &lt;div class="rd-video-volume-bar-wrap"&gt;
+          &lt;div class="rd-video-volume-bar"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 <p>Вы можете изменять данную разметку для изменения внешнего вида видеоплеера.
     Для работы плеера необходимы лишь классы на определенных элементах. Список данных классов с описанием указаны ниже в карте классов.</p>

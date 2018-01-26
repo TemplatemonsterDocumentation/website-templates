@@ -11,7 +11,7 @@
 <h4>Adjusting the countdown time</h4>
 
 <p>To change the counting speed, add <b>data-speed</b> attribute and specify the time period in milliseconds before the countdown end.</p>
-<p>Например,</p>
+<p>For example,</p>
 <pre><code>
     &lt;div class="counter" data-from="25" data-to="125" data-speed="5000"&gt;&lt;/div&gt;
   </code></pre>

@@ -1,6 +1,6 @@
 <h3>Bootstrap Accordions. Accordions</h3>
 <p>HTML Website Template uses <b>Bootstrap</b> extension for implementing accodrions.
-   To add аccordions to the target page, use the following marking:</p>
+   To add accordions to the target page, use the following marking:</p>
 
 <pre><code>
 &lt;div id="accordionOne" role="tablist" aria-multiselectable="true" class="accordion-custom"&gt;

@@ -1,4 +1,4 @@
-<h3>Slick Carousel - Карусель</h3>
+<h3>Slick Carousel</h3>
 <p>HTML Website Templates also use <b>Slick-carousel.js</b> for implementing carousel with extended data-API for interaction on template pages.
 </p>
 
@@ -48,7 +48,7 @@
     <li>
         <dl class="inline-term">
             <dt>data-sm-items="N"</dt>
-            <dd>отображает N элементов карусели, начиная с SM разрешения.</dd>
+            <dd>displays N carousel items, starting from SM resolution.</dd>
         </dl>
     </li>
     <li>
