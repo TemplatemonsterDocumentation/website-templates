@@ -1,6 +1,5 @@
 <h3>RD Instafeed</h3>
-<p>Intense uses <b> RD Instafeed</b> extension to display data from  <a
-        href="https://www.instagram.com/">https://www.instagram.com/</a> on the website.</p>
+<p>HTML Website Template uses <b> RD Instafeed</b> extension to display data from  <a href="https://www.instagram.com/">https://www.instagram.com/</a> on the website.</p>
 
 <h4>Adding widget to the page</h4>
 <p>The basic widget HTML markup to display one element looks the following way:</p>
