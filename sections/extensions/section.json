@@ -48,10 +48,17 @@
       }
     },
     {
-      "id": "google-map",
+      "id": "rd-google-map",
       "translations": {
         "en": "RD Google Maps",
         "ru": "RD Google Maps"
+      }
+    },
+    {
+      "id": "google-map",
+      "translations": {
+        "en": "Google Maps",
+        "ru": "Google Maps"
       }
     },
     {
