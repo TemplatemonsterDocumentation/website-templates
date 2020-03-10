@@ -1,0 +1,1 @@
+.section {	padding-top: 5rem;	padding-bottom: 2.5rem;}.section:last-child {	padding-bottom: 5rem;}.section + .section {	padding-top: 2.5rem;}
