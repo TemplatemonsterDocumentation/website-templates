@@ -55,13 +55,6 @@
       }
     },
     {
-      "id": "rd-bg-video",
-      "translations": {
-        "en": "Background video integration",
-        "ru": "RD Background Video"
-      }
-    },
-    {
       "id": "rd-flickr-widget",
       "translations": {
         "en": "RD Flickr Gallery",
