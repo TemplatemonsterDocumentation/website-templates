@@ -1,133 +1,4 @@
-# Components
-
-## Alert
-Alerts are used as feedback by certain actions of a user or other events. Style sheets linking occurs when the `.alert` primary class is present on the page.
-
-Markup example:
-```html
-<div class="alert alert-primary">
-  Attention! This is a multi-purpose alert that's seful anywhere!
-</div>
-```
-The component has predefined styles (class modifiers), each of which has its own semantic goal.
-
-Color modifiers:
-- primary - `.alert-primary`
-- secondary - `.alert-secondary`
-- success - `.alert-success`
-- info - `.alert-info`
-- warning - `.alert-warning`
-- danger - `.alert-danger`
-- light - `.alert-light`
-- dark - `.alert-dark`
-
-Modifiers of primary color brightening or darkening (incompatible with gradient modifier):
-- brightening - `.alert-lighter`
-- darkening - `.alert-darker`
-
-Size modifiers:
-- small alert - `.alert-sm`
-- large alert - `.alert-lg`
-
-Border modifiers:
-- left border - `.alert-border-left`
-- right border - `.alert-border-right`
-- top border - `.alert-border-top`
-- bottom border - `.alert-border-bottom`
-
-`.alert-gradient` modifier makes a gradient background out of primary background.  
-This component is a part of [Bootstrap 4](https://getbootstrap.com)  framework. Read more about it on the following page: [Bootstrap Alerts](https://getbootstrap.com/docs/4.1/components/alerts).
-
-
-## Badge
-Badge is used as a small counter or label.  
-Style sheets linking occurs when the `.badge` primary class is present on the page.
-
-Markup example:
-```html
-<span class="badge badge-primary">Badge</span>
-```
-
-The component has its own modifiers. Color modifiers:
-- primary - `.badge-primary`
-- secondary - `.badge-secondary`
-- success - `.badge-success`
-- info - `.badge-info`
-- warning - `.badge-warning`
-- danger - `.badge-danger`
-- light - `.badge-light`
-- dark - `.badge-dark`
-
-Modifier `.badge-pill` makes a badge round.  
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Badges](https://getbootstrap.com/docs/4.1/components/badge).
-
-
-## Breadcrumbs
-Компонент используется для указания местоположения текущей страницы в навигационной иерархии.  
-Подключение стилей происходит при наличии основного класса `.breadcrumbs` на странице.
-
-Markup example:
-```html
-<ul class="breadcrumbs mt-1 p-0">
-  <li class="breadcrumbs-item">
-    <a class="breadcrumbs-link" href="index.html">
-      <span class="breadcrumbs-icon fa-home"></span>
-      <span>Dashboard</span>
-    </a>
-  </li>
-  <li class="breadcrumbs-item">Documentation</li>
-  <li class="breadcrumbs-item">Components List</li>
-</ul>
-```
-
-
-## Button
-Buttons are used in forms in the first place.  
-Style sheets linking occurs when the `.btn` primary class is present on the page.
-
-Markup example:
-```html
-<button class="btn btn-primary btn-block">Button</button>
-```
-
-The component has predefined styles (class modifiers), each of which has its own semantic goal.
-
-Color modifiers:
-- primary - `.btn-primary`, `.btn-outline-primary`
-- secondary - `.btn-secondary`, `.btn-outline-secondary`
-- success - `.btn-success`, `.btn-outline-success`
-- info - `.btn-info`, `.btn-outline-info`
-- warning - `.btn-warning`, `.btn-outline-warning`
-- danger - `.btn-danger`, `.btn-outline-danger`
-- light - `.btn-light`, `.btn-outline-light`
-- dark - `.btn-dark`, `.btn-outline-dark`
-
-Size modifiers:
-- small button - `.btn-sm`
-- large button - `.btn-lg`
-
-A modifier `.btn-block` makes a block out of a button. It occupies the full width of a parent element.  
-Active (`:active`) and disabled (`[disabled]`) states of a button are also provided. They can be artificially set using `.active` and `.disabled` classes correspondingly.  
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Buttons](https://getbootstrap.com/docs/4.1/components/buttons).
-
-
-## Card
-Card is a flexible and expandable container of content. It includes heading and footer options, a wide range of content, contextual background colors and powerful display options.  
-Style sheets linking occurs when the `.card` primary class is present on the page.
-
-Code example:
-```html
-<div class="card">
-  <img class="card-img-top" src="https://via.placeholder.com/300x150/" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Card](https://getbootstrap.com/docs/4.1/components/card).
+# Plugins
 
 
 ## CKeditor
@@ -145,25 +16,6 @@ To specify the editor type, a `data-ckeditor` attribute with acceptable values i
 - `document`
 
 All available parameters of the plugin can be viewed on [CKeditor](https://ckeditor.com) website.
-
-
-## Close
-A common icon for hiding content, e.g. modal windows and notifications.  
-Style sheets linking occurs when the `.close` primary class is present on the page.
-
-Code example:
-```html
-<button type="button" class="close" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Close](https://getbootstrap.com/docs/4.1/utilities/close-icon).
-
-
-## Code
-Code component is a set of styles for changing the appearance of `<code>`, `<kbd>` and `<pre>` tags. In addition to `<code>` , there is a `.code-bg` class, which adds a background and inner paddings. Style sheets linking occurs when the `<code>` tag is present on the page.  
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Code](https://getbootstrap.com/docs/4.1/content/code).
 
 
 ## Colorpicker
@@ -358,29 +210,6 @@ An attribute can be added to any visible element on the page. The site tour star
 All available parameters of the plugin can be viewed on [Driver.js](https://kamranahmed.info/driver.js) website.
 
 
-## Dropdown
-Dropdown elements are switchable, contextual elements of surface covering for displaying link lists etc. They are interactive thanks to JavaScript plugin in Bootstrap 4. Switching of a dropdown element is performed on click and not on hover. It is done intentionally.  
-Plugin and style sheets linking occurs when the `.dropdown-toggle` primary class is present on the page.
-
-Markup example:
-```html
-<div class="dropdown">
-  <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
-    <span>Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Option 1</a>
-    <a class="dropdown-item" href="#">Option 2</a>
-    <a class="dropdown-item" href="#">Option 3</a>
-  </div>
-</div>
-```
-
-`.dropdown-toggle` element is also a `button` component and it can have the same class modifiers.
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Dropdowns](https://getbootstrap.com/docs/4.1/components/dropdowns).
-
-
 ## Dropzone
 __DropzoneJS__ is an open-source library that allows to drag and drop files with a feature of image preview.  
 Plugin and style sheets linking occurs when the element that matches the `.dropzone-form` selector is present on the page.
@@ -490,18 +319,6 @@ Markup example:
 All available parameters of the plugin can be viewed in its [GitHub repository](https://github.com/highlightjs/highlight.js#highlightjs).
 
 
-## Input
-Inputs are used in forms in the first place.  
-Style sheets linking occurs when the element that matches the `.form-group, .input-group, .form-check, .custom-control, .form-control` selector is present on the page.
-
-Markup example:
-```html
-<input class="form-control" type="text" placeholder="Type Here...">
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Forms](https://getbootstrap.com/docs/4.1/components/forms).
-
-
 ## jsTree
 __jsTree__ is a jQuery plugin that provides an interactive tree structure of anything.  
 Plugin and style sheets linking occurs when the element that matches the `.jstree` selector is present on the page.
@@ -527,23 +344,6 @@ This template provides a `data-jstree-params` attribute for jsTree that can acce
 ```
 
 All available parameters of the plugin can be viewed on [jsTree](https://www.jstree.com) website.
-
-
-## Jumbotron
-A component designed for demonstration of website’s key content.  
-Style sheets linking occurs when the `.jumbotron` primary class is present on the page.
-
-Markup example:
-```html
-<section class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-3">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p><a class="btn btn-primary mt-2" href="#">Learn more</a>
-</section>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Jumbotron](https://getbootstrap.com/docs/4.1/components/jumbotron).
 
 
 ## jVectorMap
@@ -626,53 +426,6 @@ Markup example:
 All available parameters of the plugin can be viewed in its [GitHub repository](https://github.com/mimo84/bootstrap-maxlength/#configurable-options).
 
 
-## Media Object
-__Media object__ is an object where an image is located next to the text content (message, tweet, post). Style sheets linking occurs when the `.media` primary class is present on the page.
-
-Code example:
-```html
-<div class="media">
-  <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-  <div class="media-body">
-    <h5 class="mt-0">Media heading</h5>
-    Cras sit amet nibh libero, in gravida nulla.
-  </div>
-</div>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Media Object](https://bootstrap-4.ru/docs/4.1/layout/media-object).
-
-
-## Modal
-Bootstrap Modal is a plugin for adding dialog windows, lightboxes, notifications or any other content in a pop-up window.  
-Plugin and style sheets linking occurs when the `.modal` primary class is present on the page.
-
-Markup example:
-```html
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Modals](https://getbootstrap.com/docs/4.1/components/modal).
-
-
 ## MultiSwitch
 __MultiSwitch__ is a plugin for creating groups of class switches.  
 Plugin and style sheets linking occurs when the element that matches the `[data-multi-switch]` selector is present on the page.
@@ -688,31 +441,6 @@ This template provides a `data-multi-switch` attribute for MultiSwitch that can 
 ```
 
 All available parameters of the plugin can be viewed in its [GitHub repository](https://github.com/OXAYAZA/Multi-Switches#multi-switches).
-
-
-## Nav
-Navigation is a page component that allows to transfer between website pages or through the selected content.  
-Plugin and style sheets linking occurs when the `.nav` primary class is present on the page.
-
-Markup example:
-```html
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Navs](https://getbootstrap.com/docs/4.1/components/navs).
 
 
 ## Nestable
@@ -761,25 +489,6 @@ For `.bar` loading bar, color modifiers are provided:
 All available parameters of the plugin can be viewed in its [GitHub repository](https://github.com/rstacruz/nprogress/#basic-usage).
 
 
-## Pagination
-A pagination component. Style sheets linking occurs when the `.pagination` primary class is present on the page.
-
-Code example:
-```html
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Pagination](https://getbootstrap.com/docs/4.1/components/pagination).
-
-
 ## Particles
 __Particles.js__ is a plugin for creating canvas with moving particles.  
 Plugin and style sheets linking occurs when the element that matches the `#particles-container` selector is present on the page.
@@ -823,21 +532,6 @@ Markup example:
 Text from the `.progress-counter` element is used as a value for calculation.
 
 All available plugin parameters can be viewed in their [GitHub repository](https://oxayaza.page.link/gitHub_aCounters).
-
-
-## Progress
-Progress bars components are built from two elements of HTML & CSS to set the width and several attributes.  
-We do not use HTML5 `<progress>` element that allows us to place progress bars vertically as well as animate them and place text labels above them.  
-Style sheets linking occurs when the `.progress` primary class is present on the page.
-
-Code example:
-```html
-<div class="progress">
-  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Progress](https://getbootstrap.com/docs/4.1/components/progress).
 
 
 ## RD Navbar
@@ -958,42 +652,6 @@ This template provides a `data-summernote-opts` attribute for Summernote that ca
 All available parameters of the plugin can be viewed on [Summernote](https://summernote.org/getting-started) website.
 
 
-## Table
-Table stylization component. Style sheets linking occurs when the `.table` primary class is present on the page.
-
-Code example:
-```html
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>Bird</td>
-    </tr>
-  </tbody>
-</table>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Tables](https://getbootstrap.com/docs/4.1/components/tables).
-
-
 ## Tags Manager
 __Tags Manager__ is a jQuery plugin for creating tag input fields.  
 Plugin and style sheets linking occurs when the element that matches the `.tag-manager` selector is present on the page.
@@ -1016,25 +674,13 @@ All available parameters of the plugin can be viewed in its [GitHub repository](
 
 
 ## Time Spinner
-__Time Spinner__ is a modified [jQuery UI Spinner](#section=components&anchor=spinner) for specifying time.  
+__Time Spinner__ is a modified [jQuery UI Spinner](#section=plugins&anchor=spinner) for specifying time.  
 Plugin and style sheets linking occurs when the element that matches the `[data-time-spinner]` selector is present on the page.
 
 Markup example:
 ```html
 <input class="form-control ui-spinner-input" data-time-spinner type="text" name="spinner" value="08:30 PM">
 ```
-
-
-## Tooltip
-__Tooltip__ can be added to any markup element.  
-Plugin and style sheets linking occurs when an element with the `[data-toggle="tooltip"]` attribute is present on the page.
-
-Markup example:
-```html
-<button class="btn btn-primary" data-toggle="tooltip">Tooltip</button>
-```
-
-This component is a part of [Bootstrap 4](https://getbootstrap.com) framework. Read more about it on the following page: [Bootstrap Tooltips](https://getbootstrap.com/docs/4.1/components/tooltips).
 
 
 ## Typeahead

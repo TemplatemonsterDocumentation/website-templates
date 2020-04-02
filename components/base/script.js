@@ -10,21 +10,9 @@ components.pageReveal = {
 			window.dispatchEvent( new Event( 'resize' ) );
 			document.documentElement.classList.add( 'components-ready' );
 
-			//{DEL DIST BUILDER}
-			console.log( `%c[components]: ready`, 'color: orange; font-weight: 900;' );
-			//{DEL}
-
 			nodes.forEach( function( node ) {
-				setTimeout( function() {
-					node.classList.add( 'page-revealed' );
-				}, 500 );
+				node.classList.add( 'page-revealed' );
 			});
-		}, { once: true } );
-
-		window.addEventListener( 'components:stylesReady', function () {
-			//{DEL DIST BUILDER}
-			console.log( `%c[components]: stylesReady`, 'color: orange; font-weight: 900;' );
-			//{DEL}
 		}, { once: true } );
 	}
 };
@@ -54,10 +42,55 @@ components.currentDevice = {
 	script: './components/current-device/current-device.min.js'
 };
 
+components.icon = {
+	selector: '.icon',
+	styles: './components/icon/icon.css'
+};
+
+components.logo = {
+	selector: '.logo',
+	styles: './components/logo/logo.css'
+};
+
+components.badge = {
+	selector: '.badge',
+	styles: './components/badge/badge.css'
+};
+
+components.rights = {
+	selector: '.rights',
+	styles: './components/rights/rights.css'
+};
+
+components.list = {
+	selector: '.list',
+	styles: './components/list/list.css'
+};
+
+components.alert = {
+	selector: '.alert',
+	styles: './components/alert/alert.css'
+};
+
+components.fonts = {
+	selector: 'html',
+	styles: 'https://fonts.googleapis.com/css?family=Oswald:300,400,700%7CRoboto+Mono%7CRoboto:300,400,500,700'
+};
+
+components.fontAwesome = {
+	selector: '[class*="fa-"]',
+	styles: './components/font-awesome/font-awesome.css'
+};
+
+components.mdi = {
+	selector: '[class*="mdi-"]',
+	styles: './components/mdi/mdi.css'
+};
+
 components.header = {
 	selector: '.header',
 	styles: './components/header/header.css',
-	script: './components/header/scroll-rate.js',
+	script: './components/scroll-rate/scroll-rate.min.js',
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
 			let
@@ -65,7 +98,7 @@ components.header = {
 					root: node,
 					nodes: node.querySelectorAll( '.header-inner' ),
 					offset: 0,
-					cb: function ( node ) {
+					nodesCb: function ( node ) {
 						node.style.fontSize = ( 56 - ( 56 - 24 ) * this.progressRate ) + 'px';
 						node.style.height = ( 256 - this.progress ) + 'px';
 					}
@@ -99,10 +132,15 @@ components.zemezNavbar = {
 	script: [
 		'./components/jquery/jquery-3.4.1.min.js',
 		'./components/current-device/current-device.min.js',
-		'./components/zemez-navbar/zemez-navbar.js'
+		'./components/zemez-navbar/zemez-navbar.js',
+		'./components/zemez-navbar/navigation.js'
 	],
+	dependencies: 'main',
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
+			let nav = node.querySelector( '.navbar-navigation' );
+			nav = createNavigation( nav, window.main._navigation );
+
 			new ZemezNavbar( node, {
 				stickUpClone: false,
 				anchorNav: false,
@@ -123,7 +161,29 @@ components.zemezNavbar = {
 					}
 				}
 			});
-		})
+
+			function hashHandler () {
+				let
+					oldItems = nav.querySelectorAll( `.navbar-navigation-item.active` ),
+					newSections = nav.querySelectorAll( `.navbar-navigation-item[data-href="#section=${window.main._section}"]` ),
+					newAnchors = nav.querySelectorAll( `.navbar-navigation-item[data-href*="section=${window.main._section}"][data-href*="anchor=${window.main._anchor}"]` );
+
+				oldItems.forEach( function ( node ) {
+					node.classList.remove( 'active', 'opened' );
+				});
+
+				newSections.forEach( function ( node ) {
+					node.classList.add( 'active', 'opened' );
+				});
+
+				newAnchors.forEach( function ( node ) {
+					node.classList.add( 'active' );
+				});
+			}
+
+			window.addEventListener( 'hashchange', hashHandler );
+			window.addEventListener( 'silenthashchange', hashHandler );
+		});
 	}
 };
 
@@ -187,36 +247,6 @@ components.navbarSwitch = {
 	}
 };
 
-components.icon = {
-	selector: '.icon',
-	styles: './components/icon/icon.css'
-};
-
-components.logo = {
-	selector: '.logo',
-	styles: './components/logo/logo.css'
-};
-
-components.badge = {
-	selector: '.badge',
-	styles: './components/badge/badge.css'
-};
-
-components.rights = {
-	selector: '.rights',
-	styles: './components/rights/rights.css'
-};
-
-components.list = {
-	selector: '.list',
-	styles: './components/list/list.css'
-};
-
-components.alert = {
-	selector: '.alert',
-	styles: './components/alert/alert.css'
-};
-
 components.toTop = {
 	selector: 'html',
 	styles: [
@@ -244,196 +274,40 @@ components.toTop = {
 	}
 };
 
-components.anchorLink = {
-	selector: '[data-anchor-link]',
-	script: './components/jquery/jquery-3.4.1.min.js',
+components.highlight = {
+	selector: '[data-highlight]',
+	styles: './components/highlight/highlight.css',
+	script: './components/highlight/highlight.pack.js',
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
-			let
-				anchor = document.querySelector( node.getAttribute( 'href' ) ),
-				offset = 50;
-
-			node.addEventListener( 'click', ( event ) => {
-				event.preventDefault();
-				let top = $(anchor).offset().top - offset;
-				$( 'html, body' ).stop().animate( { scrollTop: top }, 500, 'swing' );
-			});
+			let lang = node.getAttribute( 'data-highlight' );
+			node.innerHTML = hljs.highlight( lang, node.innerText ).value;
 		});
 	}
 };
-
-components.fonts = {
-	selector: 'html',
-	styles: 'https://fonts.googleapis.com/css?family=Oswald:300,400,700%7CRoboto+Mono%7CRoboto:300,400,500,700'
-};
-
-components.fontAwesome = {
-	selector: '[class*="fa-"]',
-	styles: './components/font-awesome/font-awesome.css'
-};
-
-components.mdi = {
-	selector: '[class*="mdi-"]',
-	styles: './components/mdi/mdi.css'
-};
-
-// TODO Scroll after md loaded
-// components.linkAnchor = {
-// 	selector: '[data-anchor]',
-// 	init: function ( nodes ) {
-// 		let observer = new IntersectionObserver( function ( entries ) {
-// 			entries.forEach( function ( entry ) {
-// 				if ( entry.isIntersecting ) {
-// 					entry.target.anchorLink.classList.add( 'active' );
-// 				} else {
-// 					entry.target.anchorLink.classList.remove( 'active' );
-// 				}
-// 			});
-// 		}, {
-// 			rootMargin: '-200px 0px'
-// 		});
-//
-// 		nodes.forEach( function ( node ) {
-// 			let
-// 				selector = node.getAttribute( 'href' ).replace( /^.+#/, '' ),
-// 				target = document.querySelector( '#'+ selector );
-//
-// 			if ( target ) {
-// 				target.anchorLink = node;
-//
-// 				node.addEventListener( 'click', function ( event ) {
-// 					let
-// 						currHref = window.location.href.replace( /#.+$/, '' ),
-// 						linkHref = event.target.href.replace( /#.+$/, '' );
-//
-// 					if ( ( new RegExp( linkHref ) ).test( currHref ) ) {
-// 						event.preventDefault();
-// 						history.replaceState({}, '', event.target.href);
-// 						window.dispatchEvent( new Event( 'hashchange' ) );
-// 					}
-// 				});
-//
-// 				observer.observe( target );
-// 			}
-// 		});
-// 	}
-// };
-
-// components.scrollToAnchor = {
-// 	selector: 'html',
-// 	script: './components/jquery/jquery-3.4.1.min.js',
-// 	init: function () {
-// 		let hashHandler = function () {
-// 			if ( window.location.hash ) {
-// 				let node = document.querySelector( window.location.hash );
-//
-// 				if ( node ) {
-// 					let
-// 						rect = node.getBoundingClientRect(),
-// 						dest = window.scrollY + rect.top - 80;
-//
-// 					$( 'html, body' ).stop().animate( { scrollTop: dest }, 500, 'swing' );
-// 				}
-// 			}
-// 		};
-//
-// 		window.addEventListener( 'components:ready', hashHandler );
-// 		window.addEventListener( 'hashchange', hashHandler );
-// 	}
-// };
-
-// components/markdown/documentation.md
 
 components.main = {
 	selector: '#main',
 	script: [
 		'./components/jquery/jquery-3.4.1.min.js',
 		'./components/showdown/showdown.min.js',
-		'./components/showdown/extensions.js'
+		'./components/showdown/extensions.js',
+		'./components/scroll-rate/scroll-rate.min.js',
+		'./components/base/main.js'
 	],
 	styles: './components/showdown/showdown.css',
 	init: function ( nodes ) {
-		nodes.forEach( function ( node ) {
-			let
-				converter = new showdown.Converter({
-					extensions: [ 'zemez-doc-extension' ]
-				}),
-				config = window.pageConfig = {
-					section: null,
-					anchor: null
-				};
-
-			function scrollToElememt( node ) {
-				if ( node ) {
-					let
-						rect = node.getBoundingClientRect(),
-						dest = window.scrollY + rect.top - 80;
-
-					$( 'html, body' ).stop().animate( { scrollTop: dest }, 500, 'swing' );
-				}
+		window.main = new Main({
+			node: nodes[0],
+			converter: {
+				extensions: [ 'zemez-doc-extension' ]
 			}
-
-			function updPage ( config ) {
-				if ( config.section !== window.pageConfig.section ) {
-					window.pageConfig.section = config.section;
-					loadMarkdown( `components/markdown/${window.pageConfig.section}.md`, function ( text ) {
-						node.innerHTML = converter.makeHtml( text );
-
-						if ( config.anchor !== window.pageConfig.anchor ) {
-							window.pageConfig.anchor = config.anchor;
-
-							if ( window.pageConfig.anchor ) {
-								window.scrollTo( 0, node.querySelector( '#'+ window.pageConfig.anchor ).getBoundingClientRect().top - 80 );
-							} else {
-								window.scrollTo( 0, 0 );
-							}
-						}
-					});
-				} else {
-					if ( config.anchor !== window.pageConfig.anchor ) {
-						window.pageConfig.anchor = config.anchor;
-
-						if ( window.pageConfig.anchor ) {
-							scrollToElememt( node.querySelector( '#'+ window.pageConfig.anchor ) );
-						} else {
-							scrollToElememt( node );
-						}
-					}
-				}
-			}
-
-			function onHashchange () {
-				let hash = location.hash.substring( 1 );
-
-				if ( hash.length ) {
-					let config = parseJSON('{"' + decodeURI( hash ).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
-					updPage( config );
-				}
-			}
-
-			function loadMarkdown ( file, cb ) {
-				let request = new XMLHttpRequest();
-				request.open( 'GET', file, true );
-				request.send( null );
-				request.onreadystatechange = function () {
-					if ( request.readyState === 4 && request.status === 200 ) {
-						cb( request.responseText );
-					}
-				};
-			}
-
-			converter.setFlavor( 'github' );
-
-			if ( location.hash ) {
-				onHashchange();
-			} else {
-				updPage({ section: 'preparation' });
-			}
-
-			window.addEventListener( 'hashchange', onHashchange );
 		});
+
+		return window.main.promise;
 	}
 };
+
 
 /**
  * Wrapper to eliminate json errors
@@ -452,48 +326,12 @@ function parseJSON ( str ) {
 	}
 }
 
-/**
- * Returns version of IE or false, if browser is not Internet Explorer
- * @see {@link https://gist.github.com/gaboratorium/25f08b76eb82b1e7b91b01a0448f8b1d}
- * @returns {number|boolean}
- */
-function detectIE () {
-	let
-		ua = window.navigator.userAgent,
-		msie = ua.indexOf( 'MSIE ' ),
-		trident = ua.indexOf( 'Trident/' ),
-		edge = ua.indexOf( 'Edge/' );
-
-	if ( msie > 0 ) {
-		return parseInt( ua.substring( msie + 5, ua.indexOf( '.', msie ) ), 10 );
-	}
-
-	if ( trident > 0 ) {
-		let rv = ua.indexOf( 'rv:' );
-		return parseInt( ua.substring( rv + 3, ua.indexOf( '.', rv ) ), 10 );
-	}
-
-	if ( edge > 0 ) {
-		return parseInt( ua.substring( edge + 5, ua.indexOf( '.', edge ) ), 10 );
-	}
-
-	return false;
-}
 
 // Main
 window.addEventListener( 'DOMContentLoaded', function () {
-	new ZemezCore({
-		components,
-		onError: function ( error ) {
-			if ( detectIE() < 12 ) {
-				let
-					script = document.createElement( 'script' );
-					script.src = './components/base/support.js';
-
-				document.querySelector( 'head' ).appendChild( script );
-			}
-
-			throw new Error( error );
-		}
+	window.core = new ZemezCore({
+		debug: true,
+		components: components,
+		observeDOM: false
 	});
 });

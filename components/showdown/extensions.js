@@ -1,19 +1,19 @@
-(function (extension) {
-	if (typeof showdown !== 'undefined') {
+( function ( extension ) {
+	if ( typeof showdown !== 'undefined' ) {
 		// global (browser or nodejs global)
-		extension(showdown);
-	} else if (typeof define === 'function' && define.amd) {
+		extension( showdown );
+	} else if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define(['showdown'], extension);
-	} else if (typeof exports === 'object') {
+		define( [ 'showdown' ], extension );
+	} else if ( typeof exports === 'object' ) {
 		// Node, CommonJS-like
-		module.exports = extension(require('showdown'));
+		module.exports = extension( require( 'showdown' ) );
 	} else {
 		// showdown was not found so we throw
-		throw Error('Could not find showdown library');
+		throw Error( 'Could not find showdown library' );
 	}
-}(function (showdown) {
-	// loading extension into shodown
+}( function ( showdown ) {
+	// loading extension into showdown
 	showdown.extension( 'zemez-doc-extension', function () {
 		var notifications = {
 			type: 'lang',
@@ -30,6 +30,16 @@
 			replace: '<span class="fa-$1"></span>'
 		};
 
-		return [ notifications, fontAwesome ];
+		var highlight = {
+			type: 'output',
+			filter: function ( text ) {
+				return text.replace( /<pre><code\b([^>]*)>((.|\s)+?)?<\/pre>/g, function ( match, p1, p2 ) {
+					var lang = ( p1.match( /class=\"([^ \"]+)/ ) || [] )[1];
+					return '<pre data-highlight="'+ lang +'">'+ p2 +'</pre>';
+				});
+			}
+		};
+
+		return [ notifications, fontAwesome, highlight ];
 	});
 }));

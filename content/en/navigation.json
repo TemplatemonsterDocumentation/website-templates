@@ -1,0 +1,199 @@
+{
+	"type": "root",
+	"child": [
+		{
+			"title": "Preparation",
+			"link": "#section=preparation",
+			"child": {
+				"type": "dropdown",
+				"child": [
+					{
+						"title": "Software",
+						"link": "#section=preparation&anchor=software"
+					},
+					{
+						"title": "Hosting",
+						"link": "#section=preparation&anchor=hosting"
+					},
+					{
+						"title": "Uploading a template to hosting",
+						"link": "#section=preparation&anchor=uploading-a-template-to-hosting"
+					}
+				]
+			}
+		},
+
+		{
+			"title": "Template structure",
+			"link": "#section=template-structure",
+			"child": {
+				"type": "dropdown",
+				"child": [
+					{
+						"title": "Project with a single template",
+						"link": "#section=template-structure&anchor=project-with-a-single-template"
+					},
+					{
+						"title": "Project with multiple templates",
+						"link": "#section=template-structure&anchor=project-with-multiple-templates"
+					}
+				]
+			}
+		},
+
+		{
+			"title": "Working with the project",
+			"link": "#section=working-with-the-project"
+		},
+
+		{
+			"title": "Plugins",
+			"link": "#section=plugins",
+			"child": {
+				"type": "dropdown",
+				"child": [
+					{
+						"title": "CKeditor",
+						"link": "#section=plugins&anchor=ckeditor"
+					},
+					{
+						"title": "Colorpicker",
+						"link": "#section=plugins&anchor=colorpicker"
+					},
+					{
+						"title": "Countdown",
+						"link": "#section=plugins&anchor=countdown"
+					},
+					{
+						"title": "Cropper",
+						"link": "#section=plugins&anchor=cropper"
+					},
+					{
+						"title": "Date Range Picker",
+						"link": "#section=plugins&anchor=date-range-picker"
+					},
+					{
+						"title": "Bootstrap Date/Timepicker",
+						"link": "#section=plugins&anchor=bootstrap-datetimepicker"
+					},
+					{
+						"title": "Driver",
+						"link": "#section=plugins&anchor=driver"
+					},
+					{
+						"title": "Dropzone",
+						"link": "#section=plugins&anchor=dropzone"
+					},
+					{
+						"title": "Dual Listbox",
+						"link": "#section=plugins&anchor=dual-listbox"
+					},
+					{
+						"title": "EasyZoom",
+						"link": "#section=plugins&anchor=easyzoom"
+					},
+					{
+						"title": "Tower File Input",
+						"link": "#section=plugins&anchor=tower-file-input"
+					},
+					{
+						"title": "Flot",
+						"link": "#section=plugins&anchor=flot"
+					},
+					{
+						"title": "Highcharts",
+						"link": "#section=plugins&anchor=highcharts"
+					},
+					{
+						"title": "Highlight",
+						"link": "#section=plugins&anchor=highlight"
+					},
+					{
+						"title": "jsTree",
+						"link": "#section=plugins&anchor=jstree"
+					},
+					{
+						"title": "jVectorMap",
+						"link": "#section=plugins&anchor=jvectormap"
+					},
+					{
+						"title": "Lightgallery",
+						"link": "#section=plugins&anchor=lightgallery"
+					},
+					{
+						"title": "Markdown",
+						"link": "#section=plugins&anchor=markdown"
+					},
+					{
+						"title": "jQuery Masked Input",
+						"link": "#section=plugins&anchor=jquery-masked-input"
+					},
+					{
+						"title": "Bootstrap Maxlength",
+						"link": "#section=plugins&anchor=bootstrap-maxlength"
+					},
+					{
+						"title": "MultiSwitch",
+						"link": "#section=plugins&anchor=multiswitch"
+					},
+					{
+						"title": "Nestable",
+						"link": "#section=plugins&anchor=nestable"
+					},
+					{
+						"title": "Nprogress",
+						"link": "#section=plugins&anchor=nprogress"
+					},
+					{
+						"title": "Particles",
+						"link": "#section=plugins&anchor=particles"
+					},
+					{
+						"title": "PNotify",
+						"link": "#section=plugins&anchor=pnotify"
+					},
+					{
+						"title": "Counter & ProgressCircle",
+						"link": "#section=plugins&anchor=counter--progresscircle"
+					},
+					{
+						"title": "RD Navbar",
+						"link": "#section=plugins&anchor=rd-navbar"
+					},
+					{
+						"title": "Select2",
+						"link": "#section=plugins&anchor=select2"
+					},
+					{
+						"title": "Slick",
+						"link": "#section=plugins&anchor=slick"
+					},
+					{
+						"title": "Spinner",
+						"link": "#section=plugins&anchor=spinner"
+					},
+					{
+						"title": "Summernote",
+						"link": "#section=plugins&anchor=summernote"
+					},
+					{
+						"title": "Tags Manager",
+						"link": "#section=plugins&anchor=tags-manager"
+					},
+					{
+						"title": "Time Spinner",
+						"link": "#section=plugins&anchor=time-spinner"
+					},
+					{
+						"title": "Typeahead",
+						"link": "#section=plugins&anchor=typeahead"
+					},
+					{
+						"title": "xZoom",
+						"link": "#section=plugins&anchor=xzoom"
+					}
+				]
+			}
+		}
+	]
+}
