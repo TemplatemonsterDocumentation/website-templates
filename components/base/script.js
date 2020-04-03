@@ -187,6 +187,35 @@ components.zemezNavbar = {
 	}
 };
 
+components.langBtn = {
+	selector: '.lang-btn',
+	styles: './components/lang-btn/lang-btn.css',
+	dependencies: 'main',
+	init: function ( nodes ) {
+		nodes.forEach( function ( node ) {
+			let
+				curr = node.querySelector( '.lang-btn-current' ),
+				list = node.querySelector( '.lang-btn-submenu' );
+
+			curr.innerText = main._lang;
+
+			if ( main._langs && main._langs.length ) {
+				main._langs.forEach( function ( lang ) {
+					let item = document.createElement( 'li' );
+					item.className = 'lang-btn-item';
+					item.innerText = lang;
+					item.setAttribute( 'data-lang', lang );
+					list.appendChild( item );
+					item.addEventListener( 'click', function () {
+						localStorage.setItem( 'lang', item.getAttribute( 'data-lang' ) );
+						location.reload();
+					});
+				});
+			}
+		});
+	}
+};
+
 components.multiswitch = {
 	selector: '[data-multi-switch]',
 	styles: './components/multiswitch/multiswitch.css',

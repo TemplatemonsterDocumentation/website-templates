@@ -56,6 +56,7 @@
 			'_hash': { writable: true, enumerable: false },
 			'_converter': { writable: true, enumerable: false },
 			'_lang': { writable: true, enumerable: false },
+			'_langs': { writable: true, enumerable: false },
 			'_navigation': { writable: true, enumerable: false },
 			'_startSection': { writable: true, enumerable: false },
 			'_section': { writable: true, enumerable: false },
@@ -68,6 +69,7 @@
 
 			// Проверка lang в локальном хранилище и его установка
 			this._lang = localStorage.getItem( 'lang' );
+			this._langs = Object.keys( tmp.langs );
 
 			if ( !this._lang ) {
 				this._lang = tmp.default;
@@ -75,7 +77,7 @@
 			}
 
 			document.documentElement.setAttribute( 'lang', this._lang );
-			this._startSection = tmp.lang[ this._lang ].startSection;
+			this._startSection = tmp.langs[ this._lang ].startSection;
 			return this._loadFile( path( this.root, this._lang, 'navigation.json' ) );
 		}).then( ( str ) => {
 			this._navigation = JSON.parse( str );
@@ -213,6 +215,8 @@
 
 					if ( this._hash.anchor && this._anchor !== this._hash.anchor ) {
 						this.updAnchor();
+					} else {
+						window.scrollTo( 0, 0 );
 					}
 				});
 			} else if ( this._anchor !== this._hash.anchor ) {
