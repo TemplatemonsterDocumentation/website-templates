@@ -1,0 +1,11 @@
+{
+	"default": "en",
+	"langs": {
+		"en": {
+			"startSection": "preparation"
+		},
+		"ru": {
+			"startSection": "preparation"
+		}
+	}
+}
