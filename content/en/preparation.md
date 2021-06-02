@@ -21,6 +21,6 @@ You can use the following guides for configuring your local server:
 - [How to install **XAMP** web development environment](https://www.templatemonster.com/help/how-to-install-xamp-web-development-environment.html)
 
 ## Uploading a template to hosting
-To make your website live, you need to upload all content directories **dist/** from your local computer to a hosting server.
-{{alert-info}} Pay attention: a root directory of a website depends on the internal structure of your hosting server. If you upload **dist/** folder to the hosting server, then the root of your website will be **http://your_domain_name/dist**. For the root of your website to be **http://your_domain_name** , please open the **dist/** folder and add its content to your hosting server.
+To make your website live, you need to upload all content directories **dist/** (or **dist/\<website template>/** in project with multiple templates) from your local computer to a hosting server.
+{{alert-info}} Pay attention: a root directory of a website depends on the internal structure of your hosting server. If you upload **dist/** (or **dist/\<website template>/**) folder to the hosting server, then the root of your website will be **http://your_domain_name/dist**. For the root of your website to be **http://your_domain_name** , please open the **dist/** (or **dist/\<website template>/**) folder and add its content to your hosting server.
 {{alert-danger}} Attention: do not upload **dev/** folder or any source file of the template to your hosting server.
