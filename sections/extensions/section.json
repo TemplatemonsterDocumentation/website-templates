@@ -1,0 +1,249 @@
+{
+  "id": "extensions",
+  "translations": {
+    "en": "Extensions",
+    "ru": "Расширения"
+  },
+  "articles": [
+    {
+      "id": "rd-calendar",
+      "translations": {
+        "en": "RD Calendar",
+        "ru": "RD Calendar. Календарь с поддержкой событий"
+      }
+    },
+    {
+      "id": "rd-parallax",
+      "translations": {
+        "en": "RD Parallax",
+        "ru": "RD Parallax"
+      }
+    },
+    {
+      "id": "rd-mailform",
+      "translations": {
+        "en": "RD Mailform",
+        "ru": "RD Mailform"
+      }
+    },
+    {
+      "id": "mailchimp",
+      "translations": {
+        "en": "MailChimp",
+        "ru": "MailChimp"
+      }
+    },
+    {
+      "id": "campaign-monitor",
+      "translations": {
+        "en": "Campaign Monitor",
+        "ru": "Campaign Monitor"
+      }
+    },
+    {
+      "id": "rd-navbar",
+      "translations": {
+        "en": "RD Navbar",
+        "ru": "RD Navbar"
+      }
+    },
+    {
+      "id": "rd-google-map",
+      "translations": {
+        "en": "RD Google Maps",
+        "ru": "RD Google Maps"
+      }
+    },
+    {
+      "id": "google-map",
+      "translations": {
+        "en": "Google Maps",
+        "ru": "Google Maps"
+      }
+    },
+    {
+      "id": "rd-video-player",
+      "translations": {
+        "en": "RD Video Player",
+        "ru": "RD Video Player"
+      }
+    },
+    {
+      "id": "rd-audio-player",
+      "translations": {
+        "en": "RD Audio Player",
+        "ru": "RD Audio Player"
+      }
+    },
+    {
+      "id": "rd-bg-video",
+      "translations": {
+        "en": "RD Background Video",
+        "ru": "RD Background Video"
+      }
+    },
+    {
+      "id": "rd-flickr-widget",
+      "translations": {
+        "en": "RD Flickr Gallery",
+        "ru": "RD Flickr Gallery"
+      }
+    },
+    {
+      "id": "rd-instagram-feed",
+      "translations": {
+        "en": "RD Instagram Feed",
+        "ru": "RD Instagram Feed"
+      }
+    },
+    {
+      "id": "rd-twitter-feed",
+      "translations": {
+        "en": "RD Twitterfeed",
+        "ru": "RD Twitterfeed"
+      }
+    },
+    {
+      "id": "rd-facebook-feed",
+      "translations": {
+        "en": "RD Facebook Feed",
+        "ru": "RD Facebook Feed"
+      }
+    },
+    {
+      "id": "countto",
+      "translations": {
+        "en": "CountTo.Meters",
+        "ru": "CountTo.Cчетчик"
+      }
+    },
+    {
+      "id": "countdown",
+      "translations": {
+        "en": "Countdown.Timer",
+        "ru": "Countdown.Таймер"
+      }
+    },
+    {
+      "id": "rd-search",
+      "translations": {
+        "en": "RD Search",
+        "ru": "RD Search.Поиск"
+      }
+    },
+    {
+      "id": "rd-range",
+      "translations": {
+        "en": "RD Range",
+        "ru": "RD Range.Выбор диапазона"
+      }
+    },
+    {
+      "id": "owl-carousel",
+      "translations": {
+        "en": "Carousel",
+        "ru": "Owl Carousel.Карусель"
+      }
+    },
+    {
+      "id": "slick-carousel",
+      "translations": {
+        "en": "Slick Carousel",
+        "ru": "Slick Carousel.Карусель"
+      }
+    },
+    {
+      "id": "isotope",
+      "translations": {
+        "en": "Isotope",
+        "ru": "Isotope. Лейаут фильтр"
+      }
+    },
+    {
+      "id": "bootstrap-accordions",
+      "translations": {
+        "en": "Bootstrap Accordions. Accordions",
+        "ru": "Bootstrap Accordions. Аккодрионы"
+      }
+    },
+    {
+      "id": "bootstrap-tabs",
+      "translations": {
+        "en": "Bootstrap Tabs. Tabs",
+        "ru": "Bootstrap Tabs. Табы"
+      }
+    },
+    {
+      "id": "responsive-tabs",
+      "translations": {
+        "en": "Responsive Tabs. Tabs",
+        "ru": "Responsive Tabs. Табы"
+      }
+    },
+    {
+      "id": "accordion",
+      "translations": {
+        "en": "Responsive Tabs. Accordion",
+        "ru": "Reponsive Tabs. Аккордион"
+      }
+    },
+    {
+      "id": "rd-material-tabs",
+      "translations": {
+        "en": "RD Material Tabs",
+        "ru": "RD Material Tabs.Табы"
+      }
+    },
+    {
+      "id": "stacktable",
+      "translations": {
+        "en": "Stacktable",
+        "ru": "Stacktable. Адаптивные таблицы"
+      }
+    },
+    {
+      "id": "progress-bars",
+      "translations": {
+        "en": "Progress Bar. Horizontal and radial progress bars",
+        "ru": "Progress Bar. Горизонтальные и радиальные прогресс бары"
+      }
+    },
+    {
+      "id": "progress-bar-circle",
+      "translations": {
+        "en": "Circle-progress. Radial progress bars",
+        "ru": "Circle-progress. Радиальные прогресс бары"
+      }
+    },
+    {
+      "id": "swiper",
+      "translations": {
+        "en": "Swiper Slider",
+        "ru": "Swiper Slider"
+      }
+    },
+    {
+      "id": "lightGallery",
+      "translations": {
+        "en": "lightGallery",
+        "ru": "lightGallery"
+      }
+    },
+    {
+      "id": "magnificent",
+      "translations": {
+        "en": "Magnificent.Image zoom",
+        "ru": "Magnificent.Зум изображений"
+      }
+    },
+    {
+      "id": "customScroll",
+      "translations": {
+        "en": "Custom-scrollbar",
+        "ru": "Custom-scrollbar"
+      }
+    }
+  ]
+}
+
+

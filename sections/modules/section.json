@@ -1,0 +1,25 @@
+{
+  "id": "modules",
+  "translations": {
+    "en": "Modules",
+    "ru": "Модули"
+  },
+  "articles": [
+    {
+      "id": "bootstrap-grid",
+      "translations":
+      {
+        "en": "Bootstrap Grid System",
+        "ru": "Bootstrap Grid System"
+      }
+    },
+    {
+      "id": "responsive-units",
+      "translations":
+      {
+        "en": "Responsive Units",
+        "ru": "Responsive Units"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+	"id":"preparation",
+	"translations":
+	{
+		"en":"Preparation",
+		"ru":"Подготовка"
+	},
+  "articles": [
+	{
+		"id": "software",
+		"translations":
+		{
+		"en": "Software",
+		"ru": "Програмное обеспечение"
+		}
+	},
+	{
+		"id": "hosting",
+		"translations":
+		{
+		"en": "Hosting",
+		"ru": "Хостинг"
+		}
+	},
+	{
+		"id": "uploading-a-template-to-hosting",
+		"translations":
+		{
+		"en": "Uploading a template to hosting",
+		"ru": "Загрузка шаблона на Хостинг"
+		}
+	}
+  ]
+}

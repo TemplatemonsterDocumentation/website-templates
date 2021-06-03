@@ -1,0 +1,24 @@
+{
+	"id":"template_structure",
+	"translations":
+	{
+		"en":"Template structure",
+		"ru":"Структура шаблона"
+	},
+  "articles": [
+	{
+	  "id": "intense_2_pack_structure",
+	  "translations": {
+		"en": "Intense 2 template structure",
+		"ru": "Структура шаблонов Intense 2"
+	  }
+	},
+	{
+	  "id": "intense_pack_structure",
+	  "translations": {
+		"en": "Intense template structure",
+		"ru": "Структура шаблонов Intense"
+	  }
+	}
+  ]
+}
