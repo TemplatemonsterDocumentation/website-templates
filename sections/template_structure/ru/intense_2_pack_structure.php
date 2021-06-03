@@ -9,6 +9,55 @@
         <dl class="inline-term">
             <dt>
                 <i class="fa fa-folder"></i>
+                builder
+            </dt>
+            <dd>начальный Novi builder для загрузки проектов</dd>
+        </dl>
+    </li>
+    <li class="folder">
+        <dl class="inline-term">
+            <dt>
+                <i class="fa fa-folder"></i>
+                builder-documentation
+            </dt>
+            <dd>содержит файлы документации для Novi builder</dd>
+        </dl>
+        <ul>
+            <li class="folder">
+                <dl class="inline-term">
+                    <dt>
+                        <i class="fa fa-file"></i>
+                        documentation.txt
+                    </dt>
+                    <dd>файл документации. Содержит ссылку на онлайн-документацию для Novi builder</dd>
+                </dl>
+            </li>
+        </ul>
+    </li>
+    <li class="folder">
+        <dl class="inline-term">
+            <dt>
+                <i class="fa fa-folder"></i>
+                builder-projects
+            </dt>
+            <dd>папка с проектами для Novi builder</dd>
+        </dl>
+        <ul>
+            <li class="folder">
+                <dl class="inline-term">
+                    <dt>
+                        <i class="fa fa-file"></i>
+                        *.zip
+                    </dt>
+                    <dd>проекты для Novi builder</dd>
+                </dl>
+            </li>
+        </ul>
+    </li>
+    <li class="folder">
+        <dl class="inline-term">
+            <dt>
+                <i class="fa fa-folder"></i>
                 dev
             </dt>
             <dd>содержит все файлы в исходном виде (сокращение от 'development')</dd>
@@ -18,80 +67,91 @@
                 <dl class="inline-term">
                     <dt>
                         <i class="fa fa-folder"></i>
-                        components
+                        &lt;название_темы&gt;
                     </dt>
-                    <dd>папка с компонентами</dd>
+                    <dd>содержит исходные файлы для тем</dd>
                 </dl>
                 <ul>
                     <li class="folder">
                         <dl class="inline-term">
                             <dt>
                                 <i class="fa fa-folder"></i>
-                                'component'
+                                components
                             </dt>
-                            <dd>название папки соответствует названию компонента, содержит исходные файлы (таких папок может быть сколько угодно)</dd>
+                            <dd>папка с компонентами</dd>
                         </dl>
                         <ul>
                             <li class="folder">
                                 <dl class="inline-term">
                                     <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.pug
+                                        <i class="fa fa-folder"></i>
+                                        &lt;компонент&gt;
                                     </dt>
+                                    <dd>название папки соответствует названию компонента, содержит исходные файлы (таких папок может быть сколько угодно)</dd>
                                 </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.scss
-                                    </dt>
-                                </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.css
-                                    </dt>
-                                </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.js
-                                    </dt>
-                                </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.min.js
-                                    </dt>
-                                </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.php
-                                    </dt>
-                                </dl>
+                                <ul>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.pug
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.scss
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.css
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.js
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.min.js
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.php
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
+                    <li class="folder">
+                        <dl class="inline-term">
+                            <dt>
+                                <i class="fa fa-file"></i>
+                                *.html
+                            </dt>
+                            <dd>страницы шаблона</dd>
+                        </dl>
+                    </li>
                 </ul>
-            </li>
-            <li class="folder">
-                <dl class="inline-term">
-                    <dt>
-                        <i class="fa fa-file"></i>
-                        *.html
-                    </dt>
-                    <dd>страницы шаблона</dd>
-                </dl>
             </li>
         </ul>
     </li>
@@ -109,59 +169,70 @@
                 <dl class="inline-term">
                     <dt>
                         <i class="fa fa-folder"></i>
-                        components
+                        &lt;название_темы&gt;
                     </dt>
-                    <dd> папка с компонентами
-                    </dd>
+                    <dd>содержит оптимизированные файлы для загрузки шаблона на Хостинг</dd>
                 </dl>
                 <ul>
                     <li class="folder">
                         <dl class="inline-term">
                             <dt>
                                 <i class="fa fa-folder"></i>
-                                'component'
+                                components
                             </dt>
-                            <dd>название папки соответствует названию компонента, содержит оптимизированные файлы (здесь не может быть *.pug и *.scss файлов, таких папок может быть сколько угодно)
+                            <dd> папка с компонентами
                             </dd>
                         </dl>
                         <ul>
                             <li class="folder">
                                 <dl class="inline-term">
                                     <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.css
+                                        <i class="fa fa-folder"></i>
+                                        &lt;компонент&gt;
                                     </dt>
+                                    <dd>название папки соответствует названию компонента, содержит оптимизированные файлы (здесь не может быть *.pug и *.scss файлов, таких папок может быть сколько угодно)
+                                    </dd>
                                 </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.min.js
-                                    </dt>
-                                </dl>
-                            </li>
-                            <li class="folder">
-                                <dl class="inline-term">
-                                    <dt>
-                                        <i class="fa fa-file"></i>
-                                        *.php
-                                    </dt>
-                                </dl>
+                                <ul>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.css
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.min.js
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="folder">
+                                        <dl class="inline-term">
+                                            <dt>
+                                                <i class="fa fa-file"></i>
+                                                *.php
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
+                    <li class="folder">
+                        <dl class="inline-term">
+                            <dt>
+                                <i class="fa fa-file"></i>
+                                *.html
+                            </dt>
+                            <ddстраницы шаблона
+                            </dd>
+                        </dl>
+                    </li>
                 </ul>
-            </li>
-            <li class="folder">
-                <dl class="inline-term">
-                    <dt>
-                        <i class="fa fa-file"></i>
-                        *.html
-                    </dt>
-                    <ddстраницы шаблона
-                    </dd>
-                </dl>
             </li>
         </ul>
     </li>
@@ -169,27 +240,9 @@
         <dl class="inline-term">
             <dt>
                 <i class="fa fa-file"></i>
-                package.json
+                documentation.txt
             </dt>
-            <dd>файл содержащий необходимую информацию о проекте</dd>
-        </dl>
-    </li>
-    <li class="folder">
-        <dl class="inline-term">
-            <dt>
-                <i class="fa fa-file"></i>
-                gulpfile.js
-            </dt>
-            <dd>файл для генерации Gulp-тасков</dd>
-        </dl>
-    </li>
-    <li class="folder">
-        <dl class="inline-term">
-            <dt>
-                <i class="fa fa-file"></i>
-                config.js
-            </dt>
-            <dd>файл с параметрами для выполняемых Gulp-тасков</dd>
+            <dd>основной файл документации. Содержит ссылку на онлайн-документацию, которую Вы сейчас читаете.</dd>
         </dl>
     </li>
 </ul>
@@ -230,4 +283,4 @@
 
 <h3>Структура CSS</h3>
 
-<p>Все стили шаблона расположены отдельно в каждом компоненте <b>components/'component'/*.css.</b></p>
+<p>Все стили шаблона расположены отдельно в каждом компоненте <b>components/&lt;компонент&gt;/*.css.</b></p>

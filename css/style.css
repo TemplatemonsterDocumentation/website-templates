@@ -456,7 +456,7 @@ blockquote {
   right: 0;
   height: 112px;
   background: #363636;
-  padding: 20px 14px 28px;
+  padding: 30px 14px 28px;
   font-size: 24px;
   text-align: left;
   text-align: center;
@@ -468,7 +468,7 @@ blockquote {
 .rd-mobilemenu .logo img {
   float: left;
   margin-right: 5px;
-  max-width: 250px; }
+  max-width: 200px; }
 
 .rd-mobilemenu .logo span {
   font-family: 'Oswald', sans-serif;
@@ -483,6 +483,16 @@ blockquote {
   .rd-mobilemenu .logo small {
     font-size: 12px;
     line-height: 15px; } }
+
+@media (min-width: 480px) {
+  .rd-mobilemenu .logo {
+    padding: 20px 14px 28px;
+  }
+
+  .rd-mobilemenu .logo img {
+    max-width: 250px;
+  }
+}
 
 .rd-mobilemenu_ul::-webkit-scrollbar {
   background: #eee;
