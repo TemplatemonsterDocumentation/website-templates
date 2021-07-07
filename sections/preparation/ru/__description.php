@@ -10,7 +10,7 @@
     Требования для различных шаблонов могут меняться, поэтому мы перечислим самые основные:
 </p>
 <ol class="index-list">
-    <li>Прежде всего нужны правильные приложения для распаковывания защищенного паролем архива <b>sources_#########.zip</b>.
+    <li>Прежде всего нужны правильные приложения для распаковывания архива <b>sources_#########.zip</b>.
         Можно воспользоваться <a
             href="http://www.winzip.com/downauto.cgi?o=1&file=http://download.winzip.com/winzip160.exe&email=&er=&os=win">WinZip
             9+</a> (Windows) и <a href="http://my.smithmicro.com/stuffit-deluxe-mac.html">Stuffit Expander

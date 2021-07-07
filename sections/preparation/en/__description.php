@@ -9,7 +9,7 @@
 <p>Technical requirements might differ depending on exact template, therefore we will list the most basic ones:</p>
 
 <ol class="index-list">
-    <li>First, you'll need proper unzipping software for password-protected sources_#########.zip package extracting. You
+    <li>First, you'll need proper unzipping software for sources_#########.zip package extracting. You
         may use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac). This is a mandatory software.
     </li>
     <li>You might also require Adobe Photoshop (v. CS3 or higher). It is used for source .PSD files editing and is needful
