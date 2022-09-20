@@ -1,7 +1,7 @@
 <h3>RD Mailform</h3>
 <p>You can use any form elements, presented on the <b>Components > Toolkit Components > Form Elements</b> page, for implementing
   custom forms with a custom set of fields. You can also use any Bootstrap form-related elements that can be found on the
-  <a href="http://getbootstrap.com/css/#forms">Bootstrap Official Website</a> , and Bootstrap Grid and  Flex Grid elements for implementing custom form structure.
+	<a href="https://getbootstrap.com/docs">Bootstrap Official Website</a> , and Bootstrap Grid and  Flex Grid elements for implementing custom form structure.
 </p>
 
 <p class="alert alert-info">Attention: in RD Mailform, <b>&lt;input type="email" name="email"&gt;</b> is required for the correct functioning of the form. If the field is not present, you will get an error, when submitting a form.
@@ -58,10 +58,18 @@
 <p>To change the contact form type, add to HTML marking of the target form <b>'data-form-type'</b> attribute, where you should specify the form type as the value:</p>
 
 <pre><code>
-        &lt;form class='rd-mailform' data-form-type="contact" method="post" action="bat/rd-mailform.php"&gt;
-            ...
-        &lt;/form&gt;
-    </code></pre>
+		&lt;form class='rd-mailform' data-form-type="contact" method="post" action="bat/rd-mailform.php"&gt;
+				...
+		&lt;/form&gt;
+</code></pre>
+
+<h3>Mail configuration for messages delivery</h3>
+
+<p>Form sends messages to specific email address, defined in <b>bat/rd-mailform.config.json</b> file in <b>"recipientEmail"</b> variable. You may set any number of email addresses, separated by space here.</p>
+
+<pre><code>
+	"recipientEmail": "test@demolink.com test2@demolink.com"
+</code></pre>
 
 <h3>Form fields setup</h3>
 

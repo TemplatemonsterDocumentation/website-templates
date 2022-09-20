@@ -59,10 +59,18 @@
 <p>Для того, чтобы изменить тип контактной формы необходимо в HTML разметке целевой формы добавить атрибут <b>data-form-type</b>, где в качестве значения указывается тип формы.</p>
 
 <pre><code>
-        &lt;form class='rd-mailform' data-form-type="contact" method="post" action="bat/rd-mailform.php"&gt;
-            ...
-        &lt;/form&gt;
-    </code></pre>
+		&lt;form class='rd-mailform' data-form-type="contact" method="post" action="bat/rd-mailform.php"&gt;
+				...
+		&lt;/form&gt;
+</code></pre>
+
+<h3>Настройка почты для отправления сообщений</h3>
+
+<p>Форма отправляет сообщения на определенный адрес электронной почты, указанный в файле <b>bat/rd-mailform.config.json</b> в переменной <b>"recipientEmail"</b>. Здесь вы можете указать любое количество адресов электронной почты, разделяя их пробелом.</p>
+
+<pre><code>
+	"recipientEmail": "test@demolink.com test2@demolink.com"
+</code></pre>
 
 <h3>Настройка полей формы</h3>
 
