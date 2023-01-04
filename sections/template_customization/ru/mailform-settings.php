@@ -26,6 +26,10 @@
 
 <p>Для настройки отправки почты через SMTP, Вам необходимо зайти в файл <b>bat/rd-mailform.config.json</b> и установить значение <b>useSmtp</b> - <b>true</b> и ввести настройки Вашего SMTP в следущих полях объекта.</p>
 
+<p>Для отправки почты с помощью SMTP сервера вам необходимо обратиться к оффициальной документации <b>PhpMailer</b>:</p>
+
+<a href="https://github.com/PHPMailer/PHPMailer" target="_blank">https://github.com/PHPMailer/PHPMailer</a>
+
 <div class="alert alert-info">
   <p>Работа формы через smtp доступно с версии формы 3.1.0</p>
 </div>
