@@ -24,6 +24,10 @@
 
 <p>To configure sending e-mail using SMTP, you need to open the <b>bat/rd-mailform.config.json</b> file and set the value of the <b>useSmtp</b> field to <b>true</b>. Then, enter the settings of your SMTP into next object field.</p>
 
+<p>To send messages through the SMTP server, please refer to the official documentation of the <b>PhpMailer</b>:</p>
+
+<a href="https://github.com/PHPMailer/PHPMailer" target="_blank">https://github.com/PHPMailer/PHPMailer</a>
+
 <div class="alert alert-info">
   <p>SMTP configuration is available in rd-mailform starting from version 3.1.0</p>
 </div>
