@@ -29,6 +29,14 @@
 		"en": "Uploading a template to hosting",
 		"ru": "Загрузка шаблона на Хостинг"
 		}
+	},
+	{
+		"id": "additional-settings",
+		"translations":
+		{
+		"en": "Additional settings",
+		"ru": "Дополнительные настройки"
+		}
 	}
   ]
 }

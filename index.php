@@ -74,20 +74,20 @@ if (!isset($sections)) {
                 <img src="https://www.templatemonster.com/help/quick-start-guide/website-templates/v1-2/img/logo.png" alt="">
             </a>
         </div>        
-        <div class="panel">
+        <!--<div class="panel">
             <div class="select select-lang">
                 <select>
                     <option
-                        data-href="<?php echo $path; ?>/index.php?lang=en&section=<?php echo $section_param; ?>" <?php echo $lang == "en" ? "selected" : ""; ?>>
+                        data-href="<?php /*echo $path; */?>/index.php?lang=en&section=<?php /*echo $section_param; */?>" <?php /*echo $lang == "en" ? "selected" : ""; */?>>
                         EN
                     </option>
                     <option
-                        data-href="<?php echo $path; ?>/index.php?lang=ru&section=<?php echo $section_param; ?>" <?php echo $lang == "ru" ? "selected" : ""; ?>>
+                        data-href="<?php /*echo $path; */?>/index.php?lang=ru&section=<?php /*echo $section_param; */?>" <?php /*echo $lang == "ru" ? "selected" : ""; */?>>
                         RU
                     </option>
                 </select>
             </div>
-        </div>
+        </div>-->
         <p class="copyright">TemplateMonster ©
             <a href="http://www.templatemonster.com/privacy-policy.php">Privacy Policy</a>
             <br>
