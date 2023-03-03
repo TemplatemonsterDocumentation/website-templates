@@ -1,95 +1,95 @@
-<h3>RD Google Map</h3>
+<h3>Google Maps</h3>
 
-<p>Template uses plugin for Google Map inserting - RD Google Map.</p>
-
-<p>Plugin settings allow you:</p>
+<p>The plugin supports the following settings:</p>
 
 <ul class="marked-list">
-    <li>To change map coordinates;</li>
-    <li>To add custom markers to map;</li>
-    <li>To add pop-up windows to your markers;</li>
+    <li>Google API key setup for the map;</li>
+    <li>Changing the map scale;</li>
+    <li>Modifying the map’s center according to an address or coordinates;</li>
+    <li>Setting the map style;</li>
+    <li>Adding markers to the map.</li>
 </ul>
 
-<figure class="img-polaroid">
-    <img src="img/gmap.jpg" alt="">
-</figure>
+<h4>Google API key setup for the map</h4>
 
-<h4>Map coordinates change</h4>
+<p>Without a key, your map will work in demo mode. You can find a guide on getting the key on <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">developers.google.com</a></p>
 
-<p>To replace map coordinates with your ones you need to edit <b>.html</b> file in block.</p>
-
-<code>&lt;div id=”google-map” class=”map_model”&gt;&lt;/div&gt;</code>
-
-<p>Specify two data attributes here: <b>data-x</b> (north latitude) and <b>data-y</b> (west longitude). As a result you'll have this line of code:</p>
-
-<code>&lt;div id=”google-map” class=”map_model” data-x="-73.9994068" data-y="40.643180"&gt;&lt;/div&gt;</code>
-
-<p>Coordinates can be received by using  <a href="//maps.google.com/">Google Maps</a> service . Press on right mouse button at target map place and select “What's here?”. In the appearing modal window necessary coordinates will be displayed under location name. First number stands for data-x, second one for data-y.</p>
-
-<p class="alert alert-info">In case you do not specify custom coordinates, default ones will be used instead.</p>
-
-<p class="alert alert-danger">Please also pay your attention, a common mistake is to change coordinates order so that map shows improper location from another hemisphere.</p>
-
-<h4>Adding custom markers to map</h4>
-
-<p>In order to add custom maker to map, please edit <b>.html</b> file by adding new </p>
-
-<code>&lt;ul class=”map_locations”&gt;&lt;/ul&gt;</code>
-
-<p>element to</p>
-
-<code>&lt;li&gt;&lt;/li&gt;</code>
-
-<p> list and specify its data attributes: <b>data-x</b> (north latitude) and <b>data-y</b> (west longitude). As a result you'll get line of code as follows:</p>
-
-<code>
-    &lt;li data-x="-73.9994068" data-y="40.643180"&gt;&lt;/li&gt;
-</code>
-
-<p class="alert alert-warning">In case you do not specify custom coordinates, plugin script will ignore empty list element and there will be no marker displayed.</p>
-
-<p>Complete code example will appear as follows:</p>
+<p>Insert the received key into <b>data-key</b> attribute:</p>
 
 <pre><code>
-&lt;div class="map"&gt;
-    &lt;div id="google-map" class="map_model"&gt;&lt;/div&gt;
-
-    &lt;ul class="map_locations"&gt;
-        &lt;li data-x="-73.9874068" data-y="40.643180"&gt;
-            &lt;p&gt; 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
-                &lt;span&gt;800 2345-6789&lt;/span&gt;
-            &lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li data-x="-72.9874068" data-y="39.643180"&gt;
-            &lt;p&gt; 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
-                &lt;span&gt;800 2345-6789&lt;/span&gt;
-            &lt;/p&gt;
-        &lt;/li&gt;
-
-    &lt;/ul&gt;
+&lt;!-- Google Map--&gt;
+&lt;div class="google-map-container" data-key="YOUR_API_KEY"&gt;
+	&lt;div class="google-map"&gt;&lt;/div&gt;
 &lt;/div&gt;
-    </code></pre>
+</code></pre>
 
-<p>- where:</p>
+<h4>How to change the map center coordinates</h4>
+
+<p>To replace the map center coordinates with the necessary ones, you need:</p>
 
 <pre><code>
-&lt;li data-x="-73.9874068" data-y="40.643180"&gt;
-    &lt;p&gt; 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
-        &lt;span&gt;800 2345-6789&lt;/span&gt;
-    &lt;/p&gt;
-&lt;/li&gt;
-    </code></pre>
+&lt;!-- Google Map--&gt;
+&lt;div class="google-map-container"&gt;
+    &lt;div class="google-map"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
-<p>represents new map marker.</p>
+<p>to replace a required address in <b>data-center</b> attribute in .html file with a map in the section. As a result, you will get the following code:</p>
 
-<h4>Pop-up windows to markers adding</h4>
+<pre><code>
+&lt;!-- Google Map--&gt;
+&lt;div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."&gt;
+    &lt;div class="google-map"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
-<p>In order to add pop-up window to custom map marker just insert window content to the respectable map markers list element </p>
+<h4>How to add a marker to the map</h4>
 
-<code>&lt;li&gt;&lt;/li&gt;</code>
+<p>To add your marker to the map, you need to add ito the list:</p>
 
-<p> As a result you'll get line of code as follows:</p>
+<p>Для того чтобы добавить свой маркер на карту, необходимо в .html файле с картой в список:</p>
 
-<code>
-    &lt;li data-x="-73.9994068" data-y="40.643180"&gt;Our office&lt;/li&gt;
-</code>
+<pre><code>
+&lt;!-- Google Map--&gt;
+...
+&lt;ul class="google-map-markers"&gt;
+...
+&lt;/ul&gt;
+...
+</code></pre>
+
+<p>new position with <b>data-location</b> attribute in .html file with the map. As a result, you will get:</p>
+
+<pre><code>
+&lt;!-- Google Map--&gt;
+...
+&lt;ul class="google-map-markers"&gt;
+    &lt;li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45."&gt;&lt;/li&gt;
+&lt;/ul&gt;
+...
+</code></pre>
+
+<h4>Adding a description to the marker</h4>
+
+<p>To add a popup window to a user marker, you need to specify content for the window in <b>data-description</b> attribute:</p>
+
+<pre><code>
+&lt;!-- Google Map--&gt;
+...
+&lt;li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"&gt;&lt;/li&gt;
+...
+</code></pre>
+
+<h4>How to replace the map style</h4>
+
+<p>The map supports lots of styling variants. You can get different ready-made styling variations on the website: <a
+		href="https://snazzymaps.com/." target="_blank">snazzymaps.com</a>.</p>
+
+<p>On the given website you need to copy the style array of a map you prefer and insert it into <b>data-styles</b> attribute of a corresponding map on a target *.html page:</p>
+
+<pre><code>
+&lt;!-- Google Map--&gt;
+&lt;div class="google-map-container" data-styles='Your Map Styles'&gt;
+    ...
+&lt;/div&gt;
+</code></pre>

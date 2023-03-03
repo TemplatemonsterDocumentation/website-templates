@@ -1,6 +1,6 @@
 <h3>How to edit images</h3>
 
-<p>Navigate to <b>'site/img'</b> folder. First way is to upload new images keeping the original filenames and extensions, simply replacing them.</p>
+<p>Navigate to <b>'site/images'</b> folder. First way is to upload new images keeping the original filenames and extensions, simply replacing them.</p>
 
 <p>Second way is to upload custom images specifying your own filenames and extensions.</p>
 

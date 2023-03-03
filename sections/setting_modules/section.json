@@ -13,24 +13,24 @@
       }
     },
     {
-      "id": "google_map",
+      "id": "rd_google_map",
       "translations": {
         "en": "RD Google Map",
         "ru": "RD Google Map"
       }
     },
     {
-      "id": "mailform",
+      "id": "google_map",
       "translations": {
-        "en": "RD Mailform",
-        "ru": "RD Mailform"
+        "en": "Google Map",
+        "ru": "Google Map"
       }
     },
     {
-      "id": "search",
+      "id": "rd-mailform",
       "translations": {
-        "en": "Search",
-        "ru": "Search"
+        "en": "RD Mailform",
+        "ru": "RD Mailform"
       }
     },
     {
@@ -48,21 +48,21 @@
       }
     },
     {
-      "id": "slider",
+      "id": "swiper-slider",
       "translations": {
-        "en": "Slider",
+        "en": "Swiper Slider",
         "ru": "Слайдер"
       }
     },
     {
-      "id": "gallery",
+      "id": "lightGallery",
       "translations": {
-        "en": "Gallery",
-        "ru": "Gallery"
+        "en": "lightGallery",
+        "ru": "lightGallery"
       }
     },
     {
-      "id": "parallax",
+      "id": "rd-parallax",
       "translations": {
         "en": "RD Parallax",
         "ru": "RD Parallax"
@@ -83,10 +83,10 @@
       }
     },
     {
-      "id": "timer",
+      "id": "countdown-timer",
       "translations": {
-        "en": "Countdown timer (“under construction” page)",
-        "ru": "Таймер обратного отсчёта (страница “сайт в разработке”)"
+        "en": "Countdown timer",
+        "ru": "Таймер обратного отсчёта"
       }
     },
     {
@@ -122,13 +122,6 @@
       "translations": {
         "en": "Flickr",
         "ru": "Flickr"
-      }
-    },
-    {
-      "id": "olark_livechat",
-      "translations": {
-        "en": "Olark Livechat",
-        "ru": "Olark Livechat"
       }
     }
   ]

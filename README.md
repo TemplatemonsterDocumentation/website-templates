@@ -1,2 +1,2 @@
-# theme-documentation
+# landings-documentation
 New Theme Documentation

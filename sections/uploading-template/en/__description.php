@@ -8,10 +8,10 @@
     To avoid this and make the website root <strong>http://your_domain_name/</strong> please open the
     &quot;<strong>site</strong>&quot; folder and upload the folder content. </p>
 
-<p class="alert alert-info">This <a href="/help/how-upload-files-server-2.html" target="_blank">video tutorial will show you how you can upload
+<p class="alert alert-info">This <a href="https://www.templatemonster.com/help/how-upload-files-server-2.html" target="_blank">video tutorial will show you how you can upload
         files</a> to your host using free FTP software FileZilla.</p>
 
-<p class="alert alert-info">This <a href="/help/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">video
+<p class="alert alert-info">This <a href="https://www.templatemonster.com/help/how-to-upload-files-to-a-server-using-cpanel-webhost-manager-whm.html" target="_blank">video
         tutorial will show you how you can upload files</a> to your host using hosting cPanel (WebHost Manager, WHM).
 </p>
 

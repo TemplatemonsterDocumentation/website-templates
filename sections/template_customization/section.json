@@ -1,0 +1,17 @@
+{
+	"id":"template_customization",
+	"translations":
+	{
+		"en":"Template customization",
+		"ru":"Редактирование содержимого шаблона"
+	},
+  "articles": [
+	{
+	  "id": "mailform-settings",
+	  "translations": {
+		"en": "Mailform settings",
+		"ru": "Настройки формы"
+	  }
+	}
+  ]
+}

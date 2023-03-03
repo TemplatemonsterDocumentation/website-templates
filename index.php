@@ -72,30 +72,30 @@ if (!isset($sections)) {
         <div class="logo">
             <a href="<?php echo $path; ?>">
                 <img src="<?php echo $path; ?>/img/logo.png" alt="">
-                <span><strong>HTML</strong> Templates</span>
+                <span><strong>Landing</strong> Page</span>
             </a>
         </div>        
-        <div class="panel">
+        <!--<div class="panel">
             <div class="select select-version">
                 <select>
                     <option data-href="#" selected>Version v1-2</option>
-                    <option data-href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-1/index_en.html">Version v1-1</option>
-                    <option data-href="/help/quick-start-guide/website-templates/responsive-website-templates-v1-0/index_en.html">Version v1-0</option>
+                    <option data-href="#" >Version v1-1</option>
+                    <option data-href="/help/quick-start-guide/landing-page-templates/v1-0/index_en.html">Version v1-0</option>
                 </select>
             </div>
             <div class="select select-lang">
                 <select>
                     <option
-                        data-href="<?php echo $path; ?>/index.php?lang=en&section=<?php echo $section_param; ?>" <?php echo $lang == "en" ? "selected" : ""; ?>>
+                        data-href="<?php /*echo $path; */?>/index.php?lang=en&section=<?php /*echo $section_param; */?>" <?php /*echo $lang == "en" ? "selected" : ""; */?>>
                         EN
                     </option>
                     <option
-                        data-href="<?php echo $path; ?>/index.php?lang=ru&section=<?php echo $section_param; ?>" <?php echo $lang == "ru" ? "selected" : ""; ?>>
+                        data-href="<?php /*echo $path; */?>/index.php?lang=ru&section=<?php /*echo $section_param; */?>" <?php /*echo $lang == "ru" ? "selected" : ""; */?>>
                         RU
                     </option>
                 </select>
             </div>
-        </div>
+        </div>-->
         <p class="copyright">TemplateMonster ©
             <a href="http://www.templatemonster.com/privacy-policy.php">Privacy Policy</a>
         </p>

@@ -36,7 +36,7 @@
 <p>Необходимо скачать файлы <a href="js/jquery.cookie.js" download>jquery.cookie.js</a>,
     <a href="js/jquery.cookiecuttr.js" download>jquery.cookiecuttr.js</a> и <a href="css/cookiecuttr.css" download>cookiecuttr.css</a>.
     Скопируйте их в папки <strong>js</strong> и <strong>css</strong> соответственно, добавьте скрипты плагина и ссылку
-    на файл css в секции <strong>&lt;head&gt;</strong> каждого <strong>html</strong> файла:</p>
+    на файл css в секции <strong>&lt;head&gt;</strong> <strong>html</strong> файла:</p>
 
 <pre><code>
 &lt;!-- cookiecuttr plugin --&gt;
@@ -218,4 +218,4 @@
 
 <p class="alert alert-info">Более детальную информацию и инструкции по кастомизации и использованию плагина можно найти
     на официальном сайте
-    <a href="//cookiecuttr.com/">cookiecuttr</a>.</p>
+    <a href="http://cookiecuttr.com/">cookiecuttr</a>.</p>

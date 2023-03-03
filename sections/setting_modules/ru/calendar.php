@@ -1,6 +1,6 @@
 <h3>RD Calendar</h3>
 
-<p class="alert alert-info">Календарь - необязательный скрипт. Присутствует только в случае наличия одного на .PSD макете.</p>
+<p class="alert alert-info">Календарь - необязательный скрипт. Присутствует только в случае наличия оного на .PSD макете.</p>
 
 <figure class="img-polaroid">
     <img src="img/calendar.jpg" alt="">
