@@ -90,13 +90,6 @@
       }
     },
     {
-      "id": "rd-instagram-feed",
-      "translations": {
-        "en": "RD Instagram Feed",
-        "ru": "RD Instagram Feed"
-      }
-    },
-    {
       "id": "rd-twitter-feed",
       "translations": {
         "en": "RD Twitterfeed",
