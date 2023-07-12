@@ -65,11 +65,19 @@
 
 <h3>Mail configuration for messages delivery</h3>
 
-<p>Form sends messages to specific email address, defined in <b>bat/rd-mailform.config.json</b> file in <b>"recipientEmail"</b> variable. You may set any number of email addresses, separated by space here.</p>
-
-<pre><code>
-	"recipientEmail": "test@demolink.com test2@demolink.com"
-</code></pre>
+<p>Form sends messages to specific email address, defined in <b>bat/rd-mailform.config.json</b> file in <b>"recipientEmail"</b> variable. You may set any number of email addresses, separated by space or comma.</p>
+<ol class="index-list">
+  <li><p>Separated by space:</p>
+    <pre><code>
+      "recipientEmail": "test@demolink.com test2@demolink.com"
+    </code></pre>
+  </li>
+  <li><p>Separated by comma:</p>
+    <pre><code>
+      "recipientEmail": "test@demolink.com,test2@demolink.com"
+    </code></pre>
+  </li>
+</ol>
 
 <h3>Form fields setup</h3>
 
