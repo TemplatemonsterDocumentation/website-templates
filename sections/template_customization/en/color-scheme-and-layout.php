@@ -5,7 +5,7 @@
 </h4>
 
 <p>
-  To replace main colors of the template, you need to open the file <b>_color-default.scss</b>, and replace the values of <b>$primary, $secondary, $gray-base...</b>(depends on your template)  variables with the necessary colors. Afterward, compile SCSS into CSS.
+	To replace the main colors of the template, you need to open the file <b>_color-default.scss</b>. In some cases, this file may not be present, and in such instances, you should make the changes directly in the <b>_variables.scss</b> file. Replace the values of variables like <b>$primary, $secondary, $gray-base...</b> (depending on your template) with the necessary colors. Afterward, compile SCSS into CSS.
 </p>
 
 <p class="alert alert-warning">
